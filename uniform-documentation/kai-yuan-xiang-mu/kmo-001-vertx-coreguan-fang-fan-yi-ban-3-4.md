@@ -1,4 +1,4 @@
-# Vert.x Core 文档手册
+# 「译」Vert.x Core 文档手册
 
 ## 中英对照表
 
