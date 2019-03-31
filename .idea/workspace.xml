@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf66860d-2b41-437e-ba1b-72a69d9bbd87" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zero-up/shou-ye.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/shou-ye.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,11 +52,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-100-ling-zhi-qi-yuan.md">
+        <entry file="file://$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="252">
-                <caret line="14" column="20" lean-forward="true" selection-end-line="195" />
+              <first_editor relative-caret-position="600">
+                <caret line="195" selection-start-line="195" selection-end-line="195" />
               </first_editor>
               <second_editor />
             </state>
@@ -67,12 +64,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.md">
+        <entry file="file://$PROJECT_DIR$/zero-up/shou-ye.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="614">
-                <caret line="195" selection-start-line="195" selection-end-line="195" />
+              <first_editor relative-caret-position="252">
+                <caret line="14" column="108" selection-start-line="14" selection-start-column="108" selection-end-line="14" selection-end-column="108" />
               </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
               <second_editor />
             </state>
           </provider>
@@ -82,20 +89,8 @@
         <entry file="file://$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="614">
+              <first_editor relative-caret-position="3510">
                 <caret line="195" selection-start-line="195" selection-end-line="195" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-002-di-yi-ge-zero.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="288">
-                <caret line="16" column="16" selection-end-line="222" selection-end-column="262" />
               </first_editor>
               <second_editor />
             </state>
@@ -106,20 +101,8 @@
         <entry file="file://$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="614">
+              <first_editor relative-caret-position="3996">
                 <caret line="222" column="262" selection-start-line="222" selection-start-column="262" selection-end-line="222" selection-end-column="262" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-003-restfulzhong-de-path-he-method.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="528">
-                <caret line="211" column="226" selection-start-line="211" selection-start-column="226" selection-end-line="211" selection-end-column="226" />
               </first_editor>
               <second_editor />
             </state>
@@ -145,6 +128,7 @@
         <option value="$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.md" />
         <option value="$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.md" />
         <option value="$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.md" />
+        <option value="$PROJECT_DIR$/zero-up/shou-ye.md" />
       </list>
     </option>
   </component>
@@ -191,19 +175,6 @@
               <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
               <item name="zero-up" type="462c0819:PsiDirectoryNode" />
               <item name="1-zeroji-ben-jiao-cheng" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="zero-up" type="462c0819:PsiDirectoryNode" />
-              <item name="shou-ye" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="zero-up" type="462c0819:PsiDirectoryNode" />
-              <item name="shou-ye" type="462c0819:PsiDirectoryNode" />
-              <item name="1ji-ben-jiao-cheng" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -288,6 +259,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-003-restfulzhong-de-path-he-method.md" />
+    <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-002-di-yi-ge-zero.md" />
+    <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-100-ling-zhi-qi-yuan.md" />
     <entry file="file://$PROJECT_DIR$/docker/book-init">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -316,31 +290,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-003-restfulzhong-de-path-he-method.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="528">
-            <caret line="211" column="226" selection-start-line="211" selection-start-column="226" selection-end-line="211" selection-end-column="226" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="614">
+          <first_editor relative-caret-position="3510">
             <caret line="195" selection-start-line="195" selection-end-line="195" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-002-di-yi-ge-zero.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="288">
-            <caret line="16" column="16" selection-end-line="222" selection-end-column="262" />
           </first_editor>
           <second_editor />
         </state>
@@ -349,18 +303,8 @@
     <entry file="file://$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="614">
+          <first_editor relative-caret-position="3996">
             <caret line="222" column="262" selection-start-line="222" selection-start-column="262" selection-end-line="222" selection-end-column="262" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-100-ling-zhi-qi-yuan.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="252">
-            <caret line="14" column="20" lean-forward="true" selection-end-line="195" />
           </first_editor>
           <second_editor />
         </state>
@@ -369,8 +313,26 @@
     <entry file="file://$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="614">
+          <first_editor relative-caret-position="600">
             <caret line="195" selection-start-line="195" selection-end-line="195" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zero-up/shou-ye.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="252">
+            <caret line="14" column="108" selection-start-line="14" selection-start-column="108" selection-end-line="14" selection-end-column="108" />
           </first_editor>
           <second_editor />
         </state>
