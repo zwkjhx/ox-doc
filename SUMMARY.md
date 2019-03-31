@@ -41,6 +41,8 @@
 * [语言相关](uniform-documentation/yu-yan-xiang-guan.md)
   * [KML-001 ECMA Script 6.0](uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md)
 * [开源项目](uniform-documentation/kai-yuan-xiang-mu.md)
+  * [KMO-001 Vert.x Core官方翻译版 3.4](uniform-documentation/kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.md)
+  * [KMO-002 Vert.x Web官方翻译版 3.4](uniform-documentation/kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.md)
 
 ## Environment
 
