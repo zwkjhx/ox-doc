@@ -5,7 +5,7 @@
 | 主目录 | 说明 | 文档标记 |
 | :--- | :--- | :--- |
 | 面试题 | 和面试开发人员相关的一些习题处理 | I |
-| 软件需求领域 | 软件需求领域知识库 | R |
+| 软件理论领域 | 软件需求领域知识库 | R |
 | 语言相关 | 计算机语言相关基础 | L |
 | 开源项目相关 | 开源项目的一些相关文档 | O |
 | 规范相关 | 所有软件规范的相关文档 | S |
@@ -16,7 +16,7 @@
 * [KMI-002 CDA考试大纲](/uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.html)
 * [KMI-003 Spring RESTful开发基础题](/uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html)
 
-## 软件需求领域
+## 软件理论领域
 
 * [KMR-001 非功能需求评估指标](/uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html)
 
