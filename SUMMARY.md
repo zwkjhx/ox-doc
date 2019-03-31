@@ -34,15 +34,15 @@
 ## Environment
 
 * [环境搭建知识库主页](environment/yin-dao-ye.md)
-  * [1.Docker容器环境](environment/yin-dao-ye/1dockerrong-qi-huan-jing.md)
-  * [2.Zero&Ox环境](environment/yin-dao-ye/2zeroandoxhuan-jing.md)
-  * [3.Os级别环境](environment/yin-dao-ye/3osji-bie-huan-jing.md)
-  * [4.Deployment部署教程](environment/yin-dao-ye/4deploymentbu-shu-jiao-cheng.md)
+* [1 - Docker容器环境](environment/1-dockerrong-qi-huan-jing.md)
+* [2 - Zero&Ox环境](environment/2-zeroandoxhuan-jing.md)
+* [3 - Os级别环境](environment/3-osji-bie-huan-jing.md)
+* [4 - Deployment部署教程](environment/4-deploymentbu-shu-jiao-cheng.md)
 
 ## Specification
 
 * [开发规范文档主页](specification/kai-fa-gui-fan-wen-dang-zhu-ye.md)
-  * [1.Zero规范](specification/kai-fa-gui-fan-wen-dang-zhu-ye/1zerogui-fan.md)
-  * [2.Zero UI规范](specification/kai-fa-gui-fan-wen-dang-zhu-ye/2zero-uigui-fan.md)
-  * [3.Origin X规范](specification/kai-fa-gui-fan-wen-dang-zhu-ye/3origin-xgui-fan.md)
+* [1 - Zero规范](specification/1-zerogui-fan.md)
+* [2 - Zero UI规范](specification/2-zero-uigui-fan.md)
+* [3 - Origin X规范](specification/3-origin-xgui-fan.md)
 
