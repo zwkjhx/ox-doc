@@ -22,6 +22,7 @@
 * [2 - Vert.x碎碎念](zero-up/2-vertxsui-sui-nian.md)
   * [ZVX-001 基于 auth-common 开发Vert.x自定义安全组件](zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.md)
 * [3 - Zero实战分析](zero-up/3-zeroshi-zhan-fen-xi.md)
+* [4 - Java语言基础](zero-up/4-javayu-yan-ji-chu.md)
 
 ## Origin X Engine
 
@@ -38,12 +39,15 @@
   * [KMI-001 抽奖器需求](uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.md)
   * [KMI-002 CDA考试大纲](uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.md)
   * [KMI-003 Spring RESTful开发基础题](uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.md)
-* [软件需求领域](uniform-documentation/ruan-jian-xu-qiu-ling-yu.md)
+* [软件理论领域](uniform-documentation/ruan-jian-xu-qiu-ling-yu.md)
   * [KMR-001 非功能需求评估指标](uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.md)
+  * [KMR-002 程序设计的六个基本原则](uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.md)
 * [语言相关](uniform-documentation/yu-yan-xiang-guan.md)
   * [KML-001 ECMA Script 6.0](uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md)
   * [KML-002 JSR330规范](uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.md)
   * [KML-003 浏览器中的Fetch Api](uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.md)
+  * [KML-004 Java中的静态和单例](uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.md)
+  * [KML-005 Java语言的.class字节码结构](uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md)
 * [开源项目](uniform-documentation/kai-yuan-xiang-mu.md)
   * [KMO-001 Vert.x Core官方翻译版 3.4](uniform-documentation/kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.md)
   * [KMO-002 Vert.x Web官方翻译版 3.4](uniform-documentation/kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.md)
@@ -63,14 +67,14 @@
 * [环境搭建知识库主页](environment/yin-dao-ye.md)
 * [1 - Docker容器环境](environment/1-dockerrong-qi-huan-jing.md)
 * [2 - Zero&Ox环境](environment/2-zeroandoxhuan-jing.md)
-* [3 - Os级别环境](environment/3-osji-bie-huan-jing.md)
-* [4 - Deployment部署教程](environment/4-deploymentbu-shu-jiao-cheng.md)
-* [5 - 其他环境](environment/5-qi-ta-huan-jing.md)
+* [3 - Deployment部署教程](environment/4-deploymentbu-shu-jiao-cheng.md)
+* [4 - 其他环境](environment/5-qi-ta-huan-jing.md)
   * [ENV-001 Spring Boot中的数据源配置](environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.md)
   * [ENV-002 Karma在ES6中的Webpack配置](environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.md)
   * [ENV-003 Karma的安装教程](environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.md)
   * [ENV-004 Windows环境的Docker安装](environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.md)
   * [ENV-005 使用Docker环境运行Spring Boot](environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.md)
+  * [ENV-006 Maven环境搭建](environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.md)
 
 ## Specification
 
