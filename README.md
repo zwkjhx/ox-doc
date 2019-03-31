@@ -32,5 +32,13 @@ sudo npm install -g serve
 | [http://www.vertxui.cn](http://www.vertxui.cn) | 「前端」Zero UI框架主页 |
 | [http://www.origin-x.cn](http://www.origin-x.cn) | 「当前」Origin X Doc项目主页 |
 
+## 2. 文档说明
+
+### 2.1. 前缀说明
+
+前缀说明一直是我在写文档过程中的一个习惯（不谈好坏），通过前缀将文档本身进行分类，使得文档标题具有更明确的类型指向，而不是任何时候都需要通过类型树来对文档进行定位。
+
+
+
 
 
