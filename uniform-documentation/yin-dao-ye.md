@@ -27,6 +27,7 @@
 * [KML-002 JSR330规范](/uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.html)
 * [KML-003 浏览器中的Fetch Api](/uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.html)
 * [KML-004 Java中的静态和单例](/uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.md)
+* [KML-005 Java语言的.class字节码结构](/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md)
 
 ## 开源项目相关
 
