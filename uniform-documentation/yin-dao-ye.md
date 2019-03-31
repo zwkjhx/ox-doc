@@ -18,6 +18,7 @@
 
 ## 语言相关
 
-* 
+* [KML-001 ES6语法](/uniform-documentation/kml-001-es6yu-fa.md)
+
 
 
