@@ -20,6 +20,7 @@
 ## 语言相关
 
 * [KML-001 ECMA Script 6.0](/uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.html)
+* [KML-002 JSR330规范](/uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.md)
 
 ## 开源项目相关
 
