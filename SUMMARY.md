@@ -43,4 +43,6 @@
 
 * [开发规范文档主页](specification/kai-fa-gui-fan-wen-dang-zhu-ye.md)
   * [1.Zero规范](specification/kai-fa-gui-fan-wen-dang-zhu-ye/1zerogui-fan.md)
+  * [2.Zero UI规范](specification/kai-fa-gui-fan-wen-dang-zhu-ye/2zero-uigui-fan.md)
+  * [3.Origin X规范](specification/kai-fa-gui-fan-wen-dang-zhu-ye/3origin-xgui-fan.md)
 
