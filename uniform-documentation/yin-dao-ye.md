@@ -8,6 +8,7 @@
 | 软件需求领域 | 软件需求领域知识库 | R |
 | 语言相关 | 计算机语言相关基础 | L |
 | 开源项目相关 | 开源项目的一些相关文档 | O |
+| 规范相关 | 所有软件规范的相关文档 | S |
 
 ## 面试题
 
@@ -36,6 +37,10 @@
 * [KMO-008 Dockerfile语法基础](/uniform-documentation/kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html)
 * [KMO-009 redux-orm项目文档](/uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.md)
 * [KMO-010 Tradeshift应用开发手册](/uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.md)
+
+## 规范相关
+
+
 
 
 
