@@ -1,4 +1,4 @@
-# X0007.Netty中的Pipeline机制
+# Netty中的Pipeline机制
 
 ## 1.引子：Unsafe
 
