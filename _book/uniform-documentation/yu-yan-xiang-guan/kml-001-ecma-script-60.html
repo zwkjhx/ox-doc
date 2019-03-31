@@ -1,0 +1,1899 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>KML-001 ECMA Script 6.0 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="kml-002-jsr330gui-fan.html" />
+    
+    
+    <link rel="prev" href="../yu-yan-xiang-guan.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">http://www.origin-x.cn</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Origin X Doc文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Zero UI</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../zero-ui/shou-ye.html">
+            
+                <a href="../../zero-ui/shou-ye.html">
+            
+                    
+                    Zero UI文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../zero-ui/1-zero-uiji-ben-jiao-cheng.html">
+            
+                <a href="../../zero-ui/1-zero-uiji-ben-jiao-cheng.html">
+            
+                    
+                    1 - Zero UI基本教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../zero-ui/2-reactsui-sui-nian.html">
+            
+                <a href="../../zero-ui/2-reactsui-sui-nian.html">
+            
+                    
+                    2 - React碎碎念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../zero-ui/3-antquan-jia-tong.html">
+            
+                <a href="../../zero-ui/3-antquan-jia-tong.html">
+            
+                    
+                    3 - Ant全家桶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../zero-ui/4-zero-uishi-zhan-fen-xi.html">
+            
+                <a href="../../zero-ui/4-zero-uishi-zhan-fen-xi.html">
+            
+                    
+                    4 - Zero UI实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Zero Up</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../zero-up/shou-ye.html">
+            
+                <a href="../../zero-up/shou-ye.html">
+            
+                    
+                    Zero 文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../zero-up/1-zeroji-ben-jiao-cheng.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng.html">
+            
+                    
+                    1 - Zero基本教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html">
+            
+                    
+                    ZRO-001 零之起源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html">
+            
+                    
+                    ZRO-002 第一个Zero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html">
+            
+                    
+                    ZRO-003 RESTful中的Path和Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../zero-up/2-vertxsui-sui-nian.html">
+            
+                <a href="../../zero-up/2-vertxsui-sui-nian.html">
+            
+                    
+                    2 - Vert.x碎碎念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../../zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html">
+            
+                <a href="../../zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html">
+            
+                    
+                    ZVX-001 基于 auth-common 开发Vert.x自定义安全组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../zero-up/3-zeroshi-zhan-fen-xi.html">
+            
+                <a href="../../zero-up/3-zeroshi-zhan-fen-xi.html">
+            
+                    
+                    3 - Zero实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../zero-up/4-javayu-yan-ji-chu.html">
+            
+                <a href="../../zero-up/4-javayu-yan-ji-chu.html">
+            
+                    
+                    4 - Java语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Origin X Engine</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../origin-x-engine/yin-dao-ye.html">
+            
+                <a href="../../origin-x-engine/yin-dao-ye.html">
+            
+                    
+                    Origin X Engine文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../origin-x-engine/1-oxshi-shi-jiao-cheng.html">
+            
+                <a href="../../origin-x-engine/1-oxshi-shi-jiao-cheng.html">
+            
+                    
+                    1 - Ox实施教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../origin-x-engine/2-oxzi-ding-yi-zu-jian.html">
+            
+                <a href="../../origin-x-engine/2-oxzi-ding-yi-zu-jian.html">
+            
+                    
+                    2 - Ox自定义组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../../origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html">
+            
+                <a href="../../origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html">
+            
+                    
+                    3 - Ox后端扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../../origin-x-engine/4-oxshi-zhan-fen-xi.html">
+            
+                <a href="../../origin-x-engine/4-oxshi-zhan-fen-xi.html">
+            
+                    
+                    4 - Ox实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Uniform Docoument</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../yin-dao-ye.html">
+            
+                <a href="../yin-dao-ye.html">
+            
+                    
+                    通用知识库主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../mian-shi-ti.html">
+            
+                <a href="../mian-shi-ti.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html">
+            
+                <a href="../mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html">
+            
+                    
+                    KMI-001 抽奖器需求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../mian-shi-ti/kmi-002-cdakao-shi-da-gang.html">
+            
+                <a href="../mian-shi-ti/kmi-002-cdakao-shi-da-gang.html">
+            
+                    
+                    KMI-002 CDA考试大纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html">
+            
+                <a href="../mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html">
+            
+                    
+                    KMI-003 Spring RESTful开发基础题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../ruan-jian-xu-qiu-ling-yu.html">
+            
+                <a href="../ruan-jian-xu-qiu-ling-yu.html">
+            
+                    
+                    软件理论领域
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html">
+            
+                <a href="../ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html">
+            
+                    
+                    KMR-001 非功能需求评估指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.html">
+            
+                <a href="../ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.html">
+            
+                    
+                    KMR-002 程序设计的六个基本原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../yu-yan-xiang-guan.html">
+            
+                <a href="../yu-yan-xiang-guan.html">
+            
+                    
+                    语言相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="5.4.1" data-path="kml-001-ecma-script-60.html">
+            
+                <a href="kml-001-ecma-script-60.html">
+            
+                    
+                    KML-001 ECMA Script 6.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="kml-002-jsr330gui-fan.html">
+            
+                <a href="kml-002-jsr330gui-fan.html">
+            
+                    
+                    KML-002 JSR330规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="kml-003-liu-lan-qi-zhong-de-fetch-api.html">
+            
+                <a href="kml-003-liu-lan-qi-zhong-de-fetch-api.html">
+            
+                    
+                    KML-003 浏览器中的Fetch Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.4" data-path="kml-004-javazhong-de-jing-tai-he-dan-li.html">
+            
+                <a href="kml-004-javazhong-de-jing-tai-he-dan-li.html">
+            
+                    
+                    KML-004 Java中的静态和单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.5" data-path="kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.html">
+            
+                <a href="kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.html">
+            
+                    
+                    KML-005 Java语言的.class字节码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../kai-yuan-xiang-mu.html">
+            
+                <a href="../kai-yuan-xiang-mu.html">
+            
+                    
+                    开源项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.5.1" data-path="../kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html">
+            
+                    
+                    KMO-001 Vert.x Core官方翻译版 3.4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.2" data-path="../kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html">
+            
+                    
+                    KMO-002 Vert.x Web官方翻译版 3.4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.3" data-path="../kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.html">
+            
+                    
+                    KMO-003 Spring Boot中的测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.4" data-path="../kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html">
+            
+                    
+                    KMO-004 使用OVal进行防御式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.5" data-path="../kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.html">
+            
+                    
+                    KMO-005 Sass基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.6" data-path="../kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.html">
+            
+                    
+                    KMO-006 Mockito基础和使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.7" data-path="../kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.html">
+            
+                    
+                    KMO-007 Jasmine基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.8" data-path="../kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html">
+            
+                    
+                    KMO-008 Dockerfile语法基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.9" data-path="../kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.html">
+            
+                    
+                    KMO-009 redux-orm项目文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.10" data-path="../kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html">
+            
+                    
+                    KMO-010 Tradeshift应用开发手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../gui-fan-xiang-guan.html">
+            
+                <a href="../gui-fan-xiang-guan.html">
+            
+                    
+                    规范相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6.1" data-path="../gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html">
+            
+                <a href="../gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html">
+            
+                    
+                    KMS-001 UBL规范中的Price字段说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Environment</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../environment/yin-dao-ye.html">
+            
+                <a href="../../environment/yin-dao-ye.html">
+            
+                    
+                    环境搭建知识库主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../environment/1-dockerrong-qi-huan-jing.html">
+            
+                <a href="../../environment/1-dockerrong-qi-huan-jing.html">
+            
+                    
+                    1 - Docker容器环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../../environment/2-zeroandoxhuan-jing.html">
+            
+                <a href="../../environment/2-zeroandoxhuan-jing.html">
+            
+                    
+                    2 - Zero&Ox环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../../environment/4-deploymentbu-shu-jiao-cheng.html">
+            
+                <a href="../../environment/4-deploymentbu-shu-jiao-cheng.html">
+            
+                    
+                    3 - Deployment部署教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../../environment/5-qi-ta-huan-jing.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing.html">
+            
+                    
+                    4 - 其他环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.5.1" data-path="../../environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.html">
+            
+                    
+                    ENV-001 Spring Boot中的数据源配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.2" data-path="../../environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.html">
+            
+                    
+                    ENV-002 Karma在ES6中的Webpack配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.3" data-path="../../environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.html">
+            
+                    
+                    ENV-003 Karma的安装教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.4" data-path="../../environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html">
+            
+                    
+                    ENV-004 Windows环境的Docker安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.5" data-path="../../environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html">
+            
+                    
+                    ENV-005 使用Docker环境运行Spring Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.6" data-path="../../environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html">
+            
+                    
+                    ENV-006 Maven环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Specification</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../specification/kai-fa-gui-fan-wen-dang-zhu-ye.html">
+            
+                <a href="../../specification/kai-fa-gui-fan-wen-dang-zhu-ye.html">
+            
+                    
+                    开发规范文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../specification/1-zerogui-fan.html">
+            
+                <a href="../../specification/1-zerogui-fan.html">
+            
+                    
+                    1 - Zero规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../../specification/2-zero-uigui-fan.html">
+            
+                <a href="../../specification/2-zero-uigui-fan.html">
+            
+                    
+                    2 - Zero UI规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../../specification/3-origin-xgui-fan.html">
+            
+                <a href="../../specification/3-origin-xgui-fan.html">
+            
+                    
+                    3 - Origin X规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan.html">
+            
+                    
+                    4 - RESTful设计规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.5.1" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.html">
+            
+                    
+                    SPR-001 URI路径设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5.2" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.html">
+            
+                    
+                    SPR-002 URI业务设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >KML-001 ECMA Script 6.0</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ecma-script-6">ECMA Script 6</h1><p>&#x672C;&#x6587;&#x4E3B;&#x8981;&#x4ECB;&#x7ECD;ECMA Script 6.0&#x4E2D;&#x6F14;&#x53D8;&#x8FC7;&#x7684;&#x65B0;&#x8BED;&#x6CD5;&#xFF0C;&#x5728;&#x65B0;&#x7248;&#x7684;JavaScript&#x4E2D;&#x53EF;&#x652F;&#x6301;&#xFF0C;Google Chrome&#xFF08;<code>51.0.2704.84</code>&#xFF09;&#x4E2D;&#x7EAF;&#x811A;&#x672C;&#x6D4B;&#x8BD5;&#x7ED3;&#x679C;&#xFF01;&#x517C;&#x5BB9;&#x6027;&#x6D4B;&#x8BD5;&#x8868;&#x53C2;&#x8003;&#xFF1A;</p><p><a href="https://kangax.github.io/compat-table/es6/" target="_blank">https://kangax.github.io/compat-table/es6/</a></p><p>&#xFF08;*&#xFF1A;&#x540E;&#x8FB9;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x76F4;&#x63A5;&#x5199;&#x7684;<code>===</code>&#x5219;&#x662F;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x4F7F;&#x7528;console.log&#x65B9;&#x6CD5;&#x6253;&#x5370;&#x8BE5;&#x503C;&#xFF0C;&#x800C;&#x76F4;&#x63A5;&#x8868;&#x793A;&#x5F53;&#x524D;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x5C31;&#x662F;<code>===</code>&#x4E4B;&#x540E;&#x7684;&#x503C;&#xFF01;&#xFF09;</p><h2 id="1-constants">1. Constants</h2><p>&#x65B0;&#x7248;&#x7684;JavaScript&#x4E2D;&#x652F;&#x6301;&#x5E38;&#x91CF;&#x5B9A;&#x4E49;&#xFF0C;&#x5E38;&#x91CF;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF0C;&#x548C;Java&#x4E00;&#x6837;&#xFF0C;&#x5982;&#x679C;&#x662F;Object&#x7C7B;&#x578B;&#x4EC5;&#x4EC5;&#x662F;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5F15;&#x7528;&#x4E0D;&#x53EF;&#x91CD;&#x65B0;&#x8D4B;&#x503C;&#xFF0C;&#x4F46;&#x5BF9;&#x8C61;&#x5185;&#x5BB9;&#x53EF;&#x53D8;&#x66F4;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-keyword">const</span> PI = <span class="hljs-number">3.23</span>;</code></pre>
+<h2 id="2-scoping">2. Scoping</h2><h3 id="21-block-scoped-variables">2.1. Block-Scoped Variables</h3><p>&#x65B0;&#x5173;&#x952E;&#x5B57;<code>let</code>&#xFF0C;&#x4EC5;&#x4EC5;&#x652F;&#x6301;&#x5757;&#x57DF;&#xFF0C;&#x770B;&#x4E0B;&#x8FB9;&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++ ){
+    <span class="hljs-built_in">console</span>.log(i);
+}
+<span class="hljs-built_in">console</span>.log(i);         <span class="hljs-comment">// &#x62A5;&#x9519;&#xFF1A;Uncaught ReferenceError: i is not defined</span>
+
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> j = <span class="hljs-number">0</span>; j &lt; <span class="hljs-number">3</span>; j++ ){
+    <span class="hljs-built_in">console</span>.log(j);
+}
+<span class="hljs-built_in">console</span>.log(j);         <span class="hljs-comment">// &#x4E0D;&#x62A5;&#x9519;&#xFF0C;&#x76F4;&#x63A5;&#x8F93;&#x51FA;&#xFF1A;3</span></code></pre>
+<p>*&#xFF1A;&#x4ECE;&#x4E0A;&#x8FB9;&#x7684;&#x6D4B;&#x8BD5;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#xFF0C;let&#x6BD4;&#x539F;&#x6765;&#x7684;var&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x7684;&#x8303;&#x56F4;&#x5C0F;&#xFF0C;&#x53EA;&#x652F;&#x6301;&#x5728;&#x67D0;&#x4E00;&#x4E2A;Block&#x5185;&#x7684;&#x53D8;&#x91CF;&#x4F7F;&#x7528;&#x57DF;&#xFF0C;&#x800C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5FAA;&#x73AF;&#x4E3A;&#x539F;&#x59CB;JavaScript&#x5199;&#x6CD5;&#x3002;</p><h3 id="22-block-scoped-functions-definition">2.2. Block-Scoped Functions Definition</h3><p>&#x5728;ECMA&#x4E2D;&#x652F;&#x6301;&#x5757;&#x8BED;&#x53E5;&#xFF0C;&#x66FF;&#x6362;&#x539F;&#x6765;&#x7684;&#x5757;&#x95ED;&#x5305;&#x8BED;&#x6CD5;&#xFF1A;</p><p><em>&#x539F;&#x59CB;&#x8BED;&#x6CD5;</em></p><pre><code class="lang-javascript">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+
+})();</code></pre>
+<p><em>&#x65B0;&#x8BED;&#x6CD5;</em></p><pre><code class="lang-javascript">{
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+    foo() === <span class="hljs-number">1</span>;
+}
+<span class="hljs-built_in">console</span>.log(foo());     <span class="hljs-comment">// 1</span>
+
+<span class="hljs-comment">// &#x539F;&#x59CB;&#x8BED;&#x6CD5;&#x5BF9;&#x6BD4;</span>
+(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-number">2</span>;
+    }
+})();
+<span class="hljs-built_in">console</span>.log(test());    <span class="hljs-comment">// Uncaught ReferenceError: test is not defined</span></code></pre>
+<p>*&#xFF1A;&#x8FD9;&#x91CC;&#x7684;&#x5757;&#x57DF;&#x4E3B;&#x8981;&#x6D89;&#x53CA;&#x7684;&#x662F;&#x51FD;&#x6570;&#x672C;&#x8EAB;&#x7684;&#x57DF;&#x95EE;&#x9898;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x95ED;&#x5305;&#xFF0C;&#x6240;&#x4EE5;&#x4E0A;&#x8FB9;&#x7684;<code>console.log(foo())</code>&#x4F9D;&#x7136;&#x53EF;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x50CF;&#x6700;&#x540E;&#x90A3;&#x53E5;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x800C;&#x8FD9;&#x91CC;&#x7684;&#x5757;&#x8BED;&#x6CD5;&#x4E3B;&#x8981;&#x662F;&#x9488;&#x5BF9;&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5728;Block&#x5185;&#x5B9A;&#x4E49;Function&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4E0A;&#x8FF0;&#x4F8B;&#x5B50;&#x4EC5;&#x4EC5;&#x53EA;&#x662F;&#x4E00;&#x79CD;&#x5BF9;&#x6BD4;&#xFF0C;&#x4E0B;&#x8FB9;&#x7684;&#x4F8B;&#x5B50;&#x66F4;&#x52A0;&#x80FD;&#x591F;&#x8BF4;&#x660E;Block Function&#x7684;&#x7279;&#x6027;&#x2014;&#x2014;&#x6700;&#x540E;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x53EA;&#x80FD;&#x5728;&#x5757;&#x5185;&#x9002;&#x7528;&#xFF0C;&#x8FD9;&#x4E00;&#x70B9;&#x4E00;&#x5B9A;&#x8981;&#x5BF9;&#x6BD4;&#x4E0A;&#x8FF0;&#x4F8B;&#x5B50;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#xFF1A;</p><pre><code class="lang-javascript">{
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-number">2</span>;
+    }
+    {
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+        }
+        <span class="hljs-built_in">console</span>.log(foo());         <span class="hljs-comment">// 1</span>
+    }
+    <span class="hljs-built_in">console</span>.log(foo());             <span class="hljs-comment">// 2</span>
+}</code></pre>
+<h2 id="3arrow-functions">3.Arrow Functions</h2><h3 id="31-expression-bodies">3.1. Expression Bodies</h3><p>&#x652F;&#x6301;&#x66F4;&#x591A;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x95ED;&#x5305;&#x8BED;&#x6CD5;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> events = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+<span class="hljs-built_in">console</span>.log(events);
+
+<span class="hljs-keyword">var</span> adds = events.map(v =&gt; v + <span class="hljs-number">1</span>);
+<span class="hljs-built_in">console</span>.log(adds);
+<span class="hljs-keyword">var</span> paris = events.map(v =&gt; ({event: v, odd: v + <span class="hljs-number">1</span>}));
+<span class="hljs-built_in">console</span>.log(paris);
+<span class="hljs-keyword">var</span> nums = events.map((v, i) =&gt; v + i);
+<span class="hljs-built_in">console</span>.log(nums);</code></pre>
+<p>&#x770B;&#x770B;&#x4E0A;&#x8FB9;&#x7684;&#x4EE3;&#x7801;&#x8F93;&#x51FA;&#xFF0C;&#x7406;&#x89E3;&#x4E00;&#x4E0B;&#x8FD9;&#x4E9B;&#x65B0;&#x7B97;&#x6CD5;&#xFF1A;</p><pre><code>[1, 2, 3]
+[2, 3, 4]
+[Object, Object, Object]        // Object = { event: 1, odd: 2 } ...
+[1, 3, 5]</code></pre>
+<h3 id="32-statement-bodies">3.2. Statement Bodies</h3><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> events = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>];
+<span class="hljs-keyword">var</span> threes = [];
+events.forEach(v =&gt; {
+    <span class="hljs-keyword">if</span>( v % <span class="hljs-number">3</span> == <span class="hljs-number">0</span> ){
+        threes.push(v);
+    }
+});
+<span class="hljs-built_in">console</span>.log(threes);</code></pre>
+<p>&#x4E0A;&#x8FB9;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1A;</p><pre><code>[3, 6]</code></pre>
+<h3 id="33-lexical-this">3.3. Lexical this</h3><p>&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x591A;&#x5F53;&#x524D;Object&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x76F4;&#x63A5;&#x7684;this&#x64CD;&#x4F5C;&#xFF1A;</p><p><strong>EC6</strong></p><pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.nums.forEach((v) =&gt; {
+    <span class="hljs-keyword">if</span> (v % <span class="hljs-number">5</span> === <span class="hljs-number">0</span>)
+        <span class="hljs-keyword">this</span>.fives.push(v)
+})</code></pre>
+<p><strong>EC5</strong></p><pre><code class="lang-javascript"><span class="hljs-comment">//  variant 1</span>
+<span class="hljs-keyword">var</span> self = <span class="hljs-keyword">this</span>;
+<span class="hljs-keyword">this</span>.nums.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">v</span>) </span>{
+    <span class="hljs-keyword">if</span> (v % <span class="hljs-number">5</span> === <span class="hljs-number">0</span>)
+        self.fives.push(v);
+});
+
+<span class="hljs-comment">//  variant 2 (since ECMAScript 5.1 only)</span>
+<span class="hljs-keyword">this</span>.nums.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">v</span>) </span>{
+    <span class="hljs-keyword">if</span> (v % <span class="hljs-number">5</span> === <span class="hljs-number">0</span>)
+        <span class="hljs-keyword">this</span>.fives.push(v);
+}.bind(<span class="hljs-keyword">this</span>));</code></pre>
+<h2 id="4-extended-parameter-handling">4. Extended Parameter Handling</h2><h3 id="41-default-parameter-values">4.1. Default Parameter Values</h3><p>EC6&#x4E2D;&#x652F;&#x6301;&#x9ED8;&#x8BA4;&#x503C;&#x76F4;&#x63A5;&#x5728;&#x5F62;&#x53C2;&#x4E2D;&#x8D4B;&#x503C;&#x7684;&#x8BED;&#x6CD5;&#xFF08;&#x7C7B;&#x4F3C;PHP&#xFF09;</p><pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun</span>(<span class="hljs-params">x, y = 7, z = 50</span>)</span>{
+    <span class="hljs-keyword">return</span> x + y + z;
+}
+
+<span class="hljs-built_in">console</span>.log(fun(<span class="hljs-number">1</span>));
+<span class="hljs-built_in">console</span>.log(fun(<span class="hljs-number">1</span>,<span class="hljs-number">0</span>));</code></pre>
+<p>&#x4E0A;&#x8FB9;&#x4EE3;&#x7801;&#x8F93;&#x51FA;&#x4E3A;&#xFF1A;</p><pre><code>58
+51</code></pre>
+<h3 id="42-rest-parameter">4.2. Rest Parameter</h3><p>EC6&#x5F00;&#x59CB;&#x652F;&#x6301;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x7684;&#x57FA;&#x7840;&#x8BED;&#x6CD5;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun</span>(<span class="hljs-params">x, y, ...z</span>)</span>{
+    <span class="hljs-keyword">return</span> (x + y) * z.length;
+}
+
+<span class="hljs-built_in">console</span>.log(fun(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">&quot;Hello&quot;</span>));         <span class="hljs-comment">// &#x8F93;&#x51FA;&#x7ED3;&#x679C;6</span></code></pre>
+<p>*&#xFF1A;&#x548C;Java&#x4E2D;&#x7684;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x4E00;&#x6837;&#xFF0C;Rest Parameter&#x53EA;&#x80FD;&#x653E;&#x5230;&#x51FD;&#x6570;&#x5F62;&#x53C2;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4F4D;&#xFF01;</p><h3 id="43-spread-operator">4.3. Spread Operator</h3><p>EC6&#x652F;&#x6301;&#x4E00;&#x79CD;&#x65B0;&#x7684;&#x8FDE;&#x63A5;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x8BED;&#x6CD5;&#xFF08;&#x6CE8;&#x610F;Rest Parameter&#x7684;&#x5B9E;&#x53C2;&#x4F20;&#x9012;&#x65B9;&#x5F0F;&#xFF09;&#xFF0C;&#x5176;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun</span>(<span class="hljs-params">x, y, ...z</span>)</span>{
+    <span class="hljs-keyword">return</span> (x + y) * z.length;
+}
+<span class="hljs-keyword">var</span> params = [<span class="hljs-string">&quot;hello&quot;</span>,<span class="hljs-literal">true</span>,<span class="hljs-number">7</span>];
+<span class="hljs-keyword">var</span> other = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,...params];
+<span class="hljs-built_in">console</span>.log(other);
+<span class="hljs-built_in">console</span>.log(fun(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,...params));
+
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;Hello&quot;</span>;
+<span class="hljs-keyword">var</span> chars = [...str];
+<span class="hljs-built_in">console</span>.log(chars);</code></pre>
+<p>&#x4EE3;&#x7801;&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code>[1, 2, &quot;hello&quot;, true, 7]
+7 9
+[&quot;H&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;]</code></pre>
+<h2 id="5template-literials">5.Template Literials</h2><h3 id="51-string-interpolation">5.1. String Interpolation</h3><p>EC6&#x652F;&#x6301;&#x591A;&#x884C;&#x7684;&#x5B57;&#x9762;&#x91CF;&#x8D4B;&#x503C;&#x65B9;&#x5F0F;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x5728;String&#x4E2D;&#x4F7F;&#x7528;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4F7F;&#x7528;&#x7B26;&#x53F7;&#x4E3A; `&#xFF1A;</p><pre><code class="lang-javascript">    <span class="hljs-keyword">var</span> customer = { name: <span class="hljs-string">&quot;Lang&quot;</span> };
+    <span class="hljs-keyword">var</span> card = { amount: <span class="hljs-number">7</span>, product: <span class="hljs-string">&quot;EC6&quot;</span>, unitprice: <span class="hljs-number">41.2</span> }
+    message = <span class="hljs-string">`Hello <span class="hljs-subst">${customer.name}</span>,
+    want to buy <span class="hljs-subst">${card.amount}</span> <span class="hljs-subst">${card.product}</span> for
+    a total of <span class="hljs-subst">${card.amount * card.unitprice}</span> bucks?`</span>
+
+    <span class="hljs-built_in">console</span>.log(message);</code></pre>
+<p>&#x6700;&#x7EC8;&#x6253;&#x5370;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code>Hello Lang,
+want to buy 7 EC6 for
+a total of 288.40000000000003 bucks?</code></pre>
+<h3 id="52-custom-interpolation">5.2. Custom Interpolation</h3><p>EC6&#x9664;&#x4E86;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x7684;&#x8BED;&#x6CD5;&#x652F;&#x6301;&#x4EE5;&#x5916;&#xFF0C;&#x8FD8;&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x90E8;&#x5206;&#x8BED;&#x6CD5;&#xFF0C;&#x5BF9;&#x6BD4;&#x4E24;&#x4E2A;&#x89C4;&#x8303;&#x4E2D;&#x7684;&#x7B49;&#x4EF7;&#x8BED;&#x6CD5;&#x5BF9;&#x6BD4;&#xFF1A;</p><p><em>EC6</em></p><pre><code>get`http://example.com/foo?bar=${bar + baz}&amp;quux=${quux}`</code></pre>
+<p><em>EC5</em></p><pre><code>get([ &quot;http://example.com/foo?bar=&quot;, &quot;&amp;quux=&quot;, &quot;&quot; ],bar + baz, quux);</code></pre>
+<h3 id="53-raw-string-access">5.3. Raw String Access</h3><p>EC6&#x652F;&#x6301;&#x65B0;&#x8BED;&#x6CD5;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x8BED;&#x6CD5;&#x5728;&#x539F;&#x59CB;&#x7684;JavaScript&#x662F;&#x4E0D;&#x652F;&#x6301;&#x7684;&#xFF01;</p><pre><code class="lang-javascript">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">quux</span>(<span class="hljs-params">strings, ...values</span>)</span>{
+        <span class="hljs-built_in">console</span>.log(strings[<span class="hljs-number">0</span>]);
+        <span class="hljs-built_in">console</span>.log(strings[<span class="hljs-number">1</span>]);
+        <span class="hljs-built_in">console</span>.log(strings.raw[<span class="hljs-number">0</span>]);
+        <span class="hljs-built_in">console</span>.log(strings.raw[<span class="hljs-number">1</span>]);
+        <span class="hljs-built_in">console</span>.log(values[<span class="hljs-number">0</span>]);
+    }
+
+    quux <span class="hljs-string">`foo\n<span class="hljs-subst">${ 42 }</span>bar`</span>;</code></pre>
+<p>&#x6CE8;&#x610F;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#xFF08;&#x4E3B;&#x8981;&#x662F;&#x6CE8;&#x610F;&#x6362;&#x884C;&#x7B26;&#x53F7;&#xFF09;&#xFF1A;</p><pre><code>foo
+
+bar
+foo\n
+bar
+42</code></pre>
+<h2 id="6-extended-literials">6. Extended Literials</h2><h3 id="61-binary--octal-literal">6.1. Binary &amp; Octal Literal</h3><p>EC6&#x4E2D;&#x5F00;&#x59CB;&#x652F;&#x6301;&#x4E8C;&#x8FDB;&#x5236;&#x548C;&#x516B;&#x8FDB;&#x5236;&#x7684;&#x5B57;&#x9762;&#x91CF;&#x4E86;&#xFF08;&#x524D;&#x7F00;<code>0b</code>&#x548C;<code>0o</code>&#x5927;&#x5C0F;&#x5199;&#x4E0D;&#x654F;&#x611F;&#xFF09;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-number">0b111110111</span>);       <span class="hljs-comment">// 503</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-number">0o767</span>);             <span class="hljs-comment">// 503</span></code></pre>
+<h3 id="62-unicode-string--regexp-literal">6.2. Unicode String &amp; RegExp Literal</h3><p>EC6&#x4E2D;&#x652F;&#x6301;Unicode&#x5B57;&#x7B26;&#x4E32;&#x5B57;&#x9762;&#x91CF;&#x4EE5;&#x53CA;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x5B57;&#x9762;&#x91CF;&#x8868;&#x793A;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;&#x20BB7;&quot;</span>.length);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;&#x20BB7;&quot;</span>.match(<span class="hljs-regexp">/./u</span>));
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;&#x20BB7;&quot;</span> === <span class="hljs-string">&quot;\uD842\uDFB7&quot;</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;\u{20BB7}&quot;</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;\uD842\uDFB7&quot;</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;&#x20BB7;&quot;</span>.charCodeAt(<span class="hljs-number">0</span>));
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> codepoint <span class="hljs-keyword">of</span> <span class="hljs-string">&quot;&#x20BB7;&quot;</span>) <span class="hljs-built_in">console</span>.log(codepoint);</code></pre>
+<p>&#x4E0A;&#x8FB9;&#x7684;&#x4EE3;&#x7801;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p><pre><code>2
+[&quot;&#x20BB7;&quot;, index: 0, input: &quot;&#x20BB7;&quot;]
+true
+&#x20BB7;
+&#x20BB7;
+55362
+&#x20BB7;</code></pre>
+<h2 id="7enhanced-regular-expression">7.Enhanced Regular Expression</h2><h3 id="71-regular-expression-sticky-matching">7.1. Regular Expression Sticky Matching</h3><p>EC6&#x4ECB;&#x7ECD;&#xFF08;&#x56E0;&#x4E3A;&#x5BF9;JS&#x8FD9;&#x90E8;&#x5206;&#x8BED;&#x6CD5;&#x4E0D;&#x719F;&#xFF0C;&#x5C31;&#x4E0D;&#x7FFB;&#x8BD1;&#x4E86;&#xFF09;</p><p><em>Keep the matching position sticky between matches and this way support efficient parsing of arbitrary long input strings, even with an arbitrary number of distinct regular expressions.</em></p><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> parser = (input, match) =&gt; {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> pos = <span class="hljs-number">0</span>, lastPos = input.length; pos &lt; lastPos; ) {
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; match.length; i++) {
+            match[i].pattern.lastIndex = pos
+            <span class="hljs-keyword">let</span> found
+            <span class="hljs-keyword">if</span> ((found = match[i].pattern.exec(input)) !== <span class="hljs-literal">null</span>) {
+                match[i].action(found)
+                pos = match[i].pattern.lastIndex
+                <span class="hljs-keyword">break</span>
+            }
+        }
+    }
+}
+
+<span class="hljs-keyword">let</span> report = (match) =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">JSON</span>.stringify(match))
+}
+parser(<span class="hljs-string">&quot;Foo 1 Bar 7 Baz 42&quot;</span>, [
+    { pattern: <span class="hljs-regexp">/^Foo\s+(\d+)/y</span>, action: (match) =&gt; report(match) },
+    { pattern: <span class="hljs-regexp">/^Bar\s+(\d+)/y</span>, action: (match) =&gt; report(match) },
+    { pattern: <span class="hljs-regexp">/^Baz\s+(\d+)/y</span>, action: (match) =&gt; report(match) },
+    { pattern: <span class="hljs-regexp">/^\s*/y</span>,         action: (match) =&gt; {}            }
+])</code></pre>
+<h2 id="8-enhanced-object-properties">8. Enhanced Object Properties</h2><h3 id="81-property-shorthand">8.1. Property Shorthand</h3><p>&#x5BF9;&#x4E8E;&#x5E38;&#x7528;&#x7684;Object&#x5B9A;&#x4E49;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x8FB9;&#x65B9;&#x5F0F;&#xFF1A;</p><p><em>EC6</em></p><pre><code class="lang-javascript">obj = { name, email }</code></pre>
+<p><em>EC5</em></p><pre><code class="lang-javascript">obj = { name:name, email:email }</code></pre>
+<p>&#x4F8B;&#x5982;&#x4E0B;&#x8FB9;&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> name = <span class="hljs-string">&quot;Lang&quot;</span>;
+<span class="hljs-keyword">let</span> email = <span class="hljs-string">&quot;lang.yu@hpe.com&quot;</span>;
+obj = { name, email };
+<span class="hljs-built_in">console</span>.log(obj);</code></pre>
+<p>&#x6253;&#x5370;&#x7684;&#x6700;&#x7EC8;&#x7ED3;&#x679C;&#x5982;&#xFF1A;</p><pre><code>Object {name: &quot;Lang&quot;, email: &quot;lang.yu@hpe.com&quot;}</code></pre>
+<h3 id="82-computed-property-names">8.2. Computed Property Names</h3><p>EC6&#x652F;&#x6301;&#x76F4;&#x63A5;&#x5BF9;Object&#x4E2D;&#x7684;name&#x8FDB;&#x884C;&#x8FD0;&#x7B97;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">quux</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;test&quot;</span>; }
+<span class="hljs-keyword">let</span> obj = {
+    foo: <span class="hljs-string">&quot;lang&quot;</span>,
+    [<span class="hljs-string">&quot;baz&quot;</span> + quux()]: <span class="hljs-number">42</span>
+}
+<span class="hljs-built_in">console</span>.log(obj);</code></pre>
+<p>&#x6700;&#x7EC8;&#x6253;&#x5370;&#x7ED3;&#x679C;&#x5982;&#xFF1A;</p><pre><code>Object {foo: &quot;lang&quot;, baztest: 42}</code></pre>
+<h3 id="83-method-properties">8.3. Method Properties</h3><p>EC6&#x4E2D;&#x5F00;&#x59CB;&#x5728;Object&#x4E2D;&#x652F;&#x6301;&#x65B9;&#x6CD5;&#x76F4;&#x63A5;&#x5C5E;&#x6027;&#x5B9A;&#x4E49;&#xFF0C;&#x800C;&#x4E14;&#x540C;&#x65F6;&#x652F;&#x6301;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x65B9;&#x6CD5;&#x4EE5;&#x53CA;&#x751F;&#x6210;&#x5668;&#x65B9;&#x6CD5;&#xFF08;&#x518D;&#x4E5F;&#x4E0D;&#x4F9D;&#x8D56;function&#x5173;&#x952E;&#x5B57;&#xFF09;&#xFF1A;</p><pre><code class="lang-javascript">obj = {
+    foo (a, b) {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;foo&quot;</span>;
+    },
+    bar (x, y) {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;bar&quot;</span>;
+    },
+    *quux (x, y) {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;quux&quot;</span>;
+    }
+}
+
+<span class="hljs-built_in">console</span>.log(obj);
+<span class="hljs-built_in">console</span>.log(obj.foo(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>));
+<span class="hljs-built_in">console</span>.log(obj.bar(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>));
+<span class="hljs-built_in">console</span>.log(obj.quux(<span class="hljs-number">3</span>,<span class="hljs-number">4</span>));</code></pre>
+<p>&#x8F93;&#x51FA;&#x4E3A;&#xFF1A;</p><pre><code>Object {}
+foo
+bar
+quux {[[GeneratorStatus]]: &quot;suspended&quot;, [[GeneratorReceiver]]: Object}      // &#x6CE8;&#x610F;&#x8FD9;&#x4E00;&#x884C;&#x7684;&#x5199;&#x6CD5;</code></pre>
+<h2 id="9-destructuring-assignment">9. Destructuring Assignment</h2><h3 id="91-array-matching">9.1. Array Matching</h3><p>EC6&#x4E2D;&#x652F;&#x6301;&#x66F4;&#x52A0;&#x677E;&#x6563;&#x548C;&#x81EA;&#x7531;&#x7684;&#x6570;&#x7EC4;Array&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#xFF1A;</p><p><em>EC6</em></p><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> list = [ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> ]
+<span class="hljs-keyword">var</span> [ a, , b ] = list       <span class="hljs-comment">// a = 1, b = 3</span>
+[ b, a ] = [ a, b ]         <span class="hljs-comment">// a = 3, b = 1</span>
+<span class="hljs-built_in">console</span>.log(a);
+<span class="hljs-built_in">console</span>.log(b);</code></pre>
+<p><em>EC5</em></p><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> list = [ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> ];
+<span class="hljs-keyword">var</span> a = list[<span class="hljs-number">0</span>], b = list[<span class="hljs-number">2</span>];
+<span class="hljs-keyword">var</span> tmp = a; a = b; b = tmp;</code></pre>
+<h3 id="92-object-matching-shorthand-notation">9.2. Object Matching, Shorthand Notation</h3><p>EC6&#x652F;&#x6301;&#x66F4;&#x52A0;&#x677E;&#x6563;&#x548C;&#x81EA;&#x7531;&#x7684;&#x5BF9;&#x8C61;Object&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getUser</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> {
+        name:<span class="hljs-string">&quot;lang&quot;</span>,
+        email:<span class="hljs-string">&quot;lang.yu@hpe.com&quot;</span>,
+        value:<span class="hljs-string">&quot;testValue&quot;</span>
+    }
+}
+<span class="hljs-keyword">var</span> { name, email, mobile } = getUser();
+<span class="hljs-built_in">console</span>.log(name);
+<span class="hljs-built_in">console</span>.log(email);
+<span class="hljs-built_in">console</span>.log(mobile);</code></pre>
+<p>&#x8F93;&#x51FA;&#x4FE1;&#x606F;&#xFF1A;</p><pre><code>lang
+lang.yu@hpe.com
+undefined</code></pre>
+<h3 id="93-object-matching-deep-matching">9.3. Object Matching, Deep Matching</h3><p>EC6&#x8FD8;&#x53EF;&#x4EE5;&#x9488;&#x5BF9;&#x5BF9;&#x8C61;Object&#x8FDB;&#x884C;&#x6DF1;&#x5EA6;&#x677E;&#x6563;&#x81EA;&#x7531;&#x8D4B;&#x503C;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getUser</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> addr = <span class="hljs-string">&quot;lang.yu@hpe.com&quot;</span>;
+    <span class="hljs-keyword">return</span> {
+        name:<span class="hljs-string">&quot;lang&quot;</span>,
+        email:{
+            addr
+        },
+        value:<span class="hljs-string">&quot;testValue&quot;</span>
+    }
+}
+<span class="hljs-keyword">var</span> { name, email:{ addr:op }, mobile } = getUser();
+<span class="hljs-built_in">console</span>.log(name);
+<span class="hljs-built_in">console</span>.log(op);
+<span class="hljs-built_in">console</span>.log(mobile);</code></pre>
+<p>&#x8F93;&#x51FA;&#x4FE1;&#x606F;&#xFF1A;</p><pre><code>Object {name: &quot;lang&quot;, email: Object, value: &quot;testValue&quot;}
+lang
+lang.yu@hpe.com
+undefined</code></pre>
+<h3 id="94-parameter-context-matching">9.4. Parameter Context Matching</h3><p>EC6&#x4E2D;Array&#x548C;Object&#x4E5F;&#x652F;&#x6301;&#x66F4;&#x52A0;&#x677E;&#x6563;&#x548C;&#x81EA;&#x7531;&#x7684;&#x8D4B;&#x503C;&#x5F62;&#x5F0F;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun</span>(<span class="hljs-params">[name,val]</span>)</span>{
+    <span class="hljs-built_in">console</span>.log(name, val);
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">gun</span>(<span class="hljs-params">{name:n, val:v}</span>)</span>{
+    <span class="hljs-built_in">console</span>.log(n,v);
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hun</span>(<span class="hljs-params">{name,val}</span>)</span>{
+    <span class="hljs-built_in">console</span>.log(name,val);
+}
+fun([<span class="hljs-literal">true</span>,<span class="hljs-string">&quot;Hello&quot;</span>]);
+gun({name:<span class="hljs-string">&quot;lang&quot;</span>,val:<span class="hljs-string">&quot;Value&quot;</span>});
+hun({name:<span class="hljs-string">&quot;lang&quot;</span>,val:<span class="hljs-string">&quot;Value2&quot;</span>});</code></pre>
+<p>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x5982;&#xFF1A;</p><pre><code>true &quot;Hello&quot;
+lang Value
+lang Value2</code></pre>
+<h3 id="95-fail-soft-destructuring">9.5. Fail-Soft Destructuring</h3><p>EC6&#x4E2D;&#x5BF9;Array&#x81EA;&#x7531;&#x8D4B;&#x503C;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x8BBE;&#x7F6E;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> list = [ <span class="hljs-number">7</span>, <span class="hljs-number">42</span> ]
+<span class="hljs-keyword">var</span> [ a = <span class="hljs-number">1</span>, b = <span class="hljs-number">2</span>, c = <span class="hljs-number">3</span>, d ] = list
+<span class="hljs-built_in">console</span>.log(a);
+<span class="hljs-built_in">console</span>.log(b);
+<span class="hljs-built_in">console</span>.log(c);
+<span class="hljs-built_in">console</span>.log(d);</code></pre>
+<p>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x5982;&#xFF1A;</p><pre><code>7
+42
+3
+undefined</code></pre>
+<h2 id="10modules&#xFF08;compiler-time-only&#xFF09;">10.Modules&#xFF08;Compiler Time Only&#xFF09;</h2><h3 id="101value-exportimport">10.1.Value Export/Import</h3><p>EC6&#x4E2D;&#x4E00;&#x4E2A;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x5C31;&#x662F;&#x652F;&#x6301;&#x6A21;&#x5757;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5168;&#x5C40;&#x540D;&#x7A7A;&#x95F4;&#x65F6;&#xFF0C;&#x8FD8;&#x652F;&#x6301;&#x5C06;Module&#x4E2D;&#x7684;&#x5185;&#x5BB9;Export/Import&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-comment">//  lib/math.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span> (<span class="hljs-params">x, y</span>) </span>{ <span class="hljs-keyword">return</span> x + y }
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">var</span> pi = <span class="hljs-number">3.141593</span>
+
+<span class="hljs-comment">//  someApp.js</span>
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> math <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;lib/math&quot;</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;2&#x3C0; = &quot;</span> + math.sum(math.pi, math.pi))
+
+<span class="hljs-comment">//  otherApp.js</span>
+<span class="hljs-keyword">import</span> { sum, pi } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;lib/math&quot;</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;2&#x3C0; = &quot;</span> + sum(pi, pi))</code></pre>
+<p>*&#xFF1A;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x7684;&#x4E00;&#x70B9;&#x662F;&#xFF0C;import/export&#x4E24;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x7684;&#x4F7F;&#x7528;&#x53EA;&#x80FD;&#x5728;&#x9759;&#x6001;&#x7F16;&#x8BD1;&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x4F7F;&#x7528;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x7C7B;&#x4F3C;webpack&#x8FD9;&#x79CD;&#x5DF2;&#x7ECF;&#x5C06;JS&#x6253;&#x5305;&#x6210;bundle.js&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x6700;&#x7EC8;&#x624D;&#x80FD;&#x591F;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x5E73;&#x53F0;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x8BE5;&#x8BED;&#x6CD5;&#xFF01;</p><h3 id="102default--wildcard">10.2.Default &amp; Wildcard</h3><p>&#x8BE5;&#x8BED;&#x6CD5;&#x540C;&#x4E0A;&#xFF0C;&#x7F16;&#x8BD1;&#x671F;&#x6709;&#x7528;&#xFF0C;&#x8FD0;&#x884C;&#x65F6;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x4F1A;&#x62A5;&#x9519;&#xFF01;</p><pre><code class="lang-javascript"><span class="hljs-comment">//  lib/mathplusplus.js</span>
+<span class="hljs-keyword">export</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;lib/math&quot;</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">var</span> e = <span class="hljs-number">2.71828182846</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> (x) =&gt; <span class="hljs-built_in">Math</span>.exp(x)
+
+<span class="hljs-comment">//  someApp.js</span>
+<span class="hljs-keyword">import</span> exp, { pi, e } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;lib/mathplusplus&quot;</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;e^{&#x3C0;} = &quot;</span> + exp(pi))</code></pre>
+<p><strong>Static vs. dynamic, or: rules and how to break them</strong></p><ul><li>For a dynamic language, JavaScript has gotten itself a surprisingly static module system.
+</li>
+<li>All flavors of import and export are allowed only at toplevel in a module. There are no conditional imports or exports, and you can&#x2019;t use import in function scope.
+</li>
+<li>All exported identifiers must be explicitly exported by name in the source code. You can&#x2019;t programmatically loop through an array and export a bunch of names in a data-driven way.
+</li>
+<li>Module objects are frozen. There is no way to hack a new feature into a module object, polyfill style.
+</li>
+<li>All of a module&#x2019;s dependencies must be loaded, parsed, and linked eagerly, before any module code runs. There&#x2019;s no syntax for an import that can be loaded lazily, on demand.
+</li>
+<li>There is no error recovery for import errors. An app may have hundreds of modules in it, and if anything fails to load or link, nothing runs. You can&#x2019;t import in a try/catch block. (The upside here is that because the system is so static, webpack can detect those errors for you at compile time.)
+</li>
+<li>There is no hook allowing a module to run some code before its dependencies load. This means that modules have no control over how their dependencies are loaded.
+</li></ul>
+<h2 id="11-classes">11. Classes</h2><h3 id="111-class-definition">11.1. Class Definition</h3><p>EC6&#x4E2D;&#x5F00;&#x59CB;&#x652F;&#x6301;OOP&#x7F16;&#x7A0B;</p><pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>{
+    <span class="hljs-keyword">constructor</span>(id, name, email){
+        <span class="hljs-keyword">this</span>.id = id;
+        <span class="hljs-keyword">this</span>.name = name;
+        <span class="hljs-keyword">this</span>.email = email;
+    }
+    move(x,y){
+        <span class="hljs-keyword">this</span>.x = x;
+        <span class="hljs-keyword">this</span>.y = y;
+    }
+    get(){
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + <span class="hljs-keyword">this</span>.email;
+    }
+}
+
+<span class="hljs-keyword">var</span> user = <span class="hljs-keyword">new</span> User(<span class="hljs-string">&quot;id&quot;</span>,<span class="hljs-string">&quot;lang&quot;</span>,<span class="hljs-string">&quot;lang.yu@hpe.com&quot;</span>);
+<span class="hljs-built_in">console</span>.log(user.get());</code></pre>
+<h3 id="112-class-inheritance">11.2. Class Inheritance</h3><pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>{
+    <span class="hljs-keyword">constructor</span>(id,name){
+        <span class="hljs-keyword">this</span>.name = name;
+        <span class="hljs-keyword">this</span>.id = id;
+    }
+    get(){
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name;
+    }
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">User</span></span>{
+    <span class="hljs-keyword">constructor</span>(id,name,email){
+        <span class="hljs-keyword">super</span>(id,name);
+        <span class="hljs-keyword">this</span>.email = email;
+    }
+}
+<span class="hljs-keyword">var</span> teacher = <span class="hljs-keyword">new</span> Teacher(<span class="hljs-string">&quot;id&quot;</span>,<span class="hljs-string">&quot;Lang&quot;</span>);
+<span class="hljs-built_in">console</span>.log(teacher.get());</code></pre>
+<h3 id="113-class-inheritance-from-expressions">11.3. Class Inheritance, From Expressions</h3><p>EC6&#x9664;&#x4E86;&#x652F;&#x6301;OOP&#xFF0C;&#x8FD8;&#x652F;&#x6301;&#x6DF7;&#x5408;&#x6A21;&#x5F0F;&#x7684;OOP&#x64CD;&#x4F5C;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> aggregation = (baseClass, ...mixins) =&gt; {
+    <span class="hljs-keyword">let</span> base = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_Combined</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">baseClass</span> </span>{
+        <span class="hljs-keyword">constructor</span> (...args) {
+            <span class="hljs-keyword">super</span>(...args)
+            mixins.forEach((mixin) =&gt; {
+                mixin.prototype.initializer.call(<span class="hljs-keyword">this</span>)
+            })
+        }
+    }
+    <span class="hljs-keyword">let</span> copyProps = (target, source) =&gt; {
+        <span class="hljs-built_in">Object</span>.getOwnPropertyNames(source)
+            .concat(<span class="hljs-built_in">Object</span>.getOwnPropertySymbols(source))
+            .forEach((prop) =&gt; {
+                <span class="hljs-keyword">if</span> (prop.match(<span class="hljs-regexp">/^(?:constructor|prototype|arguments|caller|name|bind|call|apply|toString|length)$/</span>))
+                    <span class="hljs-keyword">return</span>
+                <span class="hljs-built_in">Object</span>.defineProperty(target, prop, <span class="hljs-built_in">Object</span>.getOwnPropertyDescriptor(source, prop))
+            })
+    }
+    mixins.forEach((mixin) =&gt; {
+        copyProps(base.prototype, mixin.prototype)
+        copyProps(base, mixin)
+    })
+    <span class="hljs-keyword">return</span> base
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Colored</span> </span>{
+    initializer ()     { <span class="hljs-keyword">this</span>._color = <span class="hljs-string">&quot;white&quot;</span> }
+    get color ()       { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._color }
+    set color (v)      { <span class="hljs-keyword">this</span>._color = v }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ZCoord</span> </span>{
+    initializer ()     { <span class="hljs-keyword">this</span>._z = <span class="hljs-number">0</span> }
+    get z ()           { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._z }
+    set z (v)          { <span class="hljs-keyword">this</span>._z = v }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
+    <span class="hljs-keyword">constructor</span> (x, y) { <span class="hljs-keyword">this</span>._x = x; <span class="hljs-keyword">this</span>._y = y }
+    get x ()           { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._x }
+    set x (v)          { <span class="hljs-keyword">this</span>._x = v }
+    get y ()           { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._y }
+    set y (v)          { <span class="hljs-keyword">this</span>._y = v }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">aggregation</span>(<span class="hljs-title">Shape</span>, <span class="hljs-title">Colored</span>, <span class="hljs-title">ZCoord</span>) </span>{}
+
+<span class="hljs-keyword">var</span> rect = <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">7</span>, <span class="hljs-number">42</span>)
+rect.z     = <span class="hljs-number">1000</span>
+rect.color = <span class="hljs-string">&quot;red&quot;</span>
+<span class="hljs-built_in">console</span>.log(rect.x, rect.y, rect.z, rect.color)</code></pre>
+<h3 id="114-base-class-access">11.4. Base Class Access</h3><pre><code class="lang-javascript">    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
+        toString () {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">`Shape(<span class="hljs-subst">${this.id}</span>)`</span>
+        }
+    }
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
+        <span class="hljs-keyword">constructor</span> (id, x, y, width, height) {
+            <span class="hljs-keyword">super</span>(id, x, y);
+        }
+        toString () {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Rectangle &gt; &quot;</span> + <span class="hljs-keyword">super</span>.toString()
+        }
+    }
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
+        <span class="hljs-keyword">constructor</span> (id, x, y, radius) {
+            <span class="hljs-keyword">super</span>(id, x, y);
+        }
+        toString () {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Circle &gt; &quot;</span> + <span class="hljs-keyword">super</span>.toString()
+        }
+    }</code></pre>
+<h3 id="115-static-members">11.5. Static Members</h3><pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
+    <span class="hljs-keyword">static</span> defaultRectangle () {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-string">&quot;default&quot;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>)
+    }
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
+    <span class="hljs-keyword">static</span> defaultCircle () {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Circle(<span class="hljs-string">&quot;default&quot;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>)
+    }
+}
+<span class="hljs-keyword">var</span> defRectangle = Rectangle.defaultRectangle()
+<span class="hljs-keyword">var</span> defCircle    = Circle.defaultCircle()
+<span class="hljs-built_in">console</span>.log(defRectangle);
+<span class="hljs-built_in">console</span>.log(defCircle);</code></pre>
+<h3 id="116-getset">11.6. Get/Set</h3><pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
+    <span class="hljs-keyword">constructor</span> (width, height) {
+        <span class="hljs-keyword">this</span>._width  = width
+        <span class="hljs-keyword">this</span>._height = height
+    }
+    set width  (width)  { <span class="hljs-keyword">this</span>._width = width               }
+    get width  ()       { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._width                }
+    set height (height) { <span class="hljs-keyword">this</span>._height = height             }
+    get height ()       { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._height               }
+    get area   ()       { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._width * <span class="hljs-keyword">this</span>._height }
+}
+<span class="hljs-keyword">var</span> r = <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">50</span>, <span class="hljs-number">20</span>)
+<span class="hljs-built_in">console</span>.log(r.area);</code></pre>
+<h2 id="12symbol-type">12.Symbol Type</h2><h3 id="121-symbol-type">12.1. Symbol Type</h3><pre><code class="lang-javascript"><span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&quot;foo&quot;</span>) !== <span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&quot;foo&quot;</span>)
+<span class="hljs-keyword">const</span> foo = <span class="hljs-built_in">Symbol</span>()
+<span class="hljs-keyword">const</span> bar = <span class="hljs-built_in">Symbol</span>()
+<span class="hljs-keyword">typeof</span> foo === <span class="hljs-string">&quot;symbol&quot;</span>
+<span class="hljs-keyword">typeof</span> bar === <span class="hljs-string">&quot;symbol&quot;</span>
+<span class="hljs-keyword">let</span> obj = {}
+obj[foo] = <span class="hljs-string">&quot;foo&quot;</span>
+obj[bar] = <span class="hljs-string">&quot;bar&quot;</span>
+<span class="hljs-built_in">JSON</span>.stringify(obj) <span class="hljs-comment">// {}</span>
+<span class="hljs-built_in">Object</span>.keys(obj) <span class="hljs-comment">// []</span>
+<span class="hljs-built_in">Object</span>.getOwnPropertyNames(obj) <span class="hljs-comment">// []</span>
+<span class="hljs-built_in">Object</span>.getOwnPropertySymbols(obj) <span class="hljs-comment">// [ foo, bar ]</span></code></pre>
+<h3 id="122-global-symbols">12.2. Global Symbols</h3><pre><code class="lang-javascript"><span class="hljs-built_in">Symbol</span>.for(<span class="hljs-string">&quot;app.foo&quot;</span>) === <span class="hljs-built_in">Symbol</span>.for(<span class="hljs-string">&quot;app.foo&quot;</span>)
+<span class="hljs-keyword">const</span> foo = <span class="hljs-built_in">Symbol</span>.for(<span class="hljs-string">&quot;app.foo&quot;</span>)
+<span class="hljs-keyword">const</span> bar = <span class="hljs-built_in">Symbol</span>.for(<span class="hljs-string">&quot;app.bar&quot;</span>)
+<span class="hljs-built_in">Symbol</span>.keyFor(foo) === <span class="hljs-string">&quot;app.foo&quot;</span>
+<span class="hljs-built_in">Symbol</span>.keyFor(bar) === <span class="hljs-string">&quot;app.bar&quot;</span>
+<span class="hljs-keyword">typeof</span> foo === <span class="hljs-string">&quot;symbol&quot;</span>
+<span class="hljs-keyword">typeof</span> bar === <span class="hljs-string">&quot;symbol&quot;</span>
+<span class="hljs-keyword">let</span> obj = {}
+obj[foo] = <span class="hljs-string">&quot;foo&quot;</span>
+obj[bar] = <span class="hljs-string">&quot;bar&quot;</span>
+<span class="hljs-built_in">JSON</span>.stringify(obj) <span class="hljs-comment">// {}</span>
+<span class="hljs-built_in">Object</span>.keys(obj) <span class="hljs-comment">// []</span>
+<span class="hljs-built_in">Object</span>.getOwnPropertyNames(obj) <span class="hljs-comment">// []</span>
+<span class="hljs-built_in">Object</span>.getOwnPropertySymbols(obj) <span class="hljs-comment">// [ foo, bar ]</span></code></pre>
+<h2 id="13iterators">13.Iterators</h2><h3 id="131-iterator--for-of-operator">13.1. Iterator &amp; For-Of Operator</h3><p>*&#xFF1A;&#x6CE8;&#x610F;&#x6B7B;&#x5FAA;&#x73AF;&#x95EE;&#x9898;</p><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> fibonacci = {
+    [<span class="hljs-built_in">Symbol</span>.iterator]() {
+        <span class="hljs-keyword">let</span> pre = <span class="hljs-number">0</span>, cur = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">return</span> {
+            next () {
+                [ pre, cur ] = [ cur, pre + cur ]
+                <span class="hljs-keyword">return</span> { done: <span class="hljs-literal">false</span>, value: cur }
+            }
+        }
+    }
+}
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> n <span class="hljs-keyword">of</span> fibonacci) {
+    <span class="hljs-keyword">if</span> (n &gt; <span class="hljs-number">1000</span>)
+        <span class="hljs-keyword">break</span>
+    <span class="hljs-built_in">console</span>.log(n)
+}</code></pre>
+<h2 id="14generators">14.Generators</h2><h3 id="141-generator-function-iterator-protocol">14.1. Generator Function, Iterator Protocol</h3><p>EC6&#x4E2D;&#x6700;&#x5177;&#x201C;&#x9B54;&#x529B;&#x201D;&#x7684;&#x529F;&#x80FD;&#x7279;&#x6027;&#xFF0C;&#x57FA;&#x4E8E;&#x8FED;&#x4EE3;&#x534F;&#x8BAE;&#x7684;&#x751F;&#x6210;&#x5668;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> fibonacci = {
+    *[<span class="hljs-built_in">Symbol</span>.iterator]() {
+        <span class="hljs-keyword">let</span> pre = <span class="hljs-number">0</span>, cur = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">for</span> (;;) {
+            [ pre, cur ] = [ cur, pre + cur ]
+            <span class="hljs-keyword">yield</span> cur
+        }
+    }
+}
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> n <span class="hljs-keyword">of</span> fibonacci) {
+    <span class="hljs-keyword">if</span> (n &gt; <span class="hljs-number">1000</span>)
+        <span class="hljs-keyword">break</span>
+    <span class="hljs-built_in">console</span>.log(n)
+}</code></pre>
+<p>&#x751F;&#x6210;&#x5668;&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;&#x5728;&#x51FD;&#x6570;&#x540D;&#x4E4B;&#x524D;&#x52A0;<code>*</code>&#x53F7;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x51FD;&#x6570;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x53EF;&#x8C03;&#x7528;<code>yield</code>&#x7684;&#x65B9;&#x5F0F;&#x5C06;&#x8BE5;&#x51FD;&#x6570;&#x6682;&#x505C;&#xFF01;</p><h3 id="142-generator-function-direct-use">14.2. Generator Function, Direct Use</h3><pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">range</span> (<span class="hljs-params">start, end, step</span>) </span>{
+    <span class="hljs-keyword">while</span> (start &lt; end) {
+        <span class="hljs-keyword">yield</span> start
+        start += step
+    }
+}
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i <span class="hljs-keyword">of</span> range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>, <span class="hljs-number">2</span>)) {
+    <span class="hljs-built_in">console</span>.log(i) <span class="hljs-comment">// 0, 2, 4, 6, 8</span>
+}</code></pre>
+<h3 id="143-generator-matching">14.3. Generator Matching</h3><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> fibonacci = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">numbers</span>) </span>{
+    <span class="hljs-keyword">let</span> pre = <span class="hljs-number">0</span>, cur = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">while</span> (numbers-- &gt; <span class="hljs-number">0</span>) {
+        [ pre, cur ] = [ cur, pre + cur ]
+        <span class="hljs-keyword">yield</span> cur
+    }
+}
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> n <span class="hljs-keyword">of</span> fibonacci(<span class="hljs-number">1000</span>))
+    <span class="hljs-built_in">console</span>.log(n)
+
+<span class="hljs-keyword">let</span> numbers = [ ...fibonacci(<span class="hljs-number">1000</span>) ]
+
+<span class="hljs-keyword">let</span> [ n1, n2, n3, ...others ] = fibonacci(<span class="hljs-number">1000</span>)</code></pre>
+<h3 id="144-generator-control-flow">14.4. Generator Control-Flow</h3><pre><code class="lang-javascript">    <span class="hljs-comment">//  generic asynchronous control-flow driver</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">async</span> (<span class="hljs-params">proc, ...params</span>) </span>{
+        <span class="hljs-keyword">var</span> iterator = proc(...params)
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+            <span class="hljs-keyword">let</span> loop = (value) =&gt; {
+                <span class="hljs-keyword">let</span> result
+                <span class="hljs-keyword">try</span> {
+                    result = iterator.next(value)
+                }
+                <span class="hljs-keyword">catch</span> (err) {
+                    reject(err)
+                }
+                <span class="hljs-keyword">if</span> (result.done)
+                    resolve(result.value)
+                <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (   <span class="hljs-keyword">typeof</span> result.value === <span class="hljs-string">&quot;object&quot;</span>
+                    &amp;&amp; <span class="hljs-keyword">typeof</span> result.value.then === <span class="hljs-string">&quot;function&quot;</span>)
+                    result.value.then((value) =&gt; {
+                        loop(value)
+                    }, (err) =&gt; {
+                        reject(err)
+                    })
+                <span class="hljs-keyword">else</span>
+                    loop(result.value)
+            }
+            loop()
+        })
+    }
+
+    <span class="hljs-comment">//  application-specific asynchronous builder</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">makeAsync</span> (<span class="hljs-params">text, after</span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+            setTimeout(() =&gt; resolve(text), after)
+        })
+    }
+
+    <span class="hljs-comment">//  application-specific asynchronous procedure</span>
+    <span class="hljs-keyword">async</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params">greeting</span>) </span>{
+        <span class="hljs-keyword">let</span> foo = <span class="hljs-keyword">yield</span> makeAsync(<span class="hljs-string">&quot;foo&quot;</span>, <span class="hljs-number">300</span>)
+        <span class="hljs-keyword">let</span> bar = <span class="hljs-keyword">yield</span> makeAsync(<span class="hljs-string">&quot;bar&quot;</span>, <span class="hljs-number">200</span>)
+        <span class="hljs-keyword">let</span> baz = <span class="hljs-keyword">yield</span> makeAsync(<span class="hljs-string">&quot;baz&quot;</span>, <span class="hljs-number">100</span>)
+        <span class="hljs-keyword">return</span> <span class="hljs-string">`<span class="hljs-subst">${greeting}</span> <span class="hljs-subst">${foo}</span> <span class="hljs-subst">${bar}</span> <span class="hljs-subst">${baz}</span>`</span>
+    }, <span class="hljs-string">&quot;Hello&quot;</span>).then((msg) =&gt; {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;RESULT:&quot;</span>, msg) <span class="hljs-comment">// &quot;Hello foo bar baz&quot;</span>
+    })</code></pre>
+<h3 id="145-generator-methods">14.5. Generator Methods</h3><pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Clz</span> </span>{
+    * bar () {
+    }
+}
+<span class="hljs-keyword">let</span> Obj = {
+    * foo () {
+    }
+}</code></pre>
+<h2 id="15-mapset--weakmapweakset">15. Map/Set &amp; WeakMap/WeakSet</h2><h3 id="151-set-data-structure">15.1. Set Data-Structure</h3><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> s = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>()
+s.add(<span class="hljs-string">&quot;hello&quot;</span>).add(<span class="hljs-string">&quot;goodbye&quot;</span>).add(<span class="hljs-string">&quot;hello&quot;</span>)
+s.size === <span class="hljs-number">2</span>
+s.has(<span class="hljs-string">&quot;hello&quot;</span>) === <span class="hljs-literal">true</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> key <span class="hljs-keyword">of</span> s.values()) <span class="hljs-comment">// insertion order</span>
+    <span class="hljs-built_in">console</span>.log(key)</code></pre>
+<h3 id="152-map-data-structure">15.2. Map Data-Structure</h3><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> m = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>()
+m.set(<span class="hljs-string">&quot;hello&quot;</span>, <span class="hljs-number">42</span>)
+m.set(<span class="hljs-string">&quot;key&quot;</span>, <span class="hljs-number">34</span>)
+m.get(<span class="hljs-string">&quot;key&quot;</span>) === <span class="hljs-number">34</span>
+m.size === <span class="hljs-number">2</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> [ key, val ] <span class="hljs-keyword">of</span> m.entries())
+    <span class="hljs-built_in">console</span>.log(key + <span class="hljs-string">&quot; = &quot;</span> + val)</code></pre>
+<h3 id="153-mapset--weakmapweakset">15.3. Map/Set &amp; WeakMap/WeakSet</h3><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> isMarked     = <span class="hljs-keyword">new</span> <span class="hljs-built_in">WeakSet</span>()
+<span class="hljs-keyword">let</span> attachedData = <span class="hljs-keyword">new</span> <span class="hljs-built_in">WeakMap</span>()
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Node</span> </span>{
+    <span class="hljs-keyword">constructor</span> (id)   { <span class="hljs-keyword">this</span>.id = id                  }
+    mark        ()     { isMarked.add(<span class="hljs-keyword">this</span>)            }
+    unmark      ()     { isMarked.delete(<span class="hljs-keyword">this</span>)         }
+    marked      ()     { <span class="hljs-keyword">return</span> isMarked.has(<span class="hljs-keyword">this</span>)     }
+    set data    (data) { attachedData.set(<span class="hljs-keyword">this</span>, data)  }
+    get data    ()     { <span class="hljs-keyword">return</span> attachedData.get(<span class="hljs-keyword">this</span>) }
+}
+
+<span class="hljs-keyword">let</span> foo = <span class="hljs-keyword">new</span> Node(<span class="hljs-string">&quot;foo&quot;</span>)
+
+<span class="hljs-built_in">JSON</span>.stringify(foo) === <span class="hljs-string">&apos;{&quot;id&quot;:&quot;foo&quot;}&apos;</span>
+foo.mark()
+foo.data = <span class="hljs-string">&quot;bar&quot;</span>
+foo.data === <span class="hljs-string">&quot;bar&quot;</span>
+<span class="hljs-built_in">JSON</span>.stringify(foo) === <span class="hljs-string">&apos;{&quot;id&quot;:&quot;foo&quot;}&apos;</span>
+
+isMarked.has(foo)     === <span class="hljs-literal">true</span>
+attachedData.has(foo) === <span class="hljs-literal">true</span>
+foo = <span class="hljs-literal">null</span>  <span class="hljs-comment">/* remove only reference to foo */</span>
+attachedData.has(foo) === <span class="hljs-literal">false</span>
+isMarked.has(foo)     === <span class="hljs-literal">false</span></code></pre>
+<h2 id="16typed-arrays">16.Typed Arrays</h2><h3 id="161typed-arrays">16.1.Typed Arrays</h3><p>&#x4ECE;EC6&#x5F00;&#x59CB;&#x652F;&#x6301;&#x5B57;&#x8282;&#x7EA7;&#x522B;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7528;&#x4E8E;&#x5230;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x3001;&#x52A0;&#x5BC6;&#x3001;&#x683C;&#x5F0F;&#x5316;&#x7B49;&#x64CD;&#x4F5C;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-comment">//  ES6 class equivalent to the following C structure:</span>
+<span class="hljs-comment">//  struct Example { unsigned long id; char username[16]; float amountDue }</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span> </span>{
+    <span class="hljs-keyword">constructor</span> (buffer = new ArrayBuffer(24)) {
+        <span class="hljs-keyword">this</span>.buffer = buffer
+    }
+    set buffer (buffer) {
+        <span class="hljs-keyword">this</span>._buffer    = buffer
+        <span class="hljs-keyword">this</span>._id        = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint32Array</span> (<span class="hljs-keyword">this</span>._buffer,  <span class="hljs-number">0</span>,  <span class="hljs-number">1</span>)
+        <span class="hljs-keyword">this</span>._username  = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>  (<span class="hljs-keyword">this</span>._buffer,  <span class="hljs-number">4</span>, <span class="hljs-number">16</span>)
+        <span class="hljs-keyword">this</span>._amountDue = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Float32Array</span>(<span class="hljs-keyword">this</span>._buffer, <span class="hljs-number">20</span>,  <span class="hljs-number">1</span>)
+    }
+    get buffer ()     { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._buffer       }
+    set id (v)        { <span class="hljs-keyword">this</span>._id[<span class="hljs-number">0</span>] = v           }
+    get id ()         { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._id[<span class="hljs-number">0</span>]        }
+    set username (v)  { <span class="hljs-keyword">this</span>._username[<span class="hljs-number">0</span>] = v     }
+    get username ()   { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._username[<span class="hljs-number">0</span>]  }
+    set amountDue (v) { <span class="hljs-keyword">this</span>._amountDue[<span class="hljs-number">0</span>] = v    }
+    get amountDue ()  { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._amountDue[<span class="hljs-number">0</span>] }
+}
+
+<span class="hljs-keyword">let</span> example = <span class="hljs-keyword">new</span> Example()
+example.id = <span class="hljs-number">7</span>
+example.username = <span class="hljs-string">&quot;John Doe&quot;</span>
+example.amountDue = <span class="hljs-number">42.0</span></code></pre>
+<h2 id="17-new-built-in-methods">17. New Built-In Methods</h2><h3 id="171-object-property-assignment">17.1. Object Property Assignment</h3><p>&#x5BF9;&#x8C61;&#x76F4;&#x63A5;&#x8D4B;&#x503C;</p><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> dst  = { quux: <span class="hljs-number">0</span> }
+<span class="hljs-keyword">var</span> src1 = { foo: <span class="hljs-number">1</span>, bar: <span class="hljs-number">2</span> }
+<span class="hljs-keyword">var</span> src2 = { foo: <span class="hljs-number">3</span>, baz: <span class="hljs-number">4</span> }
+<span class="hljs-built_in">Object</span>.assign(dst, src1, src2)
+dst.quux === <span class="hljs-number">0</span>
+dst.foo  === <span class="hljs-number">3</span>
+dst.bar  === <span class="hljs-number">2</span>
+dst.baz  === <span class="hljs-number">4</span></code></pre>
+<h3 id="172-array-element-finding">17.2. Array Element Finding</h3><p>&#x6570;&#x7EC4;&#x7684;&#x67E5;&#x627E;&#x64CD;&#x4F5C;&#xFF1A;</p><pre><code>[ 1, 3, 4, 2 ].find(x =&gt; x &gt; 3) // 4</code></pre>
+<p>*&#xFF1A;&#x6CE8;&#x610F;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x770B;&#x4E0B;&#x8FB9;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x = [ <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">2</span> ].find(x =&gt; x &gt; <span class="hljs-number">3</span>) <span class="hljs-comment">// 4</span>
+<span class="hljs-keyword">var</span> y = [ <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">2</span> ].find(x =&gt; x &gt; <span class="hljs-number">1</span>) <span class="hljs-comment">// 3</span>
+<span class="hljs-built_in">console</span>.log(x);         <span class="hljs-comment">// 4</span>
+<span class="hljs-built_in">console</span>.log(y);         <span class="hljs-comment">// 3</span></code></pre>
+<p>&#x4ECE;&#x8F93;&#x51FA;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x8FD4;&#x56DE;&#x503C;&#x5C31;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x4E0D;&#x4F1A;&#x8FD4;&#x56DE;&#x6570;&#x7EC4;&#xFF01;</p><h3 id="173-string-repeating">17.3. String Repeating</h3><p>&#x91CD;&#x590D;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65B9;&#x6CD5;</p><pre><code>&quot; &quot;.repeat(4 * depth)
+&quot;foo&quot;.repeat(3)</code></pre>
+<h3 id="174-string-searching">17.4. String Searching</h3><p>&#x5E38;&#x7528;&#x7684;String&#x7684;API&#xFF0C;&#x7528;&#x4E8E;&#x8FDB;&#x884C;String&#x4E4B;&#x5185;&#x7684;&#x641C;&#x7D22;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-string">&quot;hello&quot;</span>.startsWith(<span class="hljs-string">&quot;ello&quot;</span>, <span class="hljs-number">1</span>) <span class="hljs-comment">// true</span>
+<span class="hljs-string">&quot;hello&quot;</span>.endsWith(<span class="hljs-string">&quot;hell&quot;</span>, <span class="hljs-number">4</span>)   <span class="hljs-comment">// true</span>
+<span class="hljs-string">&quot;hello&quot;</span>.includes(<span class="hljs-string">&quot;ell&quot;</span>)       <span class="hljs-comment">// true</span>
+<span class="hljs-string">&quot;hello&quot;</span>.includes(<span class="hljs-string">&quot;ell&quot;</span>, <span class="hljs-number">1</span>)    <span class="hljs-comment">// true</span>
+<span class="hljs-string">&quot;hello&quot;</span>.includes(<span class="hljs-string">&quot;ell&quot;</span>, <span class="hljs-number">2</span>)    <span class="hljs-comment">// false</span></code></pre>
+<h3 id="175-number-type-checking">17.5. Number Type Checking</h3><p>&#x6570;&#x503C;&#x7C7B;&#x578B;&#x68C0;&#x67E5;</p><pre><code class="lang-javascript"><span class="hljs-built_in">Number</span>.isNaN(<span class="hljs-number">42</span>) === <span class="hljs-literal">false</span>
+<span class="hljs-built_in">Number</span>.isNaN(<span class="hljs-literal">NaN</span>) === <span class="hljs-literal">true</span>
+
+<span class="hljs-built_in">Number</span>.isFinite(<span class="hljs-literal">Infinity</span>) === <span class="hljs-literal">false</span>
+<span class="hljs-built_in">Number</span>.isFinite(-<span class="hljs-literal">Infinity</span>) === <span class="hljs-literal">false</span>
+<span class="hljs-built_in">Number</span>.isFinite(<span class="hljs-literal">NaN</span>) === <span class="hljs-literal">false</span>
+<span class="hljs-built_in">Number</span>.isFinite(<span class="hljs-number">123</span>) === <span class="hljs-literal">true</span></code></pre>
+<h3 id="176-number-safety-checking">17.6. Number Safety Checking</h3><p>&#x6570;&#x503C;&#x5B89;&#x5168;&#x68C0;&#x67E5;&#xFF0C;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x8D8A;&#x754C;</p><pre><code class="lang-javascript"><span class="hljs-built_in">Number</span>.isSafeInteger(<span class="hljs-number">42</span>) === <span class="hljs-literal">true</span>
+<span class="hljs-built_in">Number</span>.isSafeInteger(<span class="hljs-number">9007199254740992</span>) === <span class="hljs-literal">false</span></code></pre>
+<h3 id="177-number-comparision">17.7. Number Comparision</h3><p>&#x6570;&#x503C;&#x6BD4;&#x8F83;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x6807;&#x51C6;&#x6570;&#x636E;&#xFF1A;</p><p><em>EC6</em></p><pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-number">0.1</span> + <span class="hljs-number">0.2</span> === <span class="hljs-number">0.3</span>) <span class="hljs-comment">// false</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.abs((<span class="hljs-number">0.1</span> + <span class="hljs-number">0.2</span>) - <span class="hljs-number">0.3</span>) &lt; <span class="hljs-built_in">Number</span>.EPSILON) <span class="hljs-comment">// true</span></code></pre>
+<p><em>EC5</em></p><pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-number">0.1</span> + <span class="hljs-number">0.2</span> === <span class="hljs-number">0.3</span>); <span class="hljs-comment">// false</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.abs((<span class="hljs-number">0.1</span> + <span class="hljs-number">0.2</span>) - <span class="hljs-number">0.3</span>) &lt; <span class="hljs-number">2.220446049250313e-16</span>); <span class="hljs-comment">// true</span></code></pre>
+<h3 id="178-number-truncation">17.8. Number Truncation</h3><p>&#x6570;&#x503C;&#x622A;&#x65AD;&#x64CD;&#x4F5C;&#xFF1A;</p><pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.trunc(<span class="hljs-number">42.7</span>)) <span class="hljs-comment">// 42</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.trunc( <span class="hljs-number">0.1</span>)) <span class="hljs-comment">// 0</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.trunc(<span class="hljs-number">-0.1</span>)) <span class="hljs-comment">// -0</span></code></pre>
+<h3 id="179-number-sign-determination">17.9. Number Sign Determination</h3><pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.sign(<span class="hljs-number">7</span>))   <span class="hljs-comment">// 1</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.sign(<span class="hljs-number">0</span>))   <span class="hljs-comment">// 0</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.sign(<span class="hljs-number">-0</span>))  <span class="hljs-comment">// -0</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.sign(<span class="hljs-number">-7</span>))  <span class="hljs-comment">// -1</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.sign(<span class="hljs-literal">NaN</span>)) <span class="hljs-comment">// NaN</span></code></pre>
+<h2 id="18promises">18.Promises</h2><h3 id="181-promise-usage">18.1. Promise Usage</h3><p>&#x652F;&#x6301;Promise&#x5F02;&#x6B65;&#x8C03;&#x7528;&#x89C4;&#x8303;&#xFF1A;</p><pre><code class="lang-javascript">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">msgAfterTimeout</span> (<span class="hljs-params">msg, who, timeout</span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+            setTimeout(() =&gt; resolve(<span class="hljs-string">`<span class="hljs-subst">${msg}</span> Hello <span class="hljs-subst">${who}</span>!`</span>), timeout)
+        })
+    }
+    msgAfterTimeout(<span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;Foo&quot;</span>, <span class="hljs-number">100</span>).then((msg) =&gt;
+        msgAfterTimeout(msg, <span class="hljs-string">&quot;Bar&quot;</span>, <span class="hljs-number">200</span>)
+    ).then((msg) =&gt; {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`done after 300ms:<span class="hljs-subst">${msg}</span>`</span>)
+    })</code></pre>
+<h3 id="182-promise-combination">18.2. Promise Combination</h3><p>&#x652F;&#x6301;Promise&#x89C4;&#x8303;&#x4E0B;&#x7684;&#x7EC4;&#x5408;&#x529F;&#x80FD;</p><pre><code class="lang-javascript">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fetchAsync</span> (<span class="hljs-params">url, timeout, onData, onError</span>)</span>{
+
+    }
+
+    <span class="hljs-keyword">let</span> fetchPromised = (url, timeout) =&gt; {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+            fetchAsync(url, timeout, resolve, reject)
+        })
+    }
+    <span class="hljs-built_in">Promise</span>.all([
+        fetchPromised(<span class="hljs-string">&quot;http://backend/foo.txt&quot;</span>, <span class="hljs-number">500</span>),
+        fetchPromised(<span class="hljs-string">&quot;http://backend/bar.txt&quot;</span>, <span class="hljs-number">500</span>),
+        fetchPromised(<span class="hljs-string">&quot;http://backend/baz.txt&quot;</span>, <span class="hljs-number">500</span>)
+    ]).then((data) =&gt; {
+        <span class="hljs-keyword">let</span> [ foo, bar, baz ] = data
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`success: foo=<span class="hljs-subst">${foo}</span> bar=<span class="hljs-subst">${bar}</span> baz=<span class="hljs-subst">${baz}</span>`</span>)
+    }, (err) =&gt; {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`error: <span class="hljs-subst">${err}</span>`</span>)
+    })</code></pre>
+<h2 id="19meta-programming">19.Meta-Programming</h2><h3 id="191-proxying">19.1. Proxying</h3><p>&#x52A8;&#x6001;&#x4EE3;&#x7406;&#x8C03;&#x7528;&#x6280;&#x672F;</p><pre><code class="lang-javascript">    <span class="hljs-keyword">let</span> target = {
+        foo: <span class="hljs-string">&quot;Welcome, foo&quot;</span>
+    }
+    <span class="hljs-keyword">let</span> proxy = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Proxy</span>(target, {
+        get (receiver, name) {
+            <span class="hljs-keyword">return</span> name <span class="hljs-keyword">in</span> receiver ? receiver[name] : <span class="hljs-string">`Hello, <span class="hljs-subst">${name}</span>`</span>
+        }
+    })
+    proxy.foo   === <span class="hljs-string">&quot;Welcome, foo&quot;</span>
+    proxy.world === <span class="hljs-string">&quot;Hello, world&quot;</span></code></pre>
+<h3 id="192-reflection">19.2. Reflection</h3><p>JS&#x4E2D;&#x7684;&#x53CD;&#x5C04;</p><pre><code class="lang-javascript"><span class="hljs-keyword">let</span> obj = { a: <span class="hljs-number">1</span> }
+<span class="hljs-built_in">Object</span>.defineProperty(obj, <span class="hljs-string">&quot;b&quot;</span>, { value: <span class="hljs-number">2</span> })
+obj[<span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&quot;c&quot;</span>)] = <span class="hljs-number">3</span>
+<span class="hljs-built_in">Reflect</span>.ownKeys(obj) <span class="hljs-comment">// [ &quot;a&quot;, &quot;b&quot;, Symbol(c) ]</span></code></pre>
+<h2 id="20-internationalization--localization">20. Internationalization &amp; Localization</h2><h3 id="201-collation">20.1. Collation</h3><pre><code class="lang-javascript"><span class="hljs-comment">// in German,  &quot;&#xE4;&quot; sorts with &quot;a&quot;</span>
+<span class="hljs-comment">// in Swedish, &quot;&#xE4;&quot; sorts after &quot;z&quot;</span>
+<span class="hljs-keyword">var</span> list = [ <span class="hljs-string">&quot;&#xE4;&quot;</span>, <span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;z&quot;</span> ]
+<span class="hljs-keyword">var</span> l10nDE = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Intl</span>.Collator(<span class="hljs-string">&quot;de&quot;</span>)
+<span class="hljs-keyword">var</span> l10nSV = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Intl</span>.Collator(<span class="hljs-string">&quot;sv&quot;</span>)
+l10nDE.compare(<span class="hljs-string">&quot;&#xE4;&quot;</span>, <span class="hljs-string">&quot;z&quot;</span>) === <span class="hljs-number">-1</span>
+l10nSV.compare(<span class="hljs-string">&quot;&#xE4;&quot;</span>, <span class="hljs-string">&quot;z&quot;</span>) === +<span class="hljs-number">1</span>
+<span class="hljs-built_in">console</span>.log(list.sort(l10nDE.compare)) <span class="hljs-comment">// [ &quot;a&quot;, &quot;&#xE4;&quot;, &quot;z&quot; ]</span>
+<span class="hljs-built_in">console</span>.log(list.sort(l10nSV.compare)) <span class="hljs-comment">// [ &quot;a&quot;, &quot;z&quot;, &quot;&#xE4;&quot; ]</span></code></pre>
+<h3 id="202-number-formatting">20.2. Number Formatting</h3><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> l10nEN = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Intl</span>.NumberFormat(<span class="hljs-string">&quot;en-US&quot;</span>)
+<span class="hljs-keyword">var</span> l10nDE = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Intl</span>.NumberFormat(<span class="hljs-string">&quot;de-DE&quot;</span>)
+l10nEN.format(<span class="hljs-number">1234567.89</span>) === <span class="hljs-string">&quot;1,234,567.89&quot;</span>
+l10nDE.format(<span class="hljs-number">1234567.89</span>) === <span class="hljs-string">&quot;1.234.567,89&quot;</span></code></pre>
+<h3 id="203-currency-formatting">20.3. Currency Formatting</h3><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> l10nUSD = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Intl</span>.NumberFormat(<span class="hljs-string">&quot;en-US&quot;</span>, { style: <span class="hljs-string">&quot;currency&quot;</span>, currency: <span class="hljs-string">&quot;USD&quot;</span> })
+<span class="hljs-keyword">var</span> l10nGBP = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Intl</span>.NumberFormat(<span class="hljs-string">&quot;en-GB&quot;</span>, { style: <span class="hljs-string">&quot;currency&quot;</span>, currency: <span class="hljs-string">&quot;GBP&quot;</span> })
+<span class="hljs-keyword">var</span> l10nEUR = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Intl</span>.NumberFormat(<span class="hljs-string">&quot;de-DE&quot;</span>, { style: <span class="hljs-string">&quot;currency&quot;</span>, currency: <span class="hljs-string">&quot;EUR&quot;</span> })
+l10nUSD.format(<span class="hljs-number">100200300.40</span>) === <span class="hljs-string">&quot;$100,200,300.40&quot;</span>
+l10nGBP.format(<span class="hljs-number">100200300.40</span>) === <span class="hljs-string">&quot;&#xA3;100,200,300.40&quot;</span>
+l10nEUR.format(<span class="hljs-number">100200300.40</span>) === <span class="hljs-string">&quot;100.200.300,40 &#x20AC;&quot;</span></code></pre>
+<h3 id="204-datetime-formatting">20.4. Date/Time Formatting</h3><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> l10nEN = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Intl</span>.DateTimeFormat(<span class="hljs-string">&quot;en-US&quot;</span>)
+<span class="hljs-keyword">var</span> l10nDE = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Intl</span>.DateTimeFormat(<span class="hljs-string">&quot;de-DE&quot;</span>)
+l10nEN.format(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015-01-02&quot;</span>)) === <span class="hljs-string">&quot;1/2/2015&quot;</span>
+l10nDE.format(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015-01-02&quot;</span>)) === <span class="hljs-string">&quot;2.1.2015&quot;</span></code></pre>
+<h2 id="summary">Summary</h2><p>None</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../yu-yan-xiang-guan.html" class="navigation navigation-prev " aria-label="Previous page: 语言相关">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="kml-002-jsr330gui-fan.html" class="navigation navigation-next " aria-label="Next page: KML-002 JSR330规范">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"KML-001 ECMA Script 6.0","level":"5.4.1","depth":2,"next":{"title":"KML-002 JSR330规范","level":"5.4.2","depth":2,"path":"uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.md","ref":"uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.md","articles":[]},"previous":{"title":"语言相关","level":"5.4","depth":1,"path":"uniform-documentation/yu-yan-xiang-guan.md","ref":"uniform-documentation/yu-yan-xiang-guan.md","articles":[{"title":"KML-001 ECMA Script 6.0","level":"5.4.1","depth":2,"path":"uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md","ref":"uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md","articles":[]},{"title":"KML-002 JSR330规范","level":"5.4.2","depth":2,"path":"uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.md","ref":"uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.md","articles":[]},{"title":"KML-003 浏览器中的Fetch Api","level":"5.4.3","depth":2,"path":"uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.md","ref":"uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.md","articles":[]},{"title":"KML-004 Java中的静态和单例","level":"5.4.4","depth":2,"path":"uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.md","ref":"uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.md","articles":[]},{"title":"KML-005 Java语言的.class字节码结构","level":"5.4.5","depth":2,"path":"uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md","ref":"uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md","mtime":"2019-03-31T14:38:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-03-31T15:05:29.515Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

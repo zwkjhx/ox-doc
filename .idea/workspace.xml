@@ -2,7 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md" beforeDir="false" afterPath="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book-init.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book-server.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/docker/book-init" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/environment/1-dockerrong-qi-huan-jing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/environment/2-zeroandoxhuan-jing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/environment/3-osji-bie-huan-jing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/environment/4-deploymentbu-shu-jiao-cheng.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/environment/yin-dao-ye.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-fontsettings/fontsettings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-fontsettings/website.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-highlight/ebook.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-highlight/website.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-lunr/lunr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-lunr/search-lunr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/lunr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/search-engine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-sharing/buttons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/images/apple-touch-icon-precomposed-152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/origin-x-engine/1-oxshi-shi-jiao-cheng.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/origin-x-engine/2-oxzi-ding-yi-zu-jian.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/origin-x-engine/4-oxshi-zhan-fen-xi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/origin-x-engine/yin-dao-ye.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/search_index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/specification/1-zerogui-fan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/specification/2-zero-uigui-fan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/specification/3-origin-xgui-fan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/specification/kai-fa-gui-fan-wen-dang-zhu-ye.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/uniform-documentation/yin-dao-ye.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/zero-ui/1-zero-uiji-ben-jiao-cheng.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/zero-ui/2-reactsui-sui-nian.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/zero-ui/3-antquan-jia-tong.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/zero-ui/4-zero-uishi-zhan-fen-xi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/zero-ui/shou-ye.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/zero-up/1-zeroji-ben-jiao-cheng.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/zero-up/2-vertxsui-sui-nian.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/zero-up/3-zeroshi-zhan-fen-xi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/zero-up/shou-ye.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.md" beforeDir="false" afterPath="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,7 +78,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="585">
-                <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+                <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
               </first_editor>
               <second_editor />
             </state>
@@ -61,12 +119,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="204">
                 <caret line="340" column="63" selection-start-line="340" selection-start-column="63" selection-end-line="340" selection-end-column="63" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="2" selection-start-column="2" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -123,6 +193,7 @@
     <findStrings>
       <find>.md</find>
       <find>我在本机使用1.8的版本输出时就会报错。</find>
+      <find>结构总表</find>
     </findStrings>
     <replaceStrings>
       <replace>.html</replace>
@@ -174,6 +245,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md" />
+        <option value="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.md" />
       </list>
     </option>
   </component>
@@ -212,31 +284,13 @@
             <path>
               <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="kml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
               <item name="uniform-documentation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
               <item name="uniform-documentation" type="462c0819:PsiDirectoryNode" />
-              <item name="yu-yan-xiang-guan" type="462c0819:PsiDirectoryNode" />
+              <item name="kai-yuan-xiang-mu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
@@ -295,7 +349,7 @@
     <frame x="0" y="23" width="1920" height="1143" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18957347" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18957347" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -306,7 +360,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3299748" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2637681" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2637681" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -731,7 +785,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="585">
-            <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+            <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
           </first_editor>
           <second_editor />
         </state>
@@ -742,6 +796,16 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="204">
             <caret line="340" column="63" selection-start-line="340" selection-start-column="63" selection-end-line="340" selection-end-column="63" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="2" selection-start-column="2" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>

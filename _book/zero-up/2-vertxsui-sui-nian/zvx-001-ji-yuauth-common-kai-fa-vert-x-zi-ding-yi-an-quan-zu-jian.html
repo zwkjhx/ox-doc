@@ -1,0 +1,1749 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>ZVX-001 基于 auth-common 开发Vert.x自定义安全组件 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../3-zeroshi-zhan-fen-xi.html" />
+    
+    
+    <link rel="prev" href="../2-vertxsui-sui-nian.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">http://www.origin-x.cn</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Origin X Doc文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Zero UI</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../zero-ui/shou-ye.html">
+            
+                <a href="../../zero-ui/shou-ye.html">
+            
+                    
+                    Zero UI文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../zero-ui/1-zero-uiji-ben-jiao-cheng.html">
+            
+                <a href="../../zero-ui/1-zero-uiji-ben-jiao-cheng.html">
+            
+                    
+                    1 - Zero UI基本教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../zero-ui/2-reactsui-sui-nian.html">
+            
+                <a href="../../zero-ui/2-reactsui-sui-nian.html">
+            
+                    
+                    2 - React碎碎念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../zero-ui/3-antquan-jia-tong.html">
+            
+                <a href="../../zero-ui/3-antquan-jia-tong.html">
+            
+                    
+                    3 - Ant全家桶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../zero-ui/4-zero-uishi-zhan-fen-xi.html">
+            
+                <a href="../../zero-ui/4-zero-uishi-zhan-fen-xi.html">
+            
+                    
+                    4 - Zero UI实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Zero Up</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../shou-ye.html">
+            
+                <a href="../shou-ye.html">
+            
+                    
+                    Zero 文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../1-zeroji-ben-jiao-cheng.html">
+            
+                <a href="../1-zeroji-ben-jiao-cheng.html">
+            
+                    
+                    1 - Zero基本教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html">
+            
+                <a href="../1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html">
+            
+                    
+                    ZRO-001 零之起源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html">
+            
+                <a href="../1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html">
+            
+                    
+                    ZRO-002 第一个Zero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html">
+            
+                <a href="../1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html">
+            
+                    
+                    ZRO-003 RESTful中的Path和Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../2-vertxsui-sui-nian.html">
+            
+                <a href="../2-vertxsui-sui-nian.html">
+            
+                    
+                    2 - Vert.x碎碎念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.3.1" data-path="zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html">
+            
+                <a href="zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html">
+            
+                    
+                    ZVX-001 基于 auth-common 开发Vert.x自定义安全组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../3-zeroshi-zhan-fen-xi.html">
+            
+                <a href="../3-zeroshi-zhan-fen-xi.html">
+            
+                    
+                    3 - Zero实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../4-javayu-yan-ji-chu.html">
+            
+                <a href="../4-javayu-yan-ji-chu.html">
+            
+                    
+                    4 - Java语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Origin X Engine</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../origin-x-engine/yin-dao-ye.html">
+            
+                <a href="../../origin-x-engine/yin-dao-ye.html">
+            
+                    
+                    Origin X Engine文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../origin-x-engine/1-oxshi-shi-jiao-cheng.html">
+            
+                <a href="../../origin-x-engine/1-oxshi-shi-jiao-cheng.html">
+            
+                    
+                    1 - Ox实施教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../origin-x-engine/2-oxzi-ding-yi-zu-jian.html">
+            
+                <a href="../../origin-x-engine/2-oxzi-ding-yi-zu-jian.html">
+            
+                    
+                    2 - Ox自定义组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../../origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html">
+            
+                <a href="../../origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html">
+            
+                    
+                    3 - Ox后端扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../../origin-x-engine/4-oxshi-zhan-fen-xi.html">
+            
+                <a href="../../origin-x-engine/4-oxshi-zhan-fen-xi.html">
+            
+                    
+                    4 - Ox实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Uniform Docoument</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../uniform-documentation/yin-dao-ye.html">
+            
+                <a href="../../uniform-documentation/yin-dao-ye.html">
+            
+                    
+                    通用知识库主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../uniform-documentation/mian-shi-ti.html">
+            
+                <a href="../../uniform-documentation/mian-shi-ti.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../../uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html">
+            
+                <a href="../../uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html">
+            
+                    
+                    KMI-001 抽奖器需求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../../uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.html">
+            
+                <a href="../../uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.html">
+            
+                    
+                    KMI-002 CDA考试大纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../../uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html">
+            
+                <a href="../../uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html">
+            
+                    
+                    KMI-003 Spring RESTful开发基础题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu.html">
+            
+                <a href="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu.html">
+            
+                    
+                    软件理论领域
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html">
+            
+                <a href="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html">
+            
+                    
+                    KMR-001 非功能需求评估指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.html">
+            
+                <a href="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.html">
+            
+                    
+                    KMR-002 程序设计的六个基本原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../uniform-documentation/yu-yan-xiang-guan.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan.html">
+            
+                    
+                    语言相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.html">
+            
+                    
+                    KML-001 ECMA Script 6.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.html">
+            
+                    
+                    KML-002 JSR330规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.html">
+            
+                    
+                    KML-003 浏览器中的Fetch Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.4" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.html">
+            
+                    
+                    KML-004 Java中的静态和单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.5" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.html">
+            
+                    
+                    KML-005 Java语言的.class字节码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../../uniform-documentation/kai-yuan-xiang-mu.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu.html">
+            
+                    
+                    开源项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.5.1" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html">
+            
+                    
+                    KMO-001 Vert.x Core官方翻译版 3.4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.2" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html">
+            
+                    
+                    KMO-002 Vert.x Web官方翻译版 3.4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.3" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.html">
+            
+                    
+                    KMO-003 Spring Boot中的测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.4" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html">
+            
+                    
+                    KMO-004 使用OVal进行防御式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.5" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.html">
+            
+                    
+                    KMO-005 Sass基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.6" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.html">
+            
+                    
+                    KMO-006 Mockito基础和使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.7" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.html">
+            
+                    
+                    KMO-007 Jasmine基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.8" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html">
+            
+                    
+                    KMO-008 Dockerfile语法基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.9" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.html">
+            
+                    
+                    KMO-009 redux-orm项目文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.10" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html">
+            
+                    
+                    KMO-010 Tradeshift应用开发手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../../uniform-documentation/gui-fan-xiang-guan.html">
+            
+                <a href="../../uniform-documentation/gui-fan-xiang-guan.html">
+            
+                    
+                    规范相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6.1" data-path="../../uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html">
+            
+                <a href="../../uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html">
+            
+                    
+                    KMS-001 UBL规范中的Price字段说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Environment</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../environment/yin-dao-ye.html">
+            
+                <a href="../../environment/yin-dao-ye.html">
+            
+                    
+                    环境搭建知识库主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../environment/1-dockerrong-qi-huan-jing.html">
+            
+                <a href="../../environment/1-dockerrong-qi-huan-jing.html">
+            
+                    
+                    1 - Docker容器环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../../environment/2-zeroandoxhuan-jing.html">
+            
+                <a href="../../environment/2-zeroandoxhuan-jing.html">
+            
+                    
+                    2 - Zero&Ox环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../../environment/4-deploymentbu-shu-jiao-cheng.html">
+            
+                <a href="../../environment/4-deploymentbu-shu-jiao-cheng.html">
+            
+                    
+                    3 - Deployment部署教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../../environment/5-qi-ta-huan-jing.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing.html">
+            
+                    
+                    4 - 其他环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.5.1" data-path="../../environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.html">
+            
+                    
+                    ENV-001 Spring Boot中的数据源配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.2" data-path="../../environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.html">
+            
+                    
+                    ENV-002 Karma在ES6中的Webpack配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.3" data-path="../../environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.html">
+            
+                    
+                    ENV-003 Karma的安装教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.4" data-path="../../environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html">
+            
+                    
+                    ENV-004 Windows环境的Docker安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.5" data-path="../../environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html">
+            
+                    
+                    ENV-005 使用Docker环境运行Spring Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.6" data-path="../../environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html">
+            
+                    
+                    ENV-006 Maven环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Specification</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../specification/kai-fa-gui-fan-wen-dang-zhu-ye.html">
+            
+                <a href="../../specification/kai-fa-gui-fan-wen-dang-zhu-ye.html">
+            
+                    
+                    开发规范文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../specification/1-zerogui-fan.html">
+            
+                <a href="../../specification/1-zerogui-fan.html">
+            
+                    
+                    1 - Zero规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../../specification/2-zero-uigui-fan.html">
+            
+                <a href="../../specification/2-zero-uigui-fan.html">
+            
+                    
+                    2 - Zero UI规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../../specification/3-origin-xgui-fan.html">
+            
+                <a href="../../specification/3-origin-xgui-fan.html">
+            
+                    
+                    3 - Origin X规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan.html">
+            
+                    
+                    4 - RESTful设计规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.5.1" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.html">
+            
+                    
+                    SPR-001 URI路径设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5.2" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.html">
+            
+                    
+                    SPR-002 URI业务设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ZVX-001 基于 auth-common 开发Vert.x自定义安全组件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x57FA;&#x4E8E;auth-common&#x5F00;&#x53D1;&#x81EA;&#x5B9A;&#x4E49;&#x8BA4;&#x8BC1;&#x7EC4;&#x4EF6;">&#x57FA;&#x4E8E;Auth Common&#x5F00;&#x53D1;&#x81EA;&#x5B9A;&#x4E49;&#x8BA4;&#x8BC1;&#x7EC4;&#x4EF6;</h1><p>&#x672C;&#x6587;&#x4E3B;&#x8981;&#x4ECB;&#x7ECD;vert.x&#x4E2D;&#x7684;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x6D41;&#x7A0B;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4E0B;&#x8FB9;&#x5185;&#x5BB9;&#xFF1A;</p><ul><li>&#x5206;&#x6790;Vert.x&#x4E2D;&#x7684;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x6846;&#x67B6;&#xFF08;&#x4EE5;auth-common&#x9879;&#x76EE;&#x4E3A;&#x4F8B;&#xFF09;
+</li>
+<li>&#x5F00;&#x53D1;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5B8C;&#x6574;&#x72EC;&#x7ACB;&#x8BA4;&#x8BC1;/&#x6388;&#x6743;&#x6D41;&#x7A0B;&#x7EC4;&#x4EF6;
+</li></ul>
+<p><em>&#x6CE8;&#x610F;&#xFF1A;&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x6BB5;&#x6765;&#x81EA;&#x4E8E;&#x771F;&#x5B9E;&#x9879;&#x76EE;&#xFF0C;&#x53EF;&#x80FD;&#x590D;&#x6742;&#x5EA6;&#x6BD4;&#x7B80;&#x5355;&#x7684;DEMO&#x8981;&#x5927;&#xFF0C;&#x5E0C;&#x671B;&#x8BFB;&#x8005;&#x8010;&#x5FC3;&#x53BB;&#x5206;&#x6790;&#x3002;</em></p><h2 id="&#x672F;&#x8BED;&#x8868;">&#x672F;&#x8BED;&#x8868;</h2><ul><li>Handler&#xFF1A;&#x7528;&#x4E8E;&#x8868;&#x8FBE;Vert.x Web&#x4E2D;Router&#x6CE8;&#x518C;&#x7684;Handler&#x7EC4;&#x4EF6;&#xFF0C;&#x8BE5;&#x7EC4;&#x4EF6;&#x901A;&#x5E38;&#x5B9E;&#x73B0;&#x4E86;&#x63A5;&#x53E3;<code>Handler&lt;RoutingContext&gt;</code>&#x3002;
+</li>
+<li>User&#xFF1A;auth-common&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x88AB;&#x8BA4;&#x8BC1;&#x7684;&#x5B9E;&#x4F53;&#x63A5;&#x53E3;&#xFF1B;
+</li>
+<li>Provider/AuthProvider&#xFF1A;&#x4E24;&#x4E2A;&#x672F;&#x8BED;&#x6DF7;&#x7528;&#xFF0C;&#x672C;&#x6587;&#x4E2D;&#x8868;&#x793A;&#x540C;&#x6837;&#x7684;&#x610F;&#x601D;&#xFF0C;auth-common&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x8BA4;&#x8BC1;&#x63D0;&#x4F9B;&#x8005;&#x7EC4;&#x4EF6;&#x3002;
+</li></ul>
+<h2 id="1-&#x6954;&#x5B50;">1. &#x6954;&#x5B50;</h2><p>&#x63D0;&#x5230;&#x7CFB;&#x7EDF;&#x4E2D;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#xFF0C;&#x4E00;&#x822C;&#x4F1A;&#x4F7F;&#x7528;RBAC&#xFF08;Role-Based Access Control&#xFF09;&#x6A21;&#x578B;&#xFF0C;&#x8BE5;&#x6A21;&#x578B;&#x5B9E;&#x9645;&#x4E0A;&#x63CF;&#x8FF0;&#x4E86;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF1A;Who, What, How&#x2014;&#x2014;&#x201C;Who&#x5BF9;What&#x8FDB;&#x884C;&#x4E86;How&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x201D;</p><ul><li>Who&#xFF1A;&#x6743;&#x9650;&#x62E5;&#x6709;&#x8005;&#xFF08;&#x5982;Role&#x3001;User&#x3001;Group&#x3001;Principal&#x7B49;&#xFF09;
+</li>
+<li>What&#xFF1A;&#x6743;&#x9650;&#x4F5C;&#x7528;&#x7684;&#x4E3B;&#x4F53;&#x5BF9;&#x8C61;&#xFF0C;&#x4E00;&#x822C;&#x79F0;&#x4E3A;&#x8D44;&#x6E90;&#xFF08;Resource&#xFF09;
+</li>
+<li>How&#xFF1A;&#x5177;&#x4F53;&#x7684;&#x6743;&#x9650;&#xFF08;Privilege&#xFF09;
+</li></ul>
+<p>&#x672C;&#x6587;&#x4E0D;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x8BE5;&#x6A21;&#x578B;&#xFF0C;&#x7EC6;&#x8282;&#x53EF;&#x53C2;&#x8003;&#xFF1A;<a href="https://en.wikipedia.org/wiki/Role-based_access_control" target="_blank">https://en.wikipedia.org/wiki/Role-based_access_control</a>&#xFF0C;&#x672C;&#x6587;&#x4E3B;&#x8981;&#x5BF9;Vert.x&#x4E2D;&#x7684;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x90E8;&#x5206;&#x8FDB;&#x884C;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#xFF0C;&#x5206;&#x4EAB;&#x5728;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x4E2D;&#x7528;&#x6765;&#x5904;&#x7406;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x90E8;&#x5206;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x5730;&#x5740;&#xFF1A;<a href="http://vertx.io/docs/#authentication_and_authorisation" target="_blank">http://vertx.io/docs/#authentication_and_authorisation</a>&#x3002;</p><h2 id="2-&#x6DF1;&#x5165;vertx&#x8BA4;&#x8BC1;&#x6388;&#x6743;">2. &#x6DF1;&#x5165;Vert.x&#x8BA4;&#x8BC1;&#x6388;&#x6743;</h2><p>Vert.x&#x4E2D;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4E86;&#x4E03;&#x4E2A;&#x9879;&#x76EE;&#x6765;&#x5904;&#x7406;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x6D41;&#x7A0B;&#xFF0C;vertx-auth-common&#x662F;Vert.x&#x4E2D;&#x8BA4;&#x8BC1;&#x548C;&#x6388;&#x6743;&#x7684;&#x63A5;&#x53E3;&#x5B9A;&#x4E49;&#xFF0C;&#x5148;&#x770B;&#x770B;&#x5B98;&#x65B9;&#x9879;&#x76EE;&#x4E2D;Vert.x Web&#x5982;&#x4F55;&#x8BBE;&#x7F6E;Basic&#x8BA4;&#x8BC1;&#x4E13;&#x7528;Handler&#x7684;&#x3002;</p><pre><code class="lang-java">AuthHandler basicAuthHandler = BasicAuthHandler.create(authProvider);
+
+<span class="hljs-comment">// All requests to paths starting with &apos;/private/&apos; will be protected</span>
+router.route(<span class="hljs-string">&quot;/private/*&quot;</span>).handler(basicAuthHandler);</code></pre>
+<p>&#x5982;&#x679C;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x7B2C;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x5728;&#x4F60;&#x773C;&#x524D;&#xFF0C;&#x53EF;&#x80FD;&#x5BF9;&#x4E8E;&#x521D;&#x5B66;&#x8005;&#x6709;&#x70B9;&#x4E0D;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF0C;&#x672C;&#x7AE0;&#x8282;&#x7684;&#x76EE;&#x7684;&#x5C31;&#x662F;&#x89E3;&#x51B3;&#x521D;&#x5B66;&#x8005;&#x5728;Vert.x&#x8BA4;&#x8BC1;&#x548C;&#x6388;&#x6743;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x56F0;&#x60D1;&#x3002;Vert.x&#x4E2D;&#x5BF9;&#x4E8E;&#x8BA4;&#x8BC1;&#x548C;&#x6388;&#x6743;&#x90E8;&#x5206;&#x5B9A;&#x4E49;&#x4E86;&#x51E0;&#x4E2A;&#x6838;&#x5FC3;&#x63A5;&#x53E3;&#xFF08;vertx-auth-common&#x4E2D;&#xFF09;&#xFF0C;&#x8FD9;&#x4E9B;&#x63A5;&#x53E3;&#x53EF;&#x4EE5;&#x8BA9;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x521B;&#x5EFA;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x8BA4;&#x8BC1;&#x3001;&#x6388;&#x6743;&#x903B;&#x8F91;&#x3002;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x6BB5;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;<code>BasicAuthHandler</code>&#x7C7B;&#x53BB;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;Handler&#x7EC4;&#x4EF6;&#xFF0C;&#x901A;&#x5E38;&#x5B83;&#x521B;&#x5EFA;&#x7684;Handler&#x7EC4;&#x4EF6;&#x548C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;lambda&#x8868;&#x8FBE;&#x5F0F;&#x76F4;&#x63A5;&#x5199;&#x7684;&#x7EC4;&#x4EF6;&#x533A;&#x522B;&#x5C31;&#x5728;&#x4E8E;&#x2014;&#x2014;&#x5F15;&#x5165;&#x4E86;&#x8BA4;&#x8BC1;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;Provider&#x63A5;&#x53E3;&#x3002;&#x5728;&#x8DEF;&#x7531;Route&#x5185;&#x7684;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x6D41;&#x7A0B;&#x4E2D;&#xFF0C;Provider&#x7684;&#x5B9E;&#x73B0;&#x7EC4;&#x4EF6;&#x8BA4;&#x8BC1;&#x903B;&#x8F91;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x800C;Provider&#x5B9E;&#x73B0;&#x7EC4;&#x4EF6;&#x7684;&#x903B;&#x8F91;&#x5C31;&#x662F;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x9700;&#x8981;&#x5173;&#x6CE8;&#x7684;&#x5730;&#x65B9;&#x3002;vertx-auth-common&#x4E2D;&#x7684;&#x51E0;&#x4E2A;&#x6838;&#x5FC3;&#x63A5;&#x53E3;&#xFF08;&#x5305;&#x62EC;&#x62BD;&#x8C61;&#x7C7B;&#xFF09;&#x5982;&#x4E0B;&#xFF1A;</p><ul><li><code>io.vertx.ext.auth.User</code>&#xFF1A;&#x88AB;&#x8BA4;&#x8BC1;&#x7684;&#x5B9E;&#x4F53;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x4E2D;&#x8BE5;&#x5B9E;&#x4F53;&#x5305;&#x542B;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x4FE1;&#x606F;&#x3002;
+</li>
+<li><code>io.vertx.ext.auth.AuthProvider</code>&#xFF1A;&#x8BA4;&#x8BC1;&#x4E13;&#x7528;&#x63A5;&#x53E3;&#x3002;
+</li>
+<li><code>io.vertx.ext.auth.AbstractUser</code>&#xFF1A;&#x5B9E;&#x73B0;&#x4E86;User&#x63A5;&#x53E3;&#x7684;&#x62BD;&#x8C61;&#x7C7B;&#xFF0C;&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x4E3B;&#x4F53;&#x903B;&#x8F91;&#x5B9E;&#x73B0;&#x4E86;&#x7B80;&#x5355;&#x7684;&#x6743;&#x9650;&#x7F13;&#x5B58;&#x3001;&#x6807;&#x51C6;&#x6743;&#x9650;&#x5904;&#x7406;&#x6D41;&#x7A0B;&#x3002;
+</li></ul>
+<h3 id="21-basicauthhandler&#x505A;&#x4E86;&#x4EC0;&#x4E48;&#xFF1F;">2.1. <code>BasicAuthHandler</code>&#x505A;&#x4E86;&#x4EC0;&#x4E48;&#xFF1F;</h3><p>&#x7531;&#x4E8E;Vert.x&#x4E2D;&#x7684;&#x5728;Router&#x5904;&#x7406;Handler&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x5B98;&#x65B9;&#x793A;&#x4F8B;&#x90FD;&#x662F;&#x4F7F;&#x7528;&#x7684;lambda&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x8BA9;&#x8BFB;&#x8005;&#x517B;&#x6210;&#x4E86;&#x4E00;&#x79CD;&#x56FA;&#x5B9A;&#x4E60;&#x60EF;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x4E86;&#x89E3;<code>BasicAuthHandler</code>&#x4E4B;&#x524D;&#x5148;&#x770B;&#x770B;Handler&#x7684;&#x4E24;&#x79CD;&#x5199;&#x6CD5;&#xFF0C;Vert.x&#x5185;&#x7F6E;&#x7684;&#x5F88;&#x591A;Handler&#x4F7F;&#x7528;&#x7684;&#x5E76;&#x4E0D;&#x662F;lambda&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x5B9A;&#x4E49;&#x2014;&#x2014;&#x5176;&#x76EE;&#x7684;&#x4E0D;&#x8A00;&#x800C;&#x8A00;&#xFF0C;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x201C;&#x804C;&#x8D23;&#x5C01;&#x88C5;&#x201D;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5C06;&#x5927;&#x6BB5;&#x5927;&#x6BB5;&#x7684;&#x4EE3;&#x7801;&#x5199;&#x5728;Verticle&#x7684;start&#x65B9;&#x6CD5;&#x5185;&#x90E8;&#x3002;&#x5982;&#xFF1A;</p><pre><code class="lang-java">router.route().handler(CookieHandler.create());
+router.route().handler(SessionHandler.create(LocalSessionStore.create(vertx)));</code></pre>
+<p>&#x5927;&#x5BB6;&#x6709;&#x65F6;&#x5019;&#x4F1A;&#x597D;&#x5947;&#xFF0C;&#x56E0;&#x4E3A;&#x4E0B;&#x8FB9;&#x6709;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x5199;&#x6CD5;&#xFF1A;</p><pre><code class="lang-java">router.route(<span class="hljs-string">&quot;/private/somepath&quot;</span>).handler(routingContext -&gt; {
+  <span class="hljs-comment">// This will have the value true</span>
+  <span class="hljs-keyword">boolean</span> isAuthenticated = routingContext.user() != <span class="hljs-keyword">null</span>;
+});</code></pre>
+<p>&#x672C;&#x8282;&#x4E3B;&#x8981;&#x5BF9;&#x8FD9;&#x4E24;&#x79CD;&#x5199;&#x6CD5;&#x8FDB;&#x884C;&#x5256;&#x6790;&#xFF0C;&#x6700;&#x7EC8;&#x4F7F;&#x7528;&#x54EA;&#x79CD;&#x6839;&#x636E;&#x8BFB;&#x8005;&#x81EA;&#x5DF1;&#x9047;&#x5230;&#x7684;&#x573A;&#x666F;&#x6765;&#x5B9A;&#x3002;&#x5148;&#x770B;&#x4E00;&#x4E2A;&#x6539;&#x5199;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p><p><em>&#xFF08;1&#xFF09;&#x76F4;&#x63A5;&#x4F7F;&#x7528;lambda&#x8868;&#x8FBE;&#x5F0F;&#xFF1A;</em></p><pre><code class="lang-java">Metadata meta = <span class="hljs-keyword">new</span> Metadata();
+router.route(<span class="hljs-string">&quot;/api/*&quot;</span>).handler(context -&gt; {
+    <span class="hljs-comment">// &#x6267;&#x884C;&#x56FA;&#x5B9A;&#x903B;&#x8F91;</span>
+    <span class="hljs-keyword">boolean</span> isSecure = meta.isSecure();
+    <span class="hljs-keyword">if</span>(isSecure){
+        <span class="hljs-comment">// &#x6267;&#x884C;&#x989D;&#x5916;&#x903B;&#x8F91;</span>
+        <span class="hljs-comment">// ......</span>
+    }<span class="hljs-keyword">else</span>{
+        context.next();
+    }
+});</code></pre>
+<p>&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x8868;&#x793A;&#x8FD9;&#x6837;&#x4E00;&#x6BB5;&#x903B;&#x8F91;&#xFF1A;&#x5728;<strong>&#x542F;&#x52A8;&#x65F6;</strong>&#xFF0C;&#x6784;&#x9020;&#x4E00;&#x4E2A;<code>Metadata</code>&#x5BF9;&#x8C61;&#xFF08;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#xFF09;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x8DEF;&#x7531;&#xFF1B;&#x5728;<strong>&#x6267;&#x884C;&#x8BF7;&#x6C42;&#x65F6;</strong>&#xFF0C;&#x8C03;&#x7528;meta&#x7684;<code>isSecure</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4F1A;&#x5F71;&#x54CD;&#x8BF7;&#x6C42;&#x7684;&#x6267;&#x884C;&#x6D41;&#x7A0B;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#x4EE3;&#x7801;&#x4E3B;&#x4F53;&#x548C;lambda&#x672C;&#x8EAB;&#x7684;&#x903B;&#x8F91;&#x5728;Vert.x<strong>&#x4E0D;&#x662F;&#x540C;&#x65F6;&#x6267;&#x884C;</strong>&#x7684;&#x3002;</p><pre><code class="lang-java">Metadata meta = <span class="hljs-keyword">new</span> Metadata();</code></pre>
+<p>&#x4E0A;&#x8FB9;&#x4EE3;&#x7801;&#x6BB5;&#x6784;&#x9020;&#x4E86;Metadata&#x5BF9;&#x8C61;&#xFF0C;Vert.x&#x4E2D;&#xFF0C;&#x5B83;&#x662F;&#x5728;Verticle&#x7EC4;&#x4EF6;start&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x65F6;&#x6267;&#x884C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;deploy&#x9636;&#x6BB5;&#x3002;</p><pre><code class="lang-java">    <span class="hljs-keyword">boolean</span> isSecure = meta.isSecure();</code></pre>
+<p>&#x4E0A;&#x8FB9;&#x4EE3;&#x7801;&#x662F;&#x6267;&#x884C;<code>Metadata</code>&#x5BF9;&#x8C61;&#x7684;isSecure&#x65B9;&#x6CD5;&#xFF0C;&#x4F4D;&#x4E8E;lambda&#x8868;&#x8FBE;&#x5F0F;&#x5185;&#x90E8;&#xFF0C;&#x5B83;&#x662F;&#x5728;&#x8BF7;&#x6C42;&#x89E6;&#x53D1;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#x2014;&#x2014;&#x5728;Vert.x&#x7684;Verticle&#x7EC4;&#x4EF6;&#x6267;&#x884C;deploy&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x5E76;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#xFF08;&#x4E0D;&#x4EC5;&#x8FD9;&#x6BB5;&#xFF0C;Handler&#x5185;&#x90E8;&#x4EE3;&#x7801;&#x90FD;&#x4E0D;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#xFF09;&#xFF0C;&#x7406;&#x89E3;&#x900F;&#x8FD9;&#x4E24;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x8FC7;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5BF9;&#x4E0A;&#x8FB9;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x6539;&#x5199;&#x4E86;&#xFF08;&#x6839;&#x636E;&#x9605;&#x8BFB;&#x4EE3;&#x7801;&#x7684;&#x56FA;&#x6709;&#x903B;&#x8F91;&#xFF0C;&#x5982;&#x679C;&#x8BFB;&#x8005;&#x5BF9;lambda&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x5F15;&#x7528;&#x4E0D;&#x662F;&#x5F88;&#x6E05;&#x695A;&#xFF0C;&#x5C31;&#x4E0D;&#x592A;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x7684;&#x6267;&#x884C;&#x751F;&#x547D;&#x5468;&#x671F;&#xFF0C;&#x76F8;&#x53CD;&#xFF0C;&#x4E0B;&#x8FB9;&#x4EE3;&#x7801;&#x53EF;&#x80FD;&#x66F4;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#x4E00;&#x70B9;&#xFF09;&#x3002;</p><p><em>&#xFF08;2&#xFF09;&#x4F7F;&#x7528;Handler&#x5B9A;&#x4E49;</em></p><p>&#x5C06;&#xFF08;1&#xFF09;&#x4EE3;&#x7801;&#x6539;&#x5199;&#x6210;&#x4E0B;&#x8FB9;&#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#xFF1A;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x7C7B;<code>MetaHandler</code>&#x7528;&#x6765;&#x521B;&#x5EFA;Handler&#x7EC4;&#x4EF6;&#xFF0C;&#x5E76;&#x5C06;<code>Metadata</code>&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#x4F20;&#x7ED9;&#x5B83;&#x3002;</p><p>&#x4E3B;&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-java">Metadata meta = <span class="hljs-keyword">new</span> Metadata();
+MetaHandler handler = MetaHandler.create(meta);
+
+router.route(<span class="hljs-string">&quot;/api/*&quot;</span>).handler(handler);</code></pre>
+<p>Handler&#x5B9A;&#x4E49;&#x4EE3;&#x7801;</p><pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MetaHandler</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Handler</span>&lt;<span class="hljs-title">RoutingContext</span>&gt;</span>{
+    <span class="hljs-comment">// &#x521B;&#x5EFA;Handler&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Handler&lt;RoutingContext&gt; <span class="hljs-title">create</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Metadata meta)</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> MetaHandler(meta);
+    }
+    <span class="hljs-comment">// &#x6210;&#x5458;&#x53D8;&#x91CF;Metadata&#x7684;&#x5BF9;&#x8C61;&#x5F15;&#x7528;</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> <span class="hljs-keyword">final</span> Metadata reference;
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">MetaHandler</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Metadata reference)</span></span>{
+        <span class="hljs-keyword">this</span>.reference = reference;
+    }
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handle</span><span class="hljs-params">(<span class="hljs-keyword">final</span> RoutingContext context)</span></span>{
+        <span class="hljs-comment">// &#x6267;&#x884C;&#x56FA;&#x5B9A;&#x903B;&#x8F91;</span>
+        <span class="hljs-keyword">boolean</span> isSecure = <span class="hljs-keyword">this</span>.reference.isSecure();
+        <span class="hljs-keyword">if</span>(isSecure){
+            <span class="hljs-comment">// &#x6267;&#x884C;&#x989D;&#x5916;&#x903B;&#x8F91;</span>
+            <span class="hljs-comment">// ......</span>
+        }<span class="hljs-keyword">else</span>{
+            context.next();
+        }
+    }
+}</code></pre>
+<p>&#x4E0A;&#x8FB9;&#x4ECE;&#x8BFB;&#x8005;&#x6700;&#x719F;&#x6089;&#x7684;lambda&#x5199;&#x6CD5;&#x5230;Handler&#x5B9A;&#x4E49;&#x7684;&#x6539;&#x5199;&#xFF0C;&#x5C31;&#x5F88;&#x6E05;&#x695A;&#x4E86;<code>BasicAuthHandler</code>&#x90A3;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x4F5C;&#x7528;&#x4E86;&#xFF0C;&#x5B83;&#x548C;&#x7B2C;&#x4E8C;&#x79CD;&#x7684;&#x4E3B;&#x4EE3;&#x7801;&#x903B;&#x8F91;&#x662F;&#x4E00;&#x81F4;&#x7684;&#x3002;</p><h3 id="22-basicauthhandler&#x80CC;&#x540E;&#x7684;&#x7ED3;&#x6784;">2.2. <code>BasicAuthHandler</code>&#x80CC;&#x540E;&#x7684;&#x7ED3;&#x6784;</h3><p>Vert.x&#x4E2D;&#x7684;<code>BasicAuthHandler</code>&#x8FDC;&#x6BD4;&#x4E0A;&#x8FB9;&#x7684;Handler&#x5B9A;&#x4E49;&#x90E8;&#x5206;&#x590D;&#x6742;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x5185;&#x5BB9;&#x5BF9;&#x4E8E;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x5F88;&#x6709;&#x5E2E;&#x52A9;&#xFF0C;&#x4F46;&#x7531;&#x4E8E;&#x662F;&#x5206;&#x6790;Vert.x&#x7684;&#x6E90;&#x4EE3;&#x7801;&#xFF0C;&#x96BE;&#x514D;&#x6709;&#x4E9B;&#x89C9;&#x5F97;&#x67AF;&#x71E5;&#xFF0C;&#x4E0D;&#x8FC7;&#x6162;&#x6162;&#x6765;&#x3002;Vert.x&#x4E2D;&#x7684;<code>BasicAuthHandler</code>&#x7684;&#x4EE3;&#x7801;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">BasicAuthHandler</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AuthHandler</span> </span>{
+    String DEFAULT_REALM = <span class="hljs-string">&quot;vertx-web&quot;</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">static</span> AuthHandler <span class="hljs-title">create</span><span class="hljs-params">(AuthProvider authProvider)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> BasicAuthHandlerImpl(authProvider, <span class="hljs-string">&quot;vertx-web&quot;</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">static</span> AuthHandler <span class="hljs-title">create</span><span class="hljs-params">(AuthProvider authProvider, String realm)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> BasicAuthHandlerImpl(authProvider, realm);
+    }
+}</code></pre>
+<p>&#x5728;&#x8C03;&#x7528;<code>BasicAuthHandler</code>&#x7684;create&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x662F;<code>AuthHandler</code>&#xFF0C;&#x800C;&#x6211;&#x4EEC;&#x5728;Handler&#x5B9A;&#x4E49;&#x4E2D;&#x8FD4;&#x56DE;&#x7684;&#x7C7B;&#x578B;&#x5E94;&#x8BE5;&#x662F;&#x4E00;&#x4E2A;<code>Handler&lt;RoutingContext&gt;</code>&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;<code>AuthHandler</code>&#x5C31;&#x662F;&#x4E00;&#x4E2A;<code>Handler&lt;RoutingContext&gt;</code>&#x7684;&#x5B50;&#x63A5;&#x53E3;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">AuthHandler</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Handler</span>&lt;<span class="hljs-title">RoutingContext</span>&gt; </span>{
+    <span class="hljs-meta">@Fluent</span>
+    <span class="hljs-function">AuthHandler <span class="hljs-title">addAuthority</span><span class="hljs-params">(String var1)</span></span>;
+
+    <span class="hljs-meta">@Fluent</span>
+    <span class="hljs-function">AuthHandler <span class="hljs-title">addAuthorities</span><span class="hljs-params">(Set&lt;String&gt; var1)</span></span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">parseCredentials</span><span class="hljs-params">(RoutingContext var1, Handler&lt;AsyncResult&lt;JsonObject&gt;&gt; var2)</span></span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">authorize</span><span class="hljs-params">(User var1, Handler&lt;AsyncResult&lt;Void&gt;&gt; var2)</span></span>;
+}</code></pre>
+<p>&#x5206;&#x6790;&#x6700;&#x521D;&#x7684;&#x4EE3;&#x7801;&#x548C;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;Handler&#x90E8;&#x5206;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-comment">// &#x6700;&#x521D;&#x7684;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x4EE3;&#x7801;&#xFF08;&#x5B98;&#x65B9;Demo&#xFF09;</span>
+AuthHandler basicAuthHandler = BasicAuthHandler.create(authProvider);
+<span class="hljs-comment">// &#x81EA;&#x5DF1;&#x7684;&#x5B9A;&#x4E49;</span>
+MetaHandler handler = MetaHandler.create(meta);</code></pre>
+<p>&#x4E0A;&#x8FF0;&#x4E24;&#x6BB5;&#x4EE3;&#x7801;&#x6700;&#x7EC8;&#x90FD;&#x505A;&#x4E86;&#x540C;&#x6837;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x5C31;&#x662F;&#x521B;&#x5EFA;<code>Handler&lt;RoutingContext&gt;</code>&#x5BF9;&#x8C61;&#xFF0C;&#x53EA;&#x6709;&#x8BE5;&#x5BF9;&#x8C61;&#x4F1A;&#x88AB;Router&#x8BC6;&#x522B;&#xFF08;&#x7528;&#x4E8E;&#x4F20;&#x9012;&#x7ED9;Route&#x4E2D;&#x6CE8;&#x518C;&#xFF09;&#xFF0C;&#x76EE;&#x524D;&#x8FD8;&#x6CA1;&#x6709;&#x8FDB;&#x5165;&#x5B9E;&#x73B0;&#x90E8;&#x5206;&#xFF0C;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x7B80;&#x5355;&#x5229;&#x7528;&#x4E86;<code>MetaHandler</code>&#x5904;&#x7406;&#x4E86;&#x5B9E;&#x73B0;&#xFF0C;&#x800C;Vert.x&#x4E2D;&#x7684;<code>BasicAuthHandler</code>&#x5B9E;&#x73B0;&#x5219;&#x662F;&#x901A;&#x8FC7;<code>BasicAuthHandlerImpl</code>&#x7C7B;&#x6765;&#x5B8C;&#x6210;&#x7684;&#x3002;&#x4ECE;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x7684;Handler&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x5B9E;&#x73B0;&#x90E8;&#x5206;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x8BF7;&#x6C42;&#x6D41;&#x7A0B;&#x6267;&#x884C;&#x65F6;&#x89E6;&#x53D1;&#x7684;&#xFF0C;&#x5B83;&#x7684;&#x4E3B;&#x903B;&#x8F91;&#x5728;&#x4E8E;&#x8C03;&#x7528;<code>handle(RoutingContext)</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;<code>BasicAuthHandlerImpl</code>&#x4E2D;&#x4F3C;&#x4E4E;&#x627E;&#x4E0D;&#x5230;&#x5B83;&#x7684;&#x8E2A;&#x5F71;&#xFF1F;&#x4E8B;&#x5B9E;&#x4E0A;Vert.x&#x4E3A;&#x4E86;&#x6EE1;&#x8DB3;&#x5404;&#x79CD;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x9700;&#x6C42;&#xFF0C;&#x8FDB;&#x884C;&#x4E86;&#x66F4;&#x52A0;&#x7EC6;&#x7C92;&#x5EA6;&#x7684;&#x8BBE;&#x8BA1;&#xFF0C;&#x5B83;&#x7684;&#x6574;&#x4E2A;&#x7EE7;&#x627F;&#x6811;&#x7ED3;&#x6784;&#x5982;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BasicAuthHandlerImpl</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AuthorizationAuthHandler</span></span>{}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AuthorizationAuthHandler</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AuthHandlerImpl</span></span>{}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AuthHandlerImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">AuthHandler</span></span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handle</span><span class="hljs-params">(RoutingContext ctx)</span></span>{
+        <span class="hljs-comment">// &#x8BF7;&#x6C42;&#x4E3B;&#x4EE3;&#x7801;&#x903B;&#x8F91;</span>
+    }
+}</code></pre>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x771F;&#x6B63;&#x5728;&#x6267;&#x884C;&#x8BA4;&#x8BC1;&#x8BF7;&#x6C42;&#x65F6;&#x5019;&#x8C03;&#x7528;&#x7684;&#x662F;<code>AuthHandlerImpl</code>&#xFF08;&#x9876;&#x5C42;&#x7236;&#x7C7B;&#xFF09;&#x4E2D;&#x7684;<code>handle(RoutingContext)</code>&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x8BF7;&#x6C42;&#x600E;&#x4E48;&#x6765;&#x7684;&#xFF0C;&#x76F8;&#x4FE1;&#x8BFB;&#x8005;&#x5C31;&#x80FD;&#x591F;&#x7406;&#x89E3;&#x4E86;&#x3002;</p><h3 id="23-basicauthhandler&#x80CC;&#x540E;&#x7684;&#x903B;&#x8F91;">2.3. <code>BasicAuthHandler</code>&#x80CC;&#x540E;&#x7684;&#x903B;&#x8F91;</h3><p>&#x65E2;&#x7136;&#x5DF2;&#x7ECF;&#x627E;&#x5230;&#x4E86;&#x8BF7;&#x6C42;&#x6267;&#x884C;&#x7684;&#x5165;&#x53E3;&#xFF0C;&#x90A3;&#x4E48;&#x4ECE;&#x5165;&#x53E3;&#x5F00;&#x59CB;&#x5206;&#x6790;BasicAuthHandlerImpl&#xFF0C;&#x8BA9;&#x5927;&#x5BB6;&#x5BF9;&#x6574;&#x4E2A;&#x8BF7;&#x6C42;&#x6D41;&#x7A0B;&#x6709;&#x66F4;&#x52A0;&#x6E05;&#x6670;&#x7684;&#x4E86;&#x89E3;&#x3002;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5206;&#x6790;&#xFF1F;&#x5982;&#x679C;&#x4EC5;&#x4EC5;&#x662F;&#x9488;&#x5BF9;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#xFF0C;&#x5F00;&#x53D1;&#x81EA;&#x5B9A;&#x4E49;&#x7684;<code>User</code>&#x548C;<code>Provider</code>&#x8DB3;&#x591F;&#x5B8C;&#x6210;&#x4EFB;&#x52A1;&#xFF0C;&#x4E86;&#x89E3;&#x6E05;&#x695A;&#x8FD9;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x7684;&#x76EE;&#x7684;&#x662F;&#x65B9;&#x4FBF;&#x5927;&#x5BB6;&#x201C;&#x77E5;&#x5176;&#x6240;&#x4EE5;&#x7136;&#x201D;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x77E5;&#x9053;Vert.x&#x7A76;&#x7ADF;&#x5E2E;&#x6211;&#x4EEC;&#x5B8C;&#x6210;&#x4E86;&#x4EC0;&#x4E48;&#x4E8B;&#xFF0C;&#x8FD9;&#x6837;&#x4ECE;&#x5185;&#x5230;&#x5916;&#x62BD;&#x4E1D;&#x5265;&#x8327;&#xFF0C;&#x6211;&#x4EEC;&#x624D;&#x77E5;&#x9053;&#x81EA;&#x5DF1;&#x5F00;&#x53D1;&#x7684;Provider&#x548C;User&#x6700;&#x7EC8;&#x662F;&#x5728;&#x6574;&#x4E2A;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x6846;&#x67B6;&#x7684;&#x4EC0;&#x4E48;&#x4F4D;&#x7F6E;&#x2014;&#x2014;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x8981;&#x5F00;&#x53D1;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x72EC;&#x7ACB;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x6D41;&#x7A0B;&#x65F6;&#x4ECE;&#x4EC0;&#x4E48;&#x4F4D;&#x7F6E;&#x5165;&#x624B;&#x6700;&#x7B26;&#x5408;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x7684;&#x9700;&#x8981;&#x3002;&#x5148;&#x770B;&#x4E0B;&#x8FB9;&#x7684;&#x6838;&#x5FC3;&#x4EE3;&#x7801;&#xFF08;&#x65B9;&#x4FBF;&#x5927;&#x5BB6;&#x7406;&#x89E3;&#xFF0C;&#x5E26;&#x4E0A;&#x8BE6;&#x7EC6;&#x7684;&#x6CE8;&#x91CA;&#xFF09;</p><p><strong>&#x8BA4;&#x8BC1;&#x90E8;&#x5206;</strong></p><pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handle</span><span class="hljs-params">(RoutingContext ctx)</span> </span>{
+        <span class="hljs-comment">/**
+         * &#x8DE8;&#x57DF;&#x8BBF;&#x95EE;&#x4E2D;&#x9996;&#x6B21;&#x8BF7;&#x6C42;OPTIONS&#x65B9;&#x6CD5;&#x7684;&#x5224;&#x65AD;&#x903B;&#x8F91;&#xFF0C;&#x5982;&#x679C;&#x662F;OPTIONS&#x5219;&#x9700;&#x8981;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x53D1;&#x9001;&#x4E86;&#x8BF7;&#x6C42;&#x5934;&#xFF1A;
+         * Access-Control-Request-Headers&#xFF0C;&#x5982;&#x679C;&#x5305;&#x542B;&#x4E86;&#x8BE5;&#x8BF7;&#x6C42;&#x5934;&#xFF0C;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x68C0;&#x67E5;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x4E2D;&#x662F;&#x5426;
+         * &#x5305;&#x542B;&#x4E86;&#x8BA4;&#x8BC1;&#x9700;&#x8981;&#x7684;Authorization&#x5934;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x4E2A;if&#x5224;&#x65AD;&#x63CF;&#x8FF0;&#x4E86;&#x5F53;&#x524D;&#x8BA4;&#x8BC1;&#x6D41;&#x7A0B;&#x7684;&#x5165;&#x53E3;&#x6761;&#x4EF6;&#x3002;
+         **/</span>
+        <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.handlePreflight(ctx)) {
+            <span class="hljs-comment">/**
+             * &#x4ECE;RoutingContext&#x4E2D;&#x8BFB;&#x53D6;User&#x5BF9;&#x8C61;
+             **/</span>
+            User user = ctx.user();
+            <span class="hljs-keyword">if</span> (user != <span class="hljs-keyword">null</span>) {
+                <span class="hljs-comment">// &#x6388;&#x6743;&#xFF1A;&#x4E0D;&#x89E3;&#x6790;&#x8BF7;&#x6C42;&#x5934;&#xFF0C;&#x76F4;&#x63A5;&#x4ECE;RoutingContext&#x4E2D;&#x62FF;&#x5230;&#x7528;&#x6237;User&#x6267;&#x884C;&#x6388;&#x6743;</span>
+                <span class="hljs-keyword">this</span>.authorizeUser(ctx, user);
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-comment">/**
+                 * &#x65E0;&#x6CD5;&#x8BFB;&#x53D6;User&#x4FE1;&#x606F;&#xFF0C;&#x76F4;&#x63A5;&#x89E3;&#x6790;Http&#x7684;&#x5934;&#xFF1A;Authorization&#xFF0C;&#x4E00;&#x822C;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#x65F6;&#x8C03;&#x7528;
+                 * &#x6CE8;&#x610F;&#xFF1A;parseCredentials&#x65B9;&#x6CD5;&#x662F;&#x5B9A;&#x4E49;&#x4E8E;AuthHandler&#x4E2D;&#x7684;
+                 * &#x88AB;&#x89E3;&#x6790;&#x7684;&#x503C;&#x683C;&#x5F0F;&#x4E00;&#x822C;&#x662F;&#xFF1A;Authorization: Schema XXXXXX&#xFF0C;&#x8FD9;&#x91CC;&#x7684;Schema&#x53C8;&#x79F0;&#x4E3A;&#x8BA4;&#x8BC1;&#x6A21;&#x5F0F;&#xFF0C;&#x4E00;&#x822C;&#x53D6;&#x4E0B;&#x5217;&#x503C;&#xFF1A;
+                 * Basic, Digest, Bearer, HOBA, Mutual, Negotiate, OAuth, SCRAM-SHA-1, SCRAM-SHA-256
+                 * &#x4E0D;&#x540C;&#x7684;&#x8BA4;&#x8BC1;&#x6D41;&#x7A0B;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x88AB;&#x91CD;&#x5199;&#xFF0C;&#x56E0;&#x4E3A;&#x89E3;&#x6790;&#x903B;&#x8F91;&#x4F1A;&#x6709;&#x6240;&#x4E0D;&#x540C;&#xFF0C;BasicAuthHandlerImpl&#x4E2D;&#x7684;
+                 * parseCredentials&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x89E3;&#x6790;Basic&#x4E2D;&#x7684;&#x5934;&#x4FE1;&#x606F;&#xFF0C;&#x683C;&#x5F0F;&#x5982;&#xFF1A;Authorization: Basic XXXX
+                 **/</span>
+                <span class="hljs-keyword">this</span>.parseCredentials(ctx, (res) -&gt; {
+                    <span class="hljs-keyword">if</span> (res.failed()) {
+                        <span class="hljs-comment">// &#x89E3;&#x6790;&#x5931;&#x8D25;&#xFF0C;&#x76F4;&#x63A5;&#x62A5;&#x9519;</span>
+                        <span class="hljs-keyword">this</span>.processException(ctx, res.cause());
+                    } <span class="hljs-keyword">else</span> {
+                        <span class="hljs-comment">// &#x89E3;&#x6790;&#x6210;&#x529F;&#xFF0C;&#x6267;&#x884C;&#x4E8C;&#x6B21;&#x903B;&#x8F91;&#x5224;&#x65AD;&#xFF0C;&#x5224;&#x65AD;Session&#x4E2D;&#x662F;&#x5426;&#x6709;&#x5F53;&#x524D;&#x7528;&#x6237;&#xFF0C;&#x8BBF;&#x95EE;&#x8FC7;&#x4E00;&#x6B21;&#x7684;&#x7528;&#x6237;</span>
+                        <span class="hljs-comment">// &#x4F1A;&#x88AB;&#x7F13;&#x5B58;&#x5728;Session&#x4F1A;&#x8BDD;&#x5BF9;&#x8C61;&#x4E2D;&#xFF08;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#xFF09;</span>
+                        User updatedUser = ctx.user();
+                        <span class="hljs-keyword">if</span> (updatedUser != <span class="hljs-keyword">null</span>) {
+                            Session session = ctx.session();
+                            <span class="hljs-keyword">if</span> (session != <span class="hljs-keyword">null</span>) {
+                                session.regenerateId();
+                            }
+                            <span class="hljs-comment">// &#x6388;&#x6743;&#xFF1A;&#x5F53;&#x524D;&#x7528;&#x6237;&#x5DF2;&#x7ECF;&#x767B;&#x9646;&#x8FC7;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;Session&#x4E2D;&#x7684;User&#x5BF9;&#x8C61;&#x6267;&#x884C;&#x6388;&#x6743;</span>
+                            <span class="hljs-keyword">this</span>.authorizeUser(ctx, updatedUser);
+                        } <span class="hljs-keyword">else</span> {
+                            <span class="hljs-comment">/**
+                             * &#x4ECE;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x903B;&#x8F91;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#xFF0C;&#x76F4;&#x5230;&#x4E3B;&#x6D41;&#x7A0B;&#x8FD0;&#x884C;&#x5230;&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#xFF0C;&#x4EE3;&#x7801;&#x624D;&#x771F;&#x6B63;&#x5230;&#x8FBE;Provider&#x4E2D;&#xFF0C;&#x800C;&#x8FD9;&#x91CC;&#x5C31;
+                             * &#x4F1A;&#x8C03;&#x7528;getAuthProvider&#x65B9;&#x6CD5;&#x53BB;&#x83B7;&#x53D6;&#x7CFB;&#x7EDF;&#x4E2D;&#x5DF2;&#x5B9A;&#x4E49;&#x8FC7;&#x7684;Provider&#xFF0C;&#x5E76;&#x4E14;&#x6267;&#x884C;provider&#x7684;
+                             * &#x4E3B;&#x903B;&#x8F91;authenticate&#x65B9;&#x6CD5;&#x3002;&#x90A3;&#x4E48;&#x8BFB;&#x8005;&#x4E5F;&#x8BB8;&#x6BD4;&#x8F83;&#x56F0;&#x60D1;&#x7684;&#x662F;res.result()&#x8FD4;&#x56DE;&#x7684;&#x5E94;&#x8BE5;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x8FD9;&#x91CC;
+                             * &#x8FD4;&#x56DE;&#x7684;&#x5185;&#x5BB9;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x7531;&#x4E0A;&#x5C42;&#x8C03;&#x7528;parseCredentials&#x6765;&#x51B3;&#x5B9A;&#x7684;&#xFF0C;&#x4E00;&#x822C;&#x662F;&#x4E00;&#x4E2A;JsonObject&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;
+                             * &#x5177;&#x4F53;&#x6570;&#x636E;&#x7531;&#x4E0D;&#x540C;&#x7684;Handler&#x5B9E;&#x73B0;&#x6765;&#x51B3;&#x5B9A;&#xFF0C;&#x6BD4;&#x5982;Basic&#x7C7B;&#x578B;&#x7684;&#x6700;&#x540E;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x4E3A;&#xFF1A;
+                             * handler.handle(Future.succeededFuture(
+                             *     (new JsonObject()).put(&quot;username&quot;, suser).put(&quot;password&quot;, spass))
+                             * )
+                             * &#x90A3;&#x4E48;&#x5B83;&#x8FD4;&#x56DE;&#x7684;&#x5C31;&#x662F;&#x4E00;&#x4E2A;JsonObject&#x5BF9;&#x8C61;&#xFF0C;&#x5F62;&#x5982;&#xFF1A;
+                             * {
+                             *     &quot;username&quot;:&quot;xxxx&quot;
+                             *     &quot;password&quot;:&quot;xxxx&quot;
+                             * }
+                             * &#x8FD9;&#x4E5F;&#x662F;&#x5B98;&#x65B9;&#x6559;&#x7A0B;&#x4E2D;&#x63D0;&#x5230;Basic&#x7684;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x9700;&#x8981;&#x518D;&#x63D0;&#x5230;&#x7684;&#x4E00;&#x70B9;&#x5C31;&#x662F;Provider&#x63A5;&#x53E3;&#x4F1A;&#x5C06;&#x4E00;&#x4E2A;
+                             * JsonObject&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x6210;User&#x88AB;&#x8BA4;&#x8BC1;&#x7684;&#x5B9E;&#x4F53;&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x7EC8;&#x4ECE;authenticate&#x7B2C;&#x4E8C;&#x53C2;&#x6570;&#x8FD4;&#x56DE;
+                             * &#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5C31;&#x662F;User&#x3002;
+                             **/</span>
+                            <span class="hljs-keyword">this</span>.getAuthProvider(ctx).authenticate((JsonObject)res.result(), 
+                                (authN) -&gt; {
+                                    <span class="hljs-keyword">if</span> (authN.succeeded()) {
+                                        <span class="hljs-comment">/**
+                                         * &#x8BA4;&#x8BC1;&#x6210;&#x529F;&#x65F6;&#xFF0C;&#x901A;&#x8FC7;Provider&#x83B7;&#x53D6;&#x8BA4;&#x8BC1;&#x7684;User&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x5C06;&#x7528;&#x6237;&#x5B58;&#x50A8;&#x5230;Context&#x4E2D;&#xFF0C;
+                                         * &#x5E76;&#x4E14;&#x6839;&#x636E;&#x8BA4;&#x8BC1;&#x57FA;&#x7840;&#x4FE1;&#x606F;&#x521B;&#x5EFA;&#x4F1A;&#x8BDD;
+                                         **/</span>
+                                        User authenticated = (User)authN.result();
+                                        ctx.setUser(authenticated);
+                                        Session session = ctx.session();
+                                        <span class="hljs-keyword">if</span> (session != <span class="hljs-keyword">null</span>) {
+                                            session.regenerateId();
+                                        }
+                                        <span class="hljs-comment">// &#x6388;&#x6743;&#xFF1A;&#x8BA4;&#x8BC1;&#x6210;&#x529F;&#xFF0C;&#x57FA;&#x7840;&#x73AF;&#x5883;&#x8BBE;&#x7F6E;&#x5B8C;&#x6210;&#xFF0C;&#x6267;&#x884C;&#x6388;&#x6743;&#x6D41;&#x7A0B;</span>
+                                        <span class="hljs-keyword">this</span>.authorizeUser(ctx, authenticated);
+                                    } <span class="hljs-keyword">else</span> {
+                                        <span class="hljs-comment">/**
+                                         * authenticateHeader&#x53C8;&#x662F;&#x4E00;&#x4E2A;&#x4F1A;&#x88AB;&#x5B50;&#x7C7B;&#x91CD;&#x5199;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;
+                                         * &#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x8BA4;&#x8BC1;&#x4E0D;&#x6210;&#x529F;&#x65F6;&#xFF0C;
+                                         * &#x5728;&#x54CD;&#x5E94;&#x4E2D;&#x63D0;&#x4F9B;WWW-Authenticate&#x7684;&#x5934;&#x4FE1;&#x606F;&#xFF0C;
+                                         * &#x5BF9;&#x4E8E;Basic&#x800C;&#x8A00;&#x4E00;&#x822C;&#x662F;Basic realm=xxx&#x683C;&#x5F0F;&#x3002;
+                                         * &#x8BB0;&#x5F97;&#x533A;&#x5206;&#x8BF7;&#x6C42;&#x5934;&#xFF1A;Authorization&#x548C;&#x54CD;&#x5E94;&#x5934;WWW-Authenticate
+                                         **/</span>
+                                        String header = <span class="hljs-keyword">this</span>.authenticateHeader(ctx);
+                                        <span class="hljs-keyword">if</span> (header != <span class="hljs-keyword">null</span>) {
+                                            ctx.response().putHeader(<span class="hljs-string">&quot;WWW-Authenticate&quot;</span>, header);
+                                        }
+
+                                        ctx.fail(<span class="hljs-number">401</span>);
+                                    }
+                            });
+                        }
+                    }
+                });
+            }
+        }
+    }</code></pre>
+<p><strong>&#x6388;&#x6743;&#x90E8;&#x5206;</strong>&#xFF08;Vert.x&#x4E2D;&#x7684;&#x6743;&#x9650;&#x6A21;&#x578B;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF09;&#xFF1A;</p><p>&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x6BB5;&#x4E2D;&#x4E09;&#x6B21;&#x8BBF;&#x95EE;&#x5230;&#x6388;&#x6743;&#x6D41;&#x7A0B;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5373;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;<code>authorizeUser</code>&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">authorizeUser</span><span class="hljs-params">(RoutingContext ctx, User user)</span> </span>{
+        <span class="hljs-keyword">this</span>.authorize(user, (authZ) -&gt; {
+            <span class="hljs-keyword">if</span> (authZ.failed()) {
+                <span class="hljs-keyword">this</span>.processException(ctx, authZ.cause());
+            } <span class="hljs-keyword">else</span> {
+                ctx.next();
+            }
+        });
+    }</code></pre>
+<p>&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x6700;&#x7EC8;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x8FD8;&#x662F;<code>authorize</code>&#xFF1A;</p><pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">authorize</span><span class="hljs-params">(User user, Handler&lt;AsyncResult&lt;Void&gt;&gt; handler)</span> </span>{
+        <span class="hljs-comment">// &#x76F4;&#x63A5;&#x8BFB;&#x53D6;&#x6240;&#x9700;&#x6388;&#x6743;&#x4FE1;&#x606F;&#x7684;&#x6570;&#x91CF;&#xFF08;&#x7F13;&#x5B58;&#x8FC7;&#x6388;&#x6743;&#x5C31;&#x4F1A;&#x6709;&#x8BE5;&#x4FE1;&#x606F;&#xFF09;</span>
+        <span class="hljs-keyword">int</span> requiredcount = <span class="hljs-keyword">this</span>.authorities.size();
+        <span class="hljs-keyword">if</span> (requiredcount &gt; <span class="hljs-number">0</span>) {
+            <span class="hljs-comment">// &#x5982;&#x679C;&#x8BFB;&#x53D6;&#x4E0D;&#x5230;&#x7528;&#x6237;&#xFF0C;&#x5219;&#x629B;&#x51FA;FORBIDDEN&#x7684;403&#x5F02;&#x5E38;&#x4FE1;&#x606F;</span>
+            <span class="hljs-keyword">if</span> (user == <span class="hljs-keyword">null</span>) {
+                handler.handle(Future.failedFuture(FORBIDDEN));
+                <span class="hljs-keyword">return</span>;
+            }
+            AtomicInteger count = <span class="hljs-keyword">new</span> AtomicInteger();
+            AtomicBoolean sentFailure = <span class="hljs-keyword">new</span> AtomicBoolean();
+            <span class="hljs-comment">// &#x6267;&#x884C;&#x4E00;&#x90E8;&#x6388;&#x6743;&#x68C0;&#x67E5;&#xFF0C;&#x5B9A;&#x4E49;authHandler&#x5BF9;&#x8C61;</span>
+            Handler&lt;AsyncResult&lt;Boolean&gt;&gt; authHandler = (res) -&gt; {
+                <span class="hljs-keyword">if</span> (res.succeeded()) {
+                    <span class="hljs-keyword">if</span> (((Boolean)res.result()).booleanValue()) {
+                        <span class="hljs-comment">// &#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x6388;&#x6743;&#x7528;&#x6237;&#x589E;&#x52A0;&#xFF0C;&#x4F7F;&#x7528;AtomicInteger&#x6267;&#x884C;&#x7EDF;&#x8BA1;&#x662F;&#x56E0;&#x4E3A;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x5171;&#x4EAB;&#xFF0C;&#x53C2;&#x8003;&#x5E76;&#x53D1;&#x7F16;&#x7A0B;</span>
+                        <span class="hljs-keyword">if</span> (count.incrementAndGet() == requiredcount) {
+                            handler.handle(Future.succeededFuture());
+                        }
+                    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (sentFailure.compareAndSet(<span class="hljs-keyword">false</span>, <span class="hljs-keyword">true</span>)) {
+                        <span class="hljs-comment">// &#x51FA;&#x73B0;&#x5F02;&#x5E38;&#xFF0C;&#x5219;&#x629B;&#x51FA;403&#x7684;FORBIDDEN&#x5F02;&#x5E38;</span>
+                        handler.handle(Future.failedFuture(FORBIDDEN));
+                    }
+                } <span class="hljs-keyword">else</span> {
+                    handler.handle(Future.failedFuture(res.cause()));
+                }
+
+            };
+            <span class="hljs-comment">// &#x904D;&#x5386;&#x6BCF;&#x4E00;&#x4E2A;&#x6743;&#x9650;&#x4FE1;&#x606F;&#xFF08;authorities&#x4E2D;&#x5B58;&#x50A8;&#x4E86;&#xFF09;</span>
+            Iterator var7 = <span class="hljs-keyword">this</span>.authorities.iterator();
+
+            <span class="hljs-keyword">while</span>(var7.hasNext()) {
+                String authority = (String)var7.next();
+                <span class="hljs-keyword">if</span> (!sentFailure.get()) {
+                    <span class="hljs-comment">// &#x9488;&#x5BF9;&#x6BCF;&#x4E2A;&#x6743;&#x9650;&#x4FE1;&#x606F;&#x8C03;&#x7528;User&#x5F15;&#x7528;&#x4E2D;&#x7684;isAuthorised&#x65B9;&#x6CD5;</span>
+                    user.isAuthorised(authority, authHandler);
+                }
+            }
+        } <span class="hljs-keyword">else</span> {
+            handler.handle(Future.succeededFuture());
+        }
+
+    }</code></pre>
+<p>&#x901A;&#x8FC7;&#x5206;&#x6790;&#x4E86;&#x8BA4;&#x8BC1;&#x548C;&#x6388;&#x6743;&#x90E8;&#x5206;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#xFF0C;&#x5C31;&#x77E5;&#x9053;auth-common&#x6846;&#x67B6;&#x4E2D;&#x7684;Provider&#x548C;User&#x7684;&#x4E3B;&#x65B9;&#x6CD5;&#x5728;&#x4EC0;&#x4E48;&#x5730;&#x65B9;&#x8C03;&#x7528;&#x7684;&#xFF1A;</p><ul><li><code>Provider</code>&#xFF1A;&#x4E3B;&#x8981;&#x65B9;&#x6CD5;&#x4E3A;<code>authenticate</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8D1F;&#x8D23;&#x8BA4;&#x8BC1;&#x3002;
+</li>
+<li><code>User</code>&#xFF1A;&#x4E3B;&#x8981;&#x65B9;&#x6CD5;&#x4E3A;<code>isAuthorised</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8D1F;&#x8D23;&#x6388;&#x6743;&#x3002;
+</li></ul>
+<p>&#x81F3;&#x4E8E;Vert.x&#x672C;&#x8EAB;&#x5DF2;&#x7ECF;&#x8003;&#x8651;&#x4E86;&#x6743;&#x9650;&#x7F13;&#x5B58;&#x3001;&#x8DE8;&#x57DF;OPTIONS&#x7684;&#x9996;&#x6B21;&#x8BBF;&#x95EE;&#x3001;&#x5F00;&#x542F;&#x7528;&#x6237;&#x4F1A;&#x8BDD;&#x7684;Session&#x3001;&#x4EE5;&#x53CA;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x7684;403&#x7684;&#x5904;&#x7406;&#x7B49;&#xFF0C;&#x5F53;&#x7136;&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#x7EC6;&#x8282;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x53C2;&#x8003;Vert.x&#x672C;&#x8EAB;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x90E8;&#x5206;&#x6700;&#x540E;&#x770B;&#x770B;&#x8FD9;&#x4E24;&#x4E2A;&#x4E3B;&#x7C7B;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x5B9A;&#x4E49;&#xFF08;&#x6CE8;&#x91CA;&#x5C31;&#x4E0D;&#x63D0;&#x4F9B;&#x4E86;&#xFF09;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-comment">// io.vertx.ext.auth.AuthProvider</span>
+<span class="hljs-meta">@VertxGen</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">AuthProvider</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">authenticate</span><span class="hljs-params">(JsonObject authInfo, Handler&lt;AsyncResult&lt;User&gt;&gt; resultHandler)</span></span>;
+}
+
+<span class="hljs-comment">// io.vertx.ext.auth.User</span>
+<span class="hljs-meta">@VertxGen</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">User</span> </span>{
+  <span class="hljs-meta">@Fluent</span>
+  <span class="hljs-function">User <span class="hljs-title">isAuthorized</span><span class="hljs-params">(String authority, Handler&lt;AsyncResult&lt;Boolean&gt;&gt; resultHandler)</span></span>;
+  <span class="hljs-meta">@Deprecated</span>
+  <span class="hljs-meta">@Fluent</span>
+  <span class="hljs-function"><span class="hljs-keyword">default</span> User <span class="hljs-title">isAuthorised</span><span class="hljs-params">(String authority, Handler&lt;AsyncResult&lt;Boolean&gt;&gt; resultHandler)</span> </span>{
+    <span class="hljs-keyword">return</span> isAuthorized(authority, resultHandler);
+  }
+  <span class="hljs-meta">@Fluent</span>
+  <span class="hljs-function">User <span class="hljs-title">clearCache</span><span class="hljs-params">()</span></span>;
+  <span class="hljs-function">JsonObject <span class="hljs-title">principal</span><span class="hljs-params">()</span></span>;
+  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setAuthProvider</span><span class="hljs-params">(AuthProvider authProvider)</span></span>;
+}</code></pre>
+<h3 id="24&#x603B;&#x7ED3;">2.4.&#x603B;&#x7ED3;</h3><p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF1A;&#x4E0A;&#x8FB9;&#x5206;&#x6790;&#x7684;BasicAuthHandler&#x90E8;&#x5206;&#x7684;&#x5185;&#x5BB9;&#x662F;Vert.x Web&#x9879;&#x76EE;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;auth-common&#x9879;&#x76EE;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x6574;&#x4F53;&#x7ED3;&#x6784;&#x56FE;&#x5E94;&#x8BE5;&#x5982;&#x4E0B;&#xFF08;&#x4EC5;&#x7EA2;&#x8272;&#x548C;&#x84DD;&#x8272;&#x90E8;&#x5206;&#x662F;&#x8FDE;&#x63A5;auth-common&#x7684;&#x5730;&#x65B9;&#xFF09;&#xFF1A;</p><p><img alt="" src="../../assets/images/zvx/001/auth-common.png">&#x4ED4;&#x7EC6;&#x7ED3;&#x5408;&#x6E90;&#x4EE3;&#x7801;&#x5206;&#x6790;&#x4E0A;&#x8FF0;&#x7ED3;&#x6784;&#x56FE;&#xFF0C;<code>BasicAuthHandler</code>&#x548C;<code>BasicAuthHandlerImpl</code>&#x8FD9;&#x4E24;&#x4E2A;&#x7C7B;&#x90FD;&#x662F;vert.x web&#x9879;&#x76EE;&#x63D0;&#x4F9B;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6240;&#x6709;&#x548C;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x76F8;&#x5173;&#x7684;Handler&#x90E8;&#x5206;&#x5728;<code>io.vertx.ext.web.handler.impl</code>&#x5305;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x89C9;&#x5F97;&#x4E0B;&#x8FB9;&#x7684;&#x5934;&#x4FE1;&#x606F;&#x4E0D;&#x9700;&#x8981;&#x6309;&#x7167;&#x81EA;&#x5DF1;&#x7684;&#x903B;&#x8F91;&#x8FDB;&#x884C;&#x89E3;&#x6790;&#xFF0C;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x91CD;&#x5199;&#x8FD9;&#x4E24;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#xFF0C;&#x5426;&#x5219;&#x7684;&#x8BDD;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x505A;&#x6DF1;&#x5EA6;&#x5B9A;&#x5236;&#xFF0C;&#x628A;&#x8FD9;&#x4E24;&#x4E2A;&#x7C7B;&#x91CD;&#x5199;&#x3002;</p><pre><code>[Basic&#x8BA4;&#x8BC1;]&#xFF1A;Authorization: Basic XXXXXXX
+[Digest&#x8BA4;&#x8BC1;]&#xFF1A;Authorization: Digest realm=&quot;xxx&quot;, qop=&quot;auth&quot;, nonce=&quot;xxxx&quot;, opque=&quot;xxxx&quot;</code></pre>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x903B;&#x8F91;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x5F00;&#x53D1;&#x4E24;&#x4E2A;&#x6838;&#x5FC3;&#x7C7B;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;AuthProvider&#xFF08;&#x524D;&#x6587;&#x4E2D;&#x63D0;&#x5230;&#x7684;Provider&#xFF09;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;User&#xFF08;&#x5B9E;&#x9645;&#x4E0A;User&#x7684;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4ECE;AbstractUser&#x7EE7;&#x627F;&#xFF0C;&#x540E;&#x8FB9;&#x6587;&#x7AE0;&#x4E2D;&#x4F1A;&#x63D0;&#x5230;AbstractUser&#x4E2D;&#x7684;&#x6838;&#x5FC3;&#x4FE1;&#x606F;&#xFF09;&#x3002;</p><h2 id="3-&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x6D41;&#x7A0B;">3. &#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x6D41;&#x7A0B;</h2><p>&#x4ECE;&#x7B2C;&#x4E8C;&#x8282;&#x7684;&#x5206;&#x6790;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;Vert.x&#x4E2D;&#x63D0;&#x4F9B;&#x7684;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x6846;&#x67B6;&#x7684;&#x6D41;&#x7A0B;&#xFF0C;&#x90A3;&#x4E48;&#x672C;&#x7AE0;&#x8282;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x5B9A;&#x5236;&#x529B;&#x5EA6;&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x6846;&#x67B6;&#xFF0C;&#x4E00;&#x65B9;&#x9762;&#x52A0;&#x6DF1;&#x8BFB;&#x8005;&#x5BF9;&#x7B2C;&#x4E8C;&#x8282;&#x7684;&#x7406;&#x89E3;&#xFF0C;&#x53E6;&#x5916;&#x4E00;&#x65B9;&#x9762;&#x8BA9;&#x5927;&#x5BB6;&#x5BF9;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x7684;&#x5404;&#x79CD;&#x5F00;&#x53D1;&#x66F4;&#x52A0;&#x8033;&#x719F;&#x80FD;&#x8BE6;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#x6211;&#x4EEC;&#x5728;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x91CD;&#x5199;&#x7684;&#x76EE;&#x7684;&#x6709;&#x51E0;&#x70B9;&#xFF08;&#x4E0D;&#x4E00;&#x5B9A;&#x6700;&#x4F18;&#xFF09;&#xFF1A;</p><ul><li>&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#x4E86;Token&#x63A5;&#x53E3;&#xFF0C;&#x89E3;&#x6790;&#x6D41;&#x7A0B;&#x53C2;&#x8003;&#x4E86;&#x4E0A;&#x8FB9;&#x7684;parseCredentials&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;&#x8BF7;&#x6C42;&#x4E2D;&#x7684;Authorization&#x5934;&#xFF1B;
+</li>
+<li>&#x53C2;&#x8003;Provider/User/Handler&#x8FD9;&#x51E0;&#x4E2A;&#x7ED3;&#x6784;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;&#x65B0;&#x7684;CommonToken&#x7684;&#x57FA;&#x7840;&#x6A21;&#x578B;&#x6765;&#x5B8C;&#x6210;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x7684;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#xFF1B;
+</li></ul>
+<h3 id="31&#x57FA;&#x672C;&#x7C7B;&#xFF1A;&#x5B9A;&#x4E49;user">3.1.&#x57FA;&#x672C;&#x7C7B;&#xFF1A;&#x5B9A;&#x4E49;User</h3><p>Vert.x&#x9ED8;&#x8BA4;&#x63D0;&#x4F9B;&#x7684;AbstractUser&#x53EF;&#x4EE5;&#x79F0;&#x4E3A;&#x662F;&#x88AB;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x7684;&#x5B9E;&#x4F53;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4E09;&#x4E2A;&#x6838;&#x5FC3;&#x903B;&#x8F91;&#xFF1A;</p><ul><li>&#x5B9E;&#x73B0;&#x4E86;isAuthorized&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x6388;&#x6743;&#xFF08;&#x6388;&#x6743;&#x6A21;&#x578B;&#x4F7F;&#x7528;<code>Set&lt;String&gt;</code>&#x7C7B;&#x578B;&#x7684;&#x6743;&#x9650;&#x96C6;&#x5408;&#xFF09;&#xFF1B;
+</li>
+<li>&#x5B9E;&#x73B0;&#x4E86;doIsPermitted&#x7528;&#x4E8E;&#x6838;&#x5FC3;&#x6388;&#x6743;&#x4EE3;&#x7801;&#x68C0;&#x67E5;&#x903B;&#x8F91;&#xFF0C;&#x548C;isAuthorized&#x65B9;&#x6CD5;&#x914D;&#x5408;&#x5B8C;&#x6210;&#xFF08;&#x4E8C;&#x8005;&#x53EF;&#x5408;&#x5E76;&#xFF09;&#xFF1B;
+</li>
+<li>&#x5B9E;&#x73B0;&#x4E86;ClusterSerializable&#x63A5;&#x53E3;&#xFF0C;&#x7528;&#x4E8E;&#x5728;Vert.x&#x7684;Cluster&#x73AF;&#x5883;&#x5B9E;&#x73B0;&#x5FEB;&#x901F;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x64CD;&#x4F5C;&#xFF1B;
+</li></ul>
+<p>&#x90A3;&#x4E48;&#x5728;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x6846;&#x67B6;&#x65F6;&#xFF0C;&#x5148;&#x5B9A;&#x4E49;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;User&#xFF0C;&#x8BE5;User&#x7684;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BasicUser</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AbstractUser</span> </span>{}</code></pre>
+<p>&#x8FD9;&#x91CC;&#x5206;&#x6790;&#x4E00;&#x4E0B;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x4F7F;&#x7528;&#x7684;Basic&#x8BA4;&#x8BC1;BasicUser&#x7C7B;&#xFF0C;&#x5B9A;&#x4E49;&#x7684;&#x6838;&#x5FC3;&#x5C5E;&#x6027;&#xFF1A;</p><pre><code class="lang-java">    <span class="hljs-comment">/**
+     * User&#x4E2D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;Provider&#x5BF9;&#x8C61;&#x5F15;&#x7528;
+     **/</span>
+    <span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&quot;unused&quot;</span>)
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> AuthProvider provider;
+    <span class="hljs-comment">/**
+     * &#x7528;&#x6237;&#x540D;&#x4FE1;&#x606F;
+     **/</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> String username;
+    <span class="hljs-comment">/**
+     * &#x7528;&#x6237;Id&#x4FE1;&#x606F;
+     **/</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> String id;
+    <span class="hljs-comment">/**
+     * &#x7528;&#x6237;&#x7684;Password&#x52A0;&#x5BC6;&#x5B57;&#x7B26;&#x4E32;
+     **/</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> String password;
+    <span class="hljs-comment">/**
+     * &#x7528;&#x6237;&#x6388;&#x6743;&#x4FE1;&#x606F;
+     **/</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> JsonObject principal;</code></pre>
+<p>&#x8FD9;&#x91CC;&#x6269;&#x5C55;&#x4E86;&#x539F;&#x751F;&#x7684;username&#x548C;password&#x4E24;&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;&#x6DFB;&#x52A0;&#x4E86;id&#xFF08;&#x6570;&#x636E;&#x5E93;&#x4EE3;&#x7406;&#x4E3B;&#x952E;&#xFF09;&#x548C;<code>JsonObject</code>&#x7C7B;&#x578B;&#x7684;principal&#xFF0C;&#x4E00;&#x822C;principal&#x5B58;&#x50A8;&#x4E86;&#x4E00;&#x4E9B;&#x9644;&#x52A0;&#x7684;&#x6570;&#x636E;&#xFF08;&#x6BD4;&#x5982;&#x5F53;&#x524D;&#x7528;&#x6237;&#x7684;&#x89D2;&#x8272;&#x3001;&#x57FA;&#x672C;&#x6743;&#x9650;&#x3001;&#x8D44;&#x6E90;&#x96C6;&#x5408;&#x7B49;&#xFF0C;&#x8FD9;&#x4E2A;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x9700;&#x8981;&#x800C;&#x6709;&#x6240;&#x4E0D;&#x540C;&#xFF09;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x5982;&#x679C;&#x8981;User&#x5BF9;&#x8C61;&#x5728;&#x96C6;&#x7FA4;&#x6A21;&#x5F0F;&#x4E2D;&#x53EF;&#x4F7F;&#x7528;&#xFF08;&#x5E94;&#x8BE5;&#x8BF4;&#x6240;&#x6709;&#x9700;&#x8981;&#x5728;&#x96C6;&#x7FA4;&#x6A21;&#x5F0F;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#xFF09;&#xFF0C;&#x90FD;&#x4F1A;&#x5B9E;&#x73B0;<code>io.vertx.core.shareddata.impl.ClusterSerializable</code>&#x63A5;&#x53E3;&#xFF0C;AbstractUser&#x672C;&#x8EAB;&#x5B9E;&#x73B0;&#x4E86;&#x8BE5;&#x63A5;&#x53E3;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x9488;&#x5BF9;&#x63A5;&#x53E3;&#x5199;&#x7C7B;&#x4F3C;&#x4E0B;&#x8FB9;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x6CD5;&#xFF1A;</p><pre><code class="lang-java">    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeToBuffer</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Buffer buffer)</span> </span>{
+        <span class="hljs-comment">/** 1.&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x65B9;&#x6CD5; **/</span>
+        <span class="hljs-keyword">super</span>.writeToBuffer(buffer);
+        <span class="hljs-comment">/** 2.&#x5199;&#x5165;id&#xFF0C;&#x7528;&#x6237;&#x540D;&#x548C;token **/</span>
+        Buffalo.write(buffer, id, username, password);
+    }
+    <span class="hljs-comment">/** **/</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">readFromBuffer</span><span class="hljs-params">(<span class="hljs-keyword">int</span> pos, <span class="hljs-keyword">final</span> Buffer buffer)</span> </span>{
+        <span class="hljs-comment">/** 1.&#x4ECE;&#x7236;&#x7C7B;&#x8BFB;&#x53D6; **/</span>
+        pos = <span class="hljs-keyword">super</span>.readFromBuffer(pos, buffer);
+        <span class="hljs-comment">/** 2.&#x8BFB;&#x53D6;&#x4FE1;&#x606F; **/</span>
+        <span class="hljs-keyword">final</span> String[] reference = <span class="hljs-keyword">new</span> String[<span class="hljs-number">3</span>];
+        pos = Buffalo.read(pos, buffer, reference);
+        <span class="hljs-comment">/** 3.&#x4ECE;&#x5F15;&#x7528;&#x4E2D;&#x8BFB;&#x53D6;&#x6570;&#x636E; **/</span>
+        <span class="hljs-keyword">this</span>.id = reference[<span class="hljs-number">0</span>];
+        <span class="hljs-keyword">this</span>.username = reference[<span class="hljs-number">1</span>];
+        <span class="hljs-keyword">this</span>.password = reference[<span class="hljs-number">2</span>];
+        <span class="hljs-keyword">return</span> pos;
+    }</code></pre>
+<p>&#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x5C31;&#x662F;<strong>&#x987A;&#x5E8F;</strong>&#xFF0C;&#x4E0A;&#x8FB9;&#x4EE3;&#x7801;&#x5C01;&#x88C5;&#x4E86;&#x8BFB;&#x5199;Buffer&#x7684;&#x901A;&#x7528;&#x903B;&#x8F91;&#xFF08;&#x56E0;&#x4E3A;&#x4EE3;&#x7801;&#x91CD;&#x590D;&#x592A;&#x9AD8;&#xFF09;&#xFF0C;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">(@NotNull <span class="hljs-keyword">final</span> Buffer buffer,
+                             <span class="hljs-keyword">final</span> String... data)</span> </span>{
+        <span class="hljs-comment">// &#x904D;&#x5386;&#x6570;&#x636E;</span>
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">final</span> String item : data) {
+            <span class="hljs-keyword">if</span> (StringKit.isNonNil(item)) {
+                <span class="hljs-comment">// &#x5B57;&#x8282;&#x6570;&#x636E;</span>
+                <span class="hljs-keyword">final</span> <span class="hljs-keyword">byte</span>[] bytes = item.getBytes(Resources.ENCODING);
+                buffer.appendInt(bytes.length);
+                buffer.appendBytes(bytes);
+            }
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">read</span><span class="hljs-params">(<span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> start,
+                           @NotNull <span class="hljs-keyword">final</span> Buffer buffer,
+                           @NotNull <span class="hljs-keyword">final</span> String[] reference)</span> </span>{
+        <span class="hljs-keyword">int</span> pos = start;
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> idx = <span class="hljs-number">0</span>; idx &lt; reference.length; idx++) {
+            <span class="hljs-comment">// &#x5148;&#x8BFB;&#x53D6;&#x957F;&#x5EA6;&#x4FE1;&#x606F;</span>
+            <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> len = buffer.getInt(pos);
+            <span class="hljs-comment">// &#x8BA1;&#x7B97;&#x504F;&#x79FB;&#x91CF;</span>
+            pos += <span class="hljs-number">4</span>;
+            <span class="hljs-comment">// &#x8BFB;&#x53D6;&#x672C;&#x8EAB;&#x5185;&#x5BB9;</span>
+            <span class="hljs-keyword">final</span> <span class="hljs-keyword">byte</span>[] bytes = buffer.getBytes(pos, pos + len);
+            reference[idx] = <span class="hljs-keyword">new</span> String(bytes, Resources.ENCODING);
+            pos += len;
+        }
+        <span class="hljs-keyword">return</span> pos;
+    }</code></pre>
+<p>&#x4ECE;&#x4E0A;&#x8FB9;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;writeToBuffer&#x7684;&#x987A;&#x5E8F;&#x662F;<code>id, username, password</code>&#xFF0C;&#x90A3;&#x4E48;&#x5728;readFromBuffer&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5176;&#x8BFB;&#x53D6;&#x7684;&#x987A;&#x5E8F;&#x4E5F;&#x662F;<code>id, username, password</code>&#xFF0C;&#x5BF9;&#x4E8E;Buffer&#x7C7B;&#x578B;&#x7684;&#x7EC6;&#x8282;&#x8FD9;&#x91CC;&#x4E0D;&#x8BB2;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x63D0;&#x9192;&#x4E00;&#x4E0B;&#x5927;&#x5BB6;&#xFF0C;&#x5982;&#x679C;&#x5B9A;&#x4E49;User&#xFF0C;&#x5FC5;&#x5B9A;&#x4F1A;&#x91CD;&#x5199;&#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x4E2A;&#x4EBA;&#x7684;&#x5EFA;&#x8BAE;&#x5C31;&#x662F;&#x628A;&#x80FD;&#x591F;&#x6807;&#x8BC6;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x7684;&#x6570;&#x636E;&#x5199;&#x5165;&#x5230;Buffer&#x4E2D;&#xFF08;&#x5982;&#x679C;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x9700;&#x8981;&#x6267;&#x884C;&#x6743;&#x9650;&#x68C0;&#x67E5;&#xFF0C;&#x90A3;&#x4E48;&#x4E5F;&#x9700;&#x8981;&#x5199;&#x5165;&#x8FDB;&#x53BB;&#xFF09;&#x5199;&#x5165;/&#x8BFB;&#x53D6;&#x7684;&#x6838;&#x5FC3;&#x70B9;&#x5C31;&#x5728;&#x4E8E;&#x5C5E;&#x6027;&#x5B57;&#x6BB5;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x5C0F;&#x5FC3;&#xFF08;&#x8FD9;&#x662F;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x64CD;&#x4F5C;&#xFF09;&#xFF0C;&#x987A;&#x5E8F;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#x4F1A;&#x5BFC;&#x81F4;&#x5E8F;&#x5217;&#x5316;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x65E0;&#x6CD5;&#x5F97;&#x5230;&#x4F60;&#x60F3;&#x8981;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p><p>&#x6700;&#x540E;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x7684;&#x662F;AbstractUser&#x5DF2;&#x7ECF;&#x5B9E;&#x73B0;&#x4E86;&#x9ED8;&#x8BA4;&#x7684;isAuthorized&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> User <span class="hljs-title">isAuthorized</span><span class="hljs-params">(String authority, Handler&lt;AsyncResult&lt;Boolean&gt;&gt; resultHandler)</span> </span>{
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.cachedPermissions.contains(authority)) {
+            resultHandler.handle(Future.succeededFuture(<span class="hljs-keyword">true</span>));
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">this</span>.doIsPermitted(authority, (res) -&gt; {
+                <span class="hljs-keyword">if</span> (res.succeeded() &amp;&amp; ((Boolean)res.result()).booleanValue()) {
+                    <span class="hljs-keyword">this</span>.cachedPermissions.add(authority);
+                }
+
+                resultHandler.handle(res);
+            });
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }</code></pre>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x8C03;&#x7528;doIsPermitted&#x65B9;&#x6CD5;&#x7528;&#x6765;&#x68C0;&#x67E5;&#x6743;&#x9650;&#x4FE1;&#x606F;&#xFF0C;&#x800C;AbstractUser&#x5F00;&#x542F;&#x4E86;&#x6743;&#x9650;&#x7F13;&#x5B58;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5728;&#x91CD;&#x5199;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4EC5;&#x4EC5;&#x9700;&#x8981;&#x5B9E;&#x73B0;doIsPermitted&#x65B9;&#x6CD5;&#x5C31;&#x8DB3;&#x591F;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x91CD;&#x5199;&#x4E86;isAuthorized&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4E22;&#x5931;&#x4E86;Vert.x&#x81EA;&#x5E26;&#x7684;&#x6743;&#x9650;&#x7F13;&#x5B58;&#x529F;&#x80FD;&#xFF0C;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x53BB;&#x5B9E;&#x73B0;&#x5B83;&#x3002;</p><pre><code class="lang-java">    <span class="hljs-comment">/**
+     * &#x6743;&#x9650;&#x68C0;&#x67E5;
+     **/</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">doIsPermitted</span><span class="hljs-params">(<span class="hljs-keyword">final</span> String permission, 
+                              <span class="hljs-keyword">final</span> Handler&lt;AsyncResult&lt;Boolean&gt;&gt; resultHandler)</span> </span>{
+        <span class="hljs-comment">// ....&#x6743;&#x9650;&#x68C0;&#x67E5;&#x7684;&#x6838;&#x5FC3;&#x903B;&#x8F91;</span>
+    }</code></pre>
+<h3 id="32&#x521B;&#x5EFA;provider&#x7C7B;">3.2.&#x521B;&#x5EFA;Provider&#x7C7B;</h3><p>&#x524D;&#x8FB9;&#x7AE0;&#x8282;&#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;&#x4E86;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;User&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x7C7B;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x5B9A;&#x4E49;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x7684;&#x6838;&#x5FC3;&#x7C7B;Provider&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x53D6;&#x540D;&#x4E3A;&#xFF1A;<code>BasicJunctor</code>&#xFF0C;Provider&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x6838;&#x5FC3;&#x8BA4;&#x8BC1;&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x5B9E;&#x73B0;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x8FDB;&#x4E00;&#x6B65;&#x8BBE;&#x8BA1;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x5B9E;&#x73B0;&#x4E00;&#x4E9B;&#x7EC6;&#x7C92;&#x5EA6;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x4E2A;&#x7C7B;&#x4E2D;&#x5B9E;&#x73B0;&#x4E86;&#x4E24;&#x4E2A;&#x6838;&#x5FC3;&#x6982;&#x5FF5;&#xFF1A;</p><ul><li>Options&#xFF1A;&#x6839;&#x636E;Basic&#x76F8;&#x5173;&#x7684;&#x8BA4;&#x8BC1;&#x7EC6;&#x8282;&#xFF0C;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x9009;&#x9879;&#xFF0C;&#x7528;&#x4E8E;&#x914D;&#x7F6E;AuthProvider&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#xFF1B;
+</li>
+<li>Authenticator&#xFF1A;&#x81EA;&#x5B9A;&#x4E49;&#x63A5;&#x53E3;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x4E3B;&#x4F53;&#x8BA4;&#x8BC1;&#x8BBF;&#x95EE;&#x63A5;&#x53E3;&#x2014;&#x2014;&#x7528;&#x4E8E;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;&#x7684;&#x4E13;&#x7528;&#x7C7B;&#xFF0C;&#x800C;&#x4E14;&#x8BE5;&#x7C7B;&#x53EF;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x66FF;&#x6362;&#x5176;&#x5B9E;&#x73B0;&#xFF0C;&#x4E3A;&#x4E86;&#x548C;AuthProvider&#x533A;&#x5206;&#x5F00;&#xFF0C;&#x6240;&#x4EE5;&#x53D6;&#x540D;&#x4E3A;<code>Authenticator</code>&#x3002;
+</li></ul>
+<p>AuthProvider&#x7684;&#x804C;&#x8D23;&#x662F;&#x5C06;&#x8F93;&#x5165;&#x7684;JsonObject&#x7C7B;&#x578B;&#x8BA4;&#x8BC1;&#x4FE1;&#x606F;&#x5728;&#x8BA4;&#x8BC1;&#x6210;&#x529F;&#x8FC7;&#x540E;&#x8F6C;&#x6362;&#x6210;User&#x5BF9;&#x8C61;&#xFF08;3.1&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x5BF9;&#x8C61;&#xFF09;&#xFF0C;&#x5148;&#x770B;&#x770B;<code>BasicJunctor</code>&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-meta">@Guarded</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BasicJunctor</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">AuthProvider</span> </span>{
+
+    <span class="hljs-comment">/**
+     * &#x5B89;&#x5168;&#x914D;&#x7F6E;&#x9879;
+     **/</span>
+    <span class="hljs-meta">@NotNull</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> <span class="hljs-keyword">final</span> Options options;
+    <span class="hljs-comment">/**
+     * &#x5E95;&#x5C42;&#x8BBF;&#x95EE;&#x5BF9;&#x8C61;
+     **/</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> <span class="hljs-keyword">final</span> Authenticator authcator;
+
+    <span class="hljs-comment">/** **/</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">BasicJunctor</span><span class="hljs-params">(@NotNull <span class="hljs-keyword">final</span> Options options)</span> </span>{
+        <span class="hljs-keyword">this</span>.options = options;
+        <span class="hljs-keyword">this</span>.authcator = <span class="hljs-keyword">new</span> BasicAuthenticator(options);
+    }
+
+    <span class="hljs-comment">/**
+     * Basic&#x8BA4;&#x8BC1;&#x7528;&#x7684;Provider
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">authenticate</span><span class="hljs-params">(@NotNull <span class="hljs-keyword">final</span> JsonObject authInfo, 
+                          @NotNull <span class="hljs-keyword">final</span> Handler&lt;AsyncResult&lt;User&gt;&gt; handler)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-comment">/** 1.&#x8BFB;&#x53D6;&#x7528;&#x6237; **/</span>
+            <span class="hljs-keyword">final</span> Record record = <span class="hljs-keyword">this</span>.authcator
+                    .authorize(authInfo.getJsonObject(SecureKeys.CREDENTIAL)
+                    .getString(SecureKeys.TOKEN));
+            <span class="hljs-comment">/** 2.&#x6784;&#x9020;User **/</span>
+            <span class="hljs-keyword">final</span> User user = <span class="hljs-keyword">this</span>.buildUser(record);
+            <span class="hljs-comment">/** 3.&#x6B63;&#x786E;&#x54CD;&#x5E94; **/</span>
+            handler.handle(Future.&lt;User&gt;succeededFuture(user));
+        } <span class="hljs-keyword">catch</span> (<span class="hljs-keyword">final</span> AbstractException ex) {
+            handler.handle(Future.&lt;User&gt;failedFuture(ex));
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> BasicUser <span class="hljs-title">buildUser</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Record record)</span> <span class="hljs-keyword">throws</span> AbstractException </span>{
+        <span class="hljs-comment">/** 1.&#x8F6C;&#x6362; **/</span>
+        <span class="hljs-keyword">final</span> Transferer transferer = Instance.singleton(ObjectTransferer.class);
+        <span class="hljs-comment">/** 2.&#x8F6C;&#x6362;&#x6570;&#x636E; **/</span>
+        <span class="hljs-keyword">final</span> JsonObject data = transferer.fromRecord(record);
+        {
+            <span class="hljs-comment">/** &#x5C06;&#x6570;&#x636E;&#x586B;&#x5145;&#x5230;&#x7CFB;&#x7EDF;&#x4E2D; **/</span>
+            <span class="hljs-keyword">if</span> (data.containsKey(Constants.PID)) {
+                <span class="hljs-comment">/** 3.1.ID&#x8F6C;&#x6362; **/</span>
+                data.put(Keys.ID, data.getString(Constants.PID));
+                data.remove(Constants.PID);
+                <span class="hljs-comment">/** 3.2.UserName&#x8F6C;&#x6362; **/</span>
+                data.put(Keys.USERID, data.getString(options.readOpts().getString(<span class="hljs-string">&quot;secure.user.id&quot;</span>)));
+            }
+        }
+        <span class="hljs-comment">/** 4.&#x7528;&#x6237;&#x540D;&#xFF0C;&#x5BC6;&#x7801; **/</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> BasicUser(<span class="hljs-keyword">this</span>, data);
+    }
+
+}</code></pre>
+<p>&#x9488;&#x5BF9;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x6BB5;&#x505A;&#x4E2A;&#x7B80;&#x5355;&#x603B;&#x7ED3;&#xFF1A;</p><ol><li><p>&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;&#x7684;&#x4EE3;&#x7801;&#x4E3B;&#x8981;&#x662F;&#x4F9D;&#x8D56;&#x81EA;&#x5B9A;&#x4E49;&#x7684;Authenticator&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x5982;&#x4E0A;&#x8FB9;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-keyword">final</span> Record record = <span class="hljs-keyword">this</span>.authcator
+                .authorize(authInfo.getJsonObject(SecureKeys.CREDENTIAL)
+                .getString(SecureKeys.TOKEN));</code></pre>
+<ol><li>&#x79C1;&#x6709;&#x65B9;&#x6CD5;<code>buildUser</code>&#x4F1A;&#x6839;&#x636E;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x6784;&#x9020;&#x5BF9;&#x5E94;&#x7684;BasicUser&#x7C7B;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x9700;&#x8981;&#x5728;&#x4E3B;&#x4EE3;&#x7801;&#x4E2D;&#x5B9E;&#x73B0;&#x8FD9;&#x79CD;&#x8F6C;&#x6362;&#xFF1B;
+</li></ol>
+</li>
+<li><p>&#x4E0A;&#x8FB9;&#x7684;&#x6838;&#x5FC3;&#x903B;&#x8F91;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x9879;&#x76EE;&#x6765;&#xFF0C;&#x6BD4;&#x5982;Record, Authenticator, Options&#x7B49;&#xFF0C;&#x8FD9;&#x4E9B;&#x7C7B;&#x7684;&#x5B9A;&#x4E49;&#x4E0D;&#x5C5E;&#x4E8E;Vert.x&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF1B;</p></li>
+<li>Vert.x&#x4E2D;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x7684;&#x4EC5;&#x4EC5;&#x53EA;&#x6709;&#x65B9;&#x6CD5;&#xFF1A;authenticate&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x5185;&#x90E8;&#x903B;&#x8F91;&#x5C31;&#x662F;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x5E94;&#x8BE5;&#x771F;&#x6B63;&#x5173;&#x6CE8;&#x7684;&#x70B9;&#x3002;
+</li></ol>
+<h3 id="33&#x4EE4;&#x724C;&#x7C7B;&#xFF1A;&#x5B9A;&#x4E49;token">3.3.&#x4EE4;&#x724C;&#x7C7B;&#xFF1A;&#x5B9A;&#x4E49;Token</h3><p>&#x6211;&#x4EEC;&#x5728;&#x8BBE;&#x8BA1;&#x6743;&#x9650;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x65F6;&#xFF0C;&#x5C06;Authorization&#x5934;&#x7684;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x4E86;&#x5C01;&#x88C5;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;Token&#x63A5;&#x53E3;&#xFF0C;&#x8BE5;&#x63A5;&#x53E3;&#x7684;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Token</span> </span>{
+    <span class="hljs-comment">/**
+     * Token&#x662F;&#x5426;&#x8BFB;&#x53D6;&#x5230;&#xFF0C;&#x8BFB;&#x53D6;&#x5230;Token&#x8BC1;&#x660E;Authorization&#x5934;&#x89E3;&#x6790;&#x6210;&#x529F;
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">obtained</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-comment">/**
+     * Token&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;Error&#xFF0C;&#x4E0D;&#x6210;&#x529F;&#x7684;&#x89E3;&#x6790;&#x4F1A;&#x8FD4;&#x56DE;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5F02;&#x5E38;&#x57FA;&#x7C7B;
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+    <span class="hljs-function">AbstractException <span class="hljs-title">error</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-comment">/**
+     * &#x83B7;&#x53D6;&#x5B89;&#x5168;Schema&#x4FE1;&#x606F;&#xFF0C;&#x5982;BASIC&#x3001;BEARER&#x3001;DIGEST&#x7B49;
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+    <span class="hljs-function">String <span class="hljs-title">schema</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-comment">/**
+     * &#x8BFB;&#x53D6;Token&#x5B57;&#x7B26;&#x4E32;&#xFF0C;Authorization: BASIC XXXX
+     * &#x4E2D;&#x7684;XXXX&#x90E8;&#x5206;&#x7684;&#x503C;
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+    <span class="hljs-function">String <span class="hljs-title">token</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-comment">/**
+     * &#x8FD4;&#x56DE;&#x57DF;&#x4FE1;&#x606F;&#xFF1A;realm&#xFF08;OAuth2&#x4E2D;&#x7684;scope&#xFF09;
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+    <span class="hljs-function">String <span class="hljs-title">realm</span><span class="hljs-params">()</span></span>;
+}</code></pre>
+<p>&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x4E3A;CommonToken&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x66FF;&#x6362;&#x8BE5;&#x5B9E;&#x73B0;&#x5185;&#x5BB9;&#xFF0C;Token&#x7684;&#x6838;&#x5FC3;&#x903B;&#x8F91;&#x548C;&#x4E0A;&#x8FB9;&#x63D0;&#x5230;&#x7684;Vert.x&#x4E2D;&#x7684;parseCredentials&#x4E00;&#x81F4;&#xFF1A;</p><pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">CommonToken</span><span class="hljs-params">(<span class="hljs-keyword">final</span> HttpServerRequest request)</span> </span>{
+        <span class="hljs-comment">/** 1.&#x68C0;&#x67E5;Authorization&#x5934; **/</span>
+        <span class="hljs-keyword">final</span> MultiMap map = request.headers();
+        <span class="hljs-keyword">if</span> (map.contains(HttpHeaders.AUTHORIZATION)) {
+            <span class="hljs-keyword">final</span> String auth = map.get(HttpHeaders.AUTHORIZATION);
+            <span class="hljs-keyword">if</span> (StringKit.isNil(auth)) {
+                <span class="hljs-keyword">this</span>.error = <span class="hljs-keyword">new</span> _401AuthHeaderMissingException(getClass(), request.path());
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-comment">/** &#x89E3;&#x6790;Auth&#x5934;&#x4FE1;&#x606F; **/</span>
+                <span class="hljs-keyword">this</span>.parseHeader(auth);
+            }
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">this</span>.error = <span class="hljs-keyword">new</span> _401AuthHeaderMissingException(getClass(), request.path());
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">parseHeader</span><span class="hljs-params">(<span class="hljs-keyword">final</span> String authHeader)</span> </span>{
+        <span class="hljs-keyword">final</span> String[] authArr = authHeader.split(Literal.SPACE);
+        <span class="hljs-keyword">if</span> (Constants.TWO == authArr.length) {
+            <span class="hljs-keyword">final</span> String schemaStr = authArr[Constants.ZERO].toUpperCase(Locale.getDefault());
+            <span class="hljs-keyword">final</span> SecureMode requested = SCHMAP.get(schemaStr);
+            <span class="hljs-keyword">if</span> (<span class="hljs-keyword">null</span> == requested) {
+                <span class="hljs-keyword">this</span>.error = <span class="hljs-keyword">new</span> _401SchemaWrongException(getClass(), schemaStr);
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">if</span> (requested == Security.MODE) {
+                    <span class="hljs-comment">/** &#x8BBE;&#x7F6E;&#x5BF9;&#x5E94;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5DF2;&#x7ECF;&#x89E3;&#x6790;&#x8FC7;Schema&#x4E86; **/</span>
+                    <span class="hljs-keyword">this</span>.schema = schemaStr;
+                    <span class="hljs-keyword">this</span>.token = authArr[Constants.ONE];
+                    <span class="hljs-keyword">this</span>.realm = Resources.Security.REALM;
+                } <span class="hljs-keyword">else</span> {
+                    <span class="hljs-keyword">this</span>.error = <span class="hljs-keyword">new</span> _401SchemaConflictException(getClass(), 
+                        requested.name() + <span class="hljs-string">&quot;:&quot;</span> + schemaStr, Security.MODE.name());
+                }
+            }
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">this</span>.error = <span class="hljs-keyword">new</span> _401AuthHeaderInvalidException(getClass());
+        }
+    }</code></pre>
+<p>&#x5B9A;&#x4E49;Token&#x7684;&#x76EE;&#x7684;&#x662F;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#x7684;&#x4F20;&#x8F93;&#xFF0C;&#x8BA9;&#x6240;&#x6709;&#x7684;&#x8BA4;&#x8BC1;&#x4E13;&#x7528;Provider&#x63A5;&#x6536;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x662F;&#x4E00;&#x4E2A;Token&#x63A5;&#x53E3;&#x5F15;&#x7528;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5176;&#x5B9E;&#x73B0;&#x5BF9;&#x8C61;&#xFF0C;Token&#x672C;&#x8EAB;&#x4F1A;&#x8F6C;&#x6362;&#x6210;&#x5B83;&#x4E3B;&#x903B;&#x8F91;&#x4E2D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;JsonObject&#xFF0C;&#x4E2A;&#x4EBA;&#x89C9;&#x5F97;&#x8FD9;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#x66F4;&#x52A0;&#x9002;&#x5408;&#x6269;&#x5C55;&#xFF0C;&#x4E5F;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x6700;&#x597D;&#x7684;&#xFF0C;&#x76EE;&#x524D;&#x7684;&#x5B9E;&#x73B0;&#x4E3B;&#x8981;&#x9488;&#x5BF9;</p><pre><code>Authorization: Basic &lt;TOKEN&gt; 
+// Token = username:password&#x7684;Base64&#x7F16;&#x7801;&#x503C;
+Authorization: Bearer &lt;TOKEN&gt; 
+// Token = accessToken:userId&#x7684;Base64&#x7F16;&#x7801;&#x503C;&#xFF0C;accessToken&#x4E3A;OAuth2&#x6388;&#x6743;&#x7801;&#x6D41;&#x7A0B;&#x4EA4;&#x6362;&#x7684;Token&#x4FE1;&#x606F;</code></pre>
+<h3 id="34-&#x6838;&#x5FC3;handler&#x7C7B;&#xFF1A;securekeaper">3.4. &#x6838;&#x5FC3;Handler&#x7C7B;&#xFF1A;SecureKeaper</h3><p>&#x8BE5;&#x7C7B;&#x5B9E;&#x73B0;&#x4E86;&#x524D;&#x6587;&#x63D0;&#x5230;&#x7684;<code>Handler&lt;RoutingContext&gt;</code>&#xFF0C;&#x6838;&#x5FC3;&#x903B;&#x8F91;&#x4F4D;&#x4E8E;<code>handle(RoutingContext)</code>&#x65B9;&#x6CD5;&#x4E2D;&#xFF1A;</p><pre><code class="lang-java">             <span class="hljs-comment">/** 1.&#x63D0;&#x53D6;Token **/</span>
+            <span class="hljs-keyword">final</span> Token token = <span class="hljs-keyword">new</span> CommonToken(event.request());
+            <span class="hljs-comment">/** 2.Token&#x662F;&#x5426;&#x83B7;&#x53D6;&#x5230; **/</span>
+            <span class="hljs-keyword">if</span> (token.obtained()) {
+                <span class="hljs-comment">/** 3.&#x9A8C;&#x8BC1;&#xFF0C;&#x5C06;Token&#x8F6C;&#x6362;&#x6210;&#x6807;&#x51C6;&#x7684;JsonObject&#x5BF9;&#x8C61;&#xFF0C;&#x4F20;&#x7ED9;Provider **/</span>
+                <span class="hljs-keyword">final</span> JsonObject unauthorized = Credential.get(event, token);
+                FlowMonitor.info(LOGGER, <span class="hljs-string">&quot;--&gt; Prepare to authorize.&quot;</span>, unauthorized);
+                <span class="hljs-comment">// &#x8BFB;&#x53D6;3.3.&#x4E2D;&#x5B9A;&#x4E49;&#x7684;BasicJunctor&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;</span>
+                <span class="hljs-keyword">final</span> AuthProvider provider = getProvider();
+                <span class="hljs-keyword">if</span> (<span class="hljs-keyword">null</span> != provider) {
+                    provider.authenticate(unauthorized, result -&gt; {
+                        <span class="hljs-keyword">if</span> (result.succeeded()) {
+                            <span class="hljs-comment">/** 4.&#x8BA4;&#x8BC1;&#x6210;&#x529F; **/</span>
+                            <span class="hljs-keyword">final</span> User user = result.result();
+                            <span class="hljs-comment">/** 5.&#x586B;&#x5145;&#x7528;&#x6237;&#x6570;&#x636E; **/</span>
+                            <span class="hljs-keyword">final</span> JsonObject credential = user.principal();
+                            event.put(VertxKeys.Request.USER, user.principal());
+                            <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> &#x6267;&#x884C;&#x6388;&#x6743;&#x6D41;&#x7A0B;</span>
+                            FlowMonitor.info(LOGGER, <span class="hljs-string">&quot;200 Authorization success.&quot;</span>, credential);
+                            Feature.next(event);
+                        } <span class="hljs-keyword">else</span> {
+                            <span class="hljs-comment">/** 4.&#x8BA4;&#x8BC1;&#x5931;&#x8D25; **/</span>
+                            <span class="hljs-keyword">final</span> Throwable error = result.cause();
+                            <span class="hljs-comment">/** &#x6355;&#x6349;&#x4E0D;&#x4E86;401&#x5C31;&#x76F4;&#x63A5;500&#x8FD4;&#x56DE; **/</span>
+                            Envelop stumer = 
+                                Envelop.failure(<span class="hljs-keyword">new</span> _500InternalServerErrorException(getClass()));
+                            <span class="hljs-comment">/** 4.1.&#x8BA4;&#x8BC1;&#x5931;&#x8D25;&#x7684;&#x4FE1;&#x606F; **/</span>
+                            FlowMonitor.warn(LOGGER, <span class="hljs-string">&quot;401 Authoration failure. &quot;</span>);
+                            <span class="hljs-keyword">if</span> (error <span class="hljs-keyword">instanceof</span> AbstractException) {
+                                stumer = Envelop.failure(
+                                        (AbstractException) error, 
+                                        StatusCode.UNAUTHORIZED);
+                            }
+                            <span class="hljs-comment">/** ERROR-ROUTE&#xFF1A;&#x9519;&#x8BEF;&#x8DEF;&#x7531;&#x5904;&#x7406; **/</span>
+                            Feature.route(event, stumer);
+                        }
+                    });
+                } <span class="hljs-keyword">else</span> {
+                    FlowMonitor.warn(LOGGER, <span class="hljs-string">&quot;401 Lookup Reference null.&quot;</span>);
+                    <span class="hljs-keyword">final</span> Envelop stumer = 
+                        Envelop.failure(<span class="hljs-keyword">new</span> _500InternalServerErrorException(getClass()));
+                }
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-comment">/** 3.&#x4ECE;Header&#x4E2D;&#x8BFB;&#x53D6;Token&#x5931;&#x8D25; **/</span>
+                FlowMonitor.warn(LOGGER, <span class="hljs-string">&quot;401 Token missing&quot;</span>);
+                <span class="hljs-keyword">final</span> Envelop stumer = Envelop.failure(token.error(), StatusCode.UNAUTHORIZED);
+                <span class="hljs-comment">/** ERROR-ROUTE&#xFF1A;&#x9519;&#x8BEF;&#x8DEF;&#x7531; **/</span>
+                Feature.route(event, stumer);
+            }
+</code></pre>
+<p>&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x662F;Handler&#x7684;&#x4E3B;&#x903B;&#x8F91;&#xFF0C;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x53EA;&#x5173;&#x5FC3;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x6CE8;&#x91CA;&#x90E8;&#x5206;&#x7684;&#x6D41;&#x7A0B;&#xFF0C;&#x4E0D;&#x7528;&#x53BB;&#x5173;&#x5FC3;&#x592A;&#x591A;&#x7EC6;&#x8282;&#xFF0C;&#x8FD9;&#x4E2A;&#x6D41;&#x7A0B;&#x5B9E;&#x73B0;&#x4E86;&#x5B8C;&#x6574;&#x7684;Handler&#x5904;&#x7406;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x4E3B;&#x903B;&#x8F91;&#x7684;&#x4EE3;&#x7801;&#x6D41;&#x7A0B;&#x3002;</p><h2 id="4&#x603B;&#x7ED3;">4.&#x603B;&#x7ED3;</h2><p>&#x4ECE;&#x4E0A;&#x8FB9;&#x7684;&#x51E0;&#x4E2A;&#x7AE0;&#x8282;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#xFF0C;&#x82E5;&#x4F60;&#x4E86;&#x89E3;&#x4E86;Vert.x&#x4E2D;&#x7684;&#x6574;&#x4E2A;&#x7ED3;&#x6784;&#xFF08;&#x5982;2.4&#x4E2D;&#x7684;&#x56FE;&#xFF09;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x5F00;&#x53D1;&#x4EFB;&#x610F;&#x81EA;&#x5DF1;&#x89C9;&#x5F97;&#x9002;&#x5408;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x6846;&#x67B6;&#xFF0C;&#x4F46;&#x771F;&#x6B63;&#x5728;&#x9879;&#x76EE;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x7684;Demo&#x590D;&#x6742;&#x5EA6;&#x548C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x4E0D;&#x6210;&#x6B63;&#x6BD4;&#xFF0C;&#x5982;&#x524D;&#x6587;&#x4E2D;&#x7684;&#x590D;&#x6742;&#x4EE3;&#x7801;&#x7ED3;&#x6784;&#xFF0C;&#x5C31;&#x5E94;&#x7528;&#x4E86;&#x5F88;&#x591A;&#x7EC6;&#x7C92;&#x5EA6;&#x8BBE;&#x8BA1;&#x3002;&#x4E0D;&#x8BBA;&#x600E;&#x4E48;&#x8BBE;&#x8BA1;&#xFF0C;&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x6D41;&#x7A0B;&#x662F;&#x4E00;&#x81F4;&#x7684;&#xFF0C;&#x7B80;&#x5355;&#x6574;&#x7406;&#x4E00;&#x4E0B;&#xFF0C;&#x5E0C;&#x671B;&#x5927;&#x5BB6;&#x7ED3;&#x5408;2&#x3001;3&#x7AE0;&#x8282;&#x7684;&#x4F8B;&#x5B50;&#x771F;&#x6B63;&#x53BB;&#x7406;&#x89E3;Vert.x&#x4E2D;&#x8BA4;&#x8BC1;&#x548C;&#x6388;&#x6743;&#x7684;&#x505A;&#x6CD5;&#x3002;Vert.x&#x4E2D;&#x7684;auth-common&#x662F;&#x4E3A;&#x4E86;&#x7B80;&#x5316;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;&#x6807;&#x51C6;&#x7684;&#x6D41;&#x7A0B;&#xFF0C;&#x8BA9;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x4EC5;&#x4EC5;&#x901A;&#x8FC7;&#x5199;AuthProvider&#x548C;User&#x7684;&#x5B9E;&#x73B0;&#x5B8C;&#x6210;&#x8BA4;&#x8BC1;&#xFF08;&#x6700;&#x5C0F;&#x6539;&#x52A8;&#xFF09;&#x3002;</p><ol><li>&#x63A5;&#x6536;&#x8BF7;&#x6C42;&#xFF0C;&#x89E3;&#x6790;RoutingContext&#x4E2D;&#x7684;HttpServerRequest&#x4E2D;&#x7684;&#x8BA4;&#x8BC1;&#x5934;&#xFF1A;<code>Authorization: Schema Value</code>&#x683C;&#x5F0F;&#x2014;&#x2014;&#x5728;Vert.x&#x4E2D;&#x8C03;&#x7528;&#x65B9;&#x6CD5;<code>parseCredentials</code>&#x6765;&#x5B8C;&#x6210;&#x8FD9;&#x4E2A;&#x5DE5;&#x4F5C;&#xFF0C;&#x5728;&#x6211;&#x4EEC;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6846;&#x67B6;&#x4E2D;&#xFF0C;&#x8FD9;&#x90E8;&#x5206;&#x903B;&#x8F91;&#x88AB;&#x5C01;&#x88C5;&#x5230;<code>CommonToken</code>&#x4E2D;&#x53BB;&#x5B9E;&#x73B0;&#x4E86;&#xFF1B;
+</li>
+<li><p>&#x7B2C;&#x4E00;&#x6B65;&#x4E2D;&#x7684;&#x89E3;&#x6790;&#x9700;&#x8981;&#x5F97;&#x7684;&#x51E0;&#x4E2A;&#x6838;&#x5FC3;&#x4FE1;&#x606F;&#xFF1A;
+1. &#x5F53;&#x524D;&#x8BA4;&#x8BC1;&#x4F7F;&#x7528;&#x7684;Schema&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#xFF1A;<code>Basic&#x3001;Digest&#x3001;Bearer</code>&#xFF0C;&#x4E00;&#x822C;&#x79F0;&#x4E3A;&#x8BA4;&#x8BC1;&#x6A21;&#x5F0F;&#x3002;
+2. &#x5F53;&#x524D;&#x8BA4;&#x8BC1;&#x4F7F;&#x7528;&#x7684;Value&#x4FE1;&#x606F;&#xFF0C;&#x4E0D;&#x540C;&#x6A21;&#x5F0F;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x6709;&#x6240;&#x533A;&#x522B;&#xFF0C;&#x89E3;&#x6790;&#x7B97;&#x6CD5;&#x4F1A;&#x4E0D;&#x540C;&#x3002;
+3. &#x4E00;&#x65E6;&#x4E0D;&#x6EE1;&#x8DB3;&#x4E0A;&#x8FF0;&#x60C5;&#x51B5;&#xFF0C;&#x9700;&#x8981;&#x8FD4;&#x56DE;401&#x7684;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#xFF08;&#x8BA4;&#x8BC1;&#x4E0D;&#x901A;&#x8FC7;&#xFF09;&#x3002;</p></li>
+<li><p>&#x89E3;&#x6790;&#x6210;&#x529F;&#x8FC7;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x6784;&#x9020;AuthProvider&#x4E2D;&#x6240;&#x9700;&#x7684;Credential&#x5BF9;&#x8C61;&#xFF08;JsonObject&#x7C7B;&#x578B;&#xFF09;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x4F1A;&#x5B58;&#x50A8;&#x5F53;&#x524D;&#x8BA4;&#x8BC1;&#x6240;&#x9700;&#x8981;&#x7684;&#x4E00;&#x4E9B;&#x6838;&#x5FC3;&#x4E1A;&#x52A1;&#x6570;&#x636E;&#xFF0C;&#x6BD4;&#x5982;Basic&#x6A21;&#x5F0F;&#x4E2D;&#x5305;&#x542B;&#x4E86;username&#x548C;password&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x9488;&#x5BF9;OAuth2&#x91CD;&#x65B0;&#x5F00;&#x53D1;&#x4E86;&#x4E00;&#x4E9B;&#x5185;&#x5BB9;&#xFF0C;&#x91CC;&#x8FB9;&#x5305;&#x542B;&#x4E86;&#x8D44;&#x6E90;ID&#x3001;&#x4EA4;&#x6362;&#x8FC7;&#x540E;&#x7684;AccessToken&#x7B49;&#xFF0C;&#x7531;&#x4E8E;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x662F;JsonObject&#xFF0C;&#x8FD9;&#x4E2A;&#x5730;&#x65B9;&#x7684;&#x4F20;&#x8F93;&#x6570;&#x636E;&#x975E;&#x5E38;&#x81EA;&#x7531;&#x3002;</p></li>
+<li>&#x3010;&#x5728;&#x8FD9;&#x4E00;&#x6B65;&#x81EA;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x5E93;&#x8BBF;&#x95EE;&#xFF0C;&#x6216;&#x8BA4;&#x8BC1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BBF;&#x95EE;&#x3011;<br>&#x8C03;&#x7528;AuthProvider&#x7684;&#x6838;&#x5FC3;&#x8BA4;&#x8BC1;&#x65B9;&#x6CD5;&#xFF1A;authenticate&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x5C06;&#x4F20;&#x5165;&#x7684;JsonObject&#x8F6C;&#x6362;&#x6210;User&#x5B9E;&#x73B0;&#x5BF9;&#x8C61;&#xFF08;User&#x5BF9;&#x8C61;&#x53EF;&#x81EA;&#x5B9A;&#x4E49;&#xFF09;&#xFF1B;
+</li>
+<li>&#x3010;&#x8FD9;&#x4E00;&#x6B65;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x6388;&#x6743;&#xFF0C;&#x5305;&#x62EC;&#x9875;&#x9762;&#x57DF;&#x3001;&#x6570;&#x636E;&#x57DF;&#x3001;&#x5B57;&#x6BB5;&#x57DF;&#x7B49;&#x3011;<br>&#x5728;&#x8BA4;&#x8BC1;&#x901A;&#x8FC7;&#x540E;&#xFF0C;&#x8C03;&#x7528;User&#x4E2D;&#x7684;doIsPermitted&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x6388;&#x6743;&#x8FC7;&#x7A0B;&#xFF0C;&#x6388;&#x6743;&#x8FC7;&#x7A0B;&#x4E5F;&#x53EF;&#x4EE5;&#x91CD;&#x5199;AbstractUser&#x7684;isAuthorized&#x65B9;&#x6CD5;&#x6765;&#x5B8C;&#x6210;&#x6574;&#x4E2A;&#x6388;&#x6743;&#x6D41;&#x7A0B;&#x7684;&#x91CD;&#x5199;&#xFF08;&#x524D;&#x6587;&#x63D0;&#x8FC7;&#xFF0C;&#x91CD;&#x5199;isAuthorized&#x4F1A;&#x5BFC;&#x81F4;&#x6743;&#x9650;&#x7F13;&#x5B58;&#x4E0D;&#x53EF;&#x7528;&#xFF08;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#xFF09;&#xFF1B;
+</li>
+<li>&#x8BA4;&#x8BC1;&#x6210;&#x529F;&#x8FC7;&#x540E;&#xFF0C;&#x6267;&#x884C;&#x6210;&#x529F;&#x903B;&#x8F91;&#xFF0C;&#x4E00;&#x822C;&#x6210;&#x529F;&#x7684;&#x60C5;&#x51B5;&#x4F1A;&#x8C03;&#x7528;RoutingContext&#x7684;next&#x65B9;&#x6CD5;&#xFF0C;&#x8FDB;&#x5165;&#x4E0B;&#x4E00;&#x4E2A;Handler&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x76F4;&#x63A5;&#x8C03;&#x7528;fail&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x7684;&#x72B6;&#x6001;&#x4EE3;&#x7801;&#xFF1A;401-&#x8BA4;&#x8BC1;&#x4E0D;&#x901A;&#x8FC7;&#x3001;403-&#x6388;&#x6743;&#x5931;&#x8D25;&#x3002;
+</li></ol>
+<p>&#x5728;&#x5B9E;&#x73B0;&#x4E0A;&#x8FF0;&#x6D41;&#x7A0B;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x4F7F;&#x7528;Vert.x&#x63D0;&#x4F9B;&#x7684;AuthProvider&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x8FC7;&#x7A0B;&#x5F0F;&#x7684;&#x4EE3;&#x7801;&#x53BB;&#x5B9E;&#x73B0;&#x81EA;&#x5DF1;&#x7684;&#x8BA4;&#x8BC1;&#x6388;&#x6743;&#x903B;&#x8F91;&#xFF0C;&#x53EA;&#x8981;&#x6309;&#x7167;&#x4E0A;&#x8FF0;&#x6D41;&#x7A0B;&#x505A;&#x5373;&#x53EF;&#xFF0C;&#x6700;&#x7EC8;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x8BBE;&#x8BA1;&#x95EE;&#x9898;&#x3002;</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../2-vertxsui-sui-nian.html" class="navigation navigation-prev " aria-label="Previous page: 2 - Vert.x碎碎念">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../3-zeroshi-zhan-fen-xi.html" class="navigation navigation-next " aria-label="Next page: 3 - Zero实战分析">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ZVX-001 基于 auth-common 开发Vert.x自定义安全组件","level":"3.3.1","depth":2,"next":{"title":"3 - Zero实战分析","level":"3.4","depth":1,"path":"zero-up/3-zeroshi-zhan-fen-xi.md","ref":"zero-up/3-zeroshi-zhan-fen-xi.md","articles":[]},"previous":{"title":"2 - Vert.x碎碎念","level":"3.3","depth":1,"path":"zero-up/2-vertxsui-sui-nian.md","ref":"zero-up/2-vertxsui-sui-nian.md","articles":[{"title":"ZVX-001 基于 auth-common 开发Vert.x自定义安全组件","level":"3.3.1","depth":2,"path":"zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.md","ref":"zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.md","mtime":"2019-03-31T12:39:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-03-31T15:05:29.515Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

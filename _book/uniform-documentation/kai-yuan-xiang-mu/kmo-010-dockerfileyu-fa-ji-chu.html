@@ -1,0 +1,1351 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>KMO-008 Dockerfile语法基础 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="kmo-009-redux-ormxiang-mu-wen-dang.html" />
+    
+    
+    <link rel="prev" href="kmo-008-jasmineji-chu-zhi-shi.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">http://www.origin-x.cn</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Origin X Doc文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Zero UI</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../zero-ui/shou-ye.html">
+            
+                <a href="../../zero-ui/shou-ye.html">
+            
+                    
+                    Zero UI文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../zero-ui/1-zero-uiji-ben-jiao-cheng.html">
+            
+                <a href="../../zero-ui/1-zero-uiji-ben-jiao-cheng.html">
+            
+                    
+                    1 - Zero UI基本教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../zero-ui/2-reactsui-sui-nian.html">
+            
+                <a href="../../zero-ui/2-reactsui-sui-nian.html">
+            
+                    
+                    2 - React碎碎念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../zero-ui/3-antquan-jia-tong.html">
+            
+                <a href="../../zero-ui/3-antquan-jia-tong.html">
+            
+                    
+                    3 - Ant全家桶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../zero-ui/4-zero-uishi-zhan-fen-xi.html">
+            
+                <a href="../../zero-ui/4-zero-uishi-zhan-fen-xi.html">
+            
+                    
+                    4 - Zero UI实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Zero Up</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../zero-up/shou-ye.html">
+            
+                <a href="../../zero-up/shou-ye.html">
+            
+                    
+                    Zero 文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../zero-up/1-zeroji-ben-jiao-cheng.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng.html">
+            
+                    
+                    1 - Zero基本教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html">
+            
+                    
+                    ZRO-001 零之起源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html">
+            
+                    
+                    ZRO-002 第一个Zero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html">
+            
+                    
+                    ZRO-003 RESTful中的Path和Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../zero-up/2-vertxsui-sui-nian.html">
+            
+                <a href="../../zero-up/2-vertxsui-sui-nian.html">
+            
+                    
+                    2 - Vert.x碎碎念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../../zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html">
+            
+                <a href="../../zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html">
+            
+                    
+                    ZVX-001 基于 auth-common 开发Vert.x自定义安全组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../zero-up/3-zeroshi-zhan-fen-xi.html">
+            
+                <a href="../../zero-up/3-zeroshi-zhan-fen-xi.html">
+            
+                    
+                    3 - Zero实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../zero-up/4-javayu-yan-ji-chu.html">
+            
+                <a href="../../zero-up/4-javayu-yan-ji-chu.html">
+            
+                    
+                    4 - Java语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Origin X Engine</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../origin-x-engine/yin-dao-ye.html">
+            
+                <a href="../../origin-x-engine/yin-dao-ye.html">
+            
+                    
+                    Origin X Engine文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../origin-x-engine/1-oxshi-shi-jiao-cheng.html">
+            
+                <a href="../../origin-x-engine/1-oxshi-shi-jiao-cheng.html">
+            
+                    
+                    1 - Ox实施教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../origin-x-engine/2-oxzi-ding-yi-zu-jian.html">
+            
+                <a href="../../origin-x-engine/2-oxzi-ding-yi-zu-jian.html">
+            
+                    
+                    2 - Ox自定义组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../../origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html">
+            
+                <a href="../../origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html">
+            
+                    
+                    3 - Ox后端扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../../origin-x-engine/4-oxshi-zhan-fen-xi.html">
+            
+                <a href="../../origin-x-engine/4-oxshi-zhan-fen-xi.html">
+            
+                    
+                    4 - Ox实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Uniform Docoument</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../yin-dao-ye.html">
+            
+                <a href="../yin-dao-ye.html">
+            
+                    
+                    通用知识库主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../mian-shi-ti.html">
+            
+                <a href="../mian-shi-ti.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html">
+            
+                <a href="../mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html">
+            
+                    
+                    KMI-001 抽奖器需求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../mian-shi-ti/kmi-002-cdakao-shi-da-gang.html">
+            
+                <a href="../mian-shi-ti/kmi-002-cdakao-shi-da-gang.html">
+            
+                    
+                    KMI-002 CDA考试大纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html">
+            
+                <a href="../mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html">
+            
+                    
+                    KMI-003 Spring RESTful开发基础题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../ruan-jian-xu-qiu-ling-yu.html">
+            
+                <a href="../ruan-jian-xu-qiu-ling-yu.html">
+            
+                    
+                    软件理论领域
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html">
+            
+                <a href="../ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html">
+            
+                    
+                    KMR-001 非功能需求评估指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.html">
+            
+                <a href="../ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.html">
+            
+                    
+                    KMR-002 程序设计的六个基本原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../yu-yan-xiang-guan.html">
+            
+                <a href="../yu-yan-xiang-guan.html">
+            
+                    
+                    语言相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../yu-yan-xiang-guan/kml-001-ecma-script-60.html">
+            
+                <a href="../yu-yan-xiang-guan/kml-001-ecma-script-60.html">
+            
+                    
+                    KML-001 ECMA Script 6.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="../yu-yan-xiang-guan/kml-002-jsr330gui-fan.html">
+            
+                <a href="../yu-yan-xiang-guan/kml-002-jsr330gui-fan.html">
+            
+                    
+                    KML-002 JSR330规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="../yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.html">
+            
+                <a href="../yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.html">
+            
+                    
+                    KML-003 浏览器中的Fetch Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.4" data-path="../yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.html">
+            
+                <a href="../yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.html">
+            
+                    
+                    KML-004 Java中的静态和单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.5" data-path="../yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.html">
+            
+                <a href="../yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.html">
+            
+                    
+                    KML-005 Java语言的.class字节码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../kai-yuan-xiang-mu.html">
+            
+                <a href="../kai-yuan-xiang-mu.html">
+            
+                    
+                    开源项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.5.1" data-path="kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html">
+            
+                <a href="kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html">
+            
+                    
+                    KMO-001 Vert.x Core官方翻译版 3.4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.2" data-path="kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html">
+            
+                <a href="kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html">
+            
+                    
+                    KMO-002 Vert.x Web官方翻译版 3.4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.3" data-path="kmo-004-spring-bootzhong-de-ce-shi.html">
+            
+                <a href="kmo-004-spring-bootzhong-de-ce-shi.html">
+            
+                    
+                    KMO-003 Spring Boot中的测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.4" data-path="kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html">
+            
+                <a href="kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html">
+            
+                    
+                    KMO-004 使用OVal进行防御式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.5" data-path="kmo-006-sassji-chu-zhi-shi.html">
+            
+                <a href="kmo-006-sassji-chu-zhi-shi.html">
+            
+                    
+                    KMO-005 Sass基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.6" data-path="kmo-007-mockitoji-chu-he-shi-yong.html">
+            
+                <a href="kmo-007-mockitoji-chu-he-shi-yong.html">
+            
+                    
+                    KMO-006 Mockito基础和使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.7" data-path="kmo-008-jasmineji-chu-zhi-shi.html">
+            
+                <a href="kmo-008-jasmineji-chu-zhi-shi.html">
+            
+                    
+                    KMO-007 Jasmine基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.5.8" data-path="kmo-010-dockerfileyu-fa-ji-chu.html">
+            
+                <a href="kmo-010-dockerfileyu-fa-ji-chu.html">
+            
+                    
+                    KMO-008 Dockerfile语法基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.9" data-path="kmo-009-redux-ormxiang-mu-wen-dang.html">
+            
+                <a href="kmo-009-redux-ormxiang-mu-wen-dang.html">
+            
+                    
+                    KMO-009 redux-orm项目文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.10" data-path="kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html">
+            
+                <a href="kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html">
+            
+                    
+                    KMO-010 Tradeshift应用开发手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../gui-fan-xiang-guan.html">
+            
+                <a href="../gui-fan-xiang-guan.html">
+            
+                    
+                    规范相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6.1" data-path="../gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html">
+            
+                <a href="../gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html">
+            
+                    
+                    KMS-001 UBL规范中的Price字段说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Environment</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../environment/yin-dao-ye.html">
+            
+                <a href="../../environment/yin-dao-ye.html">
+            
+                    
+                    环境搭建知识库主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../environment/1-dockerrong-qi-huan-jing.html">
+            
+                <a href="../../environment/1-dockerrong-qi-huan-jing.html">
+            
+                    
+                    1 - Docker容器环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../../environment/2-zeroandoxhuan-jing.html">
+            
+                <a href="../../environment/2-zeroandoxhuan-jing.html">
+            
+                    
+                    2 - Zero&Ox环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../../environment/4-deploymentbu-shu-jiao-cheng.html">
+            
+                <a href="../../environment/4-deploymentbu-shu-jiao-cheng.html">
+            
+                    
+                    3 - Deployment部署教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../../environment/5-qi-ta-huan-jing.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing.html">
+            
+                    
+                    4 - 其他环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.5.1" data-path="../../environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.html">
+            
+                    
+                    ENV-001 Spring Boot中的数据源配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.2" data-path="../../environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.html">
+            
+                    
+                    ENV-002 Karma在ES6中的Webpack配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.3" data-path="../../environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.html">
+            
+                    
+                    ENV-003 Karma的安装教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.4" data-path="../../environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html">
+            
+                    
+                    ENV-004 Windows环境的Docker安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.5" data-path="../../environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html">
+            
+                    
+                    ENV-005 使用Docker环境运行Spring Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.6" data-path="../../environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html">
+            
+                    
+                    ENV-006 Maven环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Specification</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../specification/kai-fa-gui-fan-wen-dang-zhu-ye.html">
+            
+                <a href="../../specification/kai-fa-gui-fan-wen-dang-zhu-ye.html">
+            
+                    
+                    开发规范文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../specification/1-zerogui-fan.html">
+            
+                <a href="../../specification/1-zerogui-fan.html">
+            
+                    
+                    1 - Zero规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../../specification/2-zero-uigui-fan.html">
+            
+                <a href="../../specification/2-zero-uigui-fan.html">
+            
+                    
+                    2 - Zero UI规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../../specification/3-origin-xgui-fan.html">
+            
+                <a href="../../specification/3-origin-xgui-fan.html">
+            
+                    
+                    3 - Origin X规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan.html">
+            
+                    
+                    4 - RESTful设计规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.5.1" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.html">
+            
+                    
+                    SPR-001 URI路径设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5.2" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.html">
+            
+                    
+                    SPR-002 URI业务设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >KMO-008 Dockerfile语法基础</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="dockerfile&#x5199;&#x6CD5;">Dockerfile&#x5199;&#x6CD5;</h1><h2 id="from">FROM</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>FROM &lt;image&gt;</code>
+</li>
+<li><code>FROM &lt;image&gt;:&lt;tag&gt;</code>
+</li>
+<li><code>FROM &lt;image&gt;@&lt;digest&gt;</code>
+</li></ul>
+<p>&#x4FE1;&#x606F;&#xFF1A;</p><ul><li><strong>FROM</strong>&#x5FC5;&#x987B;&#x662F;&#x6CA1;&#x6709;&#x6CE8;&#x91CA;&#x7684;&#x4EE3;&#x7801;&#x884C;
+</li>
+<li><strong>FROM</strong>&#x5982;&#x679C;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x955C;&#x50CF;&#xFF0C;&#x5728;&#x5355;&#x4E2A;Dockerfile&#x6587;&#x4EF6;&#x4E2D;FROM&#x53EF;&#x4EE5;&#x51FA;&#x73B0;&#x591A;&#x6B21;&#x2014;&#x2014;&#x5728;&#x6BCF;&#x4E2A;FROM&#x4E4B;&#x524D;&#xFF0C;&#x7B80;&#x5355;&#x4F7F;&#x7528;&#x6CE8;&#x91CA;&#x5907;&#x6CE8;&#x4E00;&#x4E0B;&#x5F53;&#x524D;&#x8FD9;&#x4E2A;&#x955C;&#x50CF;&#x7684;ImageID
+</li>
+<li><code>tag</code> &#x548C;<code>digest</code> &#x4E24;&#x4E2A;&#x503C;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x63D0;&#x4F9B;&#x5219;&#x4F7F;&#x7528;<code>latest</code> &#x7684;&#x503C;&#x4F53;&#x6539;&#x66FF;&#x4EE3;&#xFF0C;&#x5982;&#x679C;builder&#x65E0;&#x6CD5;&#x5339;&#x914D;<code>tag</code> &#x4E2D;&#x7684;&#x503C;&#x5219;&#x62A5;&#x9519;
+</li></ul>
+<h2 id="maintainer">MAINTAINER</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>MAINTAINER &lt;name&gt;</code>
+</li></ul>
+<p>&#x8BE5;&#x547D;&#x4EE4;&#x5141;&#x8BB8;&#x60A8;&#x5728;&#x6587;&#x4EF6;&#x4E2D;&#x8BBE;&#x7F6E;&#x4F5C;&#x8005;&#x4FE1;&#x606F;&#x3002;</p><h2 id="run">RUN</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>RUN &lt;command&gt;</code> &#xFF08;shell&#x683C;&#x5F0F;&#xFF0C;command&#x547D;&#x4EE4;&#x5C06;&#x5728;shell&#x4E2D;&#x8FD0;&#x884C;&#xFF0C;Linux&#x4E2D;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;<code>/bin/sh -c</code> &#xFF0C;&#x5728;Windows&#x4E2D;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;<code>cmd /S /C</code> &#xFF09;
+</li>
+<li><code>RUN [&quot;&lt;executable&gt;&quot;,&quot;&lt;param1&gt;&quot;,&quot;&lt;param2&gt;&quot;]</code>exec&#x683C;&#x5F0F;
+</li></ul>
+<p>&#x4FE1;&#x606F;&#xFF1A;</p><ul><li>exec&#x683C;&#x5F0F;&#x53EF;&#x9632;&#x6B62;shell&#x4E2D;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x76F4;&#x63A5;&#x8FD0;&#x884C;<code>RUN</code>&#x547D;&#x4EE4;&#x4F1A;&#x4F7F;&#x7528;&#x4E0D;&#x5305;&#x542B;&#x7279;&#x6B8A;Shell&#x53EF;&#x6267;&#x884C;&#x7684;&#x57FA;&#x7840;&#x955C;&#x50CF;&#x3002;
+</li>
+<li>&#x9ED8;&#x8BA4;&#x7684;shell&#x53EF;&#x76F4;&#x63A5;&#x6539;&#x6210;<code>SHELL</code>&#x547D;&#x4EE4;&#x6765;&#x5B8C;&#x6210;&#x3002;
+</li>
+<li><p>&#x5982;&#x679C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>exec</code> &#x683C;&#x5F0F;&#x4F1A;&#x89E6;&#x53D1;&#x666E;&#x901A;&#x7684;shell&#x6D41;&#x7A0B;&#xFF0C;&#x5982;&#xFF1A;</p><pre><code>RUN [&quot;echo&quot;,&quot;$HOME&quot;]</code></pre>
+<p>&#x5C06;&#x4F1A;&#x6253;&#x5370;&#x73AF;&#x5883;&#x53D8;&#x91CF;</p></li></ul>
+<h2 id="cmd">CMD</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>CMD [&quot;&lt;executable&gt;&quot;,&quot;&lt;param1&gt;&quot;,&quot;&lt;param2&gt;&quot;]</code>&#xFF08;&#x76F4;&#x63A5;&#x6267;&#x884C;exec&#x65B9;&#x5F0F;&#xFF09;
+</li>
+<li><code>CMD [&quot;&lt;param1&gt;&quot;,&quot;&lt;param2&gt;&quot;]</code>&#xFF08;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x540C;<code>ENTRYPOINT</code>&#xFF09;
+</li>
+<li><code>CMD &lt;command&gt; &lt;param1&gt; &lt;param2&gt;</code>&#xFF08;Shell&#x6A21;&#x5F0F;&#xFF09;
+</li></ul>
+<p>&#x4FE1;&#x606F;&#xFF1A;</p><ul><li><code>CMD</code> &#x7684;&#x4E3B;&#x8981;&#x610F;&#x56FE;&#x662F;&#x63D0;&#x4F9B;&#x9ED8;&#x8BA4;&#x7684;&#x6267;&#x884C;&#x5BB9;&#x5668;&#xFF0C;&#x9ED8;&#x8BA4;&#x5BB9;&#x5668;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x5668;&#xFF0C;&#x82E5;&#x4F60;&#x4F7F;&#x7528;&#x4E86;<code>ENTRYPOINT</code> &#x5219;&#x53EF;&#x7701;&#x7565;&#x8BE5;&#x6267;&#x884C;&#x5668;&#x3002;
+</li>
+<li>&#x5728;&#x4E00;&#x4E2A;Dockerfile&#x4E2D;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;<code>CMD</code>&#x6307;&#x4EE4;&#xFF0C;&#x82E5;&#x60A8;&#x63D0;&#x4F9B;&#x4E86;&#x8D85;&#x8FC7;&#x4E00;&#x4E2A;<code>CMD</code>&#xFF0C;&#x5219;&#x53EA;&#x6709;&#x6700;&#x540E;&#x4E00;&#x4E2A;<code>CMD</code>&#x4F1A;&#x751F;&#x6548;&#x3002;
+</li>
+<li>&#x5982;&#x679C;<code>CMD</code>&#x7528;&#x6765;&#x63D0;&#x4F9B;&#x4E86;<code>ENTRYPOINT</code>&#x6307;&#x4EE4;&#x7684;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#xFF0C;<code>CMD</code>&#x548C;<code>ENTRYPOINT</code>&#x6307;&#x4EE4;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;JSON Array&#x7684;&#x683C;&#x5F0F;&#x3002;
+</li>
+<li>&#x5982;&#x679C;&#x4E3A;<code>docker run</code>&#x5236;&#x5B9A;&#x4E86;&#x7279;&#x6B8A;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x5C06;&#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x6307;&#x5B9A;&#x7684;<code>CMD</code>&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x3002;
+</li>
+<li>&#x5982;&#x679C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>exec</code>&#x683C;&#x5F0F;&#x4F1A;&#x89E6;&#x53D1;&#x666E;&#x901A;&#x7684;shell&#x6D41;&#x7A0B;&#x3002;
+</li></ul>
+<h2 id="label">LABEL</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>LABEL &lt;key&gt;=&lt;value&gt; [&lt;key&gt;=&lt;value&gt; ...]</code>
+</li></ul>
+<p>&#x4FE1;&#x606F;&#xFF1A;</p><ul><li><code>LABEL</code>&#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x5728;&#x955C;&#x50CF;&#x4E2D;&#x6DFB;&#x52A0;&#x5143;&#x6570;&#x636E;&#x3002;
+</li>
+<li>&#x5982;&#x679C;&#x8981;&#x5728;LABEL&#x4E2D;&#x4F7F;&#x7528;&#x7A7A;&#x767D;&#xFF0C;&#x5219;&#x7528;&#x5F15;&#x53F7;&#x6216;&#x53CD;&#x659C;&#x6760;&#xFF0C;&#x5C31;&#x50CF;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x89E3;&#x6790;&#x4E2D;&#x4E00;&#x6837;&#x3002;
+</li>
+<li>Labels&#x672C;&#x8EAB;&#x662F;&#x9644;&#x52A0;&#x7684;&#xFF0C;&#x5305;&#x62EC;<code>FROM</code>&#x955C;&#x50CF;&#x4E2D;&#x7684;<code>LABEL</code>&#x3002;
+</li>
+<li>&#x5982;&#x679C;Docker&#x9047;&#x5230;&#x4E86;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x952E;&#x7684;label&#xFF0C;&#x65B0;&#x503C;&#x5C06;&#x4F1A;&#x66FF;&#x6362;&#x6389;&#x65E7;&#x503C;&#x3002;
+</li>
+<li>&#x82E5;&#x8981;&#x67E5;&#x770B;&#x955C;&#x50CF;&#x4E2D;&#x7684;labels&#xFF0C;&#x5219;&#x4F7F;&#x7528;<code>docker inspect</code>&#x547D;&#x4EE4;&#xFF0C;&#x6240;&#x6709;&#x4FE1;&#x606F;&#x5C06;&#x4F4D;&#x4E8E;<code>&quot;Labels&quot;</code>&#x7684;JSON&#x5C5E;&#x6027;&#x4E2D;&#x3002;
+</li></ul>
+<h2 id="expose">EXPOSE</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>EXPOSE &lt;port&gt; [&lt;port&gt; ...]</code>
+</li></ul>
+<p>&#x4FE1;&#x606F;&#xFF1A;</p><ul><li>&#x901A;&#x77E5;Docker&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x65F6;&#x5C06;&#x8981;&#x76D1;&#x542C;&#x7684;&#x7F51;&#x7EDC;&#x7AEF;&#x53E3;&#x3002;
+</li>
+<li><code>EXPOSE</code>&#x5F00;&#x653E;&#x7684;&#x7AEF;&#x53E3;&#x4E0D;&#x4F7F;&#x7528;&#x4E3B;&#x673A;&#x7AEF;&#x53E3;&#x4E5F;&#x53EF;&#x8BBF;&#x95EE;&#x3002;
+</li></ul>
+<h2 id="env">ENV</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>ENV &lt;key&gt; &lt;value&gt;</code>
+</li>
+<li><code>ENV &lt;key&gt;=&lt;value&gt; [&lt;key&gt;=&lt;value&gt; ...]</code>
+</li></ul>
+<p>&#x4FE1;&#x606F;&#xFF1A;</p><ul><li>&#x4F7F;&#x7528;<code>ENV</code>&#x547D;&#x4EE4;&#x53EF;&#x8BBE;&#x7F6E;<code>&lt;key&gt;=&lt;value&gt;</code>&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;
+</li>
+<li>&#x8FD9;&#x4E2A;&#x503C;&#x5C06;&#x5728;&#x6240;&#x6709;&quot;descendant&quot;&#x7684;Dockerfile&#x73AF;&#x5883;&#x4E2D;&#x751F;&#x6548;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5185;&#x8054;&#x66FF;&#x6362;&#x3002;
+</li>
+<li>&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x5728;&#x5BB9;&#x5668;&#x4ECE;&#x955C;&#x50CF;&#x8FD0;&#x884C;&#x5F00;&#x59CB;&#x540E;&#x4E00;&#x76F4;&#x6709;&#x6548;&#x3002;
+</li>
+<li>&#x7B2C;&#x4E00;&#x4E2A;&#x683C;&#x5F0F;&#x53EF;&#x8BBE;&#x7F6E;&#x4F46;&#x4E2A;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;<code>&lt;value&gt;</code>&#x4E2D;&#x6240;&#x6709;&#x5B57;&#x7B26;d&#x5427;&#x751F;&#x6548;&#x5305;&#x62EC;&#x7A7A;&#x767D;&#x4EE5;&#x53CA;&#x5F15;&#x53F7;&#x3002;
+</li></ul>
+<h2 id="add">ADD</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>ADD &lt;src&gt; [&lt;src&gt; ...] &lt;dest&gt;</code>
+</li>
+<li><code>ADD [&quot;&lt;src&gt;&quot;,... &quot;&lt;dest&gt;&quot;]</code>&#xFF08;&#x8FD9;&#x79CD;&#x683C;&#x5F0F;&#x7528;&#x4E8E;&#x89E3;&#x6790;&#x5305;&#x542B;&#x4E86;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x53C2;&#x6570;&#x7684;&#x60C5;&#x51B5;&#xFF09;
+</li></ul>
+<p>&#x4FE1;&#x606F;&#xFF1A;</p><ul><li>&#x62F7;&#x8D1D;<code>&lt;src&gt;</code>&#x6307;&#x5B9A;&#x7684;&#x65B0;&#x6587;&#x4EF6;&#x3001;&#x76EE;&#x5F55;&#x6216;&#x8005;&#x8FDC;&#x7A0B;URLs&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x5B83;&#x6DFB;&#x52A0;&#x5230;&#x955C;&#x50CF;&#x4E2D;<code>&lt;dest&gt;</code>&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x91CC;&#x3002;
+</li>
+<li><code>&lt;src&gt;</code>&#x4E2D;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x901A;&#x914D;&#x7B26;&#xFF0C;&#x4F7F;&#x7528;Go&#x8BED;&#x8A00;&#x4E2D;&#x7684;<code>filepath.Match</code>&#x89C4;&#x5219;&#x5339;&#x914D;&#x3002;
+</li>
+<li>&#x5982;&#x679C;<code>&lt;src&gt;</code>&#x662F;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;&#xFF0C;&#x5219;&#x5B83;&#x4EEC;&#x5FC5;&#x987B;&#x662F;&#x548C;&#x76EE;&#x5F55;&#x6E90;&#x76F8;&#x5173;&#xFF08;build&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x73AF;&#x5883;&#xFF09;&#x3002;
+</li>
+<li><code>&lt;dest&gt;</code>&#x662F;&#x4E00;&#x4E2A;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x6216;&#x76F8;&#x5F53;&#x4E8E;<code>WORKDIR</code>&#x7684;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;
+</li>
+<li>&#x5982;&#x679C;<code>&lt;dest&gt;</code>&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x521B;&#x5EFA;&#x4E22;&#x5931;&#x7684;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;&#x3002;
+</li></ul>
+<h2 id="copy">COPY</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>COPY &lt;src&gt; [&lt;src&gt; ...] &lt;dest&gt;</code>
+</li>
+<li><code>COPY [&quot;&lt;src&gt;&quot;, ... &quot;&lt;dest&quot;]</code>&#xFF08;&#x8FD9;&#x79CD;&#x683C;&#x5F0F;&#x7528;&#x4E8E;&#x89E3;&#x6790;&#x5305;&#x542B;&#x4E86;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x53C2;&#x6570;&#x7684;&#x60C5;&#x51B5;&#xFF09;
+</li></ul>
+<p>&#x4FE1;&#x606F;&#xFF1A;</p><ul><li>&#x62F7;&#x8D1D;<code>&lt;src&gt;</code>&#x6307;&#x5B9A;&#x7684;&#x65B0;&#x6587;&#x4EF6;&#x3001;&#x76EE;&#x5F55;&#x6216;&#x8005;&#x8FDC;&#x7A0B;URLs&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x5B83;&#x6DFB;&#x52A0;&#x5230;&#x955C;&#x50CF;&#x4E2D;<code>&lt;dest&gt;</code>&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x91CC;&#x3002;
+</li>
+<li><code>&lt;src&gt;</code>&#x4E2D;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x901A;&#x914D;&#x7B26;&#xFF0C;&#x4F7F;&#x7528;Go&#x8BED;&#x8A00;&#x4E2D;&#x7684;<code>filepath.Match</code>&#x89C4;&#x5219;&#x5339;&#x914D;&#x3002;
+</li>
+<li>&#x5982;&#x679C;<code>&lt;src&gt;</code>&#x662F;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;&#xFF0C;&#x5219;&#x5B83;&#x4EEC;&#x5FC5;&#x987B;&#x662F;&#x548C;&#x76EE;&#x5F55;&#x6E90;&#x76F8;&#x5173;&#xFF08;build&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x73AF;&#x5883;&#xFF09;&#x3002;
+</li>
+<li><code>&lt;dest&gt;</code>&#x662F;&#x4E00;&#x4E2A;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x6216;&#x76F8;&#x5F53;&#x4E8E;<code>WORKDIR</code>&#x7684;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;
+</li>
+<li>&#x5982;&#x679C;<code>&lt;dest&gt;</code>&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x521B;&#x5EFA;&#x4E22;&#x5931;&#x7684;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;&#x3002;
+</li></ul>
+<h2 id="entrypoint">ENTRYPOINT</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>ENTRYPOINT [&quot;&lt;executable&gt;&quot;,&quot;&lt;param1&gt;&quot;,&quot;&lt;param2&gt;&quot;]</code>&#xFF08;&#x524D;&#x6587;&#x63D0;&#x5230;&#x7684;exec&#x683C;&#x5F0F;&#xFF09;
+</li>
+<li><code>ENTRYPOINT &lt;command&gt; &lt;param1&gt; &lt;param2&gt;</code>&#xFF08;shell&#x683C;&#x5F0F;&#xFF09;
+</li></ul>
+<p>&#x4FE1;&#x606F;&#xFF1A;</p><ul><li>&#x8FD0;&#x884C;&#x60A8;&#x914D;&#x7F6E;&#x53EF;&#x6267;&#x884C;&#x7684;&#x5BB9;&#x5668;&#x3002;
+</li>
+<li><code>docker run &lt;image&gt;</code>&#x4E2D;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x5C06;&#x4F1A;&#x8FFD;&#x52A0;&#x5230;<code>ENTRYPOINT</code>&#x4E2D;&#x7684;<code>exec</code>&#x683C;&#x5F0F;&#x540E;&#xFF0C;&#x5E76;&#x4E14;&#x4F1A;&#x8986;&#x76D6;&#x4F7F;&#x7528;CMD&#x65F6;&#x7684;&#x5143;&#x7D20;&#x3002;
+</li>
+<li>shell&#x683C;&#x5F0F;&#x5C06;&#x4F1A;&#x963B;&#x6B62;&#x4EFB;&#x4F55;<code>CMD</code>&#x6216;&#x8005;&#x547D;&#x4EE4;&#x884C;&#x4F7F;&#x7528;&#x7684;&#x5176;&#x4ED6;&#x53C2;&#x6570;&#xFF0C;&#x4F46;&#x662F;<code>ENTRYPOINT</code>&#x5C06;&#x4F1A;&#x4ECE;shell&#x542F;&#x52A8;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x53EF;&#x6267;&#x884C;&#x5BB9;&#x5668;&#x4E0D;&#x4F1A;&#x662F;PID 1&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x6536;&#x5230;Unix&#x4FE1;&#x53F7;&#xFF0C;&#x9884;&#x5904;&#x7406;<code>exec</code>&#x89E3;&#x51B3;&#x4E86;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;
+</li>
+<li>Dockerfile&#x4E2D;&#x4EC5;&#x4EC5;&#x53EA;&#x6709;&#x6700;&#x540E;&#x4E00;&#x4E2A;<code>ENTRYPOINT</code>&#x4F1A;&#x751F;&#x6548;&#x3002;
+</li></ul>
+<h2 id="volume">VOLUME</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>VOLUME [&quot;&lt;path&gt;&quot;,...]</code>
+</li>
+<li><code>VOLUME &lt;path&gt; [&lt;path&gt; ...]</code>
+</li></ul>
+<p>&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x540D;&#x5B57;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6302;&#x8F7D;&#x70B9;&#x4F7F;&#x5F97;&#x5B83;&#x53EF;&#x4EE5;&#x4ECE;&#x672C;&#x673A;&#x4E3B;&#x673A;&#x548C;&#x5176;&#x4ED6;&#x5BB9;&#x5668;&#x8BBF;&#x95EE;&#x8BE5;&#x5377;&#x3002;</p><h2 id="user">USER</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>USER &lt;username | UID&gt;</code>
+</li></ul>
+<p>&#x4F7F;&#x7528;<code>USER</code>&#x6307;&#x4EE4;&#x53EF;&#x8BBE;&#x7F6E;&#x8FD0;&#x884C;&#x955C;&#x50CF;&#x7684;&#x7528;&#x6237;&#x540D;&#x548C;UID&#xFF0C;&#x8BE5;&#x4FE1;&#x606F;&#x4F1A;&#x5728;<code>RUN</code>&#xFF0C;<code>CMD</code>&#x548C;<code>ENTRYPOINT</code>&#x4E2D;&#x4F7F;&#x7528;&#x3002;</p><h2 id="workdir">WORKDIR</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>WORKDIR &lt;/path/to/workdir&gt;</code>
+</li></ul>
+<p>&#x4FE1;&#x606F;&#xFF1A;</p><ul><li>&#x8BBE;&#x7F6E;&#x547D;&#x4EE4;&#xFF08;&#x5982;<code>RUN</code>&#xFF0C;<code>CMD</code>&#xFF0C;<code>ENTRYPOINT</code>&#xFF0C;<code>COPY</code>&#xFF0C;<code>ADD</code>&#xFF09;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x3002;
+</li>
+<li>&#x5728;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#x53EF;&#x4F7F;&#x7528;&#x591A;&#x6B21;&#xFF0C;&#x82E5;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x63D0;&#x4F9B;&#x4E86;&#xFF0C;&#x5B83;&#x5C06;&#x4F7F;&#x4F7F;&#x7528;&#x524D;&#x4E00;&#x6B21;<code>WORKDIR</code>&#x6307;&#x4EE4;&#x8BBE;&#x7F6E;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x3002;
+</li></ul>
+<h2 id="arg">ARG</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>ARG &lt;name&gt; [=&lt;default value&gt;]</code>
+</li></ul>
+<p>&#x4FE1;&#x606F;&#xFF1A;</p><ul><li>&#x5B9A;&#x4E49;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4F20;&#x7ED9;<code>docker build</code>&#x547D;&#x4EE4;&#x7684;build-time&#x53D8;&#x91CF;&#x4FE1;&#x606F;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>--build-arg &lt;varname&gt;=&lt;value&gt;</code>&#x683C;&#x5F0F;&#x3002;
+</li>
+<li>&#x53EF;&#x4F7F;&#x7528;<code>ARG</code>&#x591A;&#x6B21;&#x6765;&#x8BBE;&#x7F6E;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x4FE1;&#x606F;&#x3002;
+</li>
+<li>&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;build-time&#x53D8;&#x91CF;&#x4F20;&#x9012;&#x4E00;&#x4E9B;&#x5BC6;&#x7801;&#x5982;github&#x4E2D;&#x7684;keys, credentials&#x7B49;&#xFF0C;build-time&#x53D8;&#x91CF;&#x5BF9;&#x4EFB;&#x4F55;&#x955C;&#x50CF;&#x4E2D;&#x7684;&#x5386;&#x53F2;&#x7528;&#x6237;&#x90FD;&#x662F;&#x53EF;&#x89C1;&#x7684;&#x3002;
+</li>
+<li>&#x5982;&#x679C;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E86;<code>ENV</code>&#x6307;&#x4EE4;&#x8BBE;&#x7F6E;&#x4E86;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x5219;<code>ENV</code>&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x4F1A;&#x8986;&#x76D6;<code>ARG</code>&#x6307;&#x5B9A;&#x7684;&#x53D8;&#x91CF;&#x3002;
+</li>
+<li>Docker&#x8BBE;&#x7F6E;&#x4E86;&#x9884;&#x5B9A;&#x4E49;&#x7684;<code>ARG</code>&#x53D8;&#x91CF;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x4E0D;&#x9002;&#x7528;ARG&#x5B9A;&#x4E49;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#xFF1A;
+<ul><li><code>HTTP_PROXY</code>
+</li>
+<li><code>HTTPS_PROXY</code>
+</li>
+<li><code>FTP_PROXY</code>
+</li>
+<li><code>NO_PROXY</code>
+</li></ul>
+</li></ul>
+<h2 id="onbuild">ONBUILD</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>ONBUILD &lt;Dockerfile INSTRUCTION&gt;</code>
+</li></ul>
+<p>&#x4FE1;&#x606F;&#xFF1A;</p><ul><li>&#x5F53;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#x662F;&#x57FA;&#x4E8E;&#x53E6;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x4E3A;&#x955C;&#x50CF;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x89E6;&#x53D1;&#x6307;&#x4EE4;&#x8BA9;&#x5B83;&#x4E4B;&#x540E;&#x89E6;&#x53D1;&#x3002;&#x5982;&#x679C;&#x5728;downstream&#x955C;&#x50CF;&#x7684;Dockerfile&#x7684;<code>FROM</code>&#x6307;&#x4EE4;&#x540E;&#x8FB9;&#x6DFB;&#x52A0;&#x4E86;&#x5B83;&#xFF0C;&#x8FD9;&#x4E2A;&#x89E6;&#x53D1;&#x5668;&#x5C06;&#x5728;downstream&#x6784;&#x5EFA;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x73AF;&#x5883;&#x4E2D;&#x6267;&#x884C;&#x3002;
+</li>
+<li>&#x4EFB;&#x4F55;build&#x6307;&#x4EE4;&#x90FD;&#x53EF;&#x4EE5;&#x6CE8;&#x518C;&#x6210;&#x4E00;&#x4E2A;&#x89E6;&#x53D1;&#x5668;&#x3002;
+</li>
+<li>&#x89E6;&#x53D1;&#x5668;&#x53EA;&#x80FD;&#x88AB;&quot;child&quot;&#x6784;&#x5EFA;&#x7EE7;&#x627F;&#xFF0C;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x5B83;&#x4E0D;&#x80FD;&#x88AB;&#x201D;grand-children&quot;&#x7EE7;&#x627F;&#x3002;
+</li>
+<li><code>ONBUILD</code>&#x6307;&#x4EE4;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;<code>FROM</code>&#xFF0C;<code>MAINTAINER</code>&#x6216;<code>ONBUILD</code>&#x6307;&#x4EE4;&#x3002;
+</li></ul>
+<h2 id="stopsignal">STOPSIGNAL</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>STOPSIGNAL &lt;signal&gt;</code>
+</li></ul>
+<p><code>STOPSIGNAL</code>&#x6307;&#x4EE4;&#x53EF;&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x7684;signal&#xFF0C;&#x5B83;&#x5C06;&#x5728;&#x9000;&#x51FA;&#x65F6;&#x53D1;&#x9001;&#x7ED9;&#x5BB9;&#x5668;&#x3002;&#x8FD9;&#x4E2A;signal&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x65E0;&#x7B26;&#x53F7;&#x6B63;&#x6574;&#x6570;&#xFF0C;&#x5B83;&#x7684;&#x4F4D;&#x7F6E;&#x53EF;&#x4EE5;&#x5728;&#x5185;&#x6838;syscall&#x8C03;&#x7528;&#x4E2D;&#xFF0C;&#x5982;9&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;signal&#x540D;&#x79F0;&#xFF08;&#x7528;<code>SIGNAME</code>&#x6307;&#x5B9A;&#xFF09;&#xFF0C;&#x5982;<code>SIGKILL</code>&#x3002;</p><h2 id="healthcheck">HEALTHCHECK</h2><p>&#x7528;&#x6CD5;&#xFF1A;</p><ul><li><code>HEALTHCHECK [&lt;options&gt;] CMD &lt;command&gt;</code>&#xFF08;&#x5728;&#x5BB9;&#x5668;&#x5185;&#x90E8;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x68C0;&#x67E5;&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x72B6;&#x51B5;&#xFF09;
+</li>
+<li><code>HEALTHCHECK NONE</code>&#xFF08;&#x5173;&#x95ED;&#x4EFB;&#x4F55;&#x4ECE;base&#x955C;&#x50CF;&#x4E2D;&#x7EE7;&#x627F;&#x7684;healthcheck&#xFF09;
+</li></ul>
+<p>&#x4FE1;&#x606F;&#xFF1A;</p><ul><li>&#x544A;&#x8BC9;Docker&#x5982;&#x4F55;&#x6D4B;&#x8BD5;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x5E76;&#x77E5;&#x9053;&#x5B83;&#x4ECD;&#x7136;&#x5728;&#x5DE5;&#x4F5C;&#x3002;
+</li>
+<li>&#x6BCF;&#x5F53;&#x4E00;&#x4E2A;&#x68C0;&#x67E5;&#x901A;&#x8FC7;&#xFF0C;&#x5BB9;&#x5668;&#x53D8;&#x6210;<code>healthy</code>&#xFF0C;&#x7ECF;&#x8FC7;&#x4E00;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x8FDE;&#x7EED;&#x6545;&#x969C;&#xFF0C;&#x5BB9;&#x5668;&#x53D8;&#x6210;<code>unhealthy</code>&#x3002;
+</li>
+<li><p>&#x8FD9;&#x91CC;<code>&lt;options&gt;</code>&#x53EF;&#x8868;&#x793A;&#xFF1A;</p><ul><li><code>--interval=&lt;duration&gt;</code>&#xFF08;&#x9ED8;&#x8BA4;&#xFF1A;30s&#xFF09;
+</li>
+<li><code>--timeout=&lt;duration&gt;</code>&#xFF08;&#x9ED8;&#x8BA4;&#xFF1A;30s&#xFF09;
+</li>
+<li><code>--retries=&lt;number&gt;</code>&#xFF08;&#x9ED8;&#x8BA4;&#xFF1A;3&#xFF09;
+</li></ul>
+</li>
+<li><p>&#x5BB9;&#x5668;&#x542F;&#x52A8;&#x8FC7;&#x540E;Health check&#x5C06;&#x9996;&#x5148;&#x8FD0;&#x884C;<code>interval</code>&#x79D2;&#xFF0C;&#x7136;&#x540E;&#x524D;&#x4E00;&#x6B21;&#x68C0;&#x67E5;&#x7ED3;&#x675F;&#x540E;&#x8FC7;&#x4E86;<code>interval</code>&#x79D2;&#x6267;&#x884C;&#x7B2C;&#x4E8C;&#x6B21;&#x68C0;&#x67E5;&#x3002;&#x5982;&#x679C;&#x5355;&#x6B21;&#x68C0;&#x67E5;&#x8D85;&#x8FC7;&#x4E86;<code>timeout</code>&#x7684;&#x65F6;&#x95F4;&#xFF08;&#x79D2;&#xFF09;&#x5219;&#x68C0;&#x67E5;&#x5E76;&#x5B9A;&#x4E49;&#x4E3A;&#x5931;&#x8D25;&#x3002;&#x82E5;&#x5728;<code>retries</code>&#x7684;&#x6B21;&#x6570;&#x7684;&#x8FDE;&#x7EED;&#x6545;&#x969C;&#x540E;&#xFF0C;&#x5219;&#x6807;&#x8BB0;&#x6210;<code>unhealthy</code>&#x3002;</p></li>
+<li>&#x4E00;&#x4E2A;Dockerfile&#x4E2D;&#x53EA;&#x80FD;&#x5305;&#x542B;&#x4E00;&#x4E2A;<code>HEALTHCHECK</code>&#x6307;&#x4EE4;&#xFF0C;&#x82E5;&#x60A8;&#x5217;&#x4E3E;&#x4E86;&#x591A;&#x4E2A;&#x8BE5;&#x6307;&#x4EE4;&#xFF0C;&#x53EA;&#x6709;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4F1A;&#x751F;&#x6548;&#x3002;
+</li>
+<li><code>&lt;command&gt;</code>&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;shell&#x547D;&#x4EE4;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;JSON&#x6570;&#x7EC4;&#x3002;
+</li>
+<li><p>&#x547D;&#x4EE4;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x53EF;&#x6807;&#x8BC6;&#x5BB9;&#x5668;&#x72B6;&#x51B5;&#xFF1A;</p><ul><li><code>0</code>&#xFF1A;success&#x2014;&#x2014;&#x5BB9;&#x5668;&#x5065;&#x5EB7;&#xFF0C;&#x4F7F;&#x7528;&#x5C31;&#x7EEA;
+</li>
+<li><code>1</code>&#xFF1A;unhealthy&#x2014;&#x2014;&#x5BB9;&#x5668;&#x672A;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;
+</li>
+<li><code>2</code>&#xFF1A;reserved&#x2014;&#x2014;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x8BE5;&#x9000;&#x51FA;&#x4EE3;&#x7801;
+</li></ul>
+</li>
+<li><p><code>&lt;command&gt;</code>&#x547D;&#x4EE4;&#x4E2D;&#x82E5;&#x4F7F;&#x7528;&#x4E86;stdout&#x548C;stderr&#x5219;&#x524D;4096&#x4E2A;&#x5B57;&#x8282;&#x4F1A;&#x88AB;&#x4FDD;&#x5B58;&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528;<code>docker inspect</code>&#x53EF;&#x67E5;&#x770B;&#x3002;</p></li>
+<li>&#x5F53;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x7684;&#x5065;&#x5EB7;&#x72B6;&#x51B5;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x65F6;&#xFF0C;&#x4E00;&#x4E2A;<code>health_status</code>&#x4E8B;&#x4EF6;&#x5C06;&#x4F1A;&#x4EA7;&#x751F;&#x3002;
+</li></ul>
+<h2 id="shell">SHELL</h2><p>&#x4F7F;&#x7528;&#xFF1A;</p><ul><li><code>SHELL [&quot;&lt;executable&gt;&quot;,&quot;&lt;param1&gt;&quot;,&quot;&lt;param2&gt;&quot;]</code>
+</li></ul>
+<p>&#x4FE1;&#x606F;&#xFF1A;</p><ul><li>&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;shell&#xFF0C;&#x5E76;&#x8986;&#x76D6;&#x6700;&#x521D;&#x7684;shell&#x3002;
+</li>
+<li>&#x6BCF;&#x4E2A;<code>SHELL</code>&#x6307;&#x4EE4;&#x5C06;&#x4F1A;&#x8986;&#x76D6;&#x4E4B;&#x524D;&#x6240;&#x6709;<code>SHELL</code>&#x6307;&#x4EE4;&#xFF0C;&#x5E76;&#x5F71;&#x54CD;&#x540E;&#x7EED;&#x6307;&#x4EE4;&#x3002;
+</li>
+<li>&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x5176;&#x4ED6;shell&#x5982;&#xFF1A;<code>zsh</code>&#x3001;<code>csh</code>&#x3001;<code>tcsh</code>&#x3001;<code>powershell</code>&#x7B49;&#x3002;
+</li></ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="kmo-008-jasmineji-chu-zhi-shi.html" class="navigation navigation-prev " aria-label="Previous page: KMO-007 Jasmine基础知识">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="kmo-009-redux-ormxiang-mu-wen-dang.html" class="navigation navigation-next " aria-label="Next page: KMO-009 redux-orm项目文档">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"KMO-008 Dockerfile语法基础","level":"5.5.8","depth":2,"next":{"title":"KMO-009 redux-orm项目文档","level":"5.5.9","depth":2,"path":"uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.md","ref":"uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.md","articles":[]},"previous":{"title":"KMO-007 Jasmine基础知识","level":"5.5.7","depth":2,"path":"uniform-documentation/kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.md","ref":"uniform-documentation/kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"uniform-documentation/kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.md","mtime":"2019-03-31T14:38:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-03-31T15:05:29.515Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1432 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>SPR-002 URI业务设计规范 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="spr-001-urilu-jing-she-ji-gui-fan.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">http://www.origin-x.cn</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Origin X Doc文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Zero UI</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../zero-ui/shou-ye.html">
+            
+                <a href="../../zero-ui/shou-ye.html">
+            
+                    
+                    Zero UI文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../zero-ui/1-zero-uiji-ben-jiao-cheng.html">
+            
+                <a href="../../zero-ui/1-zero-uiji-ben-jiao-cheng.html">
+            
+                    
+                    1 - Zero UI基本教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../zero-ui/2-reactsui-sui-nian.html">
+            
+                <a href="../../zero-ui/2-reactsui-sui-nian.html">
+            
+                    
+                    2 - React碎碎念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../zero-ui/3-antquan-jia-tong.html">
+            
+                <a href="../../zero-ui/3-antquan-jia-tong.html">
+            
+                    
+                    3 - Ant全家桶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../zero-ui/4-zero-uishi-zhan-fen-xi.html">
+            
+                <a href="../../zero-ui/4-zero-uishi-zhan-fen-xi.html">
+            
+                    
+                    4 - Zero UI实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Zero Up</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../zero-up/shou-ye.html">
+            
+                <a href="../../zero-up/shou-ye.html">
+            
+                    
+                    Zero 文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../zero-up/1-zeroji-ben-jiao-cheng.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng.html">
+            
+                    
+                    1 - Zero基本教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html">
+            
+                    
+                    ZRO-001 零之起源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html">
+            
+                    
+                    ZRO-002 第一个Zero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html">
+            
+                    
+                    ZRO-003 RESTful中的Path和Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../zero-up/2-vertxsui-sui-nian.html">
+            
+                <a href="../../zero-up/2-vertxsui-sui-nian.html">
+            
+                    
+                    2 - Vert.x碎碎念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../../zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html">
+            
+                <a href="../../zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html">
+            
+                    
+                    ZVX-001 基于 auth-common 开发Vert.x自定义安全组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../zero-up/3-zeroshi-zhan-fen-xi.html">
+            
+                <a href="../../zero-up/3-zeroshi-zhan-fen-xi.html">
+            
+                    
+                    3 - Zero实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../zero-up/4-javayu-yan-ji-chu.html">
+            
+                <a href="../../zero-up/4-javayu-yan-ji-chu.html">
+            
+                    
+                    4 - Java语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Origin X Engine</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../origin-x-engine/yin-dao-ye.html">
+            
+                <a href="../../origin-x-engine/yin-dao-ye.html">
+            
+                    
+                    Origin X Engine文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../origin-x-engine/1-oxshi-shi-jiao-cheng.html">
+            
+                <a href="../../origin-x-engine/1-oxshi-shi-jiao-cheng.html">
+            
+                    
+                    1 - Ox实施教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../origin-x-engine/2-oxzi-ding-yi-zu-jian.html">
+            
+                <a href="../../origin-x-engine/2-oxzi-ding-yi-zu-jian.html">
+            
+                    
+                    2 - Ox自定义组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../../origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html">
+            
+                <a href="../../origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html">
+            
+                    
+                    3 - Ox后端扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../../origin-x-engine/4-oxshi-zhan-fen-xi.html">
+            
+                <a href="../../origin-x-engine/4-oxshi-zhan-fen-xi.html">
+            
+                    
+                    4 - Ox实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Uniform Docoument</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../uniform-documentation/yin-dao-ye.html">
+            
+                <a href="../../uniform-documentation/yin-dao-ye.html">
+            
+                    
+                    通用知识库主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../uniform-documentation/mian-shi-ti.html">
+            
+                <a href="../../uniform-documentation/mian-shi-ti.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../../uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html">
+            
+                <a href="../../uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html">
+            
+                    
+                    KMI-001 抽奖器需求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../../uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.html">
+            
+                <a href="../../uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.html">
+            
+                    
+                    KMI-002 CDA考试大纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../../uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html">
+            
+                <a href="../../uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html">
+            
+                    
+                    KMI-003 Spring RESTful开发基础题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu.html">
+            
+                <a href="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu.html">
+            
+                    
+                    软件理论领域
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html">
+            
+                <a href="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html">
+            
+                    
+                    KMR-001 非功能需求评估指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.html">
+            
+                <a href="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.html">
+            
+                    
+                    KMR-002 程序设计的六个基本原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../uniform-documentation/yu-yan-xiang-guan.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan.html">
+            
+                    
+                    语言相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.html">
+            
+                    
+                    KML-001 ECMA Script 6.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.html">
+            
+                    
+                    KML-002 JSR330规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.html">
+            
+                    
+                    KML-003 浏览器中的Fetch Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.4" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.html">
+            
+                    
+                    KML-004 Java中的静态和单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.5" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.html">
+            
+                    
+                    KML-005 Java语言的.class字节码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../../uniform-documentation/kai-yuan-xiang-mu.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu.html">
+            
+                    
+                    开源项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.5.1" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html">
+            
+                    
+                    KMO-001 Vert.x Core官方翻译版 3.4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.2" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html">
+            
+                    
+                    KMO-002 Vert.x Web官方翻译版 3.4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.3" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.html">
+            
+                    
+                    KMO-003 Spring Boot中的测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.4" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html">
+            
+                    
+                    KMO-004 使用OVal进行防御式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.5" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.html">
+            
+                    
+                    KMO-005 Sass基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.6" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.html">
+            
+                    
+                    KMO-006 Mockito基础和使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.7" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.html">
+            
+                    
+                    KMO-007 Jasmine基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.8" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html">
+            
+                    
+                    KMO-008 Dockerfile语法基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.9" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.html">
+            
+                    
+                    KMO-009 redux-orm项目文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.10" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html">
+            
+                    
+                    KMO-010 Tradeshift应用开发手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../../uniform-documentation/gui-fan-xiang-guan.html">
+            
+                <a href="../../uniform-documentation/gui-fan-xiang-guan.html">
+            
+                    
+                    规范相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6.1" data-path="../../uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html">
+            
+                <a href="../../uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html">
+            
+                    
+                    KMS-001 UBL规范中的Price字段说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Environment</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../environment/yin-dao-ye.html">
+            
+                <a href="../../environment/yin-dao-ye.html">
+            
+                    
+                    环境搭建知识库主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../environment/1-dockerrong-qi-huan-jing.html">
+            
+                <a href="../../environment/1-dockerrong-qi-huan-jing.html">
+            
+                    
+                    1 - Docker容器环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../../environment/2-zeroandoxhuan-jing.html">
+            
+                <a href="../../environment/2-zeroandoxhuan-jing.html">
+            
+                    
+                    2 - Zero&Ox环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../../environment/4-deploymentbu-shu-jiao-cheng.html">
+            
+                <a href="../../environment/4-deploymentbu-shu-jiao-cheng.html">
+            
+                    
+                    3 - Deployment部署教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../../environment/5-qi-ta-huan-jing.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing.html">
+            
+                    
+                    4 - 其他环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.5.1" data-path="../../environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.html">
+            
+                    
+                    ENV-001 Spring Boot中的数据源配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.2" data-path="../../environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.html">
+            
+                    
+                    ENV-002 Karma在ES6中的Webpack配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.3" data-path="../../environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.html">
+            
+                    
+                    ENV-003 Karma的安装教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.4" data-path="../../environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html">
+            
+                    
+                    ENV-004 Windows环境的Docker安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.5" data-path="../../environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html">
+            
+                    
+                    ENV-005 使用Docker环境运行Spring Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.6" data-path="../../environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html">
+            
+                    
+                    ENV-006 Maven环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Specification</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../kai-fa-gui-fan-wen-dang-zhu-ye.html">
+            
+                <a href="../kai-fa-gui-fan-wen-dang-zhu-ye.html">
+            
+                    
+                    开发规范文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../1-zerogui-fan.html">
+            
+                <a href="../1-zerogui-fan.html">
+            
+                    
+                    1 - Zero规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../2-zero-uigui-fan.html">
+            
+                <a href="../2-zero-uigui-fan.html">
+            
+                    
+                    2 - Zero UI规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../3-origin-xgui-fan.html">
+            
+                <a href="../3-origin-xgui-fan.html">
+            
+                    
+                    3 - Origin X规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../4-restfulshe-ji-zhi-dao-gui-fan.html">
+            
+                <a href="../4-restfulshe-ji-zhi-dao-gui-fan.html">
+            
+                    
+                    4 - RESTful设计规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.5.1" data-path="spr-001-urilu-jing-she-ji-gui-fan.html">
+            
+                <a href="spr-001-urilu-jing-she-ji-gui-fan.html">
+            
+                    
+                    SPR-001 URI路径设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.5.2" data-path="spr-002-uriye-wu-she-ji-gui-fan.html">
+            
+                <a href="spr-002-uriye-wu-she-ji-gui-fan.html">
+            
+                    
+                    SPR-002 URI业务设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >SPR-002 URI业务设计规范</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="uri&#x4E1A;&#x52A1;&#x8BBE;&#x8BA1;&#x89C4;&#x8303;">URI&#x4E1A;&#x52A1;&#x8BBE;&#x8BA1;&#x89C4;&#x8303;</h1><h2 id="1-&#x57FA;&#x672C;api&#x8BF4;&#x660E;">1. &#x57FA;&#x672C;Api&#x8BF4;&#x660E;</h2><p>&#x4E1A;&#x52A1;URI&#x89C4;&#x8303;&#x57FA;&#x7840;&#x8BF4;&#x660E;&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x7528;&#x4E8E;&#x89E3;&#x51B3;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x7684;URI&#x5730;&#x5740;&#x89C4;&#x8303;&#x76F8;&#x5173;&#x95EE;&#x9898;&#x3002;</p><h3 id="11&#x8DEF;&#x5F84;&#x53C2;&#x6570;&#x51B2;&#x7A81;&#x95EE;&#x9898;">1.1.&#x8DEF;&#x5F84;&#x53C2;&#x6570;&#x51B2;&#x7A81;&#x95EE;&#x9898;</h3><p>&#x5982;&#x4E0B;&#xFF1A;</p><pre><code class="lang-shell">/api/user/by/:name
+/api/user/by/:type</code></pre>
+<p>&#x8BE5;&#x8DEF;&#x5F84;&#x4F1A;&#x88AB;&#x8BC6;&#x522B;&#x6210;&#x540C;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#xFF0C;&#x5373;&#x51FA;&#x73B0;<code>Duplicated</code>&#x7684;&#x91CD;&#x590D;&#x6A21;&#x5F0F;&#xFF0C;&#x4E14;Restful&#x9700;&#x8981;&#x7075;&#x6D3B;&#x5E94;&#x7528;Http&#x4E2D;&#x7684;&#x5404;&#x79CD;&#x65B9;&#x6CD5;&#x5982;&#xFF1A;<code>PUT&#x3001;POST&#x3001;GET&#x3001;DELETE</code>&#x7B49;&#x3002;</p><h3 id="12&#x6EE1;&#x8DB3;http&#x5E42;&#x7B49;&#x6027;">1.2.&#x6EE1;&#x8DB3;HTTP&#x5E42;&#x7B49;&#x6027;</h3><ul><li>&#x53EA;&#x5141;&#x8BB8;&#x5728;&#x7279;&#x6B8A;&#x7684;&#x89C4;&#x8303;&#x63A5;&#x53E3;&#x4E2D;&#x4F7F;&#x7528;<code>POST</code>&#x67E5;&#x8BE2;&#xFF0C;&#x4E00;&#x822C;&#x7684;&#x63A5;&#x53E3;&#x63D0;&#x5021;&#x4F9D;&#x65E7;&#x4F7F;&#x7528;<code>GET</code>&#x67E5;&#x8BE2;&#x4F18;&#x5148;&#xFF1B;
+</li>
+<li><p>&#x5982;&#x679C;&#x662F;&#x66F4;&#x65B0;&#x3001;&#x5BA1;&#x6279;&#x3001;&#x53D8;&#x66F4;&#x7B49;&#x4F7F;&#x7528;<code>PUT</code>&#x65B9;&#x6CD5;&#x4EE3;&#x66FF;<code>POST</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4E0D;&#x51FA;&#x73B0;&#x8BED;&#x4E49;&#x51B2;&#x7A81;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC;&#xFF1A;</p><ul><li>&#x5982;&#x679C;&#x662F;&#x5168;&#x8D44;&#x6E90;&#x66F4;&#x65B0;&#xFF0C;&#x4EE5;&#x53CA;&#x6279;&#x91CF;&#x66F4;&#x65B0;&#xFF0C;&#x4F7F;&#x7528;<code>PUT</code>&#x3002;
+</li>
+<li>&#x5982;&#x679C;&#x662F;&#x90E8;&#x5206;&#x8D44;&#x6E90;&#x66F4;&#x65B0;&#xFF0C;&#x4E14;&#x4E00;&#x822C;&#x7684;HTTP&#x4E0D;&#x5177;&#x6709;&#x5E42;&#x7B49;&#x6027;&#xFF0C;&#x5219;&#x4F7F;&#x7528;<code>POST</code>&#x3002;
+</li></ul>
+</li>
+<li><p>&#x5BF9;&#x4E8E;&#x7279;&#x6B8A;&#x7684;&#x9274;&#x6743;&#x4F7F;&#x7528;&#x56FA;&#x5B9A;&#x8DEF;&#x5F84;&#x8DEF;&#x7531;&#x4FE1;&#x606F;&#x6765;&#x5B8C;&#x6210;&#x3002;</p></li></ul>
+<h3 id="13api&#x4F7F;&#x7528;&#x573A;&#x666F;">1.3.API&#x4F7F;&#x7528;&#x573A;&#x666F;</h3><p>&#x8BE5;API&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x89C4;&#x8303;&#x5316;&#x4EE5;&#x4E0B;&#x573A;&#x666F;&#xFF1A;</p><ul><li>&#x4E00;&#x4E2A;&#x5B9E;&#x4F53;Entity&#x7684;&#x666E;&#x901A;CRUD&#x63A5;&#x53E3;
+</li>
+<li>&#x6839;&#x636E;&#x5355;&#x5B57;&#x6BB5;&#x67E5;&#x8BE2;Unique&#x5BF9;&#x8C61;&#xFF0C;&#x6839;&#x636E;ID&#x67E5;&#x8BE2;Unique&#x5BF9;&#x8C61;&#xFF0C;&#x4EE5;&#x53CA;&#x5224;&#x65AD;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x5B58;&#x5728;
+</li>
+<li>&#x590D;&#x6742;&#x7684;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#xFF1A;&#x641C;&#x7D22;&#x3001;&#x5206;&#x9875;&#x3001;&#x6392;&#x5E8F;&#x3001;&#x8FC7;&#x6EE4;
+</li>
+<li>&#x6279;&#x91CF;&#x5220;&#x9664;&#x3001;&#x6279;&#x91CF;&#x6DFB;&#x52A0;&#x3001;&#x6279;&#x91CF;&#x66F4;&#x65B0;&#x3001;&#x8BFB;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;
+</li>
+<li>&#x6309;&#x6761;&#x4EF6;&#x5220;&#x9664;&#x548C;&#x66F4;&#x65B0;
+</li></ul>
+<h3 id="14&#x53C2;&#x6570;&#x7C7B;&#x578B;">1.4.&#x53C2;&#x6570;&#x7C7B;&#x578B;</h3><ul><li>Form&#xFF1A;&#x76F4;&#x63A5;&#x63D0;&#x4EA4;&#x8868;&#x5355;&#x7C7B;&#x578B;
+</li>
+<li>JsonObject&#xFF1A;&#x901A;&#x8FC7;Body&#x4F20;&#x8F93;&#x6570;&#x636E;&#xFF08;POST&#x3001;PUT&#x3001;DELETE&#x4F7F;&#x7528;&#xFF0C;GET&#x7981;&#x7528;&#xFF09;
+</li>
+<li>JsonArray&#xFF1A;&#x901A;&#x8FC7;Body&#x4F20;&#x8F93;&#x6570;&#x636E;
+</li>
+<li>Path&#xFF1A;&#x4F7F;&#x7528;&#x8DEF;&#x5F84;&#x53C2;&#x6570;
+</li>
+<li>Query&#xFF1A;&#x4F7F;&#x7528;&#x67E5;&#x8BE2;&#x53C2;&#x6570;
+</li>
+<li>Header&#xFF1A;&#x53C2;&#x6570;&#x4ECE;Http Header&#x5934;&#x8FC7;&#x6765;
+</li></ul>
+<h2 id="2-&#x57FA;&#x7840;&#x89C4;&#x8303;&#x793A;&#x4F8B;">2. &#x57FA;&#x7840;&#x89C4;&#x8303;&#x793A;&#x4F8B;</h2><h3 id="21&#x52A8;&#x4F5C;&#x57FA;&#x7840;&#x4E3B;&#x8981;&#x5206;&#x4E3A;">2.1.&#x52A8;&#x4F5C;&#x57FA;&#x7840;&#x4E3B;&#x8981;&#x5206;&#x4E3A;</h3><table>
+<thead>
+<tr><th>  </th>
+<th> &#x6DFB;&#x52A0; </th>
+<th> &#x66F4;&#x65B0; </th>
+<th> &#x5220;&#x9664; </th>
+<th> &#x67E5;&#x8BE2; </th>
+</tr></thead><tbody>
+<tr><td style="text-align:left"> &#xFF08;&#x5355;&#xFF09; </td>
+<td style="text-align:left"> &#x6DFB;&#x52A0; </td>
+<td style="text-align:left"> &#x66F4;&#x65B0; </td>
+<td style="text-align:left"> &#x5220;&#x9664; </td>
+<td style="text-align:left"> &#x67E5;&#x8BE2; </td>
+</tr><tr><td style="text-align:left"> &#xFF08;&#x96C6;&#x5408;&#xFF09; </td>
+<td style="text-align:left"> &#x6279;&#x91CF;&#x6DFB;&#x52A0; </td>
+<td style="text-align:left"> &#x6279;&#x91CF;&#x66F4;&#x65B0; </td>
+<td style="text-align:left"> &#x6279;&#x91CF;&#x5220;&#x9664; </td>
+<td style="text-align:left"> &#x5168;&#x67E5;&#x8BE2; </td>
+</tr><tr><td style="text-align:left"> &#xFF08;&#x5355;&#x6761;&#x4EF6;&#xFF09; </td>
+<td style="text-align:left"> X </td>
+<td style="text-align:left"> &#x5355;&#x6761;&#x4EF6;&#x66F4;&#x65B0; </td>
+<td style="text-align:left"> &#x5355;&#x6761;&#x4EF6;&#x5220;&#x9664; </td>
+<td style="text-align:left"> &#x5355;&#x6761;&#x4EF6;&#x67E5;&#x8BE2; </td>
+</tr><tr><td style="text-align:left"> &#xFF08;&#x591A;&#x6761;&#x4EF6;AND&#xFF09; </td>
+<td style="text-align:left"> X </td>
+<td style="text-align:left"> &#x591A;&#x6761;&#x4EF6;&#x66F4;&#x65B0; </td>
+<td style="text-align:left"> &#x591A;&#x6761;&#x4EF6;&#x5220;&#x9664; </td>
+<td style="text-align:left"> &#x591A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2; </td>
+</tr><tr><td style="text-align:left"> &#xFF08;&#x591A;&#x6761;&#x4EF6;OR&#xFF09; </td>
+<td style="text-align:left"> X </td>
+<td style="text-align:left"> &#x591A;&#x6761;&#x4EF6;&#x66F4;&#x65B0; </td>
+<td style="text-align:left"> &#x591A;&#x6761;&#x4EF6;&#x5220;&#x9664; </td>
+<td style="text-align:left"> &#x591A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2; </td>
+</tr><tr><td style="text-align:left"> &#xFF08;&#x591A;&#x503C;&#xFF09; </td>
+<td style="text-align:left"> X </td>
+<td style="text-align:left"> &#x591A;&#x503C;&#x66F4;&#x65B0; </td>
+<td style="text-align:left"> &#x591A;&#x503C;&#x5220;&#x9664; </td>
+<td style="text-align:left"> &#x591A;&#x503C;&#x67E5;&#x8BE2; </td>
+</tr><tr><td style="text-align:left"> &#xFF08;&#x590D;&#x6742;&#x641C;&#x7D22;&#xFF09; </td>
+<td style="text-align:left"> X </td>
+<td style="text-align:left"> X </td>
+<td style="text-align:left"> X </td>
+<td style="text-align:left"> &#x5206;&#x9875;&#x3001;&#x6392;&#x5E8F;&#x3001;&#x7B5B;&#x9009;&#x3001;&#x8FC7;&#x6EE4; </td>
+</tr><tr><td style="text-align:left"> &#xFF08;&#x5B58;&#x5728;&#x5224;&#x65AD;&#xFF09; </td>
+<td style="text-align:left"> X </td>
+<td style="text-align:left"> X </td>
+<td style="text-align:left"> X </td>
+<td style="text-align:left"> &#x5B58;&#x5728;&#x4E0E;&#x5426;&#xFF0C;&#x7C7B;&#x4F3C;count = 0 ? &lt;&gt; 0 </td>
+</tr><tr><td style="text-align:left"> &#xFF08;&#x8FD0;&#x7B97;&#x5904;&#x7406;&#xFF09; </td>
+<td style="text-align:left"> X </td>
+<td style="text-align:left"> X </td>
+<td style="text-align:left"> X </td>
+<td style="text-align:left"> &#x805A;&#x96C6;&#x8BA1;&#x7B97;&#xFF0C;MR&#x7B97;&#x6CD5;&#x6216;&#x5176;&#x4ED6;</td>
+</tr></tbody></table>
+
+<h3 id="22uri&#x4E13;&#x7528;&#x8DEF;&#x5F84;">2.2.URI&#x4E13;&#x7528;&#x8DEF;&#x5F84;</h3><p>&#x57FA;&#x7840;&#x89C4;&#x8303;&#x793A;&#x4F8B;&#x4EE5;user&#x4E3A;Entity&#xFF0C;&#x57FA;&#x672C;&#x9605;&#x8BFB;&#x89C4;&#x5219;&#x5982;&#x4E0B;&#xFF1A;</p><ul><li>&#x6807;&#x8BB0;&#x4E3A;&#x3010;&#x95F4;&#x3011;&#x8868;&#x793A;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x8BBE;&#x8BA1;&#xFF0C;&#x4E0D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;
+</li>
+<li>&#x3010;E&#x3011;&#x8868;&#x793A;&#x5F53;&#x524D;&#x96C6;&#x5408;&#x4E2D;&#x53EA;&#x652F;&#x6301;JsonObject&#x7C7B;&#x578B;&#xFF0C;&#x4E0D;&#x53EF;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x7C7B;&#x578B;
+</li>
+<li>&#x3010;ID&#x3011;&#x5219;&#x8868;&#x793A;&#x5F53;&#x524D;&#x96C6;&#x5408;&#x4E2D;&#x53EA;&#x5141;&#x8BB8;ID&#x96C6;&#x5408;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x957F;&#x6574;&#x578B;&#x6570;&#x7EC4;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;&#xFF0C;&#x3010;T&#x3011;&#x5219;&#x8868;&#x793A;&#x5F53;&#x524D;&#x6570;&#x7EC4;&#x4E2D;&#x53EA;&#x80FD;&#x662F;&#x67D0;&#x79CD;&#x7C7B;&#x578B;&#xFF0C;&#x8FD9;&#x4E24;&#x79CD;&#x6807;&#x8BB0;&#x90FD;&#x8868;&#x793A;&#x4E0D;&#x53EF;&#x4F7F;&#x7528;JsonObject&#x4F5C;&#x4E3A;&#x6570;&#x7EC4;&#x5143;&#x7D20;
+</li>
+<li><code>{field}</code>&#x8868;&#x793A;&#x5C5E;&#x6027;&#x5360;&#x4F4D;&#x7B26;&#xFF0C;&#x8DEF;&#x5F84;&#x4E2D;&#x586B;&#x5145;&#x4E0A;&#x5B9E;&#x9645;&#x5C5E;&#x6027;&#x540D;
+</li>
+<li>&#x3010;&#x5355;&#x3011;&#x8868;&#x793A;&#x5355;&#x6761;&#x4EF6;&#xFF0C;&#x3010;&#x591A;&#x3011;&#x8868;&#x793A;&#x591A;&#x6761;&#x4EF6;
+</li>
+<li>&#x3010;O&#x3011;&#x8868;&#x793A;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;JsonObject&#xFF0C;&#x3010;A&#x3011;&#x8868;&#x793A;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;JsonArray&#xFF0C;&#x3010;B&#x3011;&#x8868;&#x793A;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;true/false
+</li></ul>
+<table>
+<thead>
+<tr><th style="text-align:left"> &#x8DEF;&#x5F84;&#x524D;&#x7F00; </th>
+<th style="text-align:left"> HTTP&#x65B9;&#x6CD5; </th>
+<th style="text-align:left"> &#x5C5E;&#x6027;&#x6807;&#x8BB0; </th>
+<th style="text-align:left"> &#x53C2;&#x6570;&#x7C7B;&#x578B;/&#x683C;&#x5F0F; </th>
+<th style="text-align:left"> API&#x8BF4;&#x660E; </th>
+</tr></thead><tbody>
+<tr><td style="text-align:left"> /api/user </td>
+<td style="text-align:left"> POST </td>
+<td style="text-align:left"> &#x3010;O&#x3011; </td>
+<td style="text-align:left"> JsonObject </td>
+<td style="text-align:left"> &#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x7528;&#x6237; </td>
+</tr><tr><td style="text-align:left"> /api/users </td>
+<td style="text-align:left"> GET </td>
+<td style="text-align:left"> &#x3010;A&#x3011; </td>
+<td style="text-align:left"> &#x65E0; </td>
+<td style="text-align:left"> &#x8BFB;&#x53D6;&#x6240;&#x6709;&#x7528;&#x6237; </td>
+</tr><tr><td style="text-align:left"> /api/users </td>
+<td style="text-align:left"> POST </td>
+<td style="text-align:left"> &#x3010;B&#x3011; </td>
+<td style="text-align:left"> JsonArray&#x3010;E&#x3011; </td>
+<td style="text-align:left"> &#x6279;&#x91CF;&#x6DFB;&#x52A0;&#x7528;&#x6237; </td>
+</tr><tr><td style="text-align:left"> /api/users </td>
+<td style="text-align:left"> PUT </td>
+<td style="text-align:left"> &#x3010;B&#x3011; </td>
+<td style="text-align:left"> JsonArray&#x3010;E&#x3011; </td>
+<td style="text-align:left"> &#x6279;&#x91CF;&#x66F4;&#x65B0;&#x7528;&#x6237; </td>
+</tr><tr><td style="text-align:left"> /api/users </td>
+<td style="text-align:left"> DELETE </td>
+<td style="text-align:left"> &#x3010;B&#x3011; </td>
+<td style="text-align:left"> JsonArray&#x3010;ID&#x3011; </td>
+<td style="text-align:left"> &#x6279;&#x91CF;&#x5220;&#x9664;&#x7528;&#x6237; </td>
+</tr><tr><td style="text-align:left"> /api/user/:id </td>
+<td style="text-align:left"> PUT </td>
+<td style="text-align:left"> &#x3010;O&#x3011; </td>
+<td style="text-align:left"> Path + JsonObject </td>
+<td style="text-align:left"> &#x6839;&#x636E;ID&#x66F4;&#x65B0;&#x4E00;&#x4E2A;&#x7528;&#x6237; </td>
+</tr><tr><td style="text-align:left"> /api/user/:id </td>
+<td style="text-align:left"> DELETE </td>
+<td style="text-align:left"> &#x3010;O&#x3011; </td>
+<td style="text-align:left"> Path </td>
+<td style="text-align:left"> &#x6839;&#x636E;ID&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x7528;&#x6237; </td>
+</tr><tr><td style="text-align:left"> /api/user/:id </td>
+<td style="text-align:left"> GET </td>
+<td style="text-align:left"> &#x3010;O&#x3011; </td>
+<td style="text-align:left"> Path </td>
+<td style="text-align:left"> &#x6839;&#x636E;ID&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x7528;&#x6237; </td>
+</tr><tr><td style="text-align:left"> /api/user/exist </td>
+<td style="text-align:left"> POST </td>
+<td style="text-align:left"> &#x3010;&#x591A;&#x3001;B&#x3011; </td>
+<td style="text-align:left"> JsonObject&#xFF0C;&#x7279;&#x6B8A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6; </td>
+<td style="text-align:left"> &#x5224;&#x65AD;&#x7279;&#x6B8A;&#x6761;&#x4EF6;&#x7528;&#x6237;&#x662F;&#x5426;&#x5B58;&#x5728; </td>
+</tr><tr><td style="text-align:left"> /api/user/and </td>
+<td style="text-align:left"> POST </td>
+<td style="text-align:left"> &#x3010;&#x591A;&#x3001;O&#x3011; </td>
+<td style="text-align:left"> JsonObject&#xFF0C;&#x7279;&#x6B8A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6; </td>
+<td style="text-align:left"> AND&#x8FDE;&#x63A5;&#x67E5;&#x8BE2;&#xFF0C;&#x6240;&#x6709;&#x6761;&#x4EF6;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;AND </td>
+</tr><tr><td style="text-align:left"> /api/users/and </td>
+<td style="text-align:left"> GET </td>
+<td style="text-align:left"> &#x3010;&#x591A;&#x3001;A&#x3011; </td>
+<td style="text-align:left"> Query </td>
+<td style="text-align:left"> &#x3010;3&#x4E2A;&#x6761;&#x4EF6;&#x6216;&#x4EE5;&#x4E0B;&#x3011;AND&#x8FDE;&#x63A5;&#x67E5;&#x8BE2;&#xFF0C;&#x6240;&#x6709;&#x6761;&#x4EF6;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;OR </td>
+</tr><tr><td style="text-align:left"> /api/users/and </td>
+<td style="text-align:left"> POST </td>
+<td style="text-align:left"> &#x3010;&#x591A;&#x3001;A&#x3011; </td>
+<td style="text-align:left"> JsonObject&#xFF0C;&#x7279;&#x6B8A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6; </td>
+<td style="text-align:left"> &#x3010;3&#x4E2A;&#x6761;&#x4EF6;&#x4EE5;&#x4E0A;&#x3011;AND&#x8FDE;&#x63A5;&#x67E5;&#x8BE2;&#xFF0C;&#x6240;&#x6709;&#x6761;&#x4EF6;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;AND </td>
+</tr><tr><td style="text-align:left"> /api/users/and </td>
+<td style="text-align:left"> PUT </td>
+<td style="text-align:left"> &#x3010;&#x591A;&#x3001;A&#x3011; </td>
+<td style="text-align:left"> Query/JsonObject&#xFF0C;&#x7279;&#x6B8A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6; </td>
+<td style="text-align:left"> &#x6240;&#x6709;&#x6761;&#x4EF6;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;AND&#xFF0C;&#x6309;&#x6761;&#x4EF6;&#x6279;&#x91CF;&#x66F4;&#x65B0; </td>
+</tr><tr><td style="text-align:left"> /api/users/and </td>
+<td style="text-align:left"> DELETE </td>
+<td style="text-align:left"> &#x3010;&#x591A;&#x3001;B&#x3011; </td>
+<td style="text-align:left"> JsonObject&#xFF0C;&#x7279;&#x6B8A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6; </td>
+<td style="text-align:left"> &#x6240;&#x6709;&#x6761;&#x4EF6;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;AND&#xFF0C;&#x6309;&#x6761;&#x4EF6;&#x6279;&#x91CF;&#x5220;&#x9664; </td>
+</tr><tr><td style="text-align:left"> /api/users/or </td>
+<td style="text-align:left"> GET </td>
+<td style="text-align:left"> &#x3010;&#x591A;&#x3001;A&#x3011; </td>
+<td style="text-align:left"> Query </td>
+<td style="text-align:left"> &#x3010;3&#x4E2A;&#x6761;&#x4EF6;&#x6216;&#x4EE5;&#x4E0B;&#x3011;OR&#x8FDE;&#x63A5;&#x67E5;&#x8BE2;&#xFF0C;&#x6240;&#x6709;&#x6761;&#x4EF6;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;OR </td>
+</tr><tr><td style="text-align:left"> /api/users/or </td>
+<td style="text-align:left"> POST </td>
+<td style="text-align:left"> &#x3010;&#x591A;&#x3001;A&#x3011; </td>
+<td style="text-align:left"> Query/JsonObject&#xFF0C;&#x7279;&#x6B8A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6; </td>
+<td style="text-align:left"> &#x3010;3&#x4E2A;&#x6761;&#x4EF6;&#x4EE5;&#x4E0A;&#x3011;OR&#x8FDE;&#x63A5;&#x67E5;&#x8BE2;&#xFF0C;&#x6240;&#x6709;&#x6761;&#x4EF6;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;OR </td>
+</tr><tr><td style="text-align:left"> /api/users/or </td>
+<td style="text-align:left"> PUT </td>
+<td style="text-align:left"> &#x3010;&#x591A;&#x3001;A&#x3011; </td>
+<td style="text-align:left"> JsonObject&#xFF0C;&#x7279;&#x6B8A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6; </td>
+<td style="text-align:left"> &#x6240;&#x6709;&#x6761;&#x4EF6;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;OR&#xFF0C;&#x6309;&#x6761;&#x4EF6;&#x6279;&#x91CF;&#x66F4;&#x65B0; </td>
+</tr><tr><td style="text-align:left"> /api/users/or </td>
+<td style="text-align:left"> DELETE </td>
+<td style="text-align:left"> &#x3010;&#x591A;&#x3001;B&#x3011; </td>
+<td style="text-align:left"> JsonObject&#xFF0C;&#x7279;&#x6B8A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6; </td>
+<td style="text-align:left"> &#x6240;&#x6709;&#x6761;&#x4EF6;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;OR&#xFF0C;&#x6309;&#x6761;&#x4EF6;&#x6279;&#x91CF;&#x5220;&#x9664; </td>
+</tr><tr><td style="text-align:left"> /api/users/search </td>
+<td style="text-align:left"> GET </td>
+<td style="text-align:left"> &#x3010;&#x591A;&#x3001;O|A&#x3011; </td>
+<td style="text-align:left"> Query </td>
+<td style="text-align:left"> &#x3010;&#x5FEB;&#x901F;&#x641C;&#x7D22;&#x3011;&#x6839;&#x636E;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x641C;&#x7D22;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x7528;&#x6237;&#x96C6;&#x5408;&#xFF0C;&#x5206;&#x9875;&#x53C2;&#x6570;page, size&#xFF0C;&#x652F;&#x6301;&#x5355;&#x5B57;&#x6BB5;&#x6392;&#x5E8F;asc=field&#x6216;desc=field </td>
+</tr><tr><td style="text-align:left"> /api/users/search </td>
+<td style="text-align:left"> POST </td>
+<td style="text-align:left"> &#x3010;&#x591A;&#x3001;O|A&#x3011; </td>
+<td style="text-align:left"> JsonObject&#x3001;&#x7279;&#x6B8A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#xFF08;&#x6807;&#x51C6;&#x6761;&#x4EF6;&#xFF09; </td>
+<td style="text-align:left"> &#x3010;&#x9AD8;&#x7EA7;&#x641C;&#x7D22;&#x3011;&#x5206;&#x9875;&#x3001;&#x6392;&#x5E8F;&#x3001;&#x7B5B;&#x9009;&#x3001;&#x8FC7;&#x6EE4;&#x7684;&#x641C;&#x7D22;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x4E2D;&#x5E26;&#x6709;count&#x3002; </td>
+</tr><tr><td style="text-align:left"> /api/users/query </td>
+<td style="text-align:left"> POST </td>
+<td style="text-align:left"> &#x3010;&#x591A;&#x3001;O|A&#x3011; </td>
+<td style="text-align:left"> JsonObject&#x3001;&#x67E5;&#x8BE2;&#x6811;&#x9AD8;&#x7EA7;&#x8BED;&#x6CD5;&#xFF08;&#x67E5;&#x8BE2;&#x6811;&#xFF09; </td>
+<td style="text-align:left"> &#x3010;&#x9AD8;&#x7EA7;&#x67E5;&#x8BE2;&#x3011;&#x63D0;&#x4F9B;&#x67E5;&#x8BE2;&#x6811;&#x8BED;&#x6CD5;&#x7528;&#x4E8E;&#x9AD8;&#x7EA7;&#x67E5;&#x8BE2;&#xFF0C;&#x53EF;&#x5206;&#x9875;&#xFF0C;&#x53EF;&#x6392;&#x5E8F; </td>
+</tr><tr><td style="text-align:left"> /api/user/{field}/:value </td>
+<td style="text-align:left"> GET </td>
+<td style="text-align:left"> &#x3010;&#x95F4;&#x3001;&#x5355;&#x3001;O&#x3011; </td>
+<td style="text-align:left"> Path </td>
+<td style="text-align:left"> &#x6309;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x67E5;&#x8BE2;&#x7528;&#x6237;&#xFF0C;&#x5B9E;&#x4F8B;&#xFF1A;/api/user/email/lang.yu@126.com&#xFF0C;&#x6309;email=lang.yu@126.com&#x8BFB;&#x53D6;&#x7528;&#x6237; </td>
+</tr><tr><td style="text-align:left"> /api/user/{field}/:value </td>
+<td style="text-align:left"> PUT </td>
+<td style="text-align:left"> &#x3010;&#x95F4;&#x3001;&#x5355;&#x3001;O&#x3011; </td>
+<td style="text-align:left"> Path + JsonObject </td>
+<td style="text-align:left"> &#x6309;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x66F4;&#x65B0;&#x7528;&#x6237;&#xFF0C;&#x793A;&#x4F8B;&#xFF1A;/api/user/name/xxx&#xFF0C;&#x6309;name=xxx&#x66F4;&#x65B0;&#x7528;&#x6237; </td>
+</tr><tr><td style="text-align:left"> /api/user/{field}/:value </td>
+<td style="text-align:left"> DELETE </td>
+<td style="text-align:left"> &#x3010;&#x95F4;&#x3001;&#x5355;&#x3001;B&#x3011; </td>
+<td style="text-align:left"> Path </td>
+<td style="text-align:left"> &#x6309;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x5220;&#x9664;&#x5F53;&#x524D;&#x7528;&#x6237; </td>
+</tr><tr><td style="text-align:left"> /api/users/{field}/:value </td>
+<td style="text-align:left"> GET </td>
+<td style="text-align:left"> &#x3010;&#x95F4;&#x3001;&#x5355;&#x3001;A&#x3011; </td>
+<td style="text-align:left"> Path </td>
+<td style="text-align:left"> &#x6309;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x8BFB;&#x53D6;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x6240;&#x6709;&#x7528;&#x6237; </td>
+</tr><tr><td style="text-align:left"> /api/users/{field}/:value </td>
+<td style="text-align:left"> PUT </td>
+<td style="text-align:left"> &#x3010;&#x95F4;&#x3001;&#x5355;&#x3001;A&#x3011; </td>
+<td style="text-align:left"> Path + JsonObject </td>
+<td style="text-align:left"> &#x6309;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x6279;&#x91CF;&#x66F4;&#x65B0;&#x7528;&#x6237;&#xFF0C;&#x793A;&#x4F8B;&#xFF1A;/api/users/type/single&#xFF0C;&#x6279;&#x91CF;&#x66F4;&#x65B0;type=single&#x7684;&#x7528;&#x6237; </td>
+</tr><tr><td style="text-align:left"> /api/users/{field}/:value </td>
+<td style="text-align:left"> DELETE </td>
+<td style="text-align:left"> &#x3010;&#x95F4;&#x3001;&#x5355;&#x3001;B&#x3011; </td>
+<td style="text-align:left"> Path </td>
+<td style="text-align:left"> &#x6309;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x5220;&#x9664;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x6240;&#x6709;&#x7528;&#x6237; </td>
+</tr><tr><td style="text-align:left"> /api/users/in/{field} </td>
+<td style="text-align:left"> POST </td>
+<td style="text-align:left"> &#x3010;&#x95F4;&#x3001;&#x5355;&#x3001;O|A&#x3011; </td>
+<td style="text-align:left"> JsonArray&#x3010;T&#x3011; </td>
+<td style="text-align:left"> &#x62C9;&#x5E73;&#x8FD4;&#x56DE;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x6784;&#x6210;JsonArray&#x96C6;&#xFF0C;&#x901A;&#x8FC7;&#x53C2;&#x6570;grouped&#x5224;&#x65AD;&#x662F;&#x5426;&#x6267;&#x884C;&#x5206;&#x7EC4;&#xFF0C;&#x5982;&#x679C;&#x5206;&#x5219;&#x5219;&#x8FD4;&#x56DE;&#x503C;&#x6309;&#x4F20;&#x5165;&#x7684;T&#x6267;&#x884C;GroupBy&#xFF0C;&#x8FD4;&#x56DE;JsonObject&#x952E;&#x6570;&#x91CF;&#x548C;&#x53C2;&#x6570;&#x3010;T&#x3011;&#x7684;&#x6570;&#x91CF;&#x4E00;&#x81F4;&#x3002; </td>
+</tr><tr><td style="text-align:left"> /api/user/exist/{field}/:value </td>
+<td style="text-align:left"> GET </td>
+<td style="text-align:left"> &#x3010;&#x95F4;&#x3001;&#x5355;&#x3001;B&#x3011; </td>
+<td style="text-align:left"> Path </td>
+<td style="text-align:left"> &#x5224;&#x65AD;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x662F;&#x5426;&#x5305;&#x542B;&#x8BE5;&#x6761;&#x4EF6;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;field=value&#x4E3A;&#x6761;&#x4EF6;&#x3002; </td>
+</tr><tr><td style="text-align:left"> /api/user/and/{field}/:value </td>
+<td style="text-align:left"> POST </td>
+<td style="text-align:left"> &#x3010;&#x95F4;&#x3001;&#x591A;&#x3001;A&#x3011; </td>
+<td style="text-align:left"> JsonObject&#xFF0C;&#x7279;&#x6B8A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6; </td>
+<td style="text-align:left"> AND&#x8FDE;&#x63A5;&#x67E5;&#x8BE2;&#xFF0C;&#x4E3B;&#x6761;&#x4EF6;&#x4F7F;&#x7528;field=value&#xFF0C;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x653E;&#x5230;JsonObject&#x4E2D; </td>
+</tr><tr><td style="text-align:left"> /api/users/or/{field}/:value </td>
+<td style="text-align:left"> POST </td>
+<td style="text-align:left"> &#x3010;&#x95F4;&#x3001;&#x591A;&#x3001;A&#x3011; </td>
+<td style="text-align:left"> JsonObject&#x3001;&#x7279;&#x6B8A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6; </td>
+<td style="text-align:left"> OR&#x8FDE;&#x63A5;&#x67E5;&#x8BE2;&#xFF0C;&#x4E3B;&#x6761;&#x4EF6;&#x4F7F;&#x7528;field=value, &#x590D;&#x5408;&#x6761;&#x4EF6;&#x653E;&#x5230;JsonObject&#x4E2D; </td>
+</tr><tr><td style="text-align:left"> /api/users/and/{field}/:value </td>
+<td style="text-align:left"> POST </td>
+<td style="text-align:left"> &#x3010;&#x95F4;&#x3001;&#x591A;&#x3001;A&#x3011; </td>
+<td style="text-align:left"> JsonObject&#x3001;&#x7279;&#x6B8A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6; </td>
+<td style="text-align:left"> OR&#x8FDE;&#x63A5;&#x67E5;&#x8BE2;&#xFF0C;&#x4E3B;&#x6761;&#x4EF6;&#x4F7F;&#x7528;field=value&#xFF0C;&#x590D;&#x5408;&#x6761;&#x4EF6;&#x653E;&#x5230;JsonObject&#x3002;</td>
+</tr></tbody></table>
+
+<h3 id="23-uri&#x8BBE;&#x8BA1;&#x57FA;&#x672C;&#x89C4;&#x5219;">2.3. URI&#x8BBE;&#x8BA1;&#x57FA;&#x672C;&#x89C4;&#x5219;</h3><p>&#x6709;&#x51E0;&#x70B9;&#x9700;&#x8981;&#x8BF4;&#x660E;&#xFF1A;</p><ul><li>&#x5355;&#x8DEF;&#x5F84;<code>/users</code>&#x4E2D;&#x7684;<code>PUT/DELETE</code>&#x65B9;&#x6CD5;&#x53EF;&#x63D0;&#x4F9B;Body&#x53C2;&#x6570;&#x652F;&#x6301;&#x3010;&#x67E5;&#x8BE2;u&#x6811;&#x3011;&#x8BED;&#x6CD5;&#x3002;
+</li>
+<li>&#x53CC;&#x8DEF;&#x5F84;&#x67E5;&#x8BE2;&#x4E2D;&#xFF0C;&#x56E0;&#x4E3A;&#x4E0D;&#x5B58;&#x5728;&#x201C;&#x6309;&#x6761;&#x4EF6;&#x6279;&#x91CF;&#x6DFB;&#x52A0;&#x201D;&#xFF0C;&#x6240;&#x4EE5;<code>GET</code>&#x7528;&#x4E8E;&#x5B57;&#x6BB5;&#x5C11;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x800C;<code>POST</code>&#x7528;&#x4E8E;&#x5B57;&#x6BB5;&#x591A;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x5BF9;&#x5E94;<code>and, or</code>&#x3002;
+</li>
+<li>&#x53CC;&#x8DEF;&#x5F84;&#x4E2D;&#xFF0C;<code>search</code>&#x4E0D;&#x652F;&#x6301;&#x67E5;&#x8BE2;&#x6811;&#xFF0C;<code>query</code>&#x4EC5;&#x652F;&#x6301;&#x67E5;&#x8BE2;&#x6811;&#x8BED;&#x6CD5;&#xFF0C;&#x4E8C;&#x8005;&#x4E92;&#x65A5;&#x3002;
+</li>
+<li>&#x4E09;&#x8DEF;&#x5F84;&#x4E2D;&#xFF0C;<code>/users/{field}/:value</code>&#x540C;&#x6837;&#x4E0D;&#x5B58;&#x5728;&#x201C;&#x6309;&#x6761;&#x4EF6;&#x6DFB;&#x52A0;&#x201D;&#xFF0C;&#x6240;&#x4EE5;<code>POST</code>&#x88AB;&#x7528;&#x4E8E;<code>in</code>&#x8BED;&#x6CD5;&#x7684;&#x591A;&#x503C;&#x67E5;&#x8BE2;&#x3002;
+</li>
+<li>&#x5982;&#x679C;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x6709;&#x81EA;&#x5B9A;&#x4E49;&#x8DEF;&#x5F84;&#xFF0C;&#x5219;&#x53EF;&#x53C2;&#x8003;&#x53CC;&#x8DEF;&#x5F84;&#x548C;&#x56DB;&#x8DEF;&#x5F84;&#xFF0C;&#x4E0D;&#x53EF;&#x6269;&#x5C55;&#x5355;&#x8DEF;&#x5F84;&#x548C;&#x4E09;&#x8DEF;&#x5F84;&#x3002;
+</li></ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="spr-001-urilu-jing-she-ji-gui-fan.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: SPR-001 URI路径设计规范">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SPR-002 URI业务设计规范","level":"7.5.2","depth":2,"previous":{"title":"SPR-001 URI路径设计规范","level":"7.5.1","depth":2,"path":"specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.md","ref":"specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.md","mtime":"2019-03-31T12:39:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-03-31T15:05:29.515Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
