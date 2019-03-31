@@ -2,52 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/001/0001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/001/0002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/001/0003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/002/0001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/003/0001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/004/0001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/004/0002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0002-concat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0003-concatWith.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0005-delay-scheduler.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0005-delay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0006-doOnError.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0006-doOnSuccess.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0007-error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0008-flatMap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0008-flatMapObservable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0008-scheduler.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0009-from-main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0009-just.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0010-map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0011-with.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0011.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0012-observeOn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0012-subscribe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0013.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0014.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0015.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0016-main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0016-scheduler-single.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0016-scheduler.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/005/0016-single.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/006/0002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/006/0003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/006/0004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/006/0006.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/007/channel-pipeline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zbr/007/up-down.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-001-javayu-yan-zhong-de-an-zhi-chuan-di.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-001-javayu-yan-zhong-de-an-zhi-chuan-di.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-002-tong-bu-he-yi-bu.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-002-tong-bu-he-yi-bu.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-003-vertxzhong-de-ji-qun-guan-li-qi.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-003-vertxzhong-de-ji-qun-guan-li-qi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-004-actormo-xing.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-004-actormo-xing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-005-rxjava2zhong-desingle-jie-xi.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-005-rxjava2zhong-desingle-jie-xi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-006-reactormo-shi.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-006-reactormo-shi.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-007-nettyzhong-de-pipeline-ji-zhi.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-007-nettyzhong-de-pipeline-ji-zhi.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-008-tcpxie-yi-zhong-de-reuse.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-008-tcpxie-yi-zhong-de-reuse.md" afterDir="false" />
     </list>
@@ -78,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-001-javayu-yan-zhong-de-an-zhi-chuan-di.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="123">
+              <first_editor relative-caret-position="2304">
                 <caret line="128" column="5" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
               </first_editor>
               <second_editor />
@@ -102,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-003-vertxzhong-de-ji-qun-guan-li-qi.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="343">
+              <first_editor relative-caret-position="3330">
                 <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
               </first_editor>
               <second_editor />
@@ -114,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-004-actormo-xing.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="19">
+              <first_editor relative-caret-position="414">
                 <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               </first_editor>
               <second_editor />
@@ -150,8 +104,8 @@
         <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-007-nettyzhong-de-pipeline-ji-zhi.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-147">
-                <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <first_editor>
+                <caret column="2" selection-start-column="2" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -162,8 +116,8 @@
         <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-008-tcpxie-yi-zhong-de-reuse.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="663">
-                <caret line="46" selection-start-line="46" selection-end-line="46" />
+              <first_editor>
+                <caret column="2" selection-start-column="2" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -787,7 +741,7 @@
     <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-001-javayu-yan-zhong-de-an-zhi-chuan-di.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="123">
+          <first_editor relative-caret-position="2304">
             <caret line="128" column="5" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
           </first_editor>
           <second_editor />
@@ -807,7 +761,7 @@
     <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-003-vertxzhong-de-ji-qun-guan-li-qi.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="343">
+          <first_editor relative-caret-position="3330">
             <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
           </first_editor>
           <second_editor />
@@ -817,7 +771,7 @@
     <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-004-actormo-xing.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="19">
+          <first_editor relative-caret-position="414">
             <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           </first_editor>
           <second_editor />
@@ -847,8 +801,8 @@
     <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-007-nettyzhong-de-pipeline-ji-zhi.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-147">
-            <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <first_editor>
+            <caret column="2" selection-start-column="2" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
@@ -857,8 +811,8 @@
     <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-008-tcpxie-yi-zhong-de-reuse.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="663">
-            <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <first_editor>
+            <caret column="2" selection-start-column="2" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
