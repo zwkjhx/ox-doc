@@ -45,6 +45,7 @@
   * [KML-001 ECMA Script 6.0](uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md)
   * [KML-002 JSR330规范](uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.md)
   * [KML-003 浏览器中的Fetch Api](uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.md)
+  * [KML-004 Java中的静态和单例](uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.md)
 * [开源项目](uniform-documentation/kai-yuan-xiang-mu.md)
   * [KMO-001 Vert.x Core官方翻译版 3.4](uniform-documentation/kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.md)
   * [KMO-002 Vert.x Web官方翻译版 3.4](uniform-documentation/kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.md)
