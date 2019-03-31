@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.md" beforeDir="false" afterPath="$PROJECT_DIR$/uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.md" beforeDir="false" afterPath="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.md" beforeDir="false" afterPath="$PROJECT_DIR$/uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md" beforeDir="false" afterPath="$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,66 +15,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="250">
-                <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/specification/kai-fa-gui-fan-wen-dang-zhu-ye.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="2" selection-start-column="2" selection-end-column="2" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="520">
-                <caret line="279" column="6" selection-start-line="279" selection-start-column="6" selection-end-line="279" selection-end-column="6" />
+              <first_editor relative-caret-position="418">
+                <caret line="52" column="60" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
               </first_editor>
               <second_editor />
             </state>
@@ -90,8 +31,8 @@
         <entry file="file://$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="54">
-                <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <first_editor relative-caret-position="56">
+                <caret line="16" column="110" selection-start-line="16" selection-start-column="110" selection-end-line="16" selection-end-column="110" />
               </first_editor>
               <second_editor />
             </state>
@@ -99,34 +40,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.md">
+        <entry file="file://$PROJECT_DIR$/uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="2" selection-start-column="2" selection-end-column="2" />
+              <first_editor relative-caret-position="487">
+                <caret line="118" column="21" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
               </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="397">
-                <caret line="199" column="5" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
               <second_editor />
             </state>
           </provider>
@@ -177,11 +96,12 @@
         <option value="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.md" />
         <option value="$PROJECT_DIR$/environment/yin-dao-ye.md" />
-        <option value="$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.md" />
+        <option value="$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md" />
+        <option value="$PROJECT_DIR$/uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -196,7 +116,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="401" />
     <option name="y" value="38" />
     <option name="width" value="1920" />
@@ -220,30 +140,12 @@
             <path>
               <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="environment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
               <item name="uniform-documentation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="uniform-documentation" type="462c0819:PsiDirectoryNode" />
-              <item name="kai-yuan-xiang-mu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="uniform-documentation" type="462c0819:PsiDirectoryNode" />
-              <item name="mian-shi-ti" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="uniform-documentation" type="462c0819:PsiDirectoryNode" />
-              <item name="ruan-jian-xu-qiu-ling-yu" type="462c0819:PsiDirectoryNode" />
+              <item name="zero-up" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -292,7 +194,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="401" y="38" width="1920" height="1143" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1143" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2543444" />
@@ -605,49 +507,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="250">
-            <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="54">
-            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor>
             <caret column="2" selection-start-column="2" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="520">
-            <caret line="279" column="6" selection-start-line="279" selection-start-column="6" selection-end-line="279" selection-end-column="6" />
           </first_editor>
           <second_editor />
         </state>
@@ -669,6 +533,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="5022">
+            <caret line="279" column="6" selection-start-line="279" selection-start-column="6" selection-end-line="279" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -682,8 +556,46 @@
     <entry file="file://$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="397">
+          <first_editor relative-caret-position="3582">
             <caret line="199" column="5" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="56">
+            <caret line="16" column="110" selection-start-line="16" selection-start-column="110" selection-end-line="16" selection-end-column="110" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="487">
+            <caret line="118" column="21" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="418">
+            <caret line="52" column="60" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
           </first_editor>
           <second_editor />
         </state>
