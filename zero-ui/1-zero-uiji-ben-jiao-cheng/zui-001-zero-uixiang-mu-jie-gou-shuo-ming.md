@@ -6,7 +6,7 @@
 
 > 只有标记为【开发】的目录会被开发人员自我管理，其他目录基本不用改变，标记为【Zero】部分为Zero UI提供的常用组件以及相关开发包，不提供给开发人员扩展。
 
-| 主目录 -&gt; 子目录 -&gt; ... | 特殊文件 | 说明 |
+| 主目录 / 子目录 / ... | 特殊文件 | 说明 |
 | :--- | :--- | :--- |
 | .storybook |  | Storybook专用配置目录，包括webpack配置。 |
 | .zero |  | Zero AI默认配置文件目录，和 [http://www.vertxai.cn](http://www.vertxai.cn) 结合使用时的配置工作目录 |
@@ -16,20 +16,20 @@
 | config | webpack.config.dev.js | 开发环境webpack配置 |
 | config | webpack.config.prod.js | 生产环境webpack配置 |
 | docs |  | API文档目录 |
-| document |  | Gitbook文档目录 |
 | public |  | 静态资源文件包 |
 | scripts |  | 原生启动脚本 |
 | shell |  | Zero专用启动脚本：环境变量初始化，代码链接，脚本执行，路由生成，容器配置检查，启动 |
+| shell / tpl / route |  |  |
 | specification |  | 组件API文档 |
-| src -&gt; app |  | 【开发】App专用目录 |
-| src -&gt; cab |  | 【开发】多国语言包 |
-| src -&gt; components |  | 【开发】Page页面组件 |
-| src -&gt; container |  | 【开发】Layout模板组件 |
-| src -&gt; econnomy |  | 【Zero】可重用组件 |
-| src -&gt; entity |  | 【Zero】TypeScript数据对象 |
-| src -&gt; environment |  | 核心环境文件 |
-| src -&gt; style |  | css相关风格文件 |
-| src -&gt; ux |  | 【Zero】Utility X包，纯函数主入口 |
+| src / app |  | 【开发】App专用目录 |
+| src / cab |  | 【开发】多国语言包 |
+| src / components |  | 【开发】Page页面组件 |
+| src / container |  | 【开发】Layout模板组件 |
+| src / econnomy |  | 【Zero】可重用组件 |
+| src / entity |  | 【Zero】TypeScript数据对象 |
+| src / environment |  | 核心环境文件 |
+| src / style |  | css相关风格文件 |
+| src / ux |  | 【Zero】Utility X包，纯函数主入口 |
 | stories |  | Storybook专用包 |
 | .babelrc |  | Babel配置文件 |
 | .eslintrc.js |  | Eslint配置文件 |
