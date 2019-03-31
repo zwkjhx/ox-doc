@@ -9,6 +9,7 @@
 | 主目录 | 子目录 | 特殊文件 | 说明 |
 | :--- | :--- | :--- | :--- |
 | .storybook |  |  | Storybook专用配置目录，包括webpack配置。 |
+| .zero |  |  | Zero AI默认配置文件目录，和 http://www.vertxai.cn 结合使用时的配置工作目录 |
 | build |  |  | 生产环境build的输出目录，可配置在服务器中运行。 |
 | config |  | variables.js | 环境变量连接文件，用于连接不同环境变量用于docker容器化和k8s集群专用。 |
 | config |  | modules.js | 模块相对路径处理专用导入脚本，解决不同模块之间的import相对路径导入问题。 |
