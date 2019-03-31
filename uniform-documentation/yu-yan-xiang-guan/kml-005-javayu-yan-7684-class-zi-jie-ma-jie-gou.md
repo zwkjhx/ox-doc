@@ -9,9 +9,9 @@
 ### __javac编译过后的字节码（16进制）__
 
 下边的截图就是.class文件的内容<br/>
-![com.sco.core.TestClass编译后结果](img/1-1.JPG)<br/>
+![com.sco.core.TestClass编译后结果](/assets/images/kml/005/1-1.JPG)<br/>
 它对应的源代码部分的内容为<br/>
-![com.sco.core.TestClass源代码](img/1-2.JPG)<br/>
+![com.sco.core.TestClass源代码](/assets/images/kml/005/1-2.JPG)<br/>
 
 <hr/>
 
@@ -125,12 +125,12 @@ u1 -- 1个字节<br/>u2 -- 2个字节<br/>u4 -- 4个字节<br/>u8 -- 8个字节
 
 *-target在使用的时候需要加上-source*，否则会产生错误，下边两种错误都是不能正确生成.class字节码文件的：<br/>
 <font style="color:red">错误1</font>：（不带-source）默认的-source是1.8，但在输出类文件格式的时候尝试使用1.5的文件格式输出<br/>
-![不带-source](img/1-3.JPG)<br/>
+![不带-source](/assets/images/kml/005/1-3.JPG)<br/>
 <font style="color:red">错误2</font>：（带-source）带上了-source的1.8参数过后尝试用1.5的文件格式输出<br/>
-![带-source](img/1-4.JPG)<br/>
+![带-source](/assets/images/kml/005/1-4.JPG)<br/>
 <font style="color:blue">警告</font>：（带-source）带上了-source的1.5参数过后尝试用1.7的文件格式输出（编译可通过）<br/>
-![警告](img/1-5.JPG)<br/>
-<font style="color:green">*综上所述，-source的版本号必须小于或等于-target的版本号，一旦大于了过后可能导致编译不通过，但这里会有一个问题，从下边的表看来，直接使用低版本输出-target <version>的方式应该是可行的，但这个用法似乎只适合特定版本的JDK，例如：1.6.0_01可直接使用-target 1.5输出JDK 1.5的字节码文件，我在本机使用1.8的版本输出时就会报错。（ -source <= -target ）*</font>
+![警告](/assets/images/kml/005/1-5.JPG)<br/>
+<font style="color:green">*综上所述，-source的版本号必须小于或等于-target的版本号，一旦大于了过后可能导致编译不通过，但这里会有一个问题，从下边的表看来，直接使用低版本输出-target <version>的方式应该是可行的，但这个用法似乎只适合特定版本的JDK，例如：1.6.0_01可直接使用-target 1.5输出JDK 1.5的字节码文件，我在本机使用1.8的版本输出时就会报错。（ -source <= -target ）*。</font>
 
 ##### __2.2.Class文件版本号__
 
@@ -245,7 +245,7 @@ u1 -- 1个字节<br/>u2 -- 2个字节<br/>u4 -- 4个字节<br/>u8 -- 8个字节
 * 从1.1到1.4的语法差异很小，默认的-target使用的都不是自身对应版本；
 * 1.5开始过后默认的-target是1.5，所以如果要生成1.4的文件格式则需要加上-source 1.4，之后的JDK使用也如此；
 
-最后：<font style="color:red">某个JVM能接受的class文件的最大主版本号不能超过对应JDK带相应-target参数编译出来的class文件的版本号。</font>例：1.4的JVM能接受最大的class文件的主版本号不能超过1.4 JDK使用-target 1.4输出的主版本号，即48。因为JDK 1.5默认编译输出-target为1.5，则最终class字节码是49.0，所以1.4的JVM是无法执行和支持JDK 1.5编译输出的字节码的，只有抛出错误。
+最后：<font style="color:red">某个JVM能接受的class文件的最大主版本号不能超过对应JDK带相应-target参数编译出来的class文件的版本号。</font> 例：1.4的JVM能接受最大的class文件的主版本号不能超过1.4 JDK使用-target 1.4输出的主版本号，即48。因为JDK 1.5默认编译输出-target为1.5，则最终class字节码是49.0，所以1.4的JVM是无法执行和支持JDK 1.5编译输出的字节码的，只有抛出错误。
 
 #### __3.关于常量池__
 
@@ -331,8 +331,8 @@ Java和C/C++语言有一点不同，它没有Link【链接】的步骤。
 JDK中提供了javap工具，该工具主要用于分析字节码，使用下边命令可输出当前字节码文件中的所有常量（例子中<font style="color:red">35项</font>）：<br/>
 <font style="color:white;background-color:black">javap -verbose TestClass.class</font><br/>
 输出（为了方便截图使用PowerShell输出，路径切换成.\TestClass.class，其他的没有变化）：
-![常量表](img/1-6.JPG)<br/>
-![常量表](img/1-7.JPG)<br/>
+![常量表](/assets/images/kml/005/1-6.JPG)<br/>
+![常量表](/assets/images/kml/005/1-7.JPG)<br/>
 
 ##### __3.4.常量类型的结构总表__
 上边提到了11种常量池的结构信息，那么这里再提供11种常量类型的结构总表，细化到前边提到的数据类型（Tag对应3.2中的表）。

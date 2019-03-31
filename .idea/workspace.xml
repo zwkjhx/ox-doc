@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md" beforeDir="false" afterPath="$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/kml/005/1-1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/kml/005/1-2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/kml/005/1-3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/kml/005/1-4.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/kml/005/1-5.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/kml/005/1-6.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/kml/005/1-7.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md" beforeDir="false" afterPath="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -52,10 +60,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/environment/yin-dao-ye.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="432">
+                <caret line="24" column="88" selection-start-line="24" selection-start-column="88" selection-end-line="24" selection-end-column="88" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="226">
+                <caret line="132" column="239" selection-start-line="132" selection-start-column="239" selection-end-line="132" selection-end-column="239" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -67,30 +99,6 @@
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="649">
                 <caret line="118" column="21" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="630">
-                <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="3" selection-start-column="3" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -180,10 +188,10 @@
         <option value="$PROJECT_DIR$/environment/yin-dao-ye.md" />
         <option value="$PROJECT_DIR$/environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.md" />
-        <option value="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.md" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md" />
+        <option value="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md" />
       </list>
     </option>
   </component>
@@ -222,25 +230,25 @@
             <path>
               <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="uniform-documentation" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="kml" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
               <item name="uniform-documentation" type="462c0819:PsiDirectoryNode" />
-              <item name="gui-fan-xiang-guan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="uniform-documentation" type="462c0819:PsiDirectoryNode" />
-              <item name="mian-shi-ti" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="uniform-documentation" type="462c0819:PsiDirectoryNode" />
-              <item name="ruan-jian-xu-qiu-ling-yu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
@@ -265,7 +273,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="11.13.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images/env/006" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images/kml/005" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -274,6 +282,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images/kml/005" />
       <recent name="$PROJECT_DIR$/assets/images/env/006" />
       <recent name="$PROJECT_DIR$/assets/images/kmo/006" />
     </key>
@@ -652,26 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/environment/yin-dao-ye.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="432">
-            <caret line="24" column="88" selection-start-line="24" selection-start-column="88" selection-end-line="24" selection-end-column="88" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="3" selection-start-column="3" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -718,14 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -751,6 +732,34 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="377">
             <caret line="29" column="124" selection-start-line="29" selection-start-column="124" selection-end-line="29" selection-end-column="124" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environment/yin-dao-ye.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="432">
+            <caret line="24" column="88" selection-start-line="24" selection-start-column="88" selection-end-line="24" selection-end-column="88" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="226">
+            <caret line="132" column="239" selection-start-line="132" selection-start-column="239" selection-end-line="132" selection-end-column="239" />
           </first_editor>
           <second_editor />
         </state>
