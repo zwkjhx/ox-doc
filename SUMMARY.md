@@ -53,6 +53,7 @@
   * [KMO-007 Jasmine基础知识](uniform-documentation/kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.md)
   * [KMO-008 Dockerfile语法基础](uniform-documentation/kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.md)
   * [KMO-009 redux-orm项目文档](uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.md)
+  * [KMO-010 Tradeshift应用开发手册](uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.md)
 
 ## Environment
 
