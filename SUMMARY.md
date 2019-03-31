@@ -24,6 +24,7 @@
   * [ZVX-001 基于 auth-common 开发Vert.x自定义安全组件](zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.md)
 * [3 - Zero实战分析](zero-up/3-zeroshi-zhan-fen-xi.md)
 * [4 - Java语言基础](zero-up/4-javayu-yan-ji-chu.md)
+* [5 - 《逐鹿记》附录](zero-up/5-300a-zhu-lu-ji-300b-fu-lu.md)
 
 ## Origin X Engine
 
