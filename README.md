@@ -6,5 +6,19 @@
 
 Origin X Doc是为Origin X Engine量身打造的文档型项目，使用`gitbook`可直接本地化成电子书方便查阅，不仅仅如此，本文档中收录了更多在开发过程中的心得以及环境搭建过程中遇到的种种问题，希望真正对读者有所帮助。
 
+### 1.1 安装serve
+
+在自己的本机使用下边命令安装一个静态服务器，推荐使用 `serve`
+
+```shell
+sudo npm install -g serve
+```
+
+然后执行根目录的脚本：
+
+```shell
+./book-server.sh
+```
+
 
 
