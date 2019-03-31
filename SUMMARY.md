@@ -6,7 +6,7 @@
 
 ## Zero UI
 
-* [Zero UI文档主页](zero-ui/shou-ye.md)
+* [Zero UI文档主页](zero-ui/main.md)
 * [1 - Zero UI基本教程](zero-ui/1-zero-uiji-ben-jiao-cheng.md)
   * [ZUI-001 Zero UI项目结构说明](zero-ui/1-zero-uiji-ben-jiao-cheng/zui-001-zero-uixiang-mu-jie-gou-shuo-ming.md)
 * [2 - React碎碎念](zero-ui/2-reactsui-sui-nian.md)
@@ -15,7 +15,7 @@
 
 ## Zero Up
 
-* [Zero 文档主页](zero-up/shou-ye.md)
+* [Zero 文档主页](zero-up/main.md)
 * [1 - Zero基本教程](zero-up/1-zeroji-ben-jiao-cheng.md)
   * [ZRO-001 零之起源](zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.md)
   * [ZRO-002 第一个Zero](zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.md)
@@ -45,7 +45,7 @@
 
 ## Origin X Engine
 
-* [Origin X Engine文档主页](origin-x-engine/yin-dao-ye.md)
+* [Origin X Engine文档主页](origin-x-engine/main.md)
 * [1 - Ox实施教程](origin-x-engine/1-oxshi-shi-jiao-cheng.md)
 * [2 - Ox自定义组件](origin-x-engine/2-oxzi-ding-yi-zu-jian.md)
 * [3 - Ox后端扩展开发](origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.md)
@@ -53,7 +53,7 @@
 
 ## Uniform Docoument
 
-* [通用知识库主页](uniform-documentation/yin-dao-ye.md)
+* [通用知识库主页](uniform-documentation/main.md)
 * [面试题](uniform-documentation/mian-shi-ti.md)
   * [KMI-001 抽奖器需求](uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.md)
   * [KMI-002 CDA考试大纲](uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.md)
@@ -104,7 +104,7 @@
 
 ## Specification
 
-* [开发规范文档主页](specification/kai-fa-gui-fan-wen-dang-zhu-ye.md)
+* [开发规范文档主页](specification/main.md)
 * [1 - Zero规范](specification/1-zerogui-fan.md)
 * [2 - Zero UI规范](specification/2-zero-uigui-fan.md)
 * [3 - Origin X规范](specification/3-origin-xgui-fan.md)
