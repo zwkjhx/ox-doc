@@ -53,4 +53,7 @@
 * [1 - Zero规范](specification/1-zerogui-fan.md)
 * [2 - Zero UI规范](specification/2-zero-uigui-fan.md)
 * [3 - Origin X规范](specification/3-origin-xgui-fan.md)
+* [4 - RESTful设计规范](specification/4-restfulshe-ji-zhi-dao-gui-fan.md)
+  * [SPR-001 URI路径设计规范](specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.md)
+  * [SPR-002 URI业务设计规范](specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.md)
 
