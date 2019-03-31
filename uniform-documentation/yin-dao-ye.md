@@ -13,7 +13,7 @@
 ## 面试题
 
 * [KMI-001 抽奖器需求](/uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html)
-* [KMI-002 CDA考试大纲](/uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.md)
+* [KMI-002 CDA考试大纲](/uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.html)
 
 ## 软件需求领域
 
@@ -35,12 +35,12 @@
 * [KMO-006 Mockito基础和使用](/uniform-documentation/kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.html)
 * [KMO-007 Jasmine基础知识](/uniform-documentation/kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.html)
 * [KMO-008 Dockerfile语法基础](/uniform-documentation/kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html)
-* [KMO-009 redux-orm项目文档](/uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.md)
-* [KMO-010 Tradeshift应用开发手册](/uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.md)
+* [KMO-009 redux-orm项目文档](/uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.html)
+* [KMO-010 Tradeshift应用开发手册](/uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html)
 
 ## 规范相关
 
-* [KMS-001 UBL规范中的Price字段说明](/uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.md)
+* [KMS-001 UBL规范中的Price字段说明](/uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html)
 
 
 
