@@ -70,6 +70,7 @@
   * [ENV-003 Karma的安装教程](environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.md)
   * [ENV-004 Windows环境的Docker安装](environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.md)
   * [ENV-005 使用Docker环境运行Spring Boot](environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.md)
+  * [ENV-006 Maven环境搭建](environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.md)
 
 ## Specification
 
