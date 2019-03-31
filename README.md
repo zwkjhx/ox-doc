@@ -30,15 +30,16 @@ sudo npm install -g serve
 | :--- | :--- |
 | [http://www.vertxup.cn](http://www.vertxup.cn) | 「后端」Zero框架主页 |
 | [http://www.vertxui.cn](http://www.vertxui.cn) | 「前端」Zero UI框架主页 |
-| [http://www.origin-x.cn](http://www.origin-x.cn) | 「当前」Origin X Doc项目主页 |
+| [http://www.vertxai.cn](http://www.vertxai.cn) | 「工具」Zero 自动化工具主页 |
+| [http://www.spring-up.cn](http://www.spring-up.cn) | 和Spring的协同工作桥接器主页 |
+
+> 由于文档的工作量巨大，大部分文档都是整理的以前的原创，再加上整个几个项目都是由我一个人主体维护，大家都是采取业余时间在处理整个体系的文档以及开源代码，所以有些文档可能会出现残章以及不全的地方，请读者见谅。
 
 ## 2. 文档说明
 
 ### 2.1. 前缀说明
 
 前缀说明一直是我在写文档过程中的一个习惯（不谈好坏），通过前缀将文档本身进行分类，使得文档标题具有更明确的类型指向，而不是任何时候都需要通过类型树来对文档进行定位，文档
-
-
 
 ### 2.2. 文档分类
 
