@@ -1,0 +1,1305 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>KML-002 JSR330规范 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="kml-003-liu-lan-qi-zhong-de-fetch-api.html" />
+    
+    
+    <link rel="prev" href="kml-001-ecma-script-60.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">http://www.origin-x.cn</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Origin X Doc文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Zero UI</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../zero-ui/shou-ye.html">
+            
+                <a href="../../zero-ui/shou-ye.html">
+            
+                    
+                    Zero UI文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../zero-ui/1-zero-uiji-ben-jiao-cheng.html">
+            
+                <a href="../../zero-ui/1-zero-uiji-ben-jiao-cheng.html">
+            
+                    
+                    1 - Zero UI基本教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../zero-ui/2-reactsui-sui-nian.html">
+            
+                <a href="../../zero-ui/2-reactsui-sui-nian.html">
+            
+                    
+                    2 - React碎碎念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../zero-ui/3-antquan-jia-tong.html">
+            
+                <a href="../../zero-ui/3-antquan-jia-tong.html">
+            
+                    
+                    3 - Ant全家桶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../zero-ui/4-zero-uishi-zhan-fen-xi.html">
+            
+                <a href="../../zero-ui/4-zero-uishi-zhan-fen-xi.html">
+            
+                    
+                    4 - Zero UI实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Zero Up</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../zero-up/shou-ye.html">
+            
+                <a href="../../zero-up/shou-ye.html">
+            
+                    
+                    Zero 文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../zero-up/1-zeroji-ben-jiao-cheng.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng.html">
+            
+                    
+                    1 - Zero基本教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html">
+            
+                    
+                    ZRO-001 零之起源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html">
+            
+                    
+                    ZRO-002 第一个Zero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html">
+            
+                    
+                    ZRO-003 RESTful中的Path和Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../zero-up/2-vertxsui-sui-nian.html">
+            
+                <a href="../../zero-up/2-vertxsui-sui-nian.html">
+            
+                    
+                    2 - Vert.x碎碎念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../../zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html">
+            
+                <a href="../../zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html">
+            
+                    
+                    ZVX-001 基于 auth-common 开发Vert.x自定义安全组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../zero-up/3-zeroshi-zhan-fen-xi.html">
+            
+                <a href="../../zero-up/3-zeroshi-zhan-fen-xi.html">
+            
+                    
+                    3 - Zero实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../zero-up/4-javayu-yan-ji-chu.html">
+            
+                <a href="../../zero-up/4-javayu-yan-ji-chu.html">
+            
+                    
+                    4 - Java语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Origin X Engine</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../origin-x-engine/yin-dao-ye.html">
+            
+                <a href="../../origin-x-engine/yin-dao-ye.html">
+            
+                    
+                    Origin X Engine文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../origin-x-engine/1-oxshi-shi-jiao-cheng.html">
+            
+                <a href="../../origin-x-engine/1-oxshi-shi-jiao-cheng.html">
+            
+                    
+                    1 - Ox实施教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../origin-x-engine/2-oxzi-ding-yi-zu-jian.html">
+            
+                <a href="../../origin-x-engine/2-oxzi-ding-yi-zu-jian.html">
+            
+                    
+                    2 - Ox自定义组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../../origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html">
+            
+                <a href="../../origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html">
+            
+                    
+                    3 - Ox后端扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../../origin-x-engine/4-oxshi-zhan-fen-xi.html">
+            
+                <a href="../../origin-x-engine/4-oxshi-zhan-fen-xi.html">
+            
+                    
+                    4 - Ox实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Uniform Docoument</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../yin-dao-ye.html">
+            
+                <a href="../yin-dao-ye.html">
+            
+                    
+                    通用知识库主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../mian-shi-ti.html">
+            
+                <a href="../mian-shi-ti.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html">
+            
+                <a href="../mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html">
+            
+                    
+                    KMI-001 抽奖器需求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../mian-shi-ti/kmi-002-cdakao-shi-da-gang.html">
+            
+                <a href="../mian-shi-ti/kmi-002-cdakao-shi-da-gang.html">
+            
+                    
+                    KMI-002 CDA考试大纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html">
+            
+                <a href="../mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html">
+            
+                    
+                    KMI-003 Spring RESTful开发基础题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../ruan-jian-xu-qiu-ling-yu.html">
+            
+                <a href="../ruan-jian-xu-qiu-ling-yu.html">
+            
+                    
+                    软件理论领域
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html">
+            
+                <a href="../ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html">
+            
+                    
+                    KMR-001 非功能需求评估指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.html">
+            
+                <a href="../ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.html">
+            
+                    
+                    KMR-002 程序设计的六个基本原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../yu-yan-xiang-guan.html">
+            
+                <a href="../yu-yan-xiang-guan.html">
+            
+                    
+                    语言相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="kml-001-ecma-script-60.html">
+            
+                <a href="kml-001-ecma-script-60.html">
+            
+                    
+                    KML-001 ECMA Script 6.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.4.2" data-path="kml-002-jsr330gui-fan.html">
+            
+                <a href="kml-002-jsr330gui-fan.html">
+            
+                    
+                    KML-002 JSR330规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="kml-003-liu-lan-qi-zhong-de-fetch-api.html">
+            
+                <a href="kml-003-liu-lan-qi-zhong-de-fetch-api.html">
+            
+                    
+                    KML-003 浏览器中的Fetch Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.4" data-path="kml-004-javazhong-de-jing-tai-he-dan-li.html">
+            
+                <a href="kml-004-javazhong-de-jing-tai-he-dan-li.html">
+            
+                    
+                    KML-004 Java中的静态和单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.5" data-path="kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.html">
+            
+                <a href="kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.html">
+            
+                    
+                    KML-005 Java语言的.class字节码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../kai-yuan-xiang-mu.html">
+            
+                <a href="../kai-yuan-xiang-mu.html">
+            
+                    
+                    开源项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.5.1" data-path="../kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html">
+            
+                    
+                    KMO-001 Vert.x Core官方翻译版 3.4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.2" data-path="../kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html">
+            
+                    
+                    KMO-002 Vert.x Web官方翻译版 3.4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.3" data-path="../kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.html">
+            
+                    
+                    KMO-003 Spring Boot中的测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.4" data-path="../kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html">
+            
+                    
+                    KMO-004 使用OVal进行防御式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.5" data-path="../kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.html">
+            
+                    
+                    KMO-005 Sass基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.6" data-path="../kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.html">
+            
+                    
+                    KMO-006 Mockito基础和使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.7" data-path="../kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.html">
+            
+                    
+                    KMO-007 Jasmine基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.8" data-path="../kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html">
+            
+                    
+                    KMO-008 Dockerfile语法基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.9" data-path="../kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.html">
+            
+                    
+                    KMO-009 redux-orm项目文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.10" data-path="../kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html">
+            
+                    
+                    KMO-010 Tradeshift应用开发手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../gui-fan-xiang-guan.html">
+            
+                <a href="../gui-fan-xiang-guan.html">
+            
+                    
+                    规范相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6.1" data-path="../gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html">
+            
+                <a href="../gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html">
+            
+                    
+                    KMS-001 UBL规范中的Price字段说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Environment</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../environment/yin-dao-ye.html">
+            
+                <a href="../../environment/yin-dao-ye.html">
+            
+                    
+                    环境搭建知识库主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../environment/1-dockerrong-qi-huan-jing.html">
+            
+                <a href="../../environment/1-dockerrong-qi-huan-jing.html">
+            
+                    
+                    1 - Docker容器环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../../environment/2-zeroandoxhuan-jing.html">
+            
+                <a href="../../environment/2-zeroandoxhuan-jing.html">
+            
+                    
+                    2 - Zero&Ox环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../../environment/4-deploymentbu-shu-jiao-cheng.html">
+            
+                <a href="../../environment/4-deploymentbu-shu-jiao-cheng.html">
+            
+                    
+                    3 - Deployment部署教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../../environment/5-qi-ta-huan-jing.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing.html">
+            
+                    
+                    4 - 其他环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.5.1" data-path="../../environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.html">
+            
+                    
+                    ENV-001 Spring Boot中的数据源配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.2" data-path="../../environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.html">
+            
+                    
+                    ENV-002 Karma在ES6中的Webpack配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.3" data-path="../../environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.html">
+            
+                    
+                    ENV-003 Karma的安装教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.4" data-path="../../environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html">
+            
+                    
+                    ENV-004 Windows环境的Docker安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.5" data-path="../../environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html">
+            
+                    
+                    ENV-005 使用Docker环境运行Spring Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.6" data-path="../../environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html">
+            
+                    
+                    ENV-006 Maven环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Specification</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../specification/kai-fa-gui-fan-wen-dang-zhu-ye.html">
+            
+                <a href="../../specification/kai-fa-gui-fan-wen-dang-zhu-ye.html">
+            
+                    
+                    开发规范文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../specification/1-zerogui-fan.html">
+            
+                <a href="../../specification/1-zerogui-fan.html">
+            
+                    
+                    1 - Zero规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../../specification/2-zero-uigui-fan.html">
+            
+                <a href="../../specification/2-zero-uigui-fan.html">
+            
+                    
+                    2 - Zero UI规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../../specification/3-origin-xgui-fan.html">
+            
+                <a href="../../specification/3-origin-xgui-fan.html">
+            
+                    
+                    3 - Origin X规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan.html">
+            
+                    
+                    4 - RESTful设计规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.5.1" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.html">
+            
+                    
+                    SPR-001 URI路径设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5.2" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.html">
+            
+                    
+                    SPR-002 URI业务设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >KML-002 JSR330规范</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="jsr330-details">JSR330 Details</h1><p>Java&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x6807;&#x51C6;&#xFF08;JSR-330&#xFF0C;Dependency Injection for Java&#xFF09;&#x2014;&#x2014;&#x8BE5;&#x89C4;&#x8303;&#x9762;&#x5411;&#x4EE5;&#x6765;&#x6CE8;&#x5165;&#x4F7F;&#x7528;&#x8005;&#xFF0C;&#x800C;&#x5BF9;&#x6CE8;&#x5165;&#x5668;&#x5B9E;&#x73B0;&#x3001;&#x914D;&#x7F6E;&#x75C5;&#x6CA1;&#x505A;&#x8BE6;&#x7EC6;&#x8981;&#x6C42;&#x3002;&#x76EE;&#x524D;Spring&#x3001;Guice&#x5DF2;&#x7ECF;&#x5F00;&#x59CB;&#x517C;&#x5BB9;&#x8BE5;&#x89C4;&#x8303;&#xFF0C;JSR-299&#xFF08;Contexts and Dependency Injection for Java EE platform&#xFF09;&#x5728;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x4E0A;&#x4E5F;&#x4F7F;&#x7528;&#x8BE5;&#x89C4;&#x8303;&#x3002;JSR-330&#x89C4;&#x8303;&#x5E76;&#x6CA1;&#x6309;JSR&#x60EF;&#x4F8B;&#x53D1;&#x5E03;&#x89C4;&#x8303;&#x6587;&#x6863;&#xFF0C;&#x53EA;&#x53D1;&#x5E03;&#x4E86;&#x89C4;&#x8303;API&#x6E90;&#x4EE3;&#x7801;&#x3002;</p><h2 id="1javaxinject">1.javax.inject</h2><p>&#x5305;javax.inject&#x5236;&#x5B9A;&#x4E86;&#x83B7;&#x53D6;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x548C;&#x6784;&#x9020;&#x5668;&#x3001;&#x5DE5;&#x5382;&#x3001;&#x670D;&#x52A1;&#x5B9A;&#x4F4D;&#x5668;&#xFF08;&#x5982;JNDI&#xFF09;&#x8FD9;&#x4E9B;&#x4F20;&#x7EDF;&#x65B9;&#x6CD5;&#x76F8;&#x6BD4;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x66F4;&#x597D;&#x7684;&#x53EF;&#x91CD;&#x7528;&#x6027;&#x3001;&#x53EF;&#x6D4B;&#x8BD5;&#x6027;&#x548C;&#x53EF;&#x7EF4;&#x62A4;&#x6027;&#x2014;&#x2014;&#x5C31;&#x662F;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x3002;</p><p>&#x5728;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x5F88;&#x591A;&#x7C7B;&#x578B;&#x4F9D;&#x8D56;&#x4E8E;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#xFF0C;&#x5982;Stopwatch&#x53EF;&#x80FD;&#x4F9D;&#x8D56;&#x4E00;&#x4E2A;TimeSource&#xFF0C;&#x4E00;&#x4E9B;&#x7C7B;&#x578B;&#x88AB;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x4F9D;&#x8D56;&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x8FD9;&#x4E9B;&#x7C7B;&#x578B;&#x53EB;&#x505A;<strong>&#x4F9D;&#x8D56;&#xFF08;&#x7269;&#xFF09;</strong>&#x3002;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x67E5;&#x627E;&#x4E00;&#x4E2A;&#x4F9D;&#x8D56;&#x5B9E;&#x4F8B;&#x7684;&#x8FC7;&#x7A0B;&#x53EB;&#x505A;<strong>&#x89E3;&#x6790;&#x4F9D;&#x8D56;</strong>&#xFF0C;&#x5982;&#x679C;&#x627E;&#x4E0D;&#x5230;&#x4F9D;&#x8D56;&#x7684;&#x5B9E;&#x73B0;&#x5219;&#x79F0;&#x8BE5;&#x4F9D;&#x8D56;&#x4E3A;<strong>&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x7684;</strong>&#xFF0C;&#x5E76;&#x5BFC;&#x81F4;&#x5E94;&#x7528;&#x8FD0;&#x884C;&#x5931;&#x8D25;&#x3002;</p><p>&#x5982;&#x679C;&#x4E0D;&#x4F7F;&#x7528;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#xFF0C;&#x5BF9;&#x8C61;&#x7684;&#x4F9D;&#x8D56;&#x89E3;&#x6790;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x7F16;&#x5199;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Stopwatch</span> </span>{
+  <span class="hljs-keyword">final</span> TimeSource timeSource;
+  Stopwatch () {
+    timeSource = <span class="hljs-keyword">new</span> AtomicClock(...);
+  }
+  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">start</span><span class="hljs-params">()</span> </span>{ ... }
+  <span class="hljs-function"><span class="hljs-keyword">long</span> <span class="hljs-title">stop</span><span class="hljs-params">()</span> </span>{ ... }
+}</code></pre>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x66F4;&#x6709;&#x5F39;&#x6027;&#x4E00;&#x70B9;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5DE5;&#x5382;&#x6216;&#x670D;&#x52A1;&#x5B9A;&#x4F4D;&#x5668;&#x5B9E;&#x73B0;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Stopwatch</span> </span>{ 
+    <span class="hljs-keyword">final</span> TimeSource timeSource; 
+    Stopwatch () { 
+        timeSource = DefaultTimeSource.getInstance(); 
+    } 
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">start</span><span class="hljs-params">()</span> </span>{ ... } 
+    <span class="hljs-function"><span class="hljs-keyword">long</span> <span class="hljs-title">stop</span><span class="hljs-params">()</span> </span>{ ... } 
+}</code></pre>
+<p>&#x5728;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x4F20;&#x7EDF;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x4F9D;&#x8D56;&#x89E3;&#x6790;&#x65F6;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x5FC5;&#x987B;&#x505A;&#x51FA;&#x9002;&#x5F53;&#x6743;&#x8861;&#x3002;&#x6784;&#x9020;&#x5668;&#x975E;&#x5E38;&#x7B80;&#x6D01;&#xFF0C;&#x4F46;&#x5374;&#x6709;&#x4E00;&#x4E9B;&#x9650;&#x5236;&#xFF08;&#x5BF9;&#x8C61;&#x751F;&#x5B58;&#x671F;&#xFF0C;&#x5BF9;&#x8C61;&#x590D;&#x7528;&#xFF09;&#x3002;&#x5DE5;&#x5382;&#x786E;&#x5B9E;&#x89E3;&#x8026;&#x4E86;&#x5BA2;&#x6237;&#x4E0E;&#x5B9E;&#x73B0;&#xFF0C;&#x4F46;&#x5374;&#x9700;&#x8981;&#x6837;&#x672C;&#x5F0F;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x670D;&#x52A1;&#x5B9A;&#x4F4D;&#x5668;&#x66F4;&#x8FDB;&#x4E00;&#x6B65;&#x5730;&#x89E3;&#x8026;&#x4E86;&#x5BA2;&#x6237;&#x4E0E;&#x5B9E;&#x73B0;&#xFF0C;&#x4F46;&#x5374;&#x964D;&#x4F4E;&#x4E86;&#x7F16;&#x8BD1;&#x65F6;&#x7684;&#x7C7B;&#x578B;&#x5B89;&#x5168;&#x3002;&#x5E76;&#x4E14;&#xFF0C;&#x8FD9;&#x4E09;&#x4E2A;&#x65B9;&#x5F0F;&#x90FD;&#x4E0D;&#x9002;&#x5408;&#x8FDB;&#x884C;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5F53;&#x7A0B;&#x5E8F;&#x5458;&#x4F7F;&#x7528;&#x5DE5;&#x5382;&#x65F6;&#xFF0C;&#x8BE5;&#x5DE5;&#x5382;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x4EA7;&#x54C1;&#x90FD;&#x5FC5;&#x987B;&#x6A21;&#x62DF;&#x51FA;&#x6765;&#xFF0C;&#x6D4B;&#x8BD5;&#x5B8C;&#x540E;&#x8FD8;&#x8981;&#x5F97;&#x8BB0;&#x5F97;&#x6E05;&#x7406;&#xFF1A;</p><pre><code class="lang-java">      <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">testStopwatch</span><span class="hljs-params">()</span> </span>{ 
+          TimeSource original = DefaultTimeSource.getInstance(); 
+          DefaultTimeSource.setInstance(<span class="hljs-keyword">new</span> MockTimeSource()); 
+          <span class="hljs-keyword">try</span> { 
+              <span class="hljs-comment">// Now, we can actually test Stopwatch. </span>
+              Stopwatch sw = <span class="hljs-keyword">new</span> Stopwatch(); 
+              ... 
+          } <span class="hljs-keyword">finally</span> { 
+              DefaultTimeSource.setInstance(original); 
+          } 
+      }</code></pre>
+<p>&#x73B0;&#x5B9E;&#x4E2D;&#xFF0C;&#x8981;&#x6A21;&#x62DF;&#x5DE5;&#x5382;&#x5C06;&#x5BFC;&#x81F4;&#x66F4;&#x591A;&#x7684;&#x6837;&#x672C;&#x5F0F;&#x4EE3;&#x7801;&#x3002;&#x6D4B;&#x8BD5;&#x6A21;&#x62DF;&#x51FA;&#x7684;&#x4EA7;&#x54C1;&#x5E76;&#x6E05;&#x7406;&#x5B83;&#x4EEC;&#x5728;&#x4F9D;&#x8D56;&#x591A;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5F88;&#x5FEB;&#x5C31;&#x63A7;&#x5236;&#x4E0D;&#x4E86;&#x4E86;&#x3002;&#x66F4;&#x7CDF;&#x7684;&#x662F;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x5FC5;&#x987B;&#x7CBE;&#x786E;&#x5730;&#x9884;&#x6D4B;&#x672A;&#x6765;&#x5230;&#x5E95;&#x9700;&#x8981;&#x591A;&#x5C11;&#x8FD9;&#x6837;&#x7684;&#x5F39;&#x6027;&#xFF0C;&#x5E76;&#x4E3A;&#x4ED6;&#x505A;&#x7684;&#x201C;&#x5F39;&#x6027;&#x9009;&#x62E9;&#x201D;&#x8D1F;&#x8D23;&#x3002;&#x5982;&#x679C;&#x7A0B;&#x5E8F;&#x5458;&#x5F00;&#x59CB;&#x65F6;&#x9009;&#x62E9;&#x4E86;&#x6784;&#x9020;&#x5668;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x540E;&#x6765;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x66F4;&#x6709;&#x5F39;&#x6027;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x90A3;&#x4ED6;&#x5C31;&#x4E0D;&#x5F97;&#x4E0D;&#x66FF;&#x6362;&#x6240;&#x6709;&#x8C03;&#x7528;&#x6784;&#x9020;&#x5668;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x5982;&#x679C;&#x7A0B;&#x5E8F;&#x5458;&#x4E00;&#x5F00;&#x59CB;&#x8FC7;&#x4E8E;&#x8C28;&#x614E;&#x5730;&#x9009;&#x62E9;&#x4E86;&#x5DE5;&#x5382;&#x65B9;&#x5F0F;&#xFF0C;&#x7ED3;&#x679C;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x8981;&#x7F16;&#x5199;&#x5F88;&#x591A;&#x989D;&#x5916;&#x7684;&#x6837;&#x672C;&#x5F0F;&#x4EE3;&#x7801;&#xFF0C;&#x5F15;&#x5165;&#x4E86;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x6F5C;&#x5728;&#x7684;&#x95EE;&#x9898;&#x6BD4;&#x6BD4;&#x7686;&#x662F;&#x3002;</p><p><strong>&#x4F9D;&#x8D56;&#x6CE8;&#x5165;</strong>&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#x3002;&#x4EE3;&#x66FF;&#x7A0B;&#x5E8F;&#x5458;&#x8C03;&#x7528;&#x6784;&#x9020;&#x5668;&#x6216;&#x5DE5;&#x5382;&#xFF0C;&#x4E00;&#x4E2A;&#x79F0;&#x4F5C;<strong>&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x5668;</strong>&#x7684;&#x5DE5;&#x5177;&#x5C06;&#x628A;&#x4F9D;&#x8D56;&#x4F20;&#x9012;&#x7ED9;&#x5BF9;&#x8C61;&#xFF1A;</p><pre><code class="lang-java">      <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Stopwatch</span> </span>{ 
+          <span class="hljs-keyword">final</span> TimeSource timeSource; 
+          <span class="hljs-meta">@Inject</span> Stopwatch(TimeSource timeSource) { 
+              <span class="hljs-keyword">this</span>.TimeSource = timeSource; 
+          } 
+          <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">start</span><span class="hljs-params">()</span> </span>{ ... } 
+          <span class="hljs-function"><span class="hljs-keyword">long</span> <span class="hljs-title">stop</span><span class="hljs-params">()</span> </span>{ ... } 
+      }</code></pre>
+<p>&#x6CE8;&#x5165;&#x5668;&#x5C06;&#x66F4;&#x8FDB;&#x4E00;&#x6B65;&#x5730;&#x4F20;&#x9012;&#x4F9D;&#x8D56;&#x7ED9;&#x5176;&#x4ED6;&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x76F4;&#x5230;&#x5B83;&#x6784;&#x9020;&#x51FA;&#x6574;&#x4E2A;&#x5BF9;&#x8C61;&#x56FE;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x8BBE;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x5458;&#x9700;&#x8981;&#x6CE8;&#x5165;&#x5668;&#x521B;&#x5EFA;&#x4E00;StopwatchWidget &#x5B9E;&#x4F8B;&#xFF1A;</p><pre><code class="lang-java"> <span class="hljs-comment">/** GUI for a Stopwatch */</span> 
+ <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StopwatchWidget</span> </span>{ 
+     <span class="hljs-meta">@Inject</span> StopwatchWidget(Stopwatch sw) { ... } 
+     ... 
+ }</code></pre>
+<p>&#x6CE8;&#x5165;&#x5668;&#x53EF;&#x80FD;&#x4F1A;&#xFF1A;</p><ol><li>&#x67E5;&#x627E;&#x4E00;&#x4E2A; TimeSource &#x5B9E;&#x4F8B;
+</li>
+<li>&#x4F7F;&#x7528;&#x627E;&#x5230;&#x7684; TimeSource &#x5B9E;&#x4F8B;&#x6784;&#x9020;&#x4E00;&#x4E2A; Stopwatch
+</li>
+<li>&#x4F7F;&#x7528;&#x6784;&#x9020;&#x7684; Stopwatch &#x5B9E;&#x4F8B;&#x6784;&#x9020;&#x4E00;&#x4E2A; StopwatchWidget
+</li></ol>
+<p>&#x8FD9;&#x4F7F;&#x5F97;&#x4EE3;&#x7801;&#x4FDD;&#x6301;&#x5E72;&#x51C0;&#xFF0C;&#x4F7F;&#x5F97;&#x7A0B;&#x5E8F;&#x5458;&#x611F;&#x5230;&#x4F7F;&#x7528;&#x4F9D;&#x8D56;&#xFF08;&#x7269;&#xFF09;&#x7684;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x3002;&#x73B0;&#x5728;&#xFF0C;&#x5728;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x4E2D;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6784;&#x9020;&#x5BF9;&#x8C61;&#xFF08;&#x4E0D;&#x4F7F;&#x7528;&#x6CE8;&#x5165;&#x5668;&#xFF09;&#x5E76;&#x5C06;&#x8BE5;&#x5BF9;&#x8C61;&#x4EE5;&#x6A21;&#x62DF;&#x4F9D;&#x8D56;&#x7684;&#x65B9;&#x5F0F;&#x76F4;&#x63A5;&#x4F20;&#x5165;&#x5F85;&#x6D4B;&#x5BF9;&#x8C61;&#x7684;&#x6784;&#x9020;&#x4E2D;&#x3002;&#x7A0B;&#x5E8F;&#x5458;&#x518D;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x4E3A;&#x6BCF;&#x4E00;&#x6B21;&#x6D4B;&#x8BD5;&#x90FD;&#x914D;&#x7F6E;&#x5E76;&#x6E05;&#x7406;&#x5DE5;&#x5382;&#x6216;&#x670D;&#x52A1;&#x5B9A;&#x4F4D;&#x5668;&#x3002;&#x8FD9;&#x5927;&#x5927;&#x7B80;&#x5316;&#x4E86;&#x6211;&#x4EEC;&#x7684;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#xFF1A;</p><pre><code class="lang-java">      <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">testStopwatch</span><span class="hljs-params">()</span> </span>{ 
+          Stopwatch sw = <span class="hljs-keyword">new</span> Stopwatch(<span class="hljs-keyword">new</span> MockTimeSource()); 
+          ... 
+      }</code></pre>
+<p>&#x5B8C;&#x5168;&#x964D;&#x4F4E;&#x4E86;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x7684;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x964D;&#x4F4E;&#x7684;&#x590D;&#x6742;&#x7A0B;&#x5EA6;&#x4E0E;&#x5F85;&#x6D4B;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x76EE;&#x53CA;&#x5176;&#x4F9D;&#x8D56;&#x6210;&#x6B63;&#x6BD4;&#x3002;<strong>&#x5305; javax.inject &#x4E3A;&#x4F7F;&#x7528;&#x8FD9;&#x6837;&#x7684;&#x8F7B;&#x4FBF;&#x7C7B;&#x63D0;&#x4F9B;&#x4E86;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x6CE8;&#x89E3;</strong>&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x5F15;&#x5165;&#x4F9D;&#x8D56;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#x3002;&#x4F9D;&#x8D56;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#x53D6;&#x51B3;&#x4E8E;&#x6CE8;&#x5165;&#x5668;&#x7684;&#x5B9E;&#x73B0;&#x3002;&#x7A0B;&#x5E8F;&#x5458;&#x53EA;&#x9700;&#x8981;&#x6807;&#x6CE8;&#x4E86;&#x6784;&#x9020;&#x5668;&#x3001;&#x65B9;&#x6CD5;&#x6216;&#x5B57;&#x6BB5;&#x6765;&#x8BF4;&#x660E;&#x5B83;&#x4EEC;&#x7684;&#x53EF;&#x6CE8;&#x5165;&#x6027;&#xFF08;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x5C31;&#x662F;&#x6784;&#x9020;&#x5668;&#x6CE8;&#x5165;&#xFF09;&#x3002;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x5668;&#x901A;&#x8FC7;&#x8FD9;&#x4E9B;&#x6CE8;&#x89E3;&#x6765;&#x8BC6;&#x522B;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x5E76;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x6CE8;&#x5165;&#x8FD9;&#x4E9B;&#x4F9D;&#x8D56;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x6CE8;&#x5165;&#x5668;&#x8981;&#x80FD;&#x591F;&#x5728;<strong>&#x6784;&#x5EFA;&#x65F6;</strong>&#x9A8C;&#x8BC1;&#x6240;&#x6709;&#x7684;&#x4F9D;&#x8D56;&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x3002;&#x76F8;&#x6BD4;&#x4E4B;&#x4E0B;&#xFF0C;&#x670D;&#x52A1;&#x5B9A;&#x4F4D;&#x5668;&#x5728;&#x6784;&#x5EFA;&#x65F6;&#x662F;&#x4E0D;&#x80FD;&#x68C0;&#x6D4B;&#x5230;&#x4F9D;&#x8D56;&#x4E0D;&#x6EE1;&#x8DB3;&#x60C5;&#x51B5;&#x7684;&#xFF0C;&#x76F4;&#x5230;&#x8FD0;&#x884C;&#x65F6;&#x624D;&#x80FD;&#x53D1;&#x73B0;&#x3002;</p><p>&#x6CE8;&#x5165;&#x5668;&#x5B9E;&#x73B0;&#x6709;&#x5F88;&#x591A;&#x5F62;&#x5F0F;&#x3002;&#x4E00;&#x4E2A;&#x6CE8;&#x5165;&#x5668;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; XML&#x3001;&#x6CE8;&#x89E3;&#x3001;DSL&#xFF08;&#x9886;&#x57DF;&#x89C4;&#x7EA6;&#x8BED;&#x8A00;&#xFF09;&#xFF0C;&#x6216;&#x662F;&#x666E;&#x901A; Java &#x4EE3;&#x7801;&#x6765;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x3002;&#x6CE8;&#x5165;&#x5668;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x6216;&#x4EE3;&#x7801;&#x751F;&#x6210;&#x3002;&#x4F7F;&#x7528;&#x7F16;&#x8BD1;&#x65F6;&#x4EE3;&#x7801;&#x751F;&#x6210;&#x7684;&#x6CE8;&#x5165;&#x5668;&#x751A;&#x81F3;&#x53EF;&#x80FD;&#x6CA1;&#x6709;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x63CF;&#x8FF0;&#x3002;&#x800C;&#x5176;&#x4ED6;&#x6CE8;&#x5165;&#x5668;&#x5B9E;&#x73B0;&#x65E0;&#x8BBA;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x8FD8;&#x662F;&#x8FD0;&#x884C;&#x65F6;&#x53EF;&#x80FD;&#x90FD;&#x4E0D;&#x4F7F;&#x7528;&#x4EE3;&#x7801;&#x751F;&#x6210;&#x3002;&#x4E00;&#x4E2A;&#x201C;&#x5BB9;&#x5668;&#x201D;&#xFF0C;&#x5176;&#x5B9E;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x4E2A;&#x6CE8;&#x5165;&#x5668;&#xFF0C;&#x4E0D;&#x8FC7;&#x5305; javax.inject &#x4E0D;&#x6D89;&#x53CA;&#x975E;&#x5E38;&#x5927;&#x6982;&#x5FF5;&#xFF0C;&#x65E8;&#x5728;&#x6700;&#x5C0F;&#x5316;&#x6CE8;&#x5165;&#x5668;&#x5B9E;&#x73B0;&#x7684;&#x9650;&#x5236;&#x3002;</p><h2 id="2inject">2.@Inject</h2><p>&#x6CE8;&#x89E3; @Inject &#x6807;&#x8BC6;&#x4E86;&#x53EF;&#x6CE8;&#x5165;&#x7684;&#x6784;&#x9020;&#x5668;&#x3001;&#x65B9;&#x6CD5;&#x6216;&#x5B57;&#x6BB5;&#x3002;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x9759;&#x6001;&#x6216;&#x5B9E;&#x4F8B;&#x6210;&#x5458;&#x3002;&#x4E00;&#x4E2A;&#x53EF;&#x6CE8;&#x5165;&#x7684;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x88AB;&#x4EFB;&#x4F55;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&#xFF08;private&#x3001;package- private&#x3001;protected&#x3001;public&#xFF09;&#x4FEE;&#x9970;&#x3002;&#x6CE8;&#x5165;&#x987A;&#x5E8F;&#x4E3A;&#x6784;&#x9020;&#x5668;&#xFF0C;&#x5B57;&#x6BB5;&#xFF0C;&#x6700;&#x540E;&#x662F;&#x65B9;&#x6CD5;&#x3002;&#x8D85;&#x7C7B;&#x7684;&#x5B57;&#x6BB5;&#x3001;&#x65B9;&#x6CD5;&#x5C06;&#x4F18;&#x5148;&#x4E8E;&#x5B50;&#x7C7B;&#x7684;&#x5B57;&#x6BB5;&#x3001;&#x65B9;&#x6CD5;&#x88AB;&#x6CE8;&#x5165;&#x3002;&#x5BF9;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x5B57;&#x6BB5;&#x662F;&#x4E0D;&#x533A;&#x5206;&#x6CE8;&#x5165;&#x987A;&#x5E8F;&#x7684;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x4EA6;&#x540C;&#x3002;&#x53EF;&#x6CE8;&#x5165;&#x7684;&#x6784;&#x9020;&#x5668;&#x6307;&#x7684;&#x662F;&#x6807;&#x6CE8;&#x4E86; @Inject &#x5E76;&#x63A5;&#x53D7; 0 &#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x4F9D;&#x8D56;&#x4F5C;&#x4E3A;&#x5B9E;&#x53C2;&#x7684;&#x6784;&#x9020;&#x5668;&#x3002;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;&#x7C7B;&#x800C;&#x8A00;&#xFF0C;@Inject &#x6700;&#x591A;&#x53EA;&#x5141;&#x8BB8;&#x5BF9;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x5668;&#x8FDB;&#x884C;&#x6807;&#x6CE8;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-meta">@Inject</span> ConstructorModifiers(opt) SimpleTypeName(FormalParameterList(opt)) Throws(opt) ConstructorBody</code></pre>
+<p>@Inject &#x5BF9;&#x4E8E;&#x4EC5;&#x5B58;&#x5728;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x5668;&#xFF08;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&#x4E3A; public &#x5E76;&#x4E14;&#x65E0;&#x53C2;&#x6570;&#xFF09;&#x7684;&#x60C5;&#x51B5;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x6CE8;&#x5165;&#x5668;&#x5C06;&#x8C03;&#x7528;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x5668;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-meta">@Inject</span>(opt) Annotations(opt) <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SimpleTypeName</span><span class="hljs-params">()</span> <span class="hljs-title">Throws</span><span class="hljs-params">(opt)</span> ConstructorBody</span></code></pre>
+<p>&#x53EF;&#x6CE8;&#x5165;&#x7684;&#x5B57;&#x6BB5;&#xFF1A;</p><ul><li>&#x88AB; @Inject &#x6807;&#x6CE8;&#x3002;
+</li>
+<li>&#x4E0D;&#x662F; final &#x7684;&#x3002;
+</li>
+<li>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x6709;&#x6548;&#x540D;&#x3002;
+</li></ul>
+<pre><code class="lang-java"><span class="hljs-meta">@Inject</span> FieldModifiers(opt) Type VariableDeclarators;</code></pre>
+<p>&#x53EF;&#x6CE8;&#x5165;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p><ul><li>&#x88AB; @Inject &#x6807;&#x6CE8;&#x3002;
+</li>
+<li>&#x4E0D;&#x662F; abstract &#x7684;&#x3002;
+</li>
+<li>&#x6CA1;&#x6709;&#x58F0;&#x660E;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7684;&#x65B9;&#x6CD5;&#x3002;
+</li>
+<li>&#x53EF;&#x4EE5;&#x5E26;&#x8FD4;&#x56DE;&#x503C;&#x3002;
+</li>
+<li>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x6709;&#x6548;&#x540D;&#x3002;
+</li>
+<li>&#x63A5;&#x53D7; 0 &#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x4F9D;&#x8D56;&#x4F5C;&#x4E3A;&#x5B9E;&#x53C2;&#x3002;
+</li></ul>
+<pre><code class="lang-java"><span class="hljs-meta">@Inject</span> MethodModifiers(opt) <span class="hljs-function">ResultType <span class="hljs-title">Identifier</span><span class="hljs-params">(FormalParameterList(opt)</span>) 
+<span class="hljs-title">Throws</span><span class="hljs-params">(opt)</span> MethodBody</span></code></pre>
+<p>&#x6CE8;&#x5165;&#x5668;&#x5FFD;&#x7565;&#x4E86;&#x6CE8;&#x5165;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x56E0;&#x4E3A;&#x65B9;&#x6CD5;&#x7684;&#x975E;&#x7A7A;&#x8FD4;&#x56DE;&#x53EF;&#x80FD;&#x4F1A;&#x7528;&#x4E8E;&#x5176;&#x4ED6;&#x4E0A;&#x4E0B;&#x6587;&#xFF08;&#x4F8B;&#x5982; builder-style &#x7684;&#x65B9;&#x6CD5;&#x94FE;&#xFF09;&#x3002;&#x4F8B;&#x5B50;&#xFF1A;</p><pre><code class="lang-java">   <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{ 
+       <span class="hljs-comment">// Injectable constructor </span>
+       <span class="hljs-meta">@Inject</span> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Car</span><span class="hljs-params">(Engine engine)</span> </span>{ ... } 
+
+       <span class="hljs-comment">// Injectable field </span>
+       <span class="hljs-meta">@Inject</span> <span class="hljs-keyword">private</span> Provider&lt;Seat&gt; seatProvider; 
+
+       <span class="hljs-comment">// Injectable package-private method </span>
+       <span class="hljs-meta">@Inject</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">install</span><span class="hljs-params">(Windshield windshield, Trunk trunk)</span> </span>{ ... } 
+   }</code></pre>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x6807;&#x6CE8;&#x4E86; @Inject &#x5E76;&#x8986;&#x5199;&#x4E86;&#x5176;&#x4ED6;&#x6807;&#x6CE8;&#x4E86; @Inject &#x7684;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x7684;&#x6BCF;&#x4E00;&#x6B21;&#x6CE8;&#x5165;&#x8BF7;&#x6C42;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x53EA;&#x4F1A;&#x88AB;&#x6CE8;&#x5165;&#x4E00;&#x6B21;&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x6CA1;&#x6709;&#x6807;&#x6CE8; @Inject &#x5E76;&#x8986;&#x5199;&#x4E86;&#x5176;&#x4ED6;&#x6807;&#x6CE8;&#x4E86; @Inject &#x7684;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x4E0D;&#x4F1A;&#x88AB;&#x6CE8;&#x5165;&#x3002;</p><p>&#x8981;&#x8FDB;&#x884C;&#x6210;&#x5458;&#x6CE8;&#x5165;&#x5C31;&#x5FC5;&#x987B;&#x6807;&#x6CE8; @Inject&#x3002;&#x4E00;&#x4E2A;&#x53EF;&#x6CE8;&#x5165;&#x7684;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&#xFF08;&#x5305;&#x62EC; private&#xFF09;&#x3002;&#x4E0D;&#x8FC7;&#x53D7;&#x4E8E;&#x5E73;&#x53F0;&#x6216;&#x6CE8;&#x5165;&#x5668;&#x9650;&#x5236;&#xFF08;&#x4F8B;&#x5982;&#x5B89;&#x5168;&#x7BA1;&#x7406;&#x6216;&#x7F3A;&#x4E4F;&#x53CD;&#x5C04;&#x652F;&#x6301;&#xFF09;&#xFF0C;&#x6807;&#x6CE8;&#x4E86; @Inject &#x7684;&#x975E;&#x516C;&#x6709;&#x6210;&#x5458;&#x53EF;&#x80FD;&#x5C06;&#x4E0D;&#x88AB;&#x6CE8;&#x5165;&#x3002;</p><h3 id="&#x9650;&#x5B9A;&#x5668;">&#x9650;&#x5B9A;&#x5668;</h3><p><strong>&#x9650;&#x5B9A;&#x5668;</strong>&#x6CE8;&#x89E3;&#x7528;&#x4E8E;&#x6807;&#x6CE8;&#x53EF;&#x6CE8;&#x5165;&#x7684;&#x5B57;&#x6BB5;&#x6216;&#x53C2;&#x6570;&#xFF0C;&#x5916;&#x52A0;&#x8BE5;&#x5B57;&#x6BB5;&#x6216;&#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x6807;&#x8BC6;&#x51FA;&#x5F85;&#x6CE8;&#x5165;&#x7684;&#x5B9E;&#x73B0;&#x3002;&#x9650;&#x5B9A;&#x7B26;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5F53;&#x4E0E; @Inject &#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x5728;&#x4E0E;&#x6CE8;&#x5165;&#x5668;&#x65E0;&#x5173;&#x7684;&#x7C7B;&#x65F6;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x6216;&#x53C2;&#x6570;&#xFF0C;&#x5E94;&#x8BE5;&#x6700;&#x591A;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x9650;&#x5B9A;&#x7B26;&#x88AB;&#x6807;&#x6CE8;&#x3002;&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x9650;&#x5B9A;&#x7B26;&#x88AB;&#x6807;&#x6CE8;&#x4E86;&#x7C97;&#x4F53;&#xFF1A;</p><pre><code class="lang-java">   <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{ 
+       <span class="hljs-meta">@Inject</span> <span class="hljs-keyword">private</span> <span class="hljs-meta">@Leather</span> Provider&lt;Seat&gt; seatProvider; 
+
+       <span class="hljs-meta">@Inject</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">install</span><span class="hljs-params">(@Tinted Windshield windshield, 
+                            @Big Trunk trunk)</span> </span>{ ... } 
+   }</code></pre>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x53EF;&#x6CE8;&#x5165;&#x7684;&#x65B9;&#x6CD5;&#x8986;&#x5199;&#x4E86;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#xFF0C;&#x8986;&#x5199;&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x5730;&#x4ECE;&#x88AB;&#x8986;&#x5199;&#x7684;&#x65B9;&#x6CD5;&#x4E0A;&#x7EE7;&#x627F;&#x9650;&#x5B9A;&#x5668;&#x3002;</p><h3 id="&#x53EF;&#x6CE8;&#x5165;&#x7684;&#x503C;">&#x53EF;&#x6CE8;&#x5165;&#x7684;&#x503C;</h3><p>&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x7ED9;&#x5B9A;&#x7684;&#x7C7B;&#x578B; T &#x4E0E;&#x53EF;&#x9009;&#x7684;&#x9650;&#x5B9A;&#x5668;&#xFF0C;&#x6CE8;&#x5165;&#x5668;&#x5FC5;&#x987B;&#x80FD;&#x591F;&#x6CE8;&#x5165;&#x7528;&#x6237;&#x6307;&#x5B9A;&#x7684;&#x7C7B;&#xFF1A;<strong>&#x4E0E; T &#x662F;&#x8D4B;&#x503C;&#x517C;&#x5BB9;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x6CE8;&#x5165;&#x7684;&#x6784;&#x9020;&#x5668;&#x3002;</strong></p><p>&#x4F8B;&#x5982;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x80FD;&#x4F7F;&#x7528;&#x5916;&#x90E8;&#x914D;&#x7F6E;&#x6765;&#x9009;&#x62E9;&#x4E00;&#x4E2A; T &#x7684;&#x5B9E;&#x73B0;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5F85;&#x6CE8;&#x5165;&#x7684;&#x503C;&#x53D6;&#x51B3;&#x4E8E;&#x6CE8;&#x5165;&#x5668;&#x5B9E;&#x73B0;&#x4E0E;&#x5B83;&#x7684;&#x914D;&#x7F6E;&#x3002;</p><h3 id="&#x5FAA;&#x73AF;&#x4F9D;&#x8D56;">&#x5FAA;&#x73AF;&#x4F9D;&#x8D56;</h3><p>&#x672C;&#x89C4;&#x8303;&#x5E76;&#x672A;&#x8BE6;&#x7EC6;&#x8981;&#x6C42;&#x63A2;&#x6D4B;&#x5FAA;&#x73AF;&#x4F9D;&#x8D56;&#x4E0E;&#x89E3;&#x6790;&#x5FAA;&#x73AF;&#x4F9D;&#x8D56;&#x3002;&#x4E24;&#x4E2A;&#x6784;&#x9020;&#x5668;&#x95F4;&#x7684;&#x5FAA;&#x73AF;&#x4F9D;&#x8D56;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x660E;&#x663E;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x53E6;&#x5916;&#xFF0C;&#x5BF9;&#x4E8E;&#x53EF;&#x6CE8;&#x5165;&#x5B57;&#x6BB5;&#x6216;&#x65B9;&#x6CD5;&#x7684;&#x5FAA;&#x73AF;&#x4F9D;&#x8D56;&#x4E5F;&#x5F88;&#x5E38;&#x89C1;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p><pre><code class="lang-java">   <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{ 
+       <span class="hljs-meta">@Inject</span> B b; 
+   } 
+   <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> </span>{ 
+       <span class="hljs-meta">@Inject</span> A a; 
+   }</code></pre>
+<p>&#x5F53;&#x6784;&#x9020; A &#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6CE8;&#x5165;&#x5668;&#x53EF;&#x80FD;&#x4F1A;&#x65E0;&#x9650;&#x5FAA;&#x73AF;&#x6784;&#x9020;&#xFF1A;B &#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x6CE8;&#x5165;&#x7ED9; A &#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A; A &#x7684;&#x5B9E;&#x4F8B;&#x6CE8;&#x5165;&#x7ED9; B &#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A; B &#x7684;&#x5B9E;&#x4F8B;&#x6CE8;&#x5165;&#x7ED9;&#x7B2C;&#x4E8C;&#x4E2A; A &#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x2026;&#x2026;&#x4E00;&#x4E2A;&#x4FDD;&#x5B88;&#x7684;&#x6CE8;&#x5165;&#x5668;&#x53EF;&#x80FD;&#x4F1A;&#x5728;&#x6784;&#x5EFA;&#x65F6;&#x63A2;&#x6D4B;&#x51FA;&#x8FD9;&#x4E2A;&#x5FAA;&#x73AF;&#x4F9D;&#x8D56;&#xFF0C;&#x5E76;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x6307;&#x51FA;&#x7A0B;&#x5E8F;&#x5458;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>Provider&lt;A&gt;</code>&#x6216; <code>Provider&lt;B&gt;</code>&#x5BF9;&#x5E94;&#x66FF;&#x6362; A &#x6216; B &#x6765;&#x6253;&#x7834;&#x8FD9;&#x4E2A;&#x5FAA;&#x73AF;&#x4F9D;&#x8D56;&#x3002;&#x4ECE;&#x6CE8;&#x5165;&#x7684;&#x6784;&#x9020;&#x5668;&#x6216;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x8BE5; provider &#x7684;get()&#x5C06;&#x6253;&#x7834;&#x8FD9;&#x4E2A;&#x5FAA;&#x73AF;&#x4F9D;&#x8D56;&#x3002;&#x5BF9;&#x4E8E;&#x65B9;&#x6CD5;&#x6216;&#x5B57;&#x6BB5;&#x6CE8;&#x5165;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5C06;&#x5176;&#x4F9D;&#x8D56;&#x7684;&#x4E00;&#x8FB9;&#x653E;&#x7F6E;&#x5230;&#x67D0;&#x4F5C;&#x7528;&#x57DF;&#xFF08;&#x4F8B;&#x5982;&#x5355;&#x4F8B;&#x4F5C;&#x7528;&#x57DF;&#xFF09;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x5F97;&#x5FAA;&#x73AF;&#x4F9D;&#x8D56;&#x80FD;&#x591F;&#x88AB;&#x6CE8;&#x5165;&#x5668;&#x89E3;&#x6790;&#x3002;</p><h2 id="3qualifier">3.@Qualifier</h2><p>&#x6CE8;&#x89E3; @Qualifier &#x7528;&#x4E8E;&#x6807;&#x8BC6;&#x9650;&#x5B9A;&#x5668;&#x6CE8;&#x89E3;&#x3002;&#x4EFB;&#x4F55;&#x4EBA;&#x90FD;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x65B0;&#x7684;&#x9650;&#x5B9A;&#x5668;&#x6CE8;&#x89E3;&#x3002;&#x4E00;&#x4E2A;&#x9650;&#x5B9A;&#x5668;&#x6CE8;&#x89E3;&#xFF1A;</p><ul><li>&#x662F;&#x88AB; @Qualifier&#x3001;@Retention(RUNTIME) &#x6807;&#x6CE8;&#x7684;&#xFF0C;&#x901A;&#x5E38;&#x4E5F;&#x88AB; @Documented &#x6807;&#x6CE8;&#x3002;
+</li>
+<li>&#x53EF;&#x4EE5;&#x62E5;&#x6709;&#x5C5E;&#x6027;&#x3002;
+</li>
+<li>&#x53EF;&#x80FD;&#x662F;&#x516C;&#x5171; API &#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x5C31;&#x50CF;&#x4F9D;&#x8D56;&#x7C7B;&#x578B;&#x4E00;&#x6837;&#xFF0C;&#x800C;&#x4E0D;&#x50CF;&#x7C7B;&#x578B;&#x5B9E;&#x73B0;&#x90A3;&#x6837;&#x4E0D;&#x4F5C;&#x4E3A;&#x516C;&#x5171; API &#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;
+</li>
+<li>&#x5982;&#x679C;&#x6807;&#x6CE8;&#x4E86; @Target &#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x7528;&#x6CD5;&#x9650;&#x5236;&#x3002;&#x672C;&#x89C4;&#x8303;&#x53EA;&#x662F;&#x6307;&#x5B9A;&#x4E86;&#x9650;&#x5B9A;&#x5668;&#x6CE8;&#x89E3;&#x53EF;&#x4EE5;&#x88AB;&#x4F7F;&#x7528;&#x5728;&#x5B57;&#x6BB5;&#x548C;&#x53C2;&#x6570;&#x4E0A;&#xFF0C;&#x4F46;&#x4E00;&#x4E9B;&#x6CE8;&#x5165;&#x5668;&#x914D;&#x7F6E;&#x53EF;&#x80FD;&#x4F7F;&#x7528;&#x9650;&#x5B9A;&#x5668;&#x6CE8;&#x89E3;&#x5728;&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x5730;&#x65B9;&#xFF08;&#x4F8B;&#x5982;&#x65B9;&#x6CD5;&#x6216;&#x7C7B;&#xFF09;&#x4E0A;&#x3002;
+</li></ul>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p><pre><code class="lang-java">   <span class="hljs-meta">@java</span>.lang.annotation.Documented 
+   <span class="hljs-meta">@java</span>.lang.annotation.Retention(RUNTIME) 
+   <span class="hljs-meta">@javax</span>.inject.Qualifier 
+   <span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> Leather { 
+       <span class="hljs-function">Color <span class="hljs-title">color</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> Color.TAN</span>; 
+       <span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Color { RED, BLACK, TAN } 
+   }</code></pre>
+<h2 id="4providert">4.<code>Provider&lt;T&gt;</code></h2><p>&#x63A5;&#x53E3; Provider &#x7528;&#x4E8E;&#x63D0;&#x4F9B;&#x7C7B;&#x578B; T &#x7684;&#x5B9E;&#x5217;&#x3002;Provider &#x662F;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x662F;&#x7531;&#x6CE8;&#x5165;&#x5668;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x5BF9;&#x4E8E;&#x4EFB;&#x4F55;&#x53EF;&#x6CE8;&#x5165;&#x7684; T &#x800C;&#x8A00;&#xFF0C;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x6CE8;&#x5165; <code>Provider&lt;T&gt;</code>&#x3002;&#x4E0E;&#x76F4;&#x63A5;&#x6CE8;&#x5165; T &#x76F8;&#x6BD4;&#xFF0C;&#x6CE8;&#x5165; <code>Provider&lt;T&gt;</code>&#x4F7F;&#x5F97;&#xFF1A;</p><ul><li>&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;
+</li>
+<li>&#x5B9E;&#x4F8B;&#x7684;&#x8FD4;&#x56DE;&#x53EF;&#x4EE5;&#x5EF6;&#x8FDF;&#x5316;&#x6216;&#x53EF;&#x9009;
+</li>
+<li>&#x6253;&#x7834;&#x5FAA;&#x73AF;&#x4F9D;&#x8D56;&#x3002;
+</li>
+<li>&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E2A;&#x5DF2;&#x77E5;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x5B9E;&#x4F8B;&#x5185;&#x67E5;&#x8BE2;&#x4E00;&#x4E2A;&#x66F4;&#x5C0F;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x7684;&#x5B9E;&#x4F8B;&#x3002;
+</li></ul>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p><pre><code class="lang-java">   <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{ 
+       <span class="hljs-meta">@Inject</span> Car(Provider&lt;Seat&gt; seatProvider) { 
+           Seat driver = seatProvider.get(); 
+           Seat passenger = seatProvider.get(); 
+           ... 
+       } 
+   }</code></pre>
+<h3 id="get">get()</h3><p>&#x7528;&#x4E8E;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5B8C;&#x5168;&#x6784;&#x9020;&#x7684;&#x7C7B;&#x578B; T &#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x5F02;&#x5E38;&#x629B;&#x51FA;&#xFF1A;RuntimeException &#x2014;&#x2014; &#x5F53;&#x6CE8;&#x5165;&#x5668;&#x5728;&#x63D0;&#x4F9B;&#x5B9E;&#x4F8B;&#x65F6;&#x9047;&#x5230;&#x9519;&#x8BEF;&#x5C06;&#x629B;&#x51FA;&#x6B64;&#x5F02;&#x5E38;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x53EF;&#x6CE8;&#x5165;&#x7684;&#x6210;&#x5458; T &#x629B;&#x51FA;&#x4E86;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#xFF0C;&#x6CE8;&#x5165;&#x5668;&#x5C06;&#x5305;&#x88C5;&#x6B64;&#x5F02;&#x5E38;&#x5E76;&#x5C06;&#x5B83;&#x629B;&#x7ED9; get() &#x7684;&#x8C03;&#x7528;&#x8005;&#x3002;&#x8C03;&#x7528;&#x8005;&#x4E0D;&#x5E94;&#x8BE5;&#x5C1D;&#x8BD5;&#x5904;&#x7406;&#x6B64;&#x7C7B;&#x5F02;&#x5E38;&#xFF0C;&#x56E0;&#x4E3A;&#x4E0D;&#x540C;&#x6CE8;&#x5165;&#x5668;&#x5B9E;&#x73B0;&#x7684;&#x884C;&#x4E3A;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x5373;&#x4F7F;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x6CE8;&#x5165;&#x5668;&#xFF0C;&#x4E5F;&#x4F1A;&#x56E0;&#x4E3A;&#x914D;&#x7F6E;&#x4E0D;&#x540C;&#x800C;&#x8868;&#x73B0;&#x7684;&#x884C;&#x4E3A;&#x4E0D;&#x540C;&#x3002;</p><h2 id="5named">5.@Named</h2><p>&#x57FA;&#x4E8E;String&#x7684;&#x9650;&#x5B9A;&#x5668;</p><pre><code class="lang-java">   <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{ 
+       <span class="hljs-meta">@Inject</span> <span class="hljs-meta">@Named</span>(<span class="hljs-string">&quot;driver&quot;</span>) Seat driverSeat; 
+       <span class="hljs-meta">@Inject</span> <span class="hljs-meta">@Named</span>(<span class="hljs-string">&quot;passenger&quot;</span>) Seat passengerSeat; 
+       ... 
+   }</code></pre>
+<h2 id="6scope">6.@Scope</h2><p>&#x6CE8;&#x89E3; @Scope &#x7528;&#x4E8E;&#x6807;&#x8BC6;&#x4F5C;&#x7528;&#x57DF;&#x6CE8;&#x89E3;&#x3002;&#x4E00;&#x4E2A;&#x4F5C;&#x7528;&#x57DF;&#x6CE8;&#x89E3;&#x662F;&#x88AB;&#x6807;&#x8BC6;&#x5728;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x53EF;&#x6CE8;&#x5165;&#x6784;&#x9020;&#x5668;&#x7684;&#x7C7B;&#x4E0A;&#x7684;&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x5982;&#x4F55;&#x88AB;&#x6CE8;&#x5165;&#x5668;&#x91CD;&#x7528;&#x3002;&#x7F3A;&#x7701;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6807;&#x8BC6;&#x4F5C;&#x7528;&#x57DF;&#x6CE8;&#x89E3;&#xFF0C;&#x6CE8;&#x5165;&#x5668;&#x5C06;&#x4E3A;&#x6BCF;&#x4E00;&#x6B21;&#x6CE8;&#x5165;&#x90FD;&#x521B;&#x5EFA;&#xFF08;&#x901A;&#x8FC7;&#x6CE8;&#x5165;&#x7C7B;&#x578B;&#x7684;&#x6784;&#x9020;&#x5668;&#xFF09;&#x65B0;&#x5B9E;&#x4F8B;&#xFF0C;&#x5E76;&#x4E0D;&#x91CD;&#x7528;&#x5DF2;&#x6709;&#x5B9E;&#x4F8B;&#x3002;&#x5982;&#x679C;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x90FD;&#x80FD;&#x591F;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x8BE5;&#x5B9E;&#x4F8B;&#x5B9E;&#x73B0;&#x5E94;&#x8BE5;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x3002;&#x4F5C;&#x7528;&#x57DF;&#x5B9E;&#x73B0;&#x7531;&#x6CE8;&#x5165;&#x5668;&#x5B8C;&#x6210;&#x3002;</p><p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x4F5C;&#x7528;&#x57DF;&#x6CE8;&#x89E3; @Singleton &#x786E;&#x4FDD;&#x6211;&#x4EEC;&#x59CB;&#x7EC8;&#x53EA;&#x6709;&#x4E00;&#x4E2A; Log &#x5B9E;&#x4F8B;&#xFF1A;</p><pre><code class="lang-java">   <span class="hljs-meta">@Singleton</span> 
+   <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Log</span> </span>{ 
+       <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">log</span><span class="hljs-params">(String message)</span> </span>{ ... } 
+   }</code></pre>
+<p>&#x5F53;&#x591A;&#x4E8E;&#x4E00;&#x4E2A;&#x4F5C;&#x7528;&#x57DF;&#x6CE8;&#x89E3;&#x6216;&#x4E0D;&#x88AB;&#x6CE8;&#x5165;&#x5668;&#x652F;&#x6301;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x6CE8;&#x89E3;&#x88AB;&#x4F7F;&#x7528;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x7C7B;&#x4E0A;&#x65F6;&#xFF0C;&#x6CE8;&#x5165;&#x5668;&#x5C06;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002; &#x4E00;&#x4E2A;&#x4F5C;&#x7528;&#x57DF;&#x6CE8;&#x89E3;&#xFF1A;</p><ul><li>&#x88AB;&#x6807;&#x6CE8;&#x4E86; @Scope&#x3001;@Retention(RUNTIME) &#x6807;&#x6CE8;&#x7684;&#xFF0C;&#x901A;&#x5E38;&#x4E5F;&#x88AB; @Documented &#x6807;&#x6CE8;&#x3002;
+</li>
+<li>&#x4E0D;&#x5E94;&#x8BE5;&#x542B;&#x6709;&#x5C5E;&#x6027;&#x3002;
+</li>
+<li>&#x4E0D;&#x5E94;&#x8BE5;&#x88AB; @Inherited &#x6807;&#x6CE8;&#xFF0C;&#x56E0;&#x6B64;&#x4F5C;&#x7528;&#x57DF;&#x4E0E;&#x7EE7;&#x627F;&#x5B9E;&#x73B0;&#xFF08;&#x6B63;&#x4EA4;&#xFF09;&#x65E0;&#x5173;&#x3002;
+</li>
+<li>&#x5982;&#x679C;&#x6807;&#x6CE8;&#x4E86; @Target &#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x7528;&#x6CD5;&#x9650;&#x5236;&#x3002;&#x672C;&#x89C4;&#x8303;&#x53EA;&#x662F;&#x6307;&#x5B9A;&#x4E86;&#x4F5C;&#x7528;&#x57DF;&#x6CE8;&#x89E3;&#x53EF;&#x4EE5;&#x88AB;&#x4F7F;&#x7528;&#x5728;&#x7C7B;&#x4E0A;&#xFF0C;&#x4F46;&#x4E00;&#x4E9B;&#x6CE8;&#x5165;&#x5668;&#x914D;&#x7F6E;&#x53EF;&#x80FD;&#x4F7F;&#x7528;&#x4F5C;&#x7528;&#x57DF;&#x6CE8;&#x89E3;&#x5728;&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x5730;&#x65B9;&#xFF08;&#x4F8B;&#x5982;&#x5DE5;&#x5382;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#xFF09;&#x4E0A;&#x3002;
+</li></ul>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p><pre><code class="lang-java">   <span class="hljs-meta">@java</span>.lang.annotation.Documented 
+   <span class="hljs-meta">@java</span>.lang.annotation.Retention(RUNTIME) 
+   <span class="hljs-meta">@javax</span>.inject.Scope 
+   <span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> RequestScoped {}</code></pre>
+<p>&#x4F7F;&#x7528; @Scope&#x6765;&#x6807;&#x8BC6;&#x4E00;&#x4E2A;&#x4F5C;&#x7528;&#x57DF;&#x6CE8;&#x89E3;&#x6709;&#x52A9;&#x4E8E;&#x6CE8;&#x5165;&#x5668;&#x63A2;&#x6D4B;&#x7A0B;&#x5E8F;&#x5458;&#x4F7F;&#x7528;&#x4E86;&#x4F5C;&#x7528;&#x57DF;&#x6CE8;&#x89E3;&#x4F46;&#x5374;&#x5FD8;&#x4E86;&#x53BB;&#x914D;&#x7F6E;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x4E00;&#x4E2A;&#x4FDD;&#x5B88;&#x7684;&#x6CE8;&#x5165;&#x5668;&#x5E94;&#x8BE5;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x800C;&#x4E0D;&#x662F;&#x53BB;&#x9002;&#x7528;&#x8BE5;&#x4F5C;&#x7528;&#x57DF;&#x3002;</p><h2 id="7singleton">7.@Singleton</h2><p>&#x6CE8;&#x89E3; @Singleton &#x6807;&#x8BC6;&#x4E86;&#x6CE8;&#x5165;&#x5668;&#x53EA;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x6B21;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x8BE5;&#x6CE8;&#x89E3;&#x4E0D;&#x80FD;&#x88AB;&#x7EE7;&#x627F;&#x3002;</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="kml-001-ecma-script-60.html" class="navigation navigation-prev " aria-label="Previous page: KML-001 ECMA Script 6.0">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="kml-003-liu-lan-qi-zhong-de-fetch-api.html" class="navigation navigation-next " aria-label="Next page: KML-003 浏览器中的Fetch Api">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"KML-002 JSR330规范","level":"5.4.2","depth":2,"next":{"title":"KML-003 浏览器中的Fetch Api","level":"5.4.3","depth":2,"path":"uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.md","ref":"uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.md","articles":[]},"previous":{"title":"KML-001 ECMA Script 6.0","level":"5.4.1","depth":2,"path":"uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md","ref":"uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.md","mtime":"2019-03-31T14:38:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-03-31T15:05:29.515Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
