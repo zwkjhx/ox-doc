@@ -11,6 +11,7 @@
 ## Zero Up
 
 * [Zero 文档主页](zero-up/shou-ye.md)
+  * [基本教程](zero-up/shou-ye/1ji-ben-jiao-cheng.md)
 
 ## Origin X Engine
 
