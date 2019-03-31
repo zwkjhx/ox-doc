@@ -22,10 +22,10 @@
 ## Origin X Engine
 
 * [Origin X Engine文档主页](origin-x-engine/yin-dao-ye.md)
-  * [1.实施教程](origin-x-engine/yin-dao-ye/1shi-shi-jiao-cheng.md)
-  * [2.自定义组件](origin-x-engine/yin-dao-ye/2zi-ding-yi-zu-jian.md)
-  * [3.后端扩展](origin-x-engine/yin-dao-ye/3hou-duan-kuo-zhan.md)
-  * [4.实战分析](origin-x-engine/yin-dao-ye/4shi-zhan-fen-xi.md)
+* [1 - Ox实施教程](origin-x-engine/1-oxshi-shi-jiao-cheng.md)
+* [2 - Ox自定义组件](origin-x-engine/2-oxzi-ding-yi-zu-jian.md)
+* [3 - Ox后端扩展开发](origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.md)
+* [4 - Ox实战分析](origin-x-engine/4-oxshi-zhan-fen-xi.md)
 
 ## Uniform Docoument
 
