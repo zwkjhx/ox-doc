@@ -26,5 +26,5 @@
 
 ## Specification
 
-* 开发规范文档主页
+* [开发规范文档主页](specification/kai-fa-gui-fan-wen-dang-zhu-ye.md)
 

@@ -45,12 +45,12 @@ sudo npm install -g serve
 
 | 文档前缀 | 分类说明 | 目录主页 |
 | :--- | :--- | :--- |
-| KM | 通用知识库 |  |
-| EN | 环境搭建相关知识库 |  |
-| ZRO | Zero相关知识库（后端） |  |
-| ZUI | Zero UI相关知识库（前端） |  |
-| OX | Origin X Engine知识库 |  |
-| SPC | 开发规范文档主页 |  |
+| KM | 通用知识库 | [通用知识库主页](/uniform-documentation/yin-dao-ye.md) |
+| EN | 环境搭建相关知识库 | [环境搭建知识库主页](/environment/yin-dao-ye.md) |
+| ZRO | Zero相关知识库（后端） | [Zero 文档主页](/zero-up/shou-ye.md) |
+| ZUI | Zero UI相关知识库（前端） | [Zero UI文档主页](/zero-ui/shou-ye.md) |
+| OX | Origin X Engine知识库 | [Origin X Engine文档主页](/origin-x-engine/yin-dao-ye.md) |
+| SPC | 开发规范文档主页 | [开发规范文档主页](/specification/kai-fa-gui-fan-wen-dang-zhu-ye.md) |
 
 
 
