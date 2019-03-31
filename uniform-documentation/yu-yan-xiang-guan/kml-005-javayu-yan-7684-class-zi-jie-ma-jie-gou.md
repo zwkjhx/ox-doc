@@ -130,7 +130,8 @@ u1 -- 1个字节<br/>u2 -- 2个字节<br/>u4 -- 4个字节<br/>u8 -- 8个字节
 ![带-source](/assets/images/kml/005/1-4.JPG)<br/>
 <font style="color:blue">警告</font>：（带-source）带上了-source的1.5参数过后尝试用1.7的文件格式输出（编译可通过）<br/>
 ![警告](/assets/images/kml/005/1-5.JPG)<br/>
-<font style="color:green">*综上所述，-source的版本号必须小于或等于-target的版本号，一旦大于了过后可能导致编译不通过，但这里会有一个问题，从下边的表看来，直接使用低版本输出-target <version>的方式应该是可行的，但这个用法似乎只适合特定版本的JDK，例如：1.6.0_01可直接使用-target 1.5输出JDK 1.5的字节码文件，我在本机使用1.8的版本输出时就会报错。（ -source <= -target ）*。</font>
+
+*综上所述，-source的版本号必须小于或等于-target的版本号，一旦大于了过后可能导致编译不通过，但这里会有一个问题，从下边的表看来，直接使用低版本输出-target <version>的方式应该是可行的，但这个用法似乎只适合特定版本的JDK，例如：1.6.0_01可直接使用-target 1.5输出JDK 1.5的字节码文件，我在本机使用1.8的版本输出时就会报错。（ -source <= -target ）*
 
 ##### __2.2.Class文件版本号__
 
