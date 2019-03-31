@@ -24,6 +24,8 @@ Zero文档用来讲解Zero框架的基本用法（[http://www.vertxup.cn](http:/
 
 ## 4.Java语言基础
 
+《09年Java博客残章》在线地址：[https://blog.csdn.net/silentbalanceyh/article/details/4587371](https://blog.csdn.net/silentbalanceyh/article/details/4587371)
+
 ## 5.《逐鹿记》附录
 
 《逐鹿记》在线地址：[https://silentbalanceyh.gitbooks.io/vert-x/content/](https://silentbalanceyh.gitbooks.io/vert-x/content/)
