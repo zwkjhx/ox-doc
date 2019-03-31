@@ -32,6 +32,11 @@ Zero文档用来讲解Zero框架的基本用法（[http://www.vertxup.cn](http:/
 
 * [ZBR-001 Java语言中的按值传递](/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-001-javayu-yan-zhong-de-an-zhi-chuan-di.md)
 * [ZBR-002 同步和异步](/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-002-tong-bu-he-yi-bu.md)
+* [ZBR-003 Vert.x中的集群管理器](/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-003-vertxzhong-de-ji-qun-guan-li-qi.md)
+* [ZBR-004 Actor模型](/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-004-actormo-xing.md)
+* [ZBR-005 RxJava2中的Single解析](/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-005-rxjava2zhong-desingle-jie-xi.md)
+* [ZBR-006 Reactor模式](/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-006-reactormo-shi.md)
+* [ZBR-007 Netty中的Pipeline机制](/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-007-nettyzhong-de-pipeline-ji-zhi.md)
 * 
 
 
