@@ -14,7 +14,7 @@ Origin X Doc是为Origin X Engine量身打造的文档型项目，使用`gitbook
 sudo npm install -g serve
 ```
 
-然后执行根目录的脚本：
+然后执行根目录的Shell脚本：
 
 ```shell
 ./book-server.sh
