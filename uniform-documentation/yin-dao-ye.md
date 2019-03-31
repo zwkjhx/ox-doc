@@ -20,19 +20,19 @@
 ## 语言相关
 
 * [KML-001 ECMA Script 6.0](/uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.html)
-* [KML-002 JSR330规范](/uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.md)
-* [KML-003 浏览器中的Fetch Api](/uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.md)
+* [KML-002 JSR330规范](/uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.html)
+* [KML-003 浏览器中的Fetch Api](/uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.html)
 
 ## 开源项目相关
 
 * [KMO-001 Vert.x Core官方翻译版 3.4](/uniform-documentation/kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html)
 * [KMO-002 Vert.x Web官方翻译版 3.4](/uniform-documentation/kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html)
-* [KMO-003 Spring Boot中的测试](/uniform-documentation/kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.md)
-* [KMO-004 使用OVal进行防御式编程](/uniform-documentation/kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.md)
-* [KMO-005 Sass基础知识](/uniform-documentation/kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.md)
-* [KMO-006 Mockito基础和使用](/uniform-documentation/kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.md)
-* [KMO-007 Jasmine基础知识](/uniform-documentation/kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.md)
-* [KMO-008 Dockerfile语法基础](/uniform-documentation/kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.md)
+* [KMO-003 Spring Boot中的测试](/uniform-documentation/kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.html)
+* [KMO-004 使用OVal进行防御式编程](/uniform-documentation/kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html)
+* [KMO-005 Sass基础知识](/uniform-documentation/kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.html)
+* [KMO-006 Mockito基础和使用](/uniform-documentation/kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.html)
+* [KMO-007 Jasmine基础知识](/uniform-documentation/kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.html)
+* [KMO-008 Dockerfile语法基础](/uniform-documentation/kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html)
 
 
 
