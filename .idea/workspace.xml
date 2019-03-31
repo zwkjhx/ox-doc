@@ -2,45 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf66860d-2b41-437e-ba1b-72a69d9bbd87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_book/CNAME" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_book/_config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_book/book-init.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_book/book-server.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_book/docker/book-init" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_book/environment/yin-dao-ye.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_book/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_book/origin-x-engine/yin-dao-ye.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_book/search_index.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_book/uniform-documentation/yin-dao-ye.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_book/zero-ui/shou-ye.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_book/zero-up/shou-ye.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/book-init" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/gitbook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/book-init.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-server.sh" beforeDir="false" afterPath="$PROJECT_DIR$/book-server.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/gitbook/fonts/fontawesome/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/gitbook/fonts/fontawesome/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/gitbook/fonts/fontawesome/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/gitbook/fonts/fontawesome/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/gitbook/gitbook-plugin-fontsettings/fontsettings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/gitbook/gitbook-plugin-fontsettings/website.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/gitbook/gitbook-plugin-sharing/buttons.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/gitbook/gitbook.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/gitbook/images/apple-touch-icon-precomposed-152.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/gitbook/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/gitbook/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/gitbook/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-002-di-yi-ge-zero.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-002-di-yi-ge-zero.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-003-restfulzhong-de-path-he-method.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-003-restfulzhong-de-path-he-method.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-100-ling-zhi-qi-yuan.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-100-ling-zhi-qi-yuan.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -52,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker/book-init">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/book-init.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -75,16 +39,52 @@
         <entry file="file://$PROJECT_DIR$/book-server.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-100-ling-zhi-qi-yuan.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="18">
+                <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-002-di-yi-ge-zero.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="173">
+                <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-003-restfulzhong-de-path-he-method.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="513">
+                <caret line="211" column="226" selection-start-line="211" selection-start-column="226" selection-end-line="211" selection-end-column="226" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -102,6 +102,9 @@
         <option value="$PROJECT_DIR$/book-init.sh" />
         <option value="$PROJECT_DIR$/book-server.sh" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-100-ling-zhi-qi-yuan.md" />
+        <option value="$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-002-di-yi-ge-zero.md" />
+        <option value="$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-003-restfulzhong-de-path-he-method.md" />
       </list>
     </option>
   </component>
@@ -130,6 +133,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,11 +141,28 @@
               <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
+              <item name="zero-up" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
+              <item name="zero-up" type="462c0819:PsiDirectoryNode" />
+              <item name="shou-ye" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
+              <item name="zero-up" type="462c0819:PsiDirectoryNode" />
+              <item name="shou-ye" type="462c0819:PsiDirectoryNode" />
+              <item name="1ji-ben-jiao-cheng" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -180,13 +201,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="392" y="40" width="1423" height="1041" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22039942" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" weight="0.3299748" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.34405145" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -194,6 +213,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3299748" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.34405145" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -230,21 +252,51 @@
     <entry file="file://$PROJECT_DIR$/book-init.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/book-server.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-100-ling-zhi-qi-yuan.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="18">
+            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-002-di-yi-ge-zero.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="173">
+            <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-003-restfulzhong-de-path-he-method.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="513">
+            <caret line="211" column="226" selection-start-line="211" selection-start-column="226" selection-end-line="211" selection-end-column="226" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
