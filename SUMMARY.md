@@ -53,4 +53,5 @@
 * [1 - Zero规范](specification/1-zerogui-fan.md)
 * [2 - Zero UI规范](specification/2-zero-uigui-fan.md)
 * [3 - Origin X规范](specification/3-origin-xgui-fan.md)
+* [4 - RESTful设计指导规范](specification/4-restfulshe-ji-zhi-dao-gui-fan.md)
 
