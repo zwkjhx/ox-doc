@@ -329,6 +329,7 @@ Java和C/C++语言有一点不同，它没有Link【链接】的步骤。
 </table>
 
 ##### __3.3.使用javap输出常量__
+
 JDK中提供了javap工具，该工具主要用于分析字节码，使用下边命令可输出当前字节码文件中的所有常量（例子中<font style="color:red">35项</font>）：<br/>
 <font style="color:white;background-color:black">javap -verbose TestClass.class</font><br/>
 输出（为了方便截图使用PowerShell输出，路径切换成.\TestClass.class，其他的没有变化）：
@@ -336,6 +337,7 @@ JDK中提供了javap工具，该工具主要用于分析字节码，使用下边
 ![常量表](/assets/images/kml/005/1-7.JPG)<br/>
 
 ##### __3.4.常量类型的结构总表__
+
 上边提到了11种常量池的结构信息，那么这里再提供11种常量类型的结构总表，细化到前边提到的数据类型（Tag对应3.2中的表）。
 
 <table style="border-collapse:collapse;font-size:12px;">
@@ -1446,20 +1448,27 @@ Deprecated和Synthetic两个属性都是boolean标记，只存在有和没有的
 ### __解析`com.sco.core.TestClass`的字节码__
 
 #### __1.魔数段（magic）__
+
 	CA FE BA BE
+
 Class字节码文件的头四个字节称为魔数（Magic Number)，唯一的作用是用于确定这个文件是否为一个虚拟机可接受的Class文件，Java字节码文件的魔数段是固定的，就是“咖啡宝贝”。
 
 #### __2.Class文件版本（minor\_version major\_version）__
+
 	00 00 00 34
+	
 紧跟魔数的4个字节是Class文件的版本号，第5和第6字节是次版本号（Minor Version，这里是`00 00`），第7和第8字节是主版本号（Major Version，这里是`00 34`），`34`是十六进制，对应十进制的52，即JDK 1.8的字节码。参考2.2章节的版本号详细内容，JDK版本从45开始到52，低版本的JVM是不能执行高版本的字节码的，范围是Version.0到Version.65535，比如JDK 1.7可执行的是51.0 ~ 51.65535。
 
 #### __3.常量池（constant\_pool）__
 
 ##### *3.1.常量池入口*
+
 	00 24
+	
 常量池入口是一个u2类型的数据，表示常量池容量计数（constant\_pool\_count），从1开始计数，24是十六进制，十进制为36，则表示常量池中有<font style="color:red">35项</font>常量，索引为1 ~ 35，索引0的位置为预留，可表示“不引用任何一个常量池项目”。<font style="color:red">只有常量池的容量计数是从1开始！！</font>
 
 ##### *3.2.常量池内容*
+
 索引值和常量的标号对应，从1 ~ 35总共35个常量<br/>
 常量1：
 

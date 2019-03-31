@@ -65,8 +65,8 @@
         <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="287">
-                <caret line="133" column="212" selection-start-line="133" selection-start-column="212" selection-end-line="133" selection-end-column="212" />
+              <first_editor relative-caret-position="204">
+                <caret line="340" column="63" selection-start-line="340" selection-start-column="63" selection-end-line="340" selection-end-column="63" />
               </first_editor>
               <second_editor />
             </state>
@@ -295,7 +295,7 @@
     <frame x="0" y="23" width="1920" height="1143" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18957347" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18957347" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -306,7 +306,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3299748" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2637681" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2637681" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -740,8 +740,8 @@
     <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="287">
-            <caret line="133" column="212" selection-start-line="133" selection-start-column="212" selection-end-line="133" selection-end-column="212" />
+          <first_editor relative-caret-position="204">
+            <caret line="340" column="63" selection-start-line="340" selection-start-column="63" selection-end-line="340" selection-end-column="63" />
           </first_editor>
           <second_editor />
         </state>
