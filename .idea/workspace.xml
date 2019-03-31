@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/kml/005/1-1.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/kml/005/1-2.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/kml/005/1-3.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/kml/005/1-4.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/kml/005/1-5.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/kml/005/1-6.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/kml/005/1-7.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md" beforeDir="false" afterPath="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,20 +19,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="508">
+              <first_editor relative-caret-position="585">
                 <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="377">
-                <caret line="29" column="124" selection-start-line="29" selection-start-column="124" selection-end-line="29" selection-end-column="124" />
               </first_editor>
               <second_editor />
             </state>
@@ -85,8 +65,8 @@
         <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="226">
-                <caret line="132" column="239" selection-start-line="132" selection-start-column="239" selection-end-line="132" selection-end-column="239" />
+              <first_editor relative-caret-position="287">
+                <caret line="133" column="212" selection-start-line="133" selection-start-column="212" selection-end-line="133" selection-end-column="212" />
               </first_editor>
               <second_editor />
             </state>
@@ -142,9 +122,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>.md</find>
+      <find>我在本机使用1.8的版本输出时就会报错。</find>
     </findStrings>
     <replaceStrings>
       <replace>.html</replace>
+      <replace>/assets/images/kml/005</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -717,26 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="508">
-            <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="377">
-            <caret line="29" column="124" selection-start-line="29" selection-start-column="124" selection-end-line="29" selection-end-column="124" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/environment/yin-dao-ye.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -755,11 +717,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="377">
+            <caret line="29" column="124" selection-start-line="29" selection-start-column="124" selection-end-line="29" selection-end-column="124" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="585">
+            <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="226">
-            <caret line="132" column="239" selection-start-line="132" selection-start-column="239" selection-end-line="132" selection-end-column="239" />
+          <first_editor relative-caret-position="287">
+            <caret line="133" column="212" selection-start-line="133" selection-start-column="212" selection-end-line="133" selection-end-column="212" />
           </first_editor>
           <second_editor />
         </state>
