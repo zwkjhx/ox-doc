@@ -2,7 +2,7 @@
 
 ## http://www.origin-x.cn
 
-* [站点主页](README.md)
+* [Origin X Engine文档](README.md)
 
 ## Zero UI
 
