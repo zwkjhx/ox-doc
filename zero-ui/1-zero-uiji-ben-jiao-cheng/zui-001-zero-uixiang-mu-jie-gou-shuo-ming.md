@@ -32,6 +32,7 @@
 | src / environment | datum.js | 【生成】该文件运行时会由 run-zero.sh 脚本生成，主要用于链接组件（components）和容器（container）自身的 Epic/Types 定义 |
 | src / environment | reducers.js | 统一调用的抽象Reducer方法，一般会映射到核心修改状态树的dispatcher中。 |
 | src / environment | routes.js | 【生成】系统会自动生成该路由文件，整个应用的路由连接器就是从这里作为起点链接 react-router的路由信息。 |
+| src / environment | zero.js | @zero注解的定义文件 |
 | src / style |  | css相关风格文件 |
 | src / ux |  | 【Zero】Utility X包，纯函数主入口 |
 | stories |  | Storybook专用包 |
