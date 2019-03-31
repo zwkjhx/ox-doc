@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniform-documentation/kml-001-es6yu-fa.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md" beforeDir="false" afterPath="$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md" beforeDir="false" afterPath="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,12 +15,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="345">
-                <caret line="56" column="85" selection-start-line="56" selection-start-column="85" selection-end-line="56" selection-end-column="85" />
+              <first_editor relative-caret-position="237">
+                <caret line="50" column="66" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
               </first_editor>
               <second_editor />
             </state>
@@ -42,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -104,9 +101,9 @@
         <option value="$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.md" />
         <option value="$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.md" />
         <option value="$PROJECT_DIR$/zero-up/shou-ye.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/yin-dao-ye.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -142,17 +139,6 @@
             <path>
               <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="uniform-documentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ox-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ox-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="uniform-documentation" type="462c0819:PsiDirectoryNode" />
-              <item name="yu-yan-xiang-guan" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -316,16 +302,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="56" column="85" selection-start-line="56" selection-start-column="85" selection-end-line="56" selection-end-column="85" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uniform-documentation/mian-shi-ti.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -365,6 +341,16 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="662">
             <caret line="1290" selection-start-line="1290" selection-end-line="1290" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="237">
+            <caret line="50" column="66" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
           </first_editor>
           <second_editor />
         </state>
