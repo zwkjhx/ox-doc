@@ -52,7 +52,7 @@ sudo npm install -g serve
 | OX | Origin X Engine知识库 | [Origin X Engine文档主页](/origin-x-engine/yin-dao-ye.md) |
 | SPC | 开发规范文档主页 | [开发规范文档主页](/specification/kai-fa-gui-fan-wen-dang-zhu-ye.md) |
 
-## 3. 写在末尾的话
+## 3. 总结
 
 
 
