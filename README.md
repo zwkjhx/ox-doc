@@ -6,7 +6,7 @@
 
 Origin X Doc是为Origin X Engine量身打造的文档型项目，使用`gitbook`可直接本地化成电子书方便查阅，不仅仅如此，本文档中收录了更多在开发过程中的心得以及环境搭建过程中遇到的种种问题，希望真正对读者有所帮助。
 
-### 1.1 安装serve
+### 1.1. 本地化
 
 在自己的本机使用下边命令安装一个静态服务器，推荐使用 `serve`
 
@@ -21,6 +21,16 @@ sudo npm install -g serve
 ```
 
 用浏览器打开地址：[http://localhost:1231/](http://localhost:1231/)，您就可以访问本地化的 Origin X Doc的主页了。
+
+### 1.2. 在线版
+
+在线的版本发布在新的域名下，这里枚举当前系统关联的所有在线地址：
+
+| 地址 | 说明 |
+| :--- | :--- |
+| [http://www.vertxup.cn](http://www.vertxup.cn) | 「后端」Zero框架主页 |
+| [http://www.vertxui.cn](http://www.vertxui.cn) | 「前端」Zero UI框架主页 |
+| [http://www.origin-x.cn](http://www.origin-x.cn) | 「当前」Origin X Doc项目主页 |
 
 
 
