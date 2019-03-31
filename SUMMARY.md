@@ -36,6 +36,8 @@
 * [通用知识库主页](uniform-documentation/yin-dao-ye.md)
 * [面试题](uniform-documentation/mian-shi-ti.md)
   * [KMI-001 抽奖器需求](uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.md)
+* [软件需求领域](uniform-documentation/ruan-jian-xu-qiu-ling-yu.md)
+  * [KMR-001 非功能需求评估指标](uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.md)
 
 ## Environment
 
