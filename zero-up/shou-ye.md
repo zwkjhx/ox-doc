@@ -8,6 +8,7 @@ Zero文档用来讲解Zero框架的基本用法（[http://www.vertxup.cn](http:/
 | Vert.x碎碎念 | 记录使用Vert.x过程中的一些心得，也是开发Vert.x过程中的使用教程 |
 | 实战分析 | 针对一些特殊的开发过程进行使用Zero的解剖。 |
 | Java语言基础 | Java语言系列教程 |
+| 《逐鹿记》附录 | 在线Vert.x教程中《逐鹿记》的附录链接文档 |
 
 ## 1.基本教程
 
@@ -22,6 +23,8 @@ Zero文档用来讲解Zero框架的基本用法（[http://www.vertxup.cn](http:/
 ## 3.实战分析
 
 ## 4.Java语言基础
+
+## 5.《逐鹿记》附录
 
 
 
