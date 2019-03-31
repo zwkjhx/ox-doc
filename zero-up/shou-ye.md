@@ -30,3 +30,7 @@ Zero文档用来讲解Zero框架的基本用法（[http://www.vertxup.cn](http:/
 
 《逐鹿记》中记录了使用`vert.x`过程中的一些心得，以及`vert.x`的系列开发教程，所以在文档中记录下《逐鹿记》中的所有的附录章节供参考：
 
+* [ZBR-001 Java语言中的按值传递](/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-001-javayu-yan-zhong-de-an-zhi-chuan-di.md)
+
+
+
