@@ -20,7 +20,6 @@
 | scripts |  | 原生启动脚本 |
 | shell |  | Zero专用启动脚本：环境变量初始化，代码链接，脚本执行，路由生成，容器配置检查，启动 |
 | shell / tpl / route | routes.zt | Zero UI中的路由模板，路由连接器依赖该模板生成详细的react-router路由连接文件 |
-| specification |  | 组件API文档 |
 | src / app |  | 【开发】App专用目录 |
 | src / cab |  | 【开发】多国语言包 |
 | src / components |  | 【开发】Page页面组件 |
