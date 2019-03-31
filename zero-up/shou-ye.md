@@ -10,9 +10,9 @@ Zero文档用来讲解Zero框架的基本用法（[http://www.vertxup.cn](http:/
 
 ## 1.基本教程
 
-* [ZRO-001 零之起源](/zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.md)
-* [ZRO-002 第一个Zero](/zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.md)
-* [ZRO-003 RESTful中的Path和Method](/zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.md)
+* [ZRO-001 零之起源](/zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html)
+* [ZRO-002 第一个Zero](/zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html)
+* [ZRO-003 RESTful中的Path和Method](/zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html)
 
 ## 2.Vert.x碎碎念
 
