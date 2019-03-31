@@ -16,6 +16,8 @@ Zero文档用来讲解Zero框架的基本用法（[http://www.vertxup.cn](http:/
 
 ## 2.Vert.x碎碎念
 
+* [ZVX-001 基于 auth-common 开发Vert.x自定义安全组件](/zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html)
+
 ## 3.实战分析
 
 

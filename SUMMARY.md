@@ -20,6 +20,7 @@
   * [ZRO-002 第一个Zero](zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.md)
   * [ZRO-003 RESTful中的Path和Method](zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.md)
 * [2 - Vert.x碎碎念](zero-up/2-vertxsui-sui-nian.md)
+  * [ZVX-001 基于 auth-common 开发Vert.x自定义安全组件](zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.md)
 * [3 - Zero实战分析](zero-up/3-zeroshi-zhan-fen-xi.md)
 
 ## Origin X Engine
