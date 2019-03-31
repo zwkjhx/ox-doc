@@ -5,12 +5,13 @@
 | 主目录 | 说明 |
 | :--- | :--- |
 | Docker容器环境 | 所有和Docker相关的容器基础环境 |
-| Zero/Ox环境 | Zero以及Origin X中的基础环境 |
+| Zero&Ox环境 | Zero以及Origin X中的基础环境 |
 | Os级别环境 | 在操作系统中搭建的基础环境 |
+| Deployment部署教程 | 最终部署使用的核心教程 |
 
 ## 1. Docker容器环境
 
-## 2. Zero/Ox环境
+## 2. Zero&Ox环境
 
 ## 3. Os级别环境
 
