@@ -66,8 +66,9 @@
 
 * [环境搭建知识库主页](environment/yin-dao-ye.md)
 * [1 - Docker容器环境](environment/1-dockerrong-qi-huan-jing.md)
-  * [END-001 Neo4j环境初始化](environment/1-dockerrong-qi-huan-jing/end-001-neo4jhuan-jing-chu-shi-hua.md)
-  * [END-002 TiDB环境初始化](environment/1-dockerrong-qi-huan-jing/end-002-tidbhuan-jing-chu-shi-hua.md)
+  * [END-001 Neo4j环境](environment/1-dockerrong-qi-huan-jing/end-001-neo4jhuan-jing-chu-shi-hua.md)
+  * [END-002 TiDB环境](environment/1-dockerrong-qi-huan-jing/end-002-tidbhuan-jing-chu-shi-hua.md)
+  * [END-003 Elastic Search环境](environment/1-dockerrong-qi-huan-jing/end-003-elastic-searchhuan-jing.md)
 * [2 - Zero&Ox环境](environment/2-zeroandoxhuan-jing.md)
 * [3 - Deployment部署教程](environment/4-deploymentbu-shu-jiao-cheng.md)
 * [4 - 其他环境](environment/5-qi-ta-huan-jing.md)
