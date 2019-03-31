@@ -15,13 +15,9 @@
 ## Zero Up
 
 * [Zero 文档主页](zero-up/shou-ye.md)
-  * [2.Vert.x碎碎念](zero-up/shou-ye/vertxsui-sui-nian.md)
-  * [1.基本教程](zero-up/shou-ye/1ji-ben-jiao-cheng.md)
-    * [ZRO-001 零之起源](zero-up/shou-ye/1ji-ben-jiao-cheng/zro-100-ling-zhi-qi-yuan.md)
-    * [ZRO-002 第一个Zero](zero-up/shou-ye/1ji-ben-jiao-cheng/zro-002-di-yi-ge-zero.md)
-    * [ZRO-003 RESTful中的Path和Method](zero-up/shou-ye/1ji-ben-jiao-cheng/zro-003-restfulzhong-de-path-he-method.md)
-  * [3.实战分析](zero-up/shou-ye/3shi-zhan-fen-xi.md)
-* 2 - Vert.x碎碎念
+* [1 - Zero基本教程](zero-up/1-zeroji-ben-jiao-cheng.md)
+* [2 - Vert.x碎碎念](zero-up/2-vertxsui-sui-nian.md)
+* [3 - Zero实战分析](zero-up/3-zeroshi-zhan-fen-xi.md)
 
 ## Origin X Engine
 
