@@ -20,5 +20,7 @@ sudo npm install -g serve
 ./book-server.sh
 ```
 
+用浏览器打开地址：[http://localhost:1231/](http://localhost:1231/)，您就可以访问本地化的 Origin X Doc的主页了。
+
 
 
