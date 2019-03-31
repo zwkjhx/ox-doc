@@ -27,6 +27,11 @@
 | src / econnomy |  | 【Zero】可重用组件 |
 | src / entity |  | 【Zero】TypeScript数据对象 |
 | src / environment |  | 核心环境文件 |
+| src / environment | actions.js | Redux中的Action连接文件 |
+| src / environment | combiner.js | Redux中的Reducer合并器 |
+| src / environment | datum.js | 【生成】该文件运行时会由 run-zero.sh 脚本生成，主要用于链接组件（components）和容器（container）自身的 Epic/Types 定义 |
+| src / environment | reducers.js | 统一调用的抽象Reducer方法，一般会映射到核心修改状态树的dispatcher中。 |
+| src / environment | routes.js | 【生成】系统会自动生成该路由文件，整个应用的路由连接器。 |
 | src / style |  | css相关风格文件 |
 | src / ux |  | 【Zero】Utility X包，纯函数主入口 |
 | stories |  | Storybook专用包 |
