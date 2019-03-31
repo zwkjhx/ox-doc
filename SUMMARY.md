@@ -38,8 +38,8 @@
   * [KMI-001 抽奖器需求](uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.md)
 * [软件需求领域](uniform-documentation/ruan-jian-xu-qiu-ling-yu.md)
   * [KMR-001 非功能需求评估指标](uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.md)
-* 语言相关
-  * [KML-001 ES6语法](uniform-documentation/kml-001-es6yu-fa.md)
+* [语言相关](uniform-documentation/yu-yan-xiang-guan.md)
+  * [KML-001 ECMA Script 6.0](uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md)
 
 ## Environment
 

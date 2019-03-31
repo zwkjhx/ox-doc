@@ -18,7 +18,7 @@
 
 ## 语言相关
 
-* [KML-001 ES6语法](/uniform-documentation/kml-001-es6yu-fa.md)
+* [KML-001 ECMA Script 6.0](/uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md)
 
 
 
