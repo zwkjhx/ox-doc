@@ -12,6 +12,7 @@
 ## 面试题
 
 * [KMI-001 抽奖器需求](/uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html)
+* [KMI-002 CDA考试大纲](/uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.md)
 
 ## 软件需求领域
 
