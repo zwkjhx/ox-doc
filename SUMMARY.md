@@ -33,6 +33,8 @@
 ## Uniform Docoument
 
 * [通用知识库主页](uniform-documentation/yin-dao-ye.md)
+* [面试题](uniform-documentation/mian-shi-ti.md)
+  * [KMI-001 抽奖器需求](uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.md)
 
 ## Environment
 
