@@ -37,6 +37,7 @@
 * [面试题](uniform-documentation/mian-shi-ti.md)
   * [KMI-001 抽奖器需求](uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.md)
   * [KMI-002 CDA考试大纲](uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.md)
+  * [KMI-003 Spring RESTful开发基础题](uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.md)
 * [软件需求领域](uniform-documentation/ruan-jian-xu-qiu-ling-yu.md)
   * [KMR-001 非功能需求评估指标](uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.md)
 * [语言相关](uniform-documentation/yu-yan-xiang-guan.md)
