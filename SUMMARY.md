@@ -7,7 +7,7 @@
 ## Zero UI
 
 * [Zero UI文档主页](zero-ui/shou-ye.md)
-  * 1.基本教程
+  * [1.基本教程](zero-ui/shou-ye/1ji-ben-jiao-cheng.md)
 
 ## Zero Up
 
