@@ -7,20 +7,21 @@
 ## Zero UI
 
 * [Zero UI文档主页](zero-ui/shou-ye.md)
-  * [1.基本教程](zero-ui/shou-ye/1ji-ben-jiao-cheng.md)
-  * [2.React碎碎念](zero-ui/shou-ye/2reactsui-sui-nian.md)
-  * [3.Ant全家桶](zero-ui/shou-ye/3antquan-jia-tong.md)
-  * [4.实战分析](zero-ui/shou-ye/4shi-zhan-fen-xi.md)
+* [1 - Zero UI基本教程](zero-ui/1-zero-uiji-ben-jiao-cheng.md)
+* [2 - React碎碎念](zero-ui/2-reactsui-sui-nian.md)
+* [3 - Ant全家桶](zero-ui/3-antquan-jia-tong.md)
+* [4 - Zero UI实战分析](zero-ui/4-zero-uishi-zhan-fen-xi.md)
 
 ## Zero Up
 
 * [Zero 文档主页](zero-up/shou-ye.md)
+  * [2.Vert.x碎碎念](zero-up/shou-ye/vertxsui-sui-nian.md)
   * [1.基本教程](zero-up/shou-ye/1ji-ben-jiao-cheng.md)
     * [ZRO-001 零之起源](zero-up/shou-ye/1ji-ben-jiao-cheng/zro-100-ling-zhi-qi-yuan.md)
     * [ZRO-002 第一个Zero](zero-up/shou-ye/1ji-ben-jiao-cheng/zro-002-di-yi-ge-zero.md)
     * [ZRO-003 RESTful中的Path和Method](zero-up/shou-ye/1ji-ben-jiao-cheng/zro-003-restfulzhong-de-path-he-method.md)
-  * [2.Vert.x碎碎念](zero-up/shou-ye/vertxsui-sui-nian.md)
   * [3.实战分析](zero-up/shou-ye/3shi-zhan-fen-xi.md)
+* 2 - Vert.x碎碎念
 
 ## Origin X Engine
 
