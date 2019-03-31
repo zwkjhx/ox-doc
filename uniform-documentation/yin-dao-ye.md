@@ -19,6 +19,7 @@
 ## 软件理论领域
 
 * [KMR-001 非功能需求评估指标](/uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html)
+* [KMR-002 程序设计的六个基本原则](/uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.md)
 
 ## 语言相关
 

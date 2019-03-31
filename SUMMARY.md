@@ -40,6 +40,7 @@
   * [KMI-003 Spring RESTful开发基础题](uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.md)
 * [软件理论领域](uniform-documentation/ruan-jian-xu-qiu-ling-yu.md)
   * [KMR-001 非功能需求评估指标](uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.md)
+  * [KMR-002 程序设计的六个基本原则](uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.md)
 * [语言相关](uniform-documentation/yu-yan-xiang-guan.md)
   * [KML-001 ECMA Script 6.0](uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md)
   * [KML-002 JSR330规范](uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.md)
