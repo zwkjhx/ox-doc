@@ -60,9 +60,7 @@ Ox自定义组件的存储位置位于：`src/app/web/`目录中，基本遵循�
 * S——State：对于状态类组件是否启用了React中的state状态；
 * F——Flat：是否支持配置数据中的平行配置（一般用于图）；
 * E——Extra：是否消费了`OxExtra`组件；
-* A——Action：是否触发
-
-
+* D——DataEvent：是否触发事件产生了`DataEvent`数据；
 
 
 
