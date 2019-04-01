@@ -50,6 +50,7 @@ Ox自定义组件的存储位置位于：`src/app/web/`目录中，基本遵循�
 |  | OxExtra | 对于Card、Tabs这种容器的右上角专用额外组件 |
 |  | OxGrid | Grid布局专用组件 |
 |  | OxIconLink | 带图标的链接 |
+|  | OxColumn | 表格专用列 |
 
 
 
