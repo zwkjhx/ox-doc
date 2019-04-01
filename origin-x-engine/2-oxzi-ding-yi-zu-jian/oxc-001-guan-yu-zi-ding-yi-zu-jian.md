@@ -43,7 +43,9 @@ Ox自定义组件的存储位置位于：`src/app/web/`目录中，基本遵循�
 | 元素类 | OxLink | 链接 |
 |  | OxTitle | 纯文本标题 |
 | 图类 | OxAxis | 条形图 |
-|  |  |  |
+|  | OxBar | 柱状图 |
+|  | OxPie | 饼图 |
+|  | OxRadar | 雷达图 |
 
 
 
