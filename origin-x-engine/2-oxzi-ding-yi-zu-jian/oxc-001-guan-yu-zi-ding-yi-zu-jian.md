@@ -36,11 +36,14 @@ Ox自定义组件的存储位置位于：`src/app/web/`目录中，基本遵循�
 |  | OxTableFull | 全功能表格：分页、排序、列过滤、列筛选、行操作（添加、删除、查询、修改、搜索）。 |
 |  | OxWelcome | 欢迎组件，一般用于首页。 |
 | 专用类 | ExColumn | Ox表格列更改专用组件。 |
-| 事件类 | OxActButton | 按钮。 |
-|  | OxActCard | 带操作按钮的卡片。 |
-|  | OxActRadio | 单选按钮组。 |
-|  | OxActSearch | 搜索框。 |
-| 元素类 |  |  |
+| 事件类 | OxActButton | 按钮 |
+|  | OxActCard | 带操作按钮的卡片 |
+|  | OxActRadio | 单选按钮组 |
+|  | OxActSearch | 搜索框 |
+| 元素类 | OxLink | 链接 |
+|  | OxTitle | 纯文本标题 |
+| 图类 | OxAxis | 条形图 |
+|  |  |  |
 
 
 
