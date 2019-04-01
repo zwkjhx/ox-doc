@@ -6,8 +6,8 @@
 
 Ox页面主要包含两套配置文件：
 
-* UI层的界面配置文件，文件位置：\`src/；
-* 业务层的业务数据Mock文件；
+* UI层的界面配置文件，文件位置：`src/app/action/mock/web`；
+* 业务层的业务数据Mock文件，文件位置：`src/app/action/mock/dynamic`；
 
 
 
