@@ -38,6 +38,8 @@ Ox自定义组件的存储位置位于：`src/app/web/`目录中，基本遵循�
 | 专用类 | ExColumn | Ox表格列更改专用组件。 |
 | 事件类 | OxActButton | 按钮。 |
 |  | OxActCard | 带操作按钮的卡片。 |
+|  | OxActRadio | 单选按钮组。 |
+|  | OxActSearch | 搜索框。 |
 
 
 
