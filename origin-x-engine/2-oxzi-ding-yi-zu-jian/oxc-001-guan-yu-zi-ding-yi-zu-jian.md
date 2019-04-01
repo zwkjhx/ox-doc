@@ -18,6 +18,7 @@ Ox自定义组件的存储位置位于：`src/app/web/`目录中，基本遵循�
 
 | 分类 | 名称 | 说明 |
 | :--- | :--- | :--- |
+| 容器类 | OxAssist | 辅助数据空容器，生成$a\_module\_data的DataArray/DataObject专用容器。 |
 |  |  |  |
 
 
