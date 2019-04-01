@@ -28,6 +28,8 @@ Ox自定义组件的存储位置位于：`src/app/web/`目录中，基本遵循�
 |  | OxCategory | 和后端X\_CATEGORY表执行深度绑定，主管整个系统的类型树。 |
 |  | OxSider | 左侧布局容器使用的可伸缩树形菜单。 |
 | 组件类 | OxBasicList | Ant Design Pro中的基本分页列表。 |
+|  | OxCount | Ant Design Pro中的工作量计数器。 |
+|  |  |  |
 
 
 
