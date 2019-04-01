@@ -12,6 +12,7 @@ Zero UI文档用来讲解Zero UI框架的基本用法（[http://www.vertxui.cn](
 ## 1. 基本教程
 
 * [ZUI-001 Zero UI项目结构说明](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-001-zero-uixiang-mu-jie-gou-shuo-ming.html)
+* [ZUI-002 Zero UI中的环境变量](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-002-zero-uizhong-de-huan-jing-bian-liang.html)
 
 ## 2. React碎碎念
 
