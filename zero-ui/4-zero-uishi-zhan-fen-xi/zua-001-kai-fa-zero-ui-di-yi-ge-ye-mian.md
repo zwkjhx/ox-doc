@@ -6,7 +6,7 @@
 
 一个Zero UI的页面主要包含下边几部分：
 
-> `<m>`表示模块名字，`<p>`表示页面名字，比如开发用户管理可以直接设置成：src/container/user/manage和src/components/user/manage，这样就可以通过：http://&lt;host&gt;:&lt;port&gt;/&lt;Z\_ROUTE&gt;/user/manage的地址访问了。
+> `<m>`表示模块名字，`<p>`表示页面名字，比如开发用户管理可以直接设置成：src/container/user/manage和src/components/user/manage，这样就可以通过：[http://&lt;host&gt;:&lt;port&gt;/&lt;Z\_ROUTE&gt;/user/manage的地址访问了。](http://<host>:<port>/<Z_ROUTE>/user/manage的地址访问了。)
 >
 > * host：服务器的主机名
 > * port：服务器端口，可通过PORT环境变量配置
@@ -15,7 +15,10 @@
 | 路径 | 文件名 | 说明 |
 | :--- | :--- | :--- |
 | src/container/&lt;m&gt;/&lt;p&gt; | UI.js | 每一个模板的入口页 |
+|  | Cab.less | 模板风格文件 |
 | src/components/&lt;m&gt;/&lt;p&gt; | UI.js | 每一个页面的入口页 |
+|  | Cab.less | 页面风格文件 |
+| src/cab/cn/components/&lt;m&gt;/&lt;p&gt; | UI.json | 资源文件 |
 
 
 
