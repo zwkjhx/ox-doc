@@ -24,7 +24,9 @@ Ox自定义组件的存储位置位于：`src/app/web/`目录中，基本遵循�
 |  | OxContainer | Ox中的标准Grid容器，支持Grid布局模式。 |
 |  | OxDivide | 左右分区容器，使用Ant Design中的Row和Col进行左右分区处理。 |
 |  | OxTabContainer | Ant Design中的Tabs容器。 |
-|  |  |  |
+| 左侧类（菜单、树形） | OxUser | 呈现用户信息的Card卡片。 |
+|  | OxCategory | 和后端X\_CATEGORY表执行深度绑定，主管整个系统的类型树。 |
+|  | OxSider | 左侧布局容器使用的可伸缩树形菜单。 |
 
 
 
