@@ -17,7 +17,7 @@ Origin X文档主页用来讲解Origin X框架的基本实施方法（主要面�
 
 ## 4. 实战分析
 
-* [OXA-001 研发第一个Ox页面](/origin-x-engine/4-oxshi-zhan-fen-xi/oxa-001-kai-fa-di-yi-ge-ox-ye-mian.md)
+* [OXA-001 研发第一个Ox空页面](/origin-x-engine/4-oxshi-zhan-fen-xi/oxa-001-kai-fa-di-yi-ge-ox-ye-mian.md)
 
 
 
