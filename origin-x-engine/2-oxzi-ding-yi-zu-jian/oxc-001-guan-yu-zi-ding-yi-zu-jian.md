@@ -9,6 +9,8 @@ Ox自定义组件的存储位置位于：`src/app/web/`目录中，基本遵循�
 * 所有Ox的组件都是以`Ox`命名起头；
 * 所有Ox的行为组件（带`event`事件配置的）都是以`OxAct`命名起头；
 * Ox组件的名称用`UI.js`，风格文件名称遵循Zero UI使用`Cab.less、Cab.Fit.less`；
+* 生命周期文件：`componentDidMount`和`componentDidUpdate`统一使用`Life.js`文件来处理，并且方法名统一；
+
 * 
 
 
