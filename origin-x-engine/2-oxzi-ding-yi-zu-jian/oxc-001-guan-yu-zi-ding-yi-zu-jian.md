@@ -31,6 +31,9 @@ Ox自定义组件的存储位置位于：`src/app/web/`目录中，基本遵循�
 |  | OxCount | Ant Design Pro中的工作量计数器。 |
 |  | OxGridCard | 行列式卡片列表。 |
 |  | OxGridLink | 行列式带图标链接列表。 |
+|  | OxListTask | 工单表格列表，从Ant Design Pro中延生出来用于放置单据。 |
+|  | OxTable | 仅带分页的简单表格，不包含其他复杂功能。 |
+|  | OxTableFull | 全功能表格：分页、排序、列过滤、列筛选、行操作（添加、删除、查询、修改、搜索）。 |
 
 
 
