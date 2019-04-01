@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-007-nettyzhong-de-pipeline-ji-zhi.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-007-nettyzhong-de-pipeline-ji-zhi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-008-tcpxie-yi-zhong-de-reuse.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-008-tcpxie-yi-zhong-de-reuse.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zero-ui/main.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-ui/main.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,18 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="317">
-                <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-001-javayu-yan-zhong-de-an-zhi-chuan-di.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -81,7 +68,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="396">
-                <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+                <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -112,12 +99,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-008-tcpxie-yi-zhong-de-reuse.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor>
                 <caret column="2" selection-start-column="2" selection-end-column="2" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zero-ui/main.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="368">
+                <caret line="21" column="105" selection-start-line="21" selection-start-column="105" selection-end-line="21" selection-end-column="105" />
               </first_editor>
               <second_editor />
             </state>
@@ -163,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/docker/book-init" />
         <option value="$PROJECT_DIR$/book-init.sh" />
         <option value="$PROJECT_DIR$/book-server.sh" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -214,6 +212,7 @@
         <option value="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-006-reactormo-shi.md" />
         <option value="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-007-nettyzhong-de-pipeline-ji-zhi.md" />
         <option value="$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-008-tcpxie-yi-zhong-de-reuse.md" />
+        <option value="$PROJECT_DIR$/zero-ui/main.md" />
       </list>
     </option>
   </component>
@@ -252,20 +251,13 @@
             <path>
               <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="zero-ui" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="images" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="images" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="zbr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="zero-ui" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="4-zero-uishi-zhan-fen-xi" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -329,7 +321,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1143" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1142" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21906267" />
@@ -343,7 +335,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3299748" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2637681" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.39555126" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -650,14 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zero-ui/main.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zero-up/main.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -718,21 +702,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="3258">
-            <caret line="181" column="84" selection-start-line="181" selection-start-column="84" selection-end-line="181" selection-end-column="84" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="317">
-            <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+          <first_editor relative-caret-position="1062">
+            <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
           </first_editor>
           <second_editor />
         </state>
@@ -782,7 +756,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="396">
-            <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           </first_editor>
           <second_editor />
         </state>
@@ -808,11 +782,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3258">
+            <caret line="181" column="84" selection-start-line="181" selection-start-column="84" selection-end-line="181" selection-end-column="84" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-008-tcpxie-yi-zhong-de-reuse.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor>
             <caret column="2" selection-start-column="2" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zero-ui/main.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="368">
+            <caret line="21" column="105" selection-start-line="21" selection-start-column="105" selection-end-line="21" selection-end-column="105" />
           </first_editor>
           <second_editor />
         </state>
