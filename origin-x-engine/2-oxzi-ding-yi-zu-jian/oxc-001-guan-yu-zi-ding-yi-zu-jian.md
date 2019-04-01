@@ -21,6 +21,8 @@ Ox自定义组件的存储位置位于：`src/app/web/`目录中，基本遵循�
 | 容器类 | OxAssist | 辅助数据空容器，生成$a\_module\_data的DataArray/DataObject专用容器。 |
 |  | OxBoundary | 纯div容器，用于放置内部组件。 |
 |  | OxCard | Ant Design中的Card卡片容器。 |
+|  | OxContainer | Ox中的标准Grid容器，支持Grid布局模式。 |
+|  | OxDivide | 左右分区容器，使用Ant Design中的Row和Col进行左右分区处理。 |
 
 
 
