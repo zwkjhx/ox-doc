@@ -5,6 +5,10 @@ Origin X是建立在Zero UI之上新起的一个前端项目，外层项目结�
 ## 1. 目录说明
 
 > Origin X运行在Zero UI之上，所以整个Origin X中的目录结构的根目录以 src/app/ 为主，固定文件：不可以更改文件名和路径，Zero UI需要依靠这些文件做完整的链接，这里需要说明一下：Zero UI中使用了下边的方式来处理Ajax请求：
+>
+> * 使用`Ux.createAction`的API创建Types定义类型，内置使用了redux-act。
+> * 使用`Ux.ajaxXXX`系列的API创建对应的Ajax Promise，这一系列的API主要包含三种：带Token请求、不带Token请求、上传下载，调用这一系列的请求时候会直接使用mock中的模拟数据实现前端独立开发。
+> * 统一使用`Ux.rxXXX`系列的API创建Epic，内部使用了Rxjs中的API执行响应式处理。
 
 | 目录 / 子目录 | 特殊文件 | 说明 |
 | :--- | :--- | :--- |
