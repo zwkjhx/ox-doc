@@ -1,6 +1,6 @@
 # Origin X UI项目结构说明
 
-Origin X是建立在Zero UI之上新起的一个前端项目，外层项目结构可以参考：[ZUI-001 Zero UI项目结构说明](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-001-zero-uixiang-mu-jie-gou-shuo-ming.md)，本文主要解析Origin X中的内层项目结构`src/app`中出现的内容。
+Origin X是建立在Zero UI之上新起的一个前端项目，外层项目结构可以参考：[ZUI-001 Zero UI项目结构说明](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-001-zero-uixiang-mu-jie-gou-shuo-ming.html)，本文主要解析Origin X中的内层项目结构`src/app`中出现的内容。
 
 ## 1. 目录说明
 
@@ -39,7 +39,7 @@ Origin X是建立在Zero UI之上新起的一个前端项目，外层项目结�
 | web/graphic |  | 图类 |
 | web/sider |  | 左侧菜单类 |
 
-> 关于自定义组件的清单可以参考：[OXC-001 关于自定义组件](/origin-x-engine/2-oxzi-ding-yi-zu-jian/oxc-001-guan-yu-zi-ding-yi-zu-jian.md)
+> 关于自定义组件的清单可以参考：[OXC-001 关于自定义组件](/origin-x-engine/2-oxzi-ding-yi-zu-jian/oxc-001-guan-yu-zi-ding-yi-zu-jian.html)
 
 ## 2. Origin X UI中的核心
 
