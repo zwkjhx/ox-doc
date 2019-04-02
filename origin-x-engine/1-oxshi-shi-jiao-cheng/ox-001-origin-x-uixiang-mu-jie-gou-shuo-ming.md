@@ -31,8 +31,13 @@ Origin X是建立在Zero UI之上新起的一个前端项目，外层项目结�
 | function/render |  | Origin X中的页面动态渲染组件 |
 | hoc | Ox.js | @ox注解的内部逻辑，高阶抽象组件专用文件，High Order Component |
 | web |  | Origin X中的自定义组件 |
-| web/action |  | 事件类自定义组件 |
-|  |  |  |
+| web/action |  | 事件类 |
+| web/component |  | 组件类 |
+| web/container |  | 容器类 |
+| web/element |  | 元素类 |
+| web/engine |  | Origin X引擎特殊定制 |
+| web/graphic |  | 图类 |
+| web/sider |  | 左侧菜单类 |
 
 
 
