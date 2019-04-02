@@ -43,9 +43,11 @@ Origin X是建立在Zero UI之上新起的一个前端项目，外层项目结�
 
 ## 2. Origin X中的核心
 
-这里提供Origin X UI和Zero UI的对比表
+这里提供Origin X UI和Zero UI的对比表如下：
 
-
+| 项目 | Zero UI | Origin X UI |
+| :--- | :--- | :--- |
+|  |  |  |
 
 
 
