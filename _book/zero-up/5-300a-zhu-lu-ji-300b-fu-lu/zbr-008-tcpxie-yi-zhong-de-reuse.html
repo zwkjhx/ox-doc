@@ -1,0 +1,1644 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>ZBR-008 TCP协议中的Reuse · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="zbr-009-ipv6zhong-de-tong-xin-liang-lei-traffic-class.html" />
+    
+    
+    <link rel="prev" href="zbr-007-nettyzhong-de-pipeline-ji-zhi.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">http://www.origin-x.cn</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Origin X Doc文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Zero UI</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../zero-ui/main.html">
+            
+                <a href="../../zero-ui/main.html">
+            
+                    
+                    Zero UI文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../zero-ui/1-zero-uiji-ben-jiao-cheng.html">
+            
+                <a href="../../zero-ui/1-zero-uiji-ben-jiao-cheng.html">
+            
+                    
+                    1 - Zero UI基本教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../zero-ui/1-zero-uiji-ben-jiao-cheng/zui-001-zero-uixiang-mu-jie-gou-shuo-ming.html">
+            
+                <a href="../../zero-ui/1-zero-uiji-ben-jiao-cheng/zui-001-zero-uixiang-mu-jie-gou-shuo-ming.html">
+            
+                    
+                    ZUI-001 Zero UI项目结构说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../../zero-ui/1-zero-uiji-ben-jiao-cheng/zui-002-zero-uizhong-de-huan-jing-bian-liang.html">
+            
+                <a href="../../zero-ui/1-zero-uiji-ben-jiao-cheng/zui-002-zero-uizhong-de-huan-jing-bian-liang.html">
+            
+                    
+                    ZUI-002 Zero UI中的环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../zero-ui/2-reactsui-sui-nian.html">
+            
+                <a href="../../zero-ui/2-reactsui-sui-nian.html">
+            
+                    
+                    2 - React碎碎念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../zero-ui/3-antquan-jia-tong.html">
+            
+                <a href="../../zero-ui/3-antquan-jia-tong.html">
+            
+                    
+                    3 - Ant全家桶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../zero-ui/4-zero-uishi-zhan-fen-xi.html">
+            
+                <a href="../../zero-ui/4-zero-uishi-zhan-fen-xi.html">
+            
+                    
+                    4 - Zero UI实战分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../../zero-ui/4-zero-uishi-zhan-fen-xi/zua-001-kai-fa-zero-ui-di-yi-ge-ye-mian.html">
+            
+                <a href="../../zero-ui/4-zero-uishi-zhan-fen-xi/zua-001-kai-fa-zero-ui-di-yi-ge-ye-mian.html">
+            
+                    
+                    ZUA-001 开发Zero UI第一个页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Zero Up</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../main.html">
+            
+                <a href="../main.html">
+            
+                    
+                    Zero 文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../1-zeroji-ben-jiao-cheng.html">
+            
+                <a href="../1-zeroji-ben-jiao-cheng.html">
+            
+                    
+                    1 - Zero基本教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html">
+            
+                <a href="../1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html">
+            
+                    
+                    ZRO-001 零之起源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html">
+            
+                <a href="../1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html">
+            
+                    
+                    ZRO-002 第一个Zero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html">
+            
+                <a href="../1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html">
+            
+                    
+                    ZRO-003 RESTful中的Path和Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../2-vertxsui-sui-nian.html">
+            
+                <a href="../2-vertxsui-sui-nian.html">
+            
+                    
+                    2 - Vert.x碎碎念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html">
+            
+                <a href="../2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html">
+            
+                    
+                    ZVX-001 基于 auth-common 开发Vert.x自定义安全组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../3-zeroshi-zhan-fen-xi.html">
+            
+                <a href="../3-zeroshi-zhan-fen-xi.html">
+            
+                    
+                    3 - Zero实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../4-javayu-yan-ji-chu.html">
+            
+                <a href="../4-javayu-yan-ji-chu.html">
+            
+                    
+                    4 - Java语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../5-300a-zhu-lu-ji-300b-fu-lu.html">
+            
+                <a href="../5-300a-zhu-lu-ji-300b-fu-lu.html">
+            
+                    
+                    5 - 《逐鹿记》后记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="zbr-001-javayu-yan-zhong-de-an-zhi-chuan-di.html">
+            
+                <a href="zbr-001-javayu-yan-zhong-de-an-zhi-chuan-di.html">
+            
+                    
+                    ZBR-001 Java语言中的按值传递
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.2" data-path="zbr-002-tong-bu-he-yi-bu.html">
+            
+                <a href="zbr-002-tong-bu-he-yi-bu.html">
+            
+                    
+                    ZBR-002 同步和异步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.3" data-path="zbr-003-vertxzhong-de-ji-qun-guan-li-qi.html">
+            
+                <a href="zbr-003-vertxzhong-de-ji-qun-guan-li-qi.html">
+            
+                    
+                    ZBR-003 Vert.x中的集群管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.4" data-path="zbr-004-actormo-xing.html">
+            
+                <a href="zbr-004-actormo-xing.html">
+            
+                    
+                    ZBR-004 Actor模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.5" data-path="zbr-005-rxjava2zhong-desingle-jie-xi.html">
+            
+                <a href="zbr-005-rxjava2zhong-desingle-jie-xi.html">
+            
+                    
+                    ZBR-005 RxJava2中的Single解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.6" data-path="zbr-006-reactormo-shi.html">
+            
+                <a href="zbr-006-reactormo-shi.html">
+            
+                    
+                    ZBR-006 Reactor模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.7" data-path="zbr-007-nettyzhong-de-pipeline-ji-zhi.html">
+            
+                <a href="zbr-007-nettyzhong-de-pipeline-ji-zhi.html">
+            
+                    
+                    ZBR-007 Netty中的Pipeline机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.6.8" data-path="zbr-008-tcpxie-yi-zhong-de-reuse.html">
+            
+                <a href="zbr-008-tcpxie-yi-zhong-de-reuse.html">
+            
+                    
+                    ZBR-008 TCP协议中的Reuse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.9" data-path="zbr-009-ipv6zhong-de-tong-xin-liang-lei-traffic-class.html">
+            
+                <a href="zbr-009-ipv6zhong-de-tong-xin-liang-lei-traffic-class.html">
+            
+                    
+                    ZBR-009 IPv6中的通信量类Traffic Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.10" data-path="zbr-010-tcpzhongdenagle-suan-fa.html">
+            
+                <a href="zbr-010-tcpzhongdenagle-suan-fa.html">
+            
+                    
+                    ZBR-010 TCP中的Nagle算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.11" data-path="zbr-011-tcpzhong-de-keepalive-ji-zhi.html">
+            
+                <a href="zbr-011-tcpzhong-de-keepalive-ji-zhi.html">
+            
+                    
+                    ZBR-011 TCP中的KeepAlive机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.12" data-path="zbr-012-alpnxie-yi.html">
+            
+                <a href="zbr-012-alpnxie-yi.html">
+            
+                    
+                    ZBR-012 Alpn协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.13" data-path="zbr-013-sslzhong-de-pfx-zheng-shu.html">
+            
+                <a href="zbr-013-sslzhong-de-pfx-zheng-shu.html">
+            
+                    
+                    ZBR-013 SSL中的Pfx证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.14" data-path="zbr-014-sslzhong-de-cert-zheng-shu.html">
+            
+                <a href="zbr-014-sslzhong-de-cert-zheng-shu.html">
+            
+                    
+                    ZBR-014 SSL中的Cert证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.15" data-path="zbr-015-guan-yu-tls-xie-yi.html">
+            
+                <a href="zbr-015-guan-yu-tls-xie-yi.html">
+            
+                    
+                    ZBR-015 关于TLS协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.16" data-path="zbr-016-wang-luo-fu-wu-qi-zhong-de-sni.html">
+            
+                <a href="zbr-016-wang-luo-fu-wu-qi-zhong-de-sni.html">
+            
+                    
+                    ZBR-016 网络服务器中的SNI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.17" data-path="zbr-017-guan-yu-two-way-shuang-xiang-ren-zheng-mo-shi.html">
+            
+                <a href="zbr-017-guan-yu-two-way-shuang-xiang-ren-zheng-mo-shi.html">
+            
+                    
+                    ZBR-017 关于Two-Way双向认证模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Origin X Engine</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../origin-x-engine/main.html">
+            
+                <a href="../../origin-x-engine/main.html">
+            
+                    
+                    Origin X Engine文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../origin-x-engine/1-oxshi-shi-jiao-cheng.html">
+            
+                <a href="../../origin-x-engine/1-oxshi-shi-jiao-cheng.html">
+            
+                    
+                    1 - Ox实施教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../../origin-x-engine/1-oxshi-shi-jiao-cheng/ox-001-origin-x-uixiang-mu-jie-gou-shuo-ming.html">
+            
+                <a href="../../origin-x-engine/1-oxshi-shi-jiao-cheng/ox-001-origin-x-uixiang-mu-jie-gou-shuo-ming.html">
+            
+                    
+                    OX-001 Origin X UI项目结构说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../origin-x-engine/2-oxzi-ding-yi-zu-jian.html">
+            
+                <a href="../../origin-x-engine/2-oxzi-ding-yi-zu-jian.html">
+            
+                    
+                    2 - Ox自定义组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../../origin-x-engine/2-oxzi-ding-yi-zu-jian/oxc-001-guan-yu-zi-ding-yi-zu-jian.html">
+            
+                <a href="../../origin-x-engine/2-oxzi-ding-yi-zu-jian/oxc-001-guan-yu-zi-ding-yi-zu-jian.html">
+            
+                    
+                    OXC-001 关于自定义组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../../origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html">
+            
+                <a href="../../origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html">
+            
+                    
+                    3 - Ox后端扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../../origin-x-engine/4-oxshi-zhan-fen-xi.html">
+            
+                <a href="../../origin-x-engine/4-oxshi-zhan-fen-xi.html">
+            
+                    
+                    4 - Ox实战分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1" data-path="../../origin-x-engine/4-oxshi-zhan-fen-xi/oxa-001-kai-fa-di-yi-ge-ox-ye-mian.html">
+            
+                <a href="../../origin-x-engine/4-oxshi-zhan-fen-xi/oxa-001-kai-fa-di-yi-ge-ox-ye-mian.html">
+            
+                    
+                    OXA-001 研发第一个Ox空页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Uniform Docoument</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../uniform-documentation/main.html">
+            
+                <a href="../../uniform-documentation/main.html">
+            
+                    
+                    通用知识库主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../uniform-documentation/mian-shi-ti.html">
+            
+                <a href="../../uniform-documentation/mian-shi-ti.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../../uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html">
+            
+                <a href="../../uniform-documentation/mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html">
+            
+                    
+                    KMI-001 抽奖器需求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../../uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.html">
+            
+                <a href="../../uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.html">
+            
+                    
+                    KMI-002 CDA考试大纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../../uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html">
+            
+                <a href="../../uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html">
+            
+                    
+                    KMI-003 Spring RESTful开发基础题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu.html">
+            
+                <a href="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu.html">
+            
+                    
+                    软件理论领域
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html">
+            
+                <a href="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html">
+            
+                    
+                    KMR-001 非功能需求评估指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.html">
+            
+                <a href="../../uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.html">
+            
+                    
+                    KMR-002 程序设计的六个基本原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../uniform-documentation/yu-yan-xiang-guan.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan.html">
+            
+                    
+                    语言相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.html">
+            
+                    
+                    KML-001 ECMA Script 6.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.html">
+            
+                    
+                    KML-002 JSR330规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.html">
+            
+                    
+                    KML-003 浏览器中的Fetch Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.4" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.html">
+            
+                    
+                    KML-004 Java中的静态和单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.5" data-path="../../uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.html">
+            
+                <a href="../../uniform-documentation/yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.html">
+            
+                    
+                    KML-005 Java语言的.class字节码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../../uniform-documentation/kai-yuan-xiang-mu.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu.html">
+            
+                    
+                    开源项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.5.1" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html">
+            
+                    
+                    KMO-001 Vert.x Core官方翻译版 3.4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.2" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html">
+            
+                    
+                    KMO-002 Vert.x Web官方翻译版 3.4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.3" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.html">
+            
+                    
+                    KMO-003 Spring Boot中的测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.4" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html">
+            
+                    
+                    KMO-004 使用OVal进行防御式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.5" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.html">
+            
+                    
+                    KMO-005 Sass基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.6" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.html">
+            
+                    
+                    KMO-006 Mockito基础和使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.7" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.html">
+            
+                    
+                    KMO-007 Jasmine基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.8" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html">
+            
+                    
+                    KMO-008 Dockerfile语法基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.9" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.html">
+            
+                    
+                    KMO-009 redux-orm项目文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.10" data-path="../../uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html">
+            
+                <a href="../../uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html">
+            
+                    
+                    KMO-010 Tradeshift应用开发手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../../uniform-documentation/gui-fan-xiang-guan.html">
+            
+                <a href="../../uniform-documentation/gui-fan-xiang-guan.html">
+            
+                    
+                    规范相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6.1" data-path="../../uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html">
+            
+                <a href="../../uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html">
+            
+                    
+                    KMS-001 UBL规范中的Price字段说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Environment</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../environment/main.html">
+            
+                <a href="../../environment/main.html">
+            
+                    
+                    环境搭建知识库主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../environment/1-dockerrong-qi-huan-jing.html">
+            
+                <a href="../../environment/1-dockerrong-qi-huan-jing.html">
+            
+                    
+                    1 - Docker容器环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="../../environment/1-dockerrong-qi-huan-jing/end-001-neo4jhuan-jing-chu-shi-hua.html">
+            
+                <a href="../../environment/1-dockerrong-qi-huan-jing/end-001-neo4jhuan-jing-chu-shi-hua.html">
+            
+                    
+                    END-001 Neo4j环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="../../environment/1-dockerrong-qi-huan-jing/end-002-tidbhuan-jing-chu-shi-hua.html">
+            
+                <a href="../../environment/1-dockerrong-qi-huan-jing/end-002-tidbhuan-jing-chu-shi-hua.html">
+            
+                    
+                    END-002 TiDB环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.3" data-path="../../environment/1-dockerrong-qi-huan-jing/end-003-elastic-searchhuan-jing.html">
+            
+                <a href="../../environment/1-dockerrong-qi-huan-jing/end-003-elastic-searchhuan-jing.html">
+            
+                    
+                    END-003 Elastic Search环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../../environment/2-zeroandoxhuan-jing.html">
+            
+                <a href="../../environment/2-zeroandoxhuan-jing.html">
+            
+                    
+                    2 - Zero&Ox环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.3.1" data-path="../../environment/2-zeroandoxhuan-jing/eno-001-ox-uihuan-jing-da-jian.html">
+            
+                <a href="../../environment/2-zeroandoxhuan-jing/eno-001-ox-uihuan-jing-da-jian.html">
+            
+                    
+                    ENO-001 ox-ui环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.2" data-path="../../environment/2-zeroandoxhuan-jing/eno-002-cang-ku-chu-shi-hua.html">
+            
+                <a href="../../environment/2-zeroandoxhuan-jing/eno-002-cang-ku-chu-shi-hua.html">
+            
+                    
+                    ENO-002 仓库初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.3" data-path="../../environment/2-zeroandoxhuan-jing/eno-003-yun-xingox-engine.html">
+            
+                <a href="../../environment/2-zeroandoxhuan-jing/eno-003-yun-xingox-engine.html">
+            
+                    
+                    ENO-003 运行ox-engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.4" data-path="../../environment/2-zeroandoxhuan-jing/eno-004-etcdben-di-ji-qun-da-jian.html">
+            
+                <a href="../../environment/2-zeroandoxhuan-jing/eno-004-etcdben-di-ji-qun-da-jian.html">
+            
+                    
+                    ENO-004 Etcd本地集群搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../../environment/4-deploymentbu-shu-jiao-cheng.html">
+            
+                <a href="../../environment/4-deploymentbu-shu-jiao-cheng.html">
+            
+                    
+                    3 - Deployment部署教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../../environment/5-qi-ta-huan-jing.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing.html">
+            
+                    
+                    4 - 其他环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.5.1" data-path="../../environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.html">
+            
+                    
+                    ENV-001 Spring Boot中的数据源配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.2" data-path="../../environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.html">
+            
+                    
+                    ENV-002 Karma在ES6中的Webpack配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.3" data-path="../../environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.html">
+            
+                    
+                    ENV-003 Karma的安装教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.4" data-path="../../environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html">
+            
+                    
+                    ENV-004 Windows环境的Docker安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.5" data-path="../../environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html">
+            
+                    
+                    ENV-005 使用Docker环境运行Spring Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.6" data-path="../../environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html">
+            
+                    
+                    ENV-006 Maven环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Specification</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../specification/main.html">
+            
+                <a href="../../specification/main.html">
+            
+                    
+                    开发规范文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../specification/1-zerogui-fan.html">
+            
+                <a href="../../specification/1-zerogui-fan.html">
+            
+                    
+                    1 - Zero规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../../specification/2-zero-uigui-fan.html">
+            
+                <a href="../../specification/2-zero-uigui-fan.html">
+            
+                    
+                    2 - Zero UI规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../../specification/3-origin-xgui-fan.html">
+            
+                <a href="../../specification/3-origin-xgui-fan.html">
+            
+                    
+                    3 - Origin X规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan.html">
+            
+                    
+                    4 - RESTful设计规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.5.1" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.html">
+            
+                    
+                    SPR-001 URI路径设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5.2" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.html">
+            
+                    
+                    SPR-002 URI业务设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ZBR-008 TCP协议中的Reuse</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tcp&#x534F;&#x8BAE;&#x4E2D;&#x7684;reuse">TCP&#x534F;&#x8BAE;&#x4E2D;&#x7684;Reuse</h1><p>&#x65E2;&#x7136;Vert.x&#x4E2D;&#x5DF2;&#x7ECF;&#x51FA;&#x73B0;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x7AE0;&#x8282;&#x6211;&#x4EEC;&#x5C31;&#x8C08;&#x8C08;TCP&#x534F;&#x8BAE;&#x4E2D;&#x7684;Reuse&#xFF0C;&#x6211;&#x4E0D;&#x662F;&#x8FD9;&#x4E00;&#x5757;&#x7684;&#x4E13;&#x5BB6;&#xFF0C;&#x4F46;&#x5C3D;&#x53EF;&#x80FD;&#x6536;&#x96C6;&#x76F8;&#x5173;&#x8D44;&#x6599;&#x52A0;&#x4E0A;&#x81EA;&#x5DF1;&#x7684;&#x89E3;&#x8BFB;&#xFF0C;&#x628A;&#x8FD9;&#x4E00;&#x5757;&#x7684;&#x5185;&#x5BB9;&#x5448;&#x73B0;&#x7ED9;&#x8BFB;&#x8005;&#x3002;</p><blockquote><p>&#x5982;&#x679C;&#x8BF4;&#x300A;&#x540E;&#x8BB0;&#x300B;&#x8868;&#x793A;&#x6587;&#x7AE0;&#x540E;&#x8FB9;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x8865;&#x5145;&#x8BB0;&#x5F55;&#xFF0C;&#x8FD8;&#x4E0D;&#x5982;&#x89E3;&#x91CA;&#x6210;&#xFF1A;&#x601D;&#x8003;&#x8FC7;&#x540E;&#x7684;&#x8BB0;&#x5F55;&#x3002;</p></blockquote><p>&#x672C;&#x6765;&#x60F3;&#x901A;&#x8FC7;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x6765;&#x8BE6;&#x7EC6;&#x9610;&#x8FF0;&#x4E00;&#x4E0B;&#x5173;&#x4E8E;TCP&#x8FDE;&#x63A5;&#x590D;&#x7528;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x540E;&#x6765;&#x60F3;&#x60F3;&#x5F15;&#x7528;&#x6587;&#x3010;<a href="http://blog.51cto.com/gaibianziji/1211940" target="_blank">Reference</a>&#x3011;&#x5DF2;&#x7ECF;&#x5F88;&#x8BE6;&#x7EC6;&#x4E86;&#xFF0C;&#x6BD5;&#x7ADF;&#x672C;&#x4E66;&#x4E0D;&#x662F;&#x5927;&#x767E;&#x79D1;&#xFF0C;&#x6240;&#x4EE5;&#x76F4;&#x63A5;&#x9488;&#x5BF9;Vert.x&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x90E8;&#x5206;&#x6765;&#x8BB2;&#x89E3;&#x590D;&#x7528;&#x7684;&#x70B9;&#x3002;</p><p>Vert.x&#x7684;<code>NetworkOptions</code>&#x6709;&#x4E0B;&#x8FB9;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;</p><table>
+<thead>
+<tr><th> Json&#x914D;&#x7F6E;&#x8282;&#x70B9; </th>
+<th> set&#x65B9;&#x6CD5;&#x540D; </th>
+<th> &#x9ED8;&#x8BA4;&#x503C; </th>
+</tr></thead><tbody>
+<tr><td style="text-align:left"> reuseAddress </td>
+<td style="text-align:left"> setReuseAddress </td>
+<td style="text-align:left"> DEFAULT_REUSE_ADDRESS = true </td>
+</tr><tr><td style="text-align:left"> reusePort </td>
+<td style="text-align:left"> setReusePort </td>
+<td style="text-align:left"> DEFAULT_REUSE_PORT = false</td>
+</tr></tbody></table>
+
+<h2 id="1-&#x5730;&#x5740;&#x590D;&#x7528;">1. &#x5730;&#x5740;&#x590D;&#x7528;</h2><p>Address Reuse&#xFF0C;&#x53C8;&#x79F0;&#x4E3A;&#x5730;&#x5740;&#x590D;&#x7528;&#xFF08;&#x5BF9;&#x5E94;&#x5E95;&#x5C42;TCP&#x534F;&#x8BAE;&#x4E2D;&#x7684;<code>SO_REUSEADDR</code>&#x5957;&#x63A5;&#x5B57;&#xFF09;&#xFF0C;&#x5B83;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4E86;&#x4EE5;&#x4E0B;&#x529F;&#x80FD;&#xFF1A;</p><ol><li>&#x5B83;&#x5141;&#x8BB8;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x76D1;&#x542C;&#x670D;&#x52A1;&#x5668;&#x5E76;&#x4E14;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x5F00;&#x653E;&#x7684;&#x7AEF;&#x53E3;&#x2014;&#x2014;&#x5373;&#x4F7F;&#x8FD9;&#x4E2A;&#x7AEF;&#x53E3;&#x5DF2;&#x7ECF;&#x88AB;&#x4EE5;&#x524D;&#x7684;&#x8FDE;&#x63A5;&#x5360;&#x7528;&#x8FC7;&#x3002;
+</li>
+<li><code>SO_REUSEADDR</code>&#x5141;&#x8BB8;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x7AEF;&#x53E3;&#x4E0A;&#x542F;&#x52A8;&#x540C;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x53EA;&#x8981;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F8B;&#x7ED1;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x672C;&#x5730;IP&#x5373;&#x53EF;&#x3002;
+</li>
+<li><code>SO_REUSEADDR</code>&#x5141;&#x8BB8;&#x5355;&#x4E2A;&#x8FDB;&#x7A0B;&#x6346;&#x7ED1;&#x540C;&#x4E00;&#x4E2A;&#x7AEF;&#x53E3;&#x5230;&#x591A;&#x4E2A;&#x5957;&#x63A5;&#x5B57;&#x4E0A;&#xFF0C;&#x53EA;&#x8981;&#x6BCF;&#x6B21;&#x6346;&#x7ED1;&#x6307;&#x5B9A;&#x4E0D;&#x540C;&#x7684;&#x672C;&#x5730;IP&#x5730;&#x5740;&#x5373;&#x53EF;&#x3002;
+</li>
+<li><code>SO_REUSEADDR</code>&#x5141;&#x8BB8;&#x5B8C;&#x5168;&#x91CD;&#x590D;&#x7684;&#x6346;&#x7ED1;&#xFF1A;&#x5F53;&#x4E00;&#x4E2A;IP&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x5DF2;&#x7ED1;&#x5B9A;&#x5230;&#x67D0;&#x4E2A;&#x5957;&#x63A5;&#x5B57;&#x4E0A;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x652F;&#x6301;&#xFF0C;&#x540C;&#x6837;&#x7684;IP&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x8FD8;&#x53EF;&#x4EE5;&#x7ED1;&#x5B9A;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x5957;&#x63A5;&#x5B57;&#x4E0A;&#x3002;&#x2014;&#x2014;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x672C;&#x7279;&#x6027;&#x4EC5;&#x652F;&#x6301;UDP&#x5957;&#x63A5;&#x5B57;&#x3002;
+</li></ol>
+<blockquote><p>&#x8FD9;&#x91CC;&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#x5728;&#x5DF2;&#x7ECF;&#x5360;&#x7528;&#x7684;&#x7AEF;&#x53E3;&#x4E0A;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x5F00;&#x653E;&#x7684;&#x7AEF;&#x53E3;</p><p>&#x4E00;&#x822C;&#x662F;&#x8FD9;&#x6837;&#x5904;&#x7406;&#xFF1A;</p><ul><li>1&#xFF09;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x76D1;&#x542C;&#x5668;&#x3002;
+</li>
+<li>2&#xFF09;&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;&#x5230;&#x7684;&#xFF0C;&#x6D3E;&#x751F;&#x4E00;&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#x6765;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x3002;
+</li>
+<li>3&#xFF09;&#x76D1;&#x542C;&#x670D;&#x52A1;&#x5668;&#x7EC8;&#x6B62;&#xFF0C;&#x4F46;&#x5B50;&#x8FDB;&#x7A0B;&#x7EE7;&#x7EED;&#x4E3A;&#x73B0;&#x6709;&#x5DF2;&#x7ECF;&#x8FDE;&#x63A5;&#x4E0A;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x3002;
+</li>
+<li>4&#xFF09;&#x91CD;&#x542F;&#x76D1;&#x542C;&#x670D;&#x52A1;&#x5668;&#x3002;
+</li></ul>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5F53;&#x76D1;&#x542C;&#x670D;&#x52A1;&#x5668;&#x5728;&#x6B65;&#x9AA4;4&#x4E2D;&#x8C03;&#x7528;<code>socket, bind, listen</code>&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x65F6;&#xFF0C;&#x7531;&#x4E8E;&#x5B83;&#x8BD5;&#x56FE;&#x6346;&#x7ED1;&#x4E00;&#x4E2A;&#x73B0;&#x6709;&#x8FDE;&#x63A5;&#x4E0A;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x4ECE;&#x800C;bind&#x8C03;&#x7528;&#x4F1A;&#x5931;&#x8D25;&#x3002;&#x4F46;&#x662F;&#x5982;&#x679C;&#x8BE5;&#x670D;&#x52A1;&#x5668;&#x5728;socket&#x548C;bind&#x4E24;&#x4E2A;&#x8C03;&#x7528;&#x4E4B;&#x95F4;&#x8BBE;&#x7F6E;&#x4E86;<code>SO_REUSEADDR</code>&#x5957;&#x63A5;&#x5B57;&#x9009;&#x9879;&#xFF0C;&#x90A3;&#x4E48;bind&#x5C06;&#x4F1A;&#x6210;&#x529F;&#xFF0C;&#x6240;&#x6709;&#x7684;TCP&#x670D;&#x52A1;&#x5668;&#x90FD;&#x5E94;&#x8BE5;&#x5236;&#x5B9A;&#x8BE5;&#x5957;&#x63A5;&#x5B57;&#x9009;&#x9879;&#xFF0C;&#x5141;&#x8BB8;&#x670D;&#x52A1;&#x5668;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x5F62;&#x4E0B;&#x88AB;&#x91CD;&#x542F;&#x3002;</p></blockquote><h2 id="2-&#x7AEF;&#x53E3;&#x590D;&#x7528;">2. &#x7AEF;&#x53E3;&#x590D;&#x7528;</h2><p>Port Reuse&#xFF0C;&#x53C8;&#x79F0;&#x4E3A;&#x7AEF;&#x53E3;&#x590D;&#x7528;&#xFF08;&#x5BF9;&#x5E94;&#x5E95;&#x5C42;TCP&#x534F;&#x8BAE;&#x4E2D;&#x7684;<code>SO_REUSEPORT</code>&#x5957;&#x63A5;&#x5B57;&#xFF09;&#xFF0C;&#x5B83;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4E0B;&#x8FB9;&#x51E0;&#x4E2A;&#x529F;&#x80FD;&#xFF1A;</p><ol><li>&#x8BE5;&#x9009;&#x9879;&#x5141;&#x8BB8;&#x5B8C;&#x5168;&#x91CD;&#x590D;&#x7684;&#x6346;&#x7ED1;&#xFF0C;&#x4E0D;&#x8FC7;&#x53EA;&#x6709;&#x5728;&#x60F3;&#x8981;&#x6346;&#x7ED1;&#x7684;&#x540C;&#x4E00;&#x4E2A;IP&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x7684;&#x6BCF;&#x4E2A;&#x5957;&#x63A5;&#x5B57;&#x90FD;&#x6307;&#x5B9A;&#x4E86;&#x672C;&#x5957;&#x63A5;&#x5B57;&#x9009;&#x9879;&#x65F6;&#x624D;&#x884C;&#x3002;
+</li>
+<li>&#x5982;&#x679C;&#x88AB;&#x6346;&#x7ED1;&#x7684;IP&#x5730;&#x5740;&#x662F;&#x4E00;&#x4E2A;&#x591A;&#x64AD;&#x5730;&#x5740;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E24;&#x4E2A;&#x9009;&#x9879;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x7B49;&#x6548;&#x7684;&#x3002;
+</li></ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="zbr-007-nettyzhong-de-pipeline-ji-zhi.html" class="navigation navigation-prev " aria-label="Previous page: ZBR-007 Netty中的Pipeline机制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="zbr-009-ipv6zhong-de-tong-xin-liang-lei-traffic-class.html" class="navigation navigation-next " aria-label="Next page: ZBR-009 IPv6中的通信量类Traffic Class">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ZBR-008 TCP协议中的Reuse","level":"3.6.8","depth":2,"next":{"title":"ZBR-009 IPv6中的通信量类Traffic Class","level":"3.6.9","depth":2,"path":"zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-009-ipv6zhong-de-tong-xin-liang-lei-traffic-class.md","ref":"zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-009-ipv6zhong-de-tong-xin-liang-lei-traffic-class.md","articles":[]},"previous":{"title":"ZBR-007 Netty中的Pipeline机制","level":"3.6.7","depth":2,"path":"zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-007-nettyzhong-de-pipeline-ji-zhi.md","ref":"zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-007-nettyzhong-de-pipeline-ji-zhi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-008-tcpxie-yi-zhong-de-reuse.md","mtime":"2019-04-01T01:27:13.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-04-02T23:53:31.943Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
