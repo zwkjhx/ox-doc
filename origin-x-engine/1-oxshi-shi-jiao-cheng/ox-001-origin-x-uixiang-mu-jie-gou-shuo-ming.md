@@ -45,9 +45,12 @@ Origin X是建立在Zero UI之上新起的一个前端项目，外层项目结�
 
 这里提供Origin X UI和Zero UI的对比表如下：
 
-| 项目 | Zero UI | Origin X UI |
+| 项 | Zero UI | Origin X UI |
 | :--- | :--- | :--- |
-|  |  |  |
+| 支持动态路由 | 不支持 | 支持 |
+| 界面渲染语言 | React Jsx | Json数据文件 |
+| 高阶专用注解 | @zero | @ox |
+| 启用entity中的DataEvent | 不使用 | 启用 |
 
 
 
