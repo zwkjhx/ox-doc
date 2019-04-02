@@ -24,6 +24,13 @@ Origin X是建立在Zero UI之上新起的一个前端项目，外层项目结�
 | action/mock |  | 模拟数据专用文件夹 |
 | action/mock/web |  | 【开发】页面Mock文件 |
 | action/mock/dynamic |  | 【开发】业务数据Mock专用文件 |
+| function |  | Origin X通用工具函数库 |
+| function/behavior |  | Origin X中的DataEvent事件底层专用事件Action列表 |
+| function/common |  | Origin X中的核心共享函数 |
+| function/event |  | Origin X中的DataEvent事件处理核心组件 |
+| function/render |  | Origin X中的页面动态渲染组件 |
+| hoc | Ox.js | @ox注解的内部逻辑，高阶抽象组件专用文件，High Order Component |
+| web |  | Origin X中的自定义组件 |
 
 
 
