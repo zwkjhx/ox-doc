@@ -51,6 +51,21 @@ Origin X是建立在Zero UI之上新起的一个前端项目，外层项目结�
 | 界面渲染语言 | React Jsx | Json数据文件 |
 | 高阶专用注解 | @zero | @ox |
 | 启用entity中的DataEvent | 不使用 | 启用 |
+| 单项数据流组件 | Redux | React State |
+| Ajax请求 | 仅业务请求 | 配置请求和业务请求 |
+| 面向用户群主体 | 开发人员 | 实施人员 |
+| 依赖固定后端 | 不依赖，纯前端框架 | 依赖后端的Origin X Engine |
+
+实际上Origin X UI不能算是Zero UI的升级版，毕竟使用的用户群体不一样，在Origin X UI中，用户可以直接通过界面工具入口直接对整个系统的页面进行全新创建，创建过程直接使用：
+
+* Form Designer可视化设计表单
+* Page Designer动态创建新的页面
+* Model Designer进行建模设计
+* Flow Designer进行工作流设计
+* Report Designer进行报表设计和定义
+* Integration Designer进行集成管理，包括接口定义、业务组件植入
+
+以上列表是Origin X UI中最终会提供的工具类，主要提供给实施人员直接在系统中执行二次开发和定制动作。
 
 
 
