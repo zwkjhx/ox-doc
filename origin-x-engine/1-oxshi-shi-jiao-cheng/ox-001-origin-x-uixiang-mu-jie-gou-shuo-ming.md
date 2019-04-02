@@ -4,11 +4,16 @@ Origin X是建立在Zero UI之上新起的一个前端项目，外层项目结�
 
 ## 1. 目录说明
 
-> Origin X运行在Zero UI之上，所以整个Origin X中的目录结构的根目录以 src/app/ 为主。
+> Origin X运行在Zero UI之上，所以整个Origin X中的目录结构的根目录以 src/app/ 为主，
+>
+> * 固定文件：不可以更改文件名，Zero UI需要依靠这些文件做完整的链接。
+> *
 
 | 目录 / 子目录 | 特殊文件 | 说明 |
 | :--- | :--- | :--- |
-|  |  |  |
+| action | Ajax.js | 固定文件，Ajax远程访问主文件 |
+| action | Epic.js | 固定文件，Epic远程访问主文件 |
+| action | Types.js | 固定文件，Redux中的Types定义文件 |
 
 
 
