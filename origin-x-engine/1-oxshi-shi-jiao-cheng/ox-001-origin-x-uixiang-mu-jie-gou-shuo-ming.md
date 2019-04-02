@@ -17,6 +17,7 @@ Origin X是建立在Zero UI之上新起的一个前端项目，外层项目结�
 | action/macrocosm |  | 系统数据，如X\_APP，X\_SOURCE等 |
 | action/security |  | 权限控制专用文件 |
 | action/web |  | Web UI的配置程序读取专用文件 |
+| action/mock |  | 模拟数据专用文件夹 |
 | action/mock/web |  | 【开发】页面Mock文件 |
 | action/mock/dynamic |  | 【开发】业务数据Mock专用文件 |
 
