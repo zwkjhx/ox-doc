@@ -36,8 +36,8 @@
 
 ## 5. Zero Ai的使用
 
-* [EAI-001 Zero Ai的安装](/environment/eai-001-zero-aide-an-zhuang.md)
-* [EAI-002 Zero UI的初始化](/environment/eai-002-zero-uide-chu-shi-hua.md)
+* [EAI-001 Zero Ai的安装](/environment/6-zero-ai/eai-001-zero-aide-an-zhuang.md)
+* [EAI-002 Zero UI的初始化](/environment/6-zero-ai/eai-002-zero-uide-chu-shi-hua.md)
 
 
 
