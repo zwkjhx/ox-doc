@@ -71,23 +71,26 @@ class A extends React.PureComponent{
 环境变量的设置位于环境变量文件`.env.development`：
 
 ```properties
-HOST=localhost
-PORT=4100
+PORT=5000
 Z_LANGUAGE=cn
-Z_ENDPOINT=http://localhost:4100
-Z_APP=app.ima
-Z_ROUTE=ima
+Z_ENDPOINT=http://localhost:6083
+Z_APP=vie.app.ox
+Z_ROUTE=ox
 Z_SHARED=app
 Z_ENTRY_LOGIN=/login/index
 Z_ENTRY_ADMIN=/admin/index
-Z_K_SESSION=@@IMA/
-Z_K_EVENT=@@IMA-ACT
+Z_K_SESSION=@@OX/
+Z_K_EVENT=@@OX-ACT
+REACT_APP_LESS_MODULES=true
+
 Z_DEV_DEBUG=true
 Z_DEV_MOCK=true
+Z_DEV_AJAX=false
 Z_DEV_FORM=true
-Z_CSS_PREFIX=ima
-Z_CORS_CREDENTIALS=include
-Z_CORS_MODE=cors
+Z_DEV_MONITOR=true
+
+Z_CSS_PREFIX=ox
+Z_CSS_COLOR=#3d8ce7
 ```
 
 
