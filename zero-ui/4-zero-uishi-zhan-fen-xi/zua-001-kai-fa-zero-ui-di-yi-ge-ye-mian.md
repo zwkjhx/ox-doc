@@ -12,6 +12,8 @@
 > * port：服务器端口，可通过PORT环境变量配置
 > * Z\_ROUTE：环境变量设置的当前应用的根路径
 
+环境变量说明可以参考：[ZUI-002 Zero UI中的环境变量](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-002-zero-uizhong-de-huan-jing-bian-liang.md)。
+
 | 路径 | 文件名 | 说明 |
 | :--- | :--- | :--- |
 | src/container/&lt;m&gt;/&lt;p&gt; | UI.js | 每一个模板的入口页 |
