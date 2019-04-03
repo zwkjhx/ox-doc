@@ -63,7 +63,8 @@ src/cab/cn/components/module/page：             # 资源文件目录
 | ai csv | 独立 | 将一个json文件转换成CSV文件 |
 | ai ui.card | ZT | 直接创建一个带有PageCard的JS文件 |
 | ai ui.form | ZT | 直接创建一个带有Form的表单JS文件 |
-| ai rs.left  / ai rs.right | ZT | 修改PageCard的资源文件专用工具 |
+| ai rs.left | ZT | 修改PageCard的资源文件（左工具） |
+| ai rs.right | ZT | 修改PageCard的资源文件（右工具） |
 
 
 
