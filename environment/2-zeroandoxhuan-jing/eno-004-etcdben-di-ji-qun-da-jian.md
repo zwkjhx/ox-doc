@@ -29,5 +29,15 @@ Node2：/Users/lang/Runtime/data/etcd/node2/*
 Node3：/Users/lang/Runtime/data/etcd/node3/*
 ```
 
+### 2.2. 书写启动脚本
+
+为了方便读者区分，将启动脚本分开呈现：
+
+**node1.sh**：
+
+```shell
+
+```
+
 
 
