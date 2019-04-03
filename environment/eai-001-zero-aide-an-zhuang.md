@@ -23,6 +23,12 @@ added 2 packages from 1 contributor and updated 62 packages in 34.953s
 
 ## 2. 使用帮助
 
+所有的命令语法如下：
+
+```shell
+ai <command> <arguments>
+```
+
 
 
 
