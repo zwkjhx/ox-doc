@@ -33,7 +33,7 @@ Node3：/Users/lang/Runtime/data/etcd/node3/*
 
 为了方便读者区分，将启动脚本分开呈现：
 
-**node1.sh**：
+node1.sh：
 
 ```shell
 #!/usr/bin/env bash
@@ -42,7 +42,7 @@ rm -rf /Users/lang/Runtime/data/etcd/node1/*         # 开发模式专用
 etcd --config-file ./tool/etcd3-cluster/etcd-1.yml
 ```
 
-**node2.sh**：
+node2.sh：
 
 ```shell
 #!/usr/bin/env bash
@@ -51,7 +51,7 @@ rm -rf /Users/lang/Runtime/data/etcd/node2/*         # 开发模式专用
 etcd --config-file ./tool/etcd3-cluster/etcd-2.yml
 ```
 
-**node3.sh**
+node3.sh
 
 ```shell
 #!/usr/bin/env bash
@@ -63,6 +63,36 @@ etcd --config-file ./tool/etcd3-cluster/etcd-3.yml
 上述启动脚本不需要过多说明，由于使用的是开发模式，所以会在启动的时候删除三个数据目录，真正的使用模式下可以去掉上述注释的开发模式专用的行。
 
 ### 2.3. 配置文件
+
+接下来看看三个配置文件：
+
+etcd-1.yml
+
+```yaml
+name: etcd_1
+data-dir: /Users/lang/Runtime/data/etcd/node1
+listen-client-urls: http://127.0.0.1:6179
+advertise-client-urls: http://127.0.0.1:6179
+listen-peer-urls: http://127.0.0.1:2379
+initial-advertise-peer-urls: http://127.0.0.1:2379
+initial-cluster: etcd_1=http://127.0.0.1:2379,etcd_2=http://127.0.0.1:2380,etcd_3=http://127.0.0.1:2381
+initial-cluster-token: etcd-cluster-token
+initial-cluster-state: new
+```
+
+etcd-2.yml
+
+```yaml
+name: etcd_2
+data-dir: /Users/lang/Runtime/data/etcd/node2
+listen-client-urls: http://127.0.0.1:6180
+advertise-client-urls: http://127.0.0.1:6180
+listen-peer-urls: http://127.0.0.1:2380
+initial-advertise-peer-urls: http://127.0.0.1:2380
+initial-cluster: etcd_1=http://127.0.0.1:2379,etcd_2=http://127.0.0.1:2380,etcd_3=http://127.0.0.1:2381
+initial-cluster-token: etcd-cluster-token
+initial-cluster-state: new
+```
 
 
 
