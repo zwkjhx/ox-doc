@@ -50,7 +50,5 @@ docker run \
 
 下图是使用Navicat工具连接TiDB的截图：
 
-
-
-
+![](/assets/images/end/002/tidb-connect.png)
 
