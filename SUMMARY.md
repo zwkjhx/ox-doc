@@ -50,7 +50,7 @@
 * [Origin X Engine文档主页](origin-x-engine/main.md)
 * [1 - Ox实施教程](origin-x-engine/1-oxshi-shi-jiao-cheng.md)
   * [OX-001 Origin X UI项目结构说明](origin-x-engine/1-oxshi-shi-jiao-cheng/ox-001-origin-x-uixiang-mu-jie-gou-shuo-ming.md)
-  * [OX-002 Origin X中可配置的事件说明](origin-x-engine/1-oxshi-shi-jiao-cheng/ox-002-origin-xzhong-ke-pei-zhi-de-shi-jian-shuo-ming.md)
+  * [OX-002 Origin X UI中可配置的事件说明](origin-x-engine/1-oxshi-shi-jiao-cheng/ox-002-origin-xzhong-ke-pei-zhi-de-shi-jian-shuo-ming.md)
 * [2 - Ox自定义组件](origin-x-engine/2-oxzi-ding-yi-zu-jian.md)
   * [OXC-001 关于自定义组件](origin-x-engine/2-oxzi-ding-yi-zu-jian/oxc-001-guan-yu-zi-ding-yi-zu-jian.md)
 * [3 - Ox后端扩展开发](origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.md)

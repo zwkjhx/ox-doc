@@ -12,7 +12,7 @@ Origin X文档主页用来讲解Origin X框架的基本实施方法（主要面�
 ## 1. 实施教程
 
 * [OX-001 Origin X UI项目结构说明](/origin-x-engine/1-oxshi-shi-jiao-cheng/ox-001-origin-x-uixiang-mu-jie-gou-shuo-ming.html)
-* [OX-002 Origin X中可配置的事件说明](/origin-x-engine/1-oxshi-shi-jiao-cheng/ox-002-origin-xzhong-ke-pei-zhi-de-shi-jian-shuo-ming.md)
+* [OX-002 Origin X UI中可配置的事件说明](/origin-x-engine/1-oxshi-shi-jiao-cheng/ox-002-origin-xzhong-ke-pei-zhi-de-shi-jian-shuo-ming.md)
 
 ## 2. 自定义组件
 
