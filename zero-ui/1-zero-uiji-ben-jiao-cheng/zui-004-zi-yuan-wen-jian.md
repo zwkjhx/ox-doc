@@ -45,7 +45,5 @@ src/cab/cn/
 
 ## 4. 绑定代码
 
-绑定代码位于组件的定义层，关于绑定细节参考：。
-
-
+绑定代码位于组件的定义层，关于绑定细节参考：[ZUA-002 和资源文件绑定](/zero-ui/4-zero-uishi-zhan-fen-xi/zua-002-he-zi-yuan-wen-jian-bang-ding.md)。
 
