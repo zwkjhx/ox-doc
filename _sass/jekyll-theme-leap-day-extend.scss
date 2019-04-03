@@ -219,6 +219,7 @@ header {
   }
 
   .fork {
+    position:fixed;
     left:50%;
     padding: 10px 12px;
     margin-top: 6px;
@@ -228,7 +229,6 @@ header {
   }
 
   .github{
-    position:fixed;
     margin-left:-325px;
   }
 
