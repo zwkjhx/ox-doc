@@ -37,5 +37,9 @@ class A extends React.PureComponent{
 
 ## 3. 变量列表
 
+| 外部环境变量 | 脚本中的引用方法 | 备注 |
+| :--- | :--- | :--- |
+|  |  |  |
+
 
 
