@@ -1,6 +1,6 @@
 # Zero Ai的安装
 
-Zero Ai是针对Zero/Zero UI量身打造的命令行工具项目（[http://www.vertxai.cn](http://www.vertxai.cn)），这个工具箱项目可以帮我们完成很多开发过程中的自动化操作。
+Zero Ai是针对Zero/Zero UI量身打造的命令行工具项目（[http://www.vertxai.cn](http://www.vertxai.cn)），这个工具箱项目可以帮我们完成很多开发过程中的自动化操作（暂时没在Windows中测试过）
 
 ## 1. 安装
 
