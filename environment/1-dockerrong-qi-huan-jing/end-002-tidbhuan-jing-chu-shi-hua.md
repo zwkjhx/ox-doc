@@ -13,5 +13,27 @@ cd script/shell
 ./ox-tidb.sh
 ```
 
-执行了该脚本过后，就可以启动一个新的`ox_tidb`的容器了。
+执行了该脚本过后，就可以启动一个新的`ox_tidb`的容器了，该脚本的内容如：
+
+```shell
+
+```shell
+#!/usr/bin/env bash
+export DATA_DIR=/Users/lang/Runtime/ox-engine/data
+img_name="tidb"
+container_name=ox_${img_name}
+
+docker stop ${container_name}
+docker rm ${container_name}
+docker rmi ${img_name}:latest
+
+docker build -t ${img_name}:latest -f ox-tidb .
+docker run \
+  -p 4000:4000 \
+  -v ${DATA_DIR}:/tmp/tidb \
+  --name ${container_name} ${img_name}
+```
+```
+
+
 
