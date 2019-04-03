@@ -115,6 +115,7 @@
 * [5 - Zero Ai的使用](environment/5-zero-aide-shi-yong.md)
   * [EAI-001 Zero Ai的安装](environment/eai-001-zero-aide-an-zhuang.md)
   * [EAI-002 Zero UI的初始化](environment/eai-002-zero-uide-chu-shi-hua.md)
+  * [EAI-003 分析Zero中的微服务通讯](environment/eai-003-fen-xi-zero-zhong-de-wei-fu-wu-tong-xun.md)
 
 ## Specification
 
