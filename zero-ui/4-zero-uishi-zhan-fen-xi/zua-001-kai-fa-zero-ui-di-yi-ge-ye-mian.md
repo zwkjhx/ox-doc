@@ -49,7 +49,7 @@ src/container/test/module/UI.js
 
 文件内容如下：
 
-```js
+```jsx
 import React from 'react'
 import {Col, Row} from 'antd';
 
