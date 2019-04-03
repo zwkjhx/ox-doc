@@ -126,3 +126,5 @@ export default Component
 
 运行好过后，直接使用浏览器打开：
 
+![](/assets/images/zua/001/browser.png)
+
