@@ -19,5 +19,15 @@ brew install etcd
 
 ## 2. 配置
 
+### 2.1. 数据目录
+
+在自己的本机搭建不同节点的数据目录：
+
+```shell
+Node1：/Users/lang/Runtime/data/etcd/node1/*
+Node2：/Users/lang/Runtime/data/etcd/node2/*
+Node3：/Users/lang/Runtime/data/etcd/node3/*
+```
+
 
 
