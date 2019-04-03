@@ -301,10 +301,10 @@ small {
 }
 
 nav {
-  width: 230px;
+  width: 300px;
   position: fixed;
   top: 220px;
-  left:50%;
+  left:46%;
   margin-left:-580px;
   text-align: right;
 
@@ -313,9 +313,11 @@ nav {
     list-style-image:none;
     font-size: 14px;
     line-height:24px;
+    max-height:580px;
+    overflow-y:scroll
 
     li {
-      padding: 5px 0px;
+      padding: 5px 10px 5px 0;
       line-height: 16px;
       // padding-right:17px;
       // position:relative;
