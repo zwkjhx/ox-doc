@@ -108,5 +108,11 @@ initial-cluster-token: etcd-cluster-token
 initial-cluster-state: new
 ```
 
+上述配置中只需要注意：`initial-cluster`的值分别对应三个节点不同的信息即可。
+
+## 3. 启动连接
+
+
+
 
 
