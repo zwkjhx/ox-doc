@@ -50,8 +50,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/_sass/jekyll-theme-leap-day-extend.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="509">
-                  <caret line="292" column="9" selection-start-line="292" selection-start-column="7" selection-end-line="292" selection-end-column="9" />
+                <state relative-caret-position="261">
+                  <caret line="189" column="19" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -100,7 +100,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/_layouts/default.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-551" />
+                <state relative-caret-position="-243" />
               </provider>
             </entry>
           </file>
@@ -118,6 +118,9 @@
       <find>X7/</find>
       <find>.md</find>
       <find>wra</find>
+      <find>section</find>
+      <find>header</find>
+      <find>banner</find>
     </findStrings>
     <replaceStrings>
       <replace>/assets/images/kml/005</replace>
@@ -200,6 +203,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="400" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1142" />
@@ -270,7 +274,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1142" extended-state="0" />
+    <frame x="400" y="23" width="1920" height="1142" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21906267" />
@@ -714,7 +718,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551" />
+        <state relative-caret-position="-243" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
@@ -726,8 +730,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_sass/jekyll-theme-leap-day-extend.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="292" column="9" selection-start-line="292" selection-start-column="7" selection-end-line="292" selection-end-column="9" />
+        <state relative-caret-position="261">
+          <caret line="189" column="19" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="19" />
         </state>
       </provider>
     </entry>
