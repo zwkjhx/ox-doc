@@ -93,7 +93,9 @@ class Component extends React.PureComponent {
     render() {
         return (
             <div>
-                <Tag title={"Hello World"}/>
+                <Tag color={"red"}>
+                    Hello World
+                </Tag>
             </div>
         )
     }
