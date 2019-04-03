@@ -54,7 +54,44 @@ src/cab/en/components/test/page/UI.json
 
 将UI.js修改成下边这种：
 
+```jsx
+import React from 'react'
+import {Tag} from 'antd';
+import Ux from 'ux';
 
+const {zero} = Ux;
+
+@zero(Ux.rxEtat(require("./Cab"))
+    .cab("UI")  // 资源文件文件名
+    .to()
+)
+class Component extends React.PureComponent {
+    render() {
+        // 提取
+        const message = Ux.fromHoc(this, "message");
+        return (
+            <div>
+                <Tag color={"red"}>
+                    {message.title}
+                </Tag>
+            </div>
+        )
+    }
+}
+
+export default Component
+```
+
+* 上边代码中使用了`Ux.fromHoc`的方式提取资源文件，这里传入参数不传下划线。
+* require是原生代码，直接从当前目录中读取Cab.json文件内容。
+* 绑定的资源文件名称可根据实际情况而定。
+
+## 4. 运行
+
+| 运行次数 | 环境变量 |
+| :--- | :--- |
+| 第一次运行 | Z\_LANGUAGE = cn |
+| 第二次运行 | Z\_LANGUAGE = en |
 
 
 
