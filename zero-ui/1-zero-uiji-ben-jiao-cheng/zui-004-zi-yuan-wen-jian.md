@@ -24,5 +24,7 @@ src/cab/cn/
 }
 ```
 
+> 注，名空间不包括src/cab/cn部分
+
 
 
