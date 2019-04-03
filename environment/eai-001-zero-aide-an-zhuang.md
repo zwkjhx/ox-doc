@@ -54,9 +54,9 @@ src/cab/cn/components/module/page：             # 资源文件目录
 
 目前所有支持的command列表：
 
-| 命令 | 分类 | 说明 |
-| :--- | :--- | :--- |
-|  |  |  |
+| 命令 | 分类 | 说明 |  |
+| :--- | :--- | :--- | :--- |
+| zero | 独立命令 | 初始化工程 | [EAI-002 Zero UI的初始化](/environment/eai-002-zero-uide-chu-shi-hua.md) |
 
 
 
