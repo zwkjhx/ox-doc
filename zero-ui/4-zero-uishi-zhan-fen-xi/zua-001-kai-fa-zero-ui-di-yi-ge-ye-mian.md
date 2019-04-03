@@ -37,7 +37,11 @@
 | Z\_LANGUAGE | cn |
 | Z\_CSS\_PREFIX | ima |
 
-## 1.
+## 1. 模板文件
+
+### 1.1. Js文件
+
+在`src/container/`目录中创建文件
 
 
 
