@@ -36,8 +36,35 @@ Node3：/Users/lang/Runtime/data/etcd/node3/*
 **node1.sh**：
 
 ```shell
-
+#!/usr/bin/env bash
+export ETCDCTL_API=3
+rm -rf /Users/lang/Runtime/data/etcd/node1/*         # 开发模式专用
+etcd --config-file ./tool/etcd3-cluster/etcd-1.yml
 ```
+
+**node2.sh**：
+
+```shell
+#!/usr/bin/env bash
+export ETCDCTL_API=3
+rm -rf /Users/lang/Runtime/data/etcd/node2/*         # 开发模式专用
+etcd --config-file ./tool/etcd3-cluster/etcd-2.yml
+```
+
+**node3.sh**
+
+```shell
+#!/usr/bin/env bash
+export ETCDCTL_API=3
+rm -rf /Users/lang/Runtime/data/etcd/node3/*         # 开发模式专用
+etcd --config-file ./tool/etcd3-cluster/etcd-3.yml
+```
+
+上述启动脚本不需要过多说明，由于使用的是开发模式，所以会在启动的时候删除三个数据目录
+
+### 2.3. 配置文件
+
+
 
 
 
