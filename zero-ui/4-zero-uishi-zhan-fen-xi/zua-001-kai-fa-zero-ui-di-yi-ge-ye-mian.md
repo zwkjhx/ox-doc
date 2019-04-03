@@ -41,7 +41,15 @@
 
 ### 1.1. Js文件
 
-在`src/container/`目录中创建文件
+在`src/container/`目录中创建下边文件：
+
+```shell
+src/container/test/module/UI.js
+```
+
+文件内容如下：
+
+
 
 
 
