@@ -142,7 +142,7 @@ initial-cluster-state: new
 
 ### 3.2. 连接
 
-连接可以使用工具：
+连接可以使用工具：[https://github.com/nikfoundas/etcd-viewer](https://github.com/nikfoundas/etcd-viewer)，连接教程直接参考官方链接即可，这样一个本地的Etcd集群就搭建好了。
 
 
 
