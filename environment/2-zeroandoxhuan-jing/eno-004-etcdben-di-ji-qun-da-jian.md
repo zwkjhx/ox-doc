@@ -154,7 +154,11 @@ git clone https://github.com/nikfoundas/etcd-viewer.git
 mvn jetty:run
 ```
 
-然后打开：http://localhost:8080，并且添加一个新的Registry：
+然后打开：[http://localhost:8080，并且添加一个新的Registry：](http://localhost:8080，并且添加一个新的Registry：)
 
 ![](/assets/images/eno/004/etcd-registry.png)
+
+最后刷新就可以查看了：
+
+![](/assets/images/eno/004/registries.png)
 
