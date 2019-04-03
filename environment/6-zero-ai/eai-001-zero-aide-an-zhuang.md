@@ -35,7 +35,7 @@ ai <command> <arguments>
 
 ### 2.2. ZT工具
 
-ZT工具是针对Zero设置的专用工具，当它作用于某个组件时（参考：[ZUI-001 Zero UI项目结构说明](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-001-zero-uixiang-mu-jie-gou-shuo-ming.md)），那么ZT的环境变量会帮助我们对组件进行环境初始化，步骤如下：
+ZT工具是针对Zero设置的专用工具，当它作用于某个组件时（参考：[ZUI-001 Zero UI项目结构说明](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-001-zero-uixiang-mu-jie-gou-shuo-ming.html)），那么ZT的环境变量会帮助我们对组件进行环境初始化，步骤如下：
 
 ```shell
 # 这行命令执行完成后，会作用于src/components/module/page这个页面
