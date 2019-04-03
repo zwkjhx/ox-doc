@@ -11,7 +11,14 @@ return (
 )
 ```
 
-## 1. 
+本章我们继续在第一章的Demo中修改，把中间显示的文字改成多语种。
+
+## 1. 创建资源文件
+
+```
+src/cab/cn/components/test/page/UI.json
+src/cab/en/components/test/page/UI.json
+```
 
 
 
