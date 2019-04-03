@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/origin-x-engine/1-oxshi-shi-jiao-cheng/ox-001-origin-x-uixiang-mu-jie-gou-shuo-ming.md" beforeDir="false" afterPath="$PROJECT_DIR$/origin-x-engine/1-oxshi-shi-jiao-cheng/ox-001-origin-x-uixiang-mu-jie-gou-shuo-ming.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/origin-x-engine/main.md" beforeDir="false" afterPath="$PROJECT_DIR$/origin-x-engine/main.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/env/001/14-neo4j-first.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/env/001/14-neo4j-password.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/1-dockerrong-qi-huan-jing/end-001-neo4jhuan-jing-chu-shi-hua.md" beforeDir="false" afterPath="$PROJECT_DIR$/environment/1-dockerrong-qi-huan-jing/end-001-neo4jhuan-jing-chu-shi-hua.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/1-dockerrong-qi-huan-jing/end-003-elastic-searchhuan-jing.md" beforeDir="false" afterPath="$PROJECT_DIR$/environment/1-dockerrong-qi-huan-jing/end-003-elastic-searchhuan-jing.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,42 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-004-actormo-xing.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="414">
-                <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-005-rxjava2zhong-desingle-jie-xi.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="396">
-                <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-006-reactormo-shi.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="882">
-                <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-007-nettyzhong-de-pipeline-ji-zhi.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -104,18 +71,54 @@
         <entry file="file://$PROJECT_DIR$/origin-x-engine/2-oxzi-ding-yi-zu-jian/oxc-001-guan-yu-zi-ding-yi-zu-jian.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-9" />
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/origin-x-engine/1-oxshi-shi-jiao-cheng/ox-001-origin-x-uixiang-mu-jie-gou-shuo-ming.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="167">
+                <caret line="41" column="114" selection-start-line="41" selection-start-column="114" selection-end-line="41" selection-end-column="114" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/environment/main.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="8">
+                <caret line="13" column="69" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/environment/1-dockerrong-qi-huan-jing/end-001-neo4jhuan-jing-chu-shi-hua.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="404">
+                <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/origin-x-engine/1-oxshi-shi-jiao-cheng/ox-001-origin-x-uixiang-mu-jie-gou-shuo-ming.md">
+        <entry file="file://$PROJECT_DIR$/environment/1-dockerrong-qi-huan-jing/end-003-elastic-searchhuan-jing.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="167">
-                <caret line="41" column="114" selection-start-line="41" selection-start-column="114" selection-end-line="41" selection-end-column="114" />
+              <first_editor>
+                <caret column="2" selection-start-column="2" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -161,8 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-100-ling-zhi-qi-yuan.md" />
         <option value="$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-002-di-yi-ge-zero.md" />
         <option value="$PROJECT_DIR$/zero-up/shou-ye/1ji-ben-jiao-cheng/zro-003-restfulzhong-de-path-he-method.md" />
         <option value="$PROJECT_DIR$/zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.md" />
@@ -212,6 +213,8 @@
         <option value="$PROJECT_DIR$/zero-ui/main.md" />
         <option value="$PROJECT_DIR$/origin-x-engine/main.md" />
         <option value="$PROJECT_DIR$/origin-x-engine/1-oxshi-shi-jiao-cheng/ox-001-origin-x-uixiang-mu-jie-gou-shuo-ming.md" />
+        <option value="$PROJECT_DIR$/environment/1-dockerrong-qi-huan-jing/end-001-neo4jhuan-jing-chu-shi-hua.md" />
+        <option value="$PROJECT_DIR$/environment/1-dockerrong-qi-huan-jing/end-003-elastic-searchhuan-jing.md" />
       </list>
     </option>
   </component>
@@ -250,19 +253,31 @@
             <path>
               <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="origin-x-engine" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="origin-x-engine" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="1-oxshi-shi-jiao-cheng" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="images" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="origin-x-engine" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="2-oxzi-ding-yi-zu-jian" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="images" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="env" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="environment" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="environment" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="1-dockerrong-qi-huan-jing" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -287,7 +302,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="11.13.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images/zbr/007" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images/env/001" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -296,11 +311,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images/env/001" />
       <recent name="$PROJECT_DIR$/assets/images/zbr/007" />
       <recent name="$PROJECT_DIR$/assets/images/zbr/006" />
       <recent name="$PROJECT_DIR$/assets/images/zbr/005" />
       <recent name="$PROJECT_DIR$/assets/images/zbr/004" />
-      <recent name="$PROJECT_DIR$/assets/images/zbr/003" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -361,26 +376,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-001-ecma-script-60.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="23220">
-            <caret line="1290" selection-start-line="1290" selection-end-line="1290" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="18" selection-start-column="18" selection-end-column="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -655,16 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/environment/main.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="234">
-            <caret line="13" column="69" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uniform-documentation/ruan-jian-xu-qiu-ling-yu.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -781,16 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="3258">
-            <caret line="181" column="84" selection-start-line="181" selection-start-column="84" selection-end-line="181" selection-end-column="84" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/origin-x-engine/main.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -804,7 +779,17 @@
     <entry file="file://$PROJECT_DIR$/origin-x-engine/2-oxzi-ding-yi-zu-jian/oxc-001-guan-yu-zi-ding-yi-zu-jian.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-9" />
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3258">
+            <caret line="181" column="84" selection-start-line="181" selection-start-column="84" selection-end-line="181" selection-end-column="84" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
@@ -814,6 +799,36 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="167">
             <caret line="41" column="114" selection-start-line="41" selection-start-column="114" selection-end-line="41" selection-end-column="114" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environment/main.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="8">
+            <caret line="13" column="69" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environment/1-dockerrong-qi-huan-jing/end-001-neo4jhuan-jing-chu-shi-hua.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="404">
+            <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environment/1-dockerrong-qi-huan-jing/end-003-elastic-searchhuan-jing.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="2" selection-start-column="2" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
