@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/jekyll-theme-leap-day-extend.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/jekyll-theme-leap-day-extend.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.23128793">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -51,8 +50,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/_sass/jekyll-theme-leap-day-extend.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="346">
-                  <caret line="378" column="23" selection-start-line="378" selection-start-column="23" selection-end-line="378" selection-end-column="23" />
+                <state relative-caret-position="400">
+                  <caret line="381" lean-forward="true" selection-start-line="381" selection-end-line="381" />
                 </state>
               </provider>
             </entry>
@@ -101,7 +100,9 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/_layouts/default.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-243" />
+                <state relative-caret-position="197">
+                  <caret line="27" column="90" selection-start-line="27" selection-start-column="90" selection-end-line="27" selection-end-column="90" />
+                </state>
               </provider>
             </entry>
           </file>
@@ -139,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-002-jsr330gui-fan.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.md" />
@@ -190,6 +190,7 @@
         <option value="$PROJECT_DIR$/assets/css/style.scss" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_sass/jekyll-theme-leap-day-extend.scss" />
+        <option value="$PROJECT_DIR$/_layouts/default.html" />
       </list>
     </option>
   </component>
@@ -205,8 +206,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="400" />
-    <option name="y" value="23" />
+    <option name="x" value="42" />
+    <option name="y" value="25" />
     <option name="width" value="1920" />
     <option name="height" value="1142" />
   </component>
@@ -224,6 +225,11 @@
             <path>
               <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="_layouts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -276,7 +282,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="400" y="23" width="1920" height="1142" extended-state="0" />
+    <frame x="42" y="25" width="1920" height="1142" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21906267" />
@@ -718,11 +724,6 @@
     <entry file="file://$PROJECT_DIR$/_sass/rouge-base16-dark.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -732,8 +733,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_sass/jekyll-theme-leap-day-extend.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="378" column="23" selection-start-line="378" selection-start-column="23" selection-end-line="378" selection-end-column="23" />
+        <state relative-caret-position="400">
+          <caret line="381" lean-forward="true" selection-start-line="381" selection-end-line="381" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="27" column="90" selection-start-line="27" selection-start-column="90" selection-end-line="27" selection-end-column="90" />
         </state>
       </provider>
     </entry>
