@@ -218,14 +218,6 @@ header {
     }
   }
 
-  .first{
-    margin-left:445px;
-  }
-
-  .other{
-    margin-left:10px
-  }
-
   .fork {
     position:fixed;
     left:50%;
@@ -236,6 +228,15 @@ header {
     font-size:14px;
     background-color: #FFE788;
   }
+
+  .first{
+    margin-left:445px;
+  }
+
+  .other{
+    margin-left:10px
+  }
+
 
   .downloads {
     float: right;
