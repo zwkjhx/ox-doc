@@ -12,7 +12,7 @@
 > * port：服务器端口，可通过PORT环境变量配置
 > * Z\_ROUTE：环境变量设置的当前应用的根路径
 
-环境变量说明可以参考：[ZUI-002 Zero UI中的环境变量](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-002-zero-uizhong-de-huan-jing-bian-liang.md)。
+环境变量说明可以参考：[ZUI-002 Zero UI中的环境变量](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-002-zero-uizhong-de-huan-jing-bian-liang.html)。
 
 | 路径 | 文件名 | 说明 |
 | :--- | :--- | :--- |
@@ -27,7 +27,7 @@
 * `<m>`——Module，表示模块。
 * `<p>`——Page，表示页面。
 
-上边的整体结构参考：[ZUI-003 模板和页面连接文件](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-003-mo-ban-he-ye-mian-lian-jie-wen-jian.md)。
+上边的整体结构参考：[ZUI-003 模板和页面连接文件](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-003-mo-ban-he-ye-mian-lian-jie-wen-jian.html)。
 
 示例中的默认信息：
 
