@@ -6,7 +6,7 @@
 | :--- | :--- | :--- |
 | bolt://localhost:6075 | neo4j | neo4j |
 
-## 0. 安装
+## 1. 安装
 
 确认开发机器上已经安装了Docker环境，并保证Docker Engine已经运行起来。
 
@@ -42,7 +42,7 @@ Successfully tagged neo4j:latest
 74da44d584e55a8d5424dd39f5ee54b32532ef0cb878f54dd645a51cfcc72db5
 ```
 
-## 1. 脚本内容
+## 2. 脚本内容
 
 `ox-neo4j.sh`脚本的内容如下：
 
@@ -74,7 +74,7 @@ FROM neo4j:latest
 
 上述脚本中的`NEO4J_AUTH`设置的就是下边登录过程中使用的账号和密码。
 
-## 2. Web控制台
+## 3. Web控制台
 
 运行好这个Docker过后，可直接在浏览器中打开：[http://localhost:6074/](http://localhost:6074/)登录Web控制台，第一次登录时会提示您修改neo4j的密码，可以参考本文最开始把密码「口令」改掉，输入任意密码都可。
 
