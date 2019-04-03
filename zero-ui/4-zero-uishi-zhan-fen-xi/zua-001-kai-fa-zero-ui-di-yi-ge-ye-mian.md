@@ -39,12 +39,10 @@
 
 ## 1. 模板文件
 
-### 1.1. Js文件
-
 在`src/container/`目录中创建下边文件：
 
 ```shell
-src/container/test/module/UI.js
+src/container/test/page/UI.js
 ```
 
 文件内容如下：
@@ -74,6 +72,55 @@ class Component extends React.PureComponent {
 
 export default Component
 ```
+
+## 2. 页面文件
+
+然后在`src/components/`下创建下边文件：
+
+```
+src/components/test/page/UI.js
+```
+
+文件内容如下：
+
+```jsx
+import React from 'react'
+import {Tag} from 'antd';
+
+class Component extends React.PureComponent {
+    render() {
+        return (
+            <div>
+                <Tag title={"Hello World"}/>
+            </div>
+        )
+    }
+}
+
+export default Component
+```
+
+## 3. 修改route.json
+
+由于这个例子中添加了新的模板，所以需要修改route.json，下边是改动过后的结果：
+
+```json
+{
+    "defined": "_module_page",
+    "special": {
+        "_login_index": [
+            "_login_index"
+        ],
+        "_test_page": [
+            "_test_page"
+        ]
+    }
+}
+```
+
+## 4. 运行
+
+运行好过后，直接使用浏览器打开：
 
 
 
