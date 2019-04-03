@@ -95,7 +95,7 @@
   * [END-003 Elastic Search环境](environment/1-dockerrong-qi-huan-jing/end-003-elastic-searchhuan-jing.md)
 * [2 - Zero&Ox环境](environment/2-zeroandoxhuan-jing.md)
   * [ENO-001 ox-ui环境搭建](environment/2-zeroandoxhuan-jing/eno-001-ox-uihuan-jing-da-jian.md)
-  * [ENO-002 元数据初始化](environment/2-zeroandoxhuan-jing/eno-002-cang-ku-chu-shi-hua.md)
+  * [ENO-002 元数据仓库初始化](environment/2-zeroandoxhuan-jing/eno-002-cang-ku-chu-shi-hua.md)
   * [ENO-003 运行ox-engine](environment/2-zeroandoxhuan-jing/eno-003-yun-xingox-engine.md)
   * [ENO-004 Etcd本地集群搭建](environment/2-zeroandoxhuan-jing/eno-004-etcdben-di-ji-qun-da-jian.md)
 * [3 - Deployment部署教程](environment/4-deploymentbu-shu-jiao-cheng.md)
