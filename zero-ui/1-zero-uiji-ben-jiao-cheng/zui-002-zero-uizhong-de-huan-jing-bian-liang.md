@@ -61,6 +61,7 @@ class A extends React.PureComponent{
 | Z\_CORS\_CREDENTIALS | Ux.Env.CORS\_CREDENTIALS | 对应Options中的credentials选项，包括include, omit，或者提供相关的域信息。 |
 | Z\_SIGN | Ux.Env.SIGN | 是否启用数字签名功能，默认false |
 | Z\_CSS\_PREFIX | Ux.Env.CSS\_PREFIX | 当前站点的风格文件专用前缀设置，该设置需要定义Less的全局变量@app |
+| Z\_CSS\_COLOR | Ux.Env.CSS\_COLOR | 当前站点的主色调，一旦改动了这个颜色过后，所有按钮边框和效果都会被更改，对应到Ant Design中的@primary-color的值。 |
 | Z\_SHARED | Ux.Env.SHARED | 全局Epic和Types共享目录名称，默认值为app，所以共享内容位于src/app/action的目录下 |
 | Z\_ENTRY\_LOGIN | Ux.Env.ENTRY\_LOGIN | 当前应用的登录首页 |
 | Z\_ENTRY\_ADMIN | Ux.Env.ENTRY\_ADMIN | 当前应用的管理首页【带登录控制】，关于管理首页可以直接将该页面开发成根据不同角色的分离器，这样就可以完成应用入口根据不同授权的分离功能。 |
