@@ -66,9 +66,9 @@ class A extends React.PureComponent{
 | Z\_ENTRY\_LOGIN | Ux.Env.ENTRY\_LOGIN | 当前应用的登录首页 |
 | Z\_ENTRY\_ADMIN | Ux.Env.ENTRY\_ADMIN | 当前应用的管理首页【带登录控制】，关于管理首页可以直接将该页面开发成根据不同角色的分离器，这样就可以完成应用入口根据不同授权的分离功能。 |
 
-### 4. 设置位置
+## 4. 设置例子
 
-环境变量的设置位于环境变量文件`.env.development`：
+下边是环境变量文件`.env.development`的例子：
 
 ```properties
 PORT=5000
@@ -94,6 +94,10 @@ Z_DEV_MONITOR=true
 Z_CSS_PREFIX=ox
 Z_CSS_COLOR=#3d8ce7
 ```
+
+## 5. 打印结果
+
+
 
 
 
