@@ -19,8 +19,7 @@
 
 * [ENO-001 ox-ui环境搭建](/environment/2-zeroandoxhuan-jing/eno-001-ox-uihuan-jing-da-jian.html)
 * [ENO-002 仓库初始化](/environment/2-zeroandoxhuan-jing/eno-002-cang-ku-chu-shi-hua.html)
-* [ENO-003 运行ox-engine](/environment/2-zeroandoxhuan-jing/eno-003-yun-xingox-engine.html)
-* [ENO-004 Etcd本地集群搭建](/environment/2-zeroandoxhuan-jing/eno-004-etcdben-di-ji-qun-da-jian.html)
+* [ENO-003 Etcd本地集群搭建](/environment/2-zeroandoxhuan-jing/eno-004-etcdben-di-ji-qun-da-jian.html)
 
 ## 3. Deployment部署教程
 
