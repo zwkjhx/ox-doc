@@ -22,6 +22,8 @@ Zero UI中的前端页面主要包含两部分：
 
 在Zero UI中一个页面主要分为两部分：
 
+![](/assets/images/zui/003/container-component.png)
+
 实际上模板是多个页面可共享的文件，而页面文件是每个地址独有的文件，通过这种方式就可以将一个完整的应用呈现出来了。
 
 ## 3. 连接
@@ -85,8 +87,6 @@ src/route.json
 | 入口文件名约定 | 不论模板还是页面文件名固定为UI.js |
 | 目录层级约定 | 在src/container和src/components下的页面文件必须是二级路径，二级路径足够表达出很多不同种类的模块和页面了 |
 | 变量名约定 | 书写route.json中的模板和页面名称时，一律使用：\_&lt;module&gt;\_&lt;page&gt;的语法，如上边所示 |
-
-
 
 
 
