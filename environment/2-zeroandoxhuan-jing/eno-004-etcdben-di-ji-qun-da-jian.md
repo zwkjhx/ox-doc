@@ -112,7 +112,37 @@ initial-cluster-state: new
 
 ## 3. 启动连接
 
+### 3.1. 启动
 
+先启动的节点会有下边日志输出：
+
+```shell
+2019-04-03 10:19:20.934870 I | raft: 183e7493f2ef3420 became candidate at term 6
+2019-04-03 10:19:20.934882 I | raft: 183e7493f2ef3420 received MsgVoteResp from 183e7493f2ef3420 at term 6
+2019-04-03 10:19:20.934892 I | raft: 183e7493f2ef3420 [logterm: 1, index: 3] sent MsgVote request to 3fcd54d1766f30b4 at term 6
+2019-04-03 10:19:20.934900 I | raft: 183e7493f2ef3420 [logterm: 1, index: 3] sent MsgVote request to 48e24310bdb358ce at term 6
+2019-04-03 10:19:20.943912 E | etcdserver: publish error: etcdserver: request timed out
+2019-04-03 10:19:22.531767 I | raft: 183e7493f2ef3420 is starting a new election at term 6
+```
+
+节点全部启动完成后可以看到：
+
+```shell
+2019-04-03 10:20:12.098868 N | etcdserver/membership: set the initial cluster version to 3.0
+2019-04-03 10:20:12.098916 I | etcdserver/api: enabled capabilities for version 3.0
+2019-04-03 10:20:12.107925 I | etcdserver: published {Name:etcd_3 ClientURLs:[http://127.0.0.1:6181]} to cluster a1ffaa67ef23959d
+2019-04-03 10:20:12.107947 I | embed: ready to serve client requests
+2019-04-03 10:20:12.108448 N | embed: serving insecure client requests on 127.0.0.1:6181, this is strongly discouraged!
+2019-04-03 10:20:12.135082 I | etcdserver: 3fcd54d1766f30b4 initialzed peer connection; fast-forwarding 8 ticks (election ticks 10) with 2 active peer(s)
+2019-04-03 10:20:12.412819 N | etcdserver/membership: updated the cluster version from 3.0 to 3.3
+2019-04-03 10:20:12.412930 I | etcdserver/api: enabled capabilities for version 3.3
+```
+
+然后就可以直接连接了。
+
+### 3.2. 连接
+
+连接可以使用工具：
 
 
 
