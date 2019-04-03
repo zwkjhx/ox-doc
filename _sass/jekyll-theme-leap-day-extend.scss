@@ -367,6 +367,18 @@ footer {
   line-height: 16px;
 }
 
+table{
+    thead{
+        tr{
+            th{
+                min-width:72px;
+                background-color: rgb(73, 112, 172);
+                color: white;
+            }
+        }
+    }
+}
+
 @media print, screen and (max-width: 1060px) {
 
   div.wrapper {
