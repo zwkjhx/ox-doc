@@ -54,9 +54,12 @@ src/cab/cn/components/module/page：             # 资源文件目录
 
 目前所有支持的command列表：
 
-| 命令 | 分类 | 说明 |  |
-| :--- | :--- | :--- | :--- |
-| zero | 独立命令 | 初始化工程 | [EAI-002 Zero UI的初始化](/environment/eai-002-zero-uide-chu-shi-hua.md) |
+| 命令 | 分类 | 说明 |
+| :--- | :--- | :--- |
+| ai zero | 独立 | 初始化Zero UI工程 |
+| ai key | 独立 | 为已存在的数据文件追加UUID格式的字段 |
+| ai data | 独立 | 帮助开发人员生成模拟数据，主要生成Mock部分的数据 |
+| ai ipc | 独立 | 分析Zero所有的微服务项目中的内部服务通讯Rpc调用 |
 
 
 
