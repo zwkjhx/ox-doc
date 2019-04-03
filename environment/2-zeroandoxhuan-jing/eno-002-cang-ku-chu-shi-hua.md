@@ -19,3 +19,9 @@ mvn clean package install
 
 元数据仓库TiDB的搭建可以参考：[END-002 TiDB环境](/environment/1-dockerrong-qi-huan-jing/end-002-tidbhuan-jing-chu-shi-hua.md)。
 
+## 1. 初始化
+
+
+
+
+
