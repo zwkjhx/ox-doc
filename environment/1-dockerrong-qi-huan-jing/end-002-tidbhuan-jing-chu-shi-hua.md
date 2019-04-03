@@ -16,10 +16,8 @@ cd script/shell
 执行了该脚本过后，就可以启动一个新的`ox_tidb`的容器了，该脚本的内容如：
 
 ```shell
-
-```shell
 #!/usr/bin/env bash
-export DATA_DIR=/Users/lang/Runtime/ox-engine/data
+export DATA_DIR="/Users/lang/Runtime/ox-engine/data"
 img_name="tidb"
 container_name=ox_${img_name}
 
@@ -33,7 +31,8 @@ docker run \
   -v ${DATA_DIR}:/tmp/tidb \
   --name ${container_name} ${img_name}
 ```
-```
+
+注意环境变量`DATA_DIR`，该变量设置的路径会作为本机中TiDB存储数据文件的路径专用。
 
 
 
