@@ -72,16 +72,18 @@ class A extends React.PureComponent{
 
 ```properties
 PORT=5000
+REACT_APP_LESS_MODULES=true
+
 Z_LANGUAGE=cn
 Z_ENDPOINT=http://localhost:6083
 Z_APP=vie.app.ox
 Z_ROUTE=ox
 Z_SHARED=app
+
 Z_ENTRY_LOGIN=/login/index
 Z_ENTRY_ADMIN=/admin/index
 Z_K_SESSION=@@OX/
 Z_K_EVENT=@@OX-ACT
-REACT_APP_LESS_MODULES=true
 
 Z_DEV_DEBUG=true
 Z_DEV_MOCK=true
