@@ -104,6 +104,7 @@
   * [ENO-001 ox-ui环境搭建](environment/2-zeroandoxhuan-jing/eno-001-ox-uihuan-jing-da-jian.md)
   * [ENO-002 元数据仓库初始化](environment/2-zeroandoxhuan-jing/eno-002-cang-ku-chu-shi-hua.md)
   * [ENO-003 Etcd本地集群搭建](environment/2-zeroandoxhuan-jing/eno-004-etcdben-di-ji-qun-da-jian.md)
+  * [ENO-004 Zero UI工程初始化](environment/2-zeroandoxhuan-jing/eno-004-zero-uigong-cheng-chu-shi-hua.md)
 * [3 - Deployment部署教程](environment/4-deploymentbu-shu-jiao-cheng.md)
 * [4 - 其他环境](environment/5-qi-ta-huan-jing.md)
   * [ENV-001 Spring Boot中的数据源配置](environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.md)
