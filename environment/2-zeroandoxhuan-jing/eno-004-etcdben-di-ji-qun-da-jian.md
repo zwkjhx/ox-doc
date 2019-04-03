@@ -1,6 +1,6 @@
 # Etcd本地集群搭建
 
-由于Zero容器使用了Etcd作为微服务的注册中心，最终Api Gateway会连接Etcd集群来完成请求转发，所以本文介绍如何在本机搭建一个Etcd本地化的集群（三个节点的伪集群）。
+由于Zero容器使用了Etcd作为微服务的注册中心，最终Api Gateway会连接Etcd集群来完成请求转发，所以本文介绍如何在本机搭建一个Etcd本地化的集群（三个节点的伪集群），也可直接参考：[https://github.com/etcd-io/etcd/releases](https://github.com/etcd-io/etcd/releases)。
 
 ## 1. 安装
 
@@ -9,7 +9,15 @@
 * 若要以Docker方式运行，则考虑使用：[https://github.com/soyking/e3w](https://github.com/soyking/e3w)完成一建式部署。
 * 如果是在本机运行，则需要先安装 Etcd，保证 `etcd`命令可用。
 
+Mac OS中安装etcd想对简单，直接使用：
 
+```shell
+brew install etcd
+```
+
+直接在Etcd的Github地址中下载Windows版本的etcd：[https://github.com/etcd-io/etcd/releases](https://github.com/etcd-io/etcd/releases)，然后将解压过后的`etcd.exe`配置到环境变量`PATH`中，保证`etcd`的命令可用即可。
+
+## 2. 配置
 
 
 
