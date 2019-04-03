@@ -29,7 +29,11 @@ added 2 packages from 1 contributor and updated 62 packages in 34.953s
 ai <command> <arguments>
 ```
 
+目前所有支持的command列表：
 
+| 命令 | 说明 |
+| :--- | :--- |
+|  |  |
 
 
 
