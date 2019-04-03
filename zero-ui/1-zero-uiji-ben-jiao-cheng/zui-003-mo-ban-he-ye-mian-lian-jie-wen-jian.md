@@ -20,9 +20,5 @@ Zero UI中的前端页面主要包含两部分：
 * src/container/login/index/UI.js：当前页面使用的模板文件；
 * src/components/login/index/UI.js：当前页面核心文件；
 
-在Zero UI中一个页面主要分为两部分：
-
-
-
-
+在Zero UI中一个页面主要分为两部分：![](/assets/images/zui/003/tpl.png)实际上模板是多个页面可共享的文件，而页面文件是每个地址独有的文件，通过这种方式就可以将一个完整的应用呈现出来了。
 
