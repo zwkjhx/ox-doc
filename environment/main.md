@@ -8,6 +8,7 @@
 | Zero&Ox环境 | Zero以及Origin X中的基础环境 |
 | Deployment部署教程 | 最终部署使用的核心教程 |
 | 其他环境 | 其他环境相关搭建文档 |
+| Zero Ai的使用 | Zero Ai工具箱教程 |
 
 ## 1. Docker容器环境
 
@@ -20,6 +21,7 @@
 * [ENO-001 ox-ui环境搭建](/environment/2-zeroandoxhuan-jing/eno-001-ox-uihuan-jing-da-jian.html)
 * [ENO-002 仓库初始化](/environment/2-zeroandoxhuan-jing/eno-002-cang-ku-chu-shi-hua.html)
 * [ENO-003 Etcd本地集群搭建](/environment/2-zeroandoxhuan-jing/eno-004-etcdben-di-ji-qun-da-jian.html)
+* [ENO-004 Zero UI工程初始化](/environment/2-zeroandoxhuan-jing/eno-004-zero-uigong-cheng-chu-shi-hua.md)
 
 ## 3. Deployment部署教程
 
@@ -31,6 +33,11 @@
 * [ENV-004 Windows环境的Docker安装](/environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html)
 * [ENV-005 使用Docker环境运行Spring Boot](/environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html)
 * [ENV-006 Maven环境搭建](/environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html)
+
+## 5. Zero Ai的使用
+
+* [EAI-001 Zero Ai的安装](/environment/6-zero-ai/eai-001-zero-aide-an-zhuang.html)
+* [EAI-002 Zero UI的初始化](/environment/6-zero-ai/eai-002-zero-uide-chu-shi-hua.html)
 
 
 
