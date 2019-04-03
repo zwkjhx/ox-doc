@@ -4,7 +4,10 @@
 
 ## 1. 安装
 
-如果是搭建本地的Etcd集群，有两种模式，若要以Docker方式运行，则考虑：
+如果是搭建本地的Etcd集群，有两种模式：
+
+* 若要以Docker方式运行，则考虑使用：[https://github.com/soyking/e3w](https://github.com/soyking/e3w)完成一建式部署。
+* 如果是在本机运行，则需要先安装 Etcd，保证 `etcd`命令可用。
 
 
 
