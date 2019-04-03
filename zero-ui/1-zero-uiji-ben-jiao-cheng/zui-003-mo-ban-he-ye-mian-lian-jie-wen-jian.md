@@ -72,5 +72,19 @@ src/route.json
 }
 ```
 
-由于/module/page这个页面同样适用了/module/page这个模板，而默认模板使用的是/module/page，所以可直接简化。
+由于/module/page这个页面同样适用了/module/page这个模板，而默认模板使用的是/module/page，所以可直接简化，也就是说模板名称只是一种约定，/login/index这个页面也可以使用其他的模板如/module/page，最终看开发人员如何设计。
+
+## 4. 自动路由规则
+
+那么最后讲解一下最终的约定说明：
+
+| 约定 | 说明 |
+| :--- | :--- |
+| 模板目录约定 | 所有的模板文件放在src/container/下。 |
+| 页面目录约定 | 所有的页面文件放在src/components/下。 |
+| 入口文件名约定 | 不论模板还是页面文件名固定为UI.js。 |
+| 目录层级约定 | 在src/container和src/components下的页面文件必须是二级路径，二级路径足够表达出很多不同种类的模块和页面了。 |
+| 变量名约定 | 书写route.json中的模板和页面名称时，一律使用：\_&lt;module&gt;\_&lt;page&gt;的语法，如上边所示。 |
+
+
 
