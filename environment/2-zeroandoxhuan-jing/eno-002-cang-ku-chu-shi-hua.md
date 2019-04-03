@@ -17,11 +17,16 @@ cd vertx-zero
 mvn clean package install
 ```
 
-元数据仓库TiDB的搭建可以参考：[END-002 TiDB环境](/environment/1-dockerrong-qi-huan-jing/end-002-tidbhuan-jing-chu-shi-hua.md)。
+元数据仓库TiDB的搭建可以参考：[END-002 TiDB环境](/environment/1-dockerrong-qi-huan-jing/end-002-tidbhuan-jing-chu-shi-hua.md)。还有一点需要注意的是，您需要在您的hosts地址中添加如下：
+
+```shell
+127.0.0.1   ox.engine.cn
+172.20.10.2 ox.engine.cn  # 根据你自己的环境来定前边的IP使用什么
+```
+
+这样处理的主要目的是方便所有开发人员在开发过程中统一使用一套配置文件。
 
 ## 1. 初始化
-
-
 
 
 
