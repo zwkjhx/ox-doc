@@ -95,5 +95,5 @@ export default Component
 
 两次的截图分别：
 
-![](/assets/images/zua/002/cn-language.png)
+![](/assets/images/zua/002/cn-language.png)![](/assets/images/zua/002/en-language.png)
 
