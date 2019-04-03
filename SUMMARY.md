@@ -11,10 +11,13 @@
   * [ZUI-001 Zero UI项目结构说明](zero-ui/1-zero-uiji-ben-jiao-cheng/zui-001-zero-uixiang-mu-jie-gou-shuo-ming.md)
   * [ZUI-002 Zero UI中的环境变量](zero-ui/1-zero-uiji-ben-jiao-cheng/zui-002-zero-uizhong-de-huan-jing-bian-liang.md)
   * [ZUI-003 模板和页面连接文件](zero-ui/1-zero-uiji-ben-jiao-cheng/zui-003-mo-ban-he-ye-mian-lian-jie-wen-jian.md)
+  * [ZUI-004 资源文件](zero-ui/1-zero-uiji-ben-jiao-cheng/zui-004-zi-yuan-wen-jian.md)
 * [2 - React碎碎念](zero-ui/2-reactsui-sui-nian.md)
 * [3 - Ant全家桶](zero-ui/3-antquan-jia-tong.md)
 * [4 - Zero UI实战分析](zero-ui/4-zero-uishi-zhan-fen-xi.md)
   * [ZUA-001 开发Zero UI第一个页面](zero-ui/4-zero-uishi-zhan-fen-xi/zua-001-kai-fa-zero-ui-di-yi-ge-ye-mian.md)
+  * [ZUA-002 和资源文件绑定](zero-ui/4-zero-uishi-zhan-fen-xi/zua-002-he-zi-yuan-wen-jian-bang-ding.md)
+  * [ZUA-003 render之前的Ajax开发](zero-ui/4-zero-uishi-zhan-fen-xi/zua-003-renderzhi-qian-de-ajax-kai-fa.md)
 
 ## Zero Up
 
