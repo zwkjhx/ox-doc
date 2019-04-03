@@ -29,11 +29,21 @@ added 2 packages from 1 contributor and updated 62 packages in 34.953s
 ai <command> <arguments>
 ```
 
+### 2.1. 独立工具
+
+独立工具的含义就是可以直接使用的工具，不依赖外部环境。
+
+### 2.2. ZT工具
+
+ZT工具是针对Zero设置的专用工具，当它作用于某个组件时（参考：[ZUI-001 Zero UI项目结构说明](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-001-zero-uixiang-mu-jie-gou-shuo-ming.md)）：
+
+
+
 目前所有支持的command列表：
 
-| 命令 | 说明 |
-| :--- | :--- |
-|  |  |
+| 命令 | 分类 | 说明 |
+| :--- | :--- | :--- |
+|  |  |  |
 
 
 
