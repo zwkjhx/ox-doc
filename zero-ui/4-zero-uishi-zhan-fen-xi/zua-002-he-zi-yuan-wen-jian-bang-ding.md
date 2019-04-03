@@ -93,5 +93,7 @@ export default Component
 | 第一次运行 | Z\_LANGUAGE = cn |
 | 第二次运行 | Z\_LANGUAGE = en |
 
+两次的截图分别：
 
+![](/assets/images/zua/002/cn-language.png)
 
