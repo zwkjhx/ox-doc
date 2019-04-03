@@ -59,7 +59,7 @@ docker rmi ${img_name}:latest
 
 docker build -t ${img_name}:latest -f ox-neo4j .
 docker run \
-  -env=NEO4J_AUTH=neo4j/HpLive2012 \
+  -env=NEO4J_AUTH=neo4j/neo4j \
   -d -p 6074:7474 \
   -d -p 6073:7473 \
   -d -p 6075:7687 \
@@ -71,6 +71,8 @@ docker run \
 ```dockerfile
 FROM neo4j:latest
 ```
+
+上述脚本中的`NEO4J_AUTH`设置的就是下边登录过程中使用的账号和密码。
 
 ## 2. Web控制台
 
