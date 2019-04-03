@@ -55,6 +55,7 @@ class A extends React.PureComponent{
 |  | Ux.Env.HTTP\_METHOD | Http方法常量 |
 |  | Ux.Env.MIMES | 常用MIME映射文件 |
 | Z\_DEV\_FORM | Ux.Env.FORM | 监控表单渲染的专用变量，牵涉到表单的布局渲染流程 |
+| Z\_DEV\_MONITOR | Ux.Env.MONITOR | 是否启用Zero UI中支持的原生监控工具，会有一个监控工具栏出现在浏览器的下方。 |
 | Z\_DEV\_AJAX | Ux.Env.DEV\_AJAX | 是否将Ajax请求保存成Json文件格式，如果调试模式打开，Request请求将保存成Json格式，每次请求都会存储一次。 |
 | Z\_CORS\_MODE | Ux.Env.CORS\_MODE | 跨域的基本模式，对应到fetch中的选项Option的值：cors，no-cors，或者提供相关的域信息。 |
 | Z\_CORS\_CREDENTIALS | Ux.Env.CORS\_CREDENTIALS | 对应Options中的credentials选项，包括include, omit，或者提供相关的域信息。 |
