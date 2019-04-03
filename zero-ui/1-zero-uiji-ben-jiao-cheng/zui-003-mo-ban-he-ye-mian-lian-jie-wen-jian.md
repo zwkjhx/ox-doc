@@ -54,7 +54,23 @@ src/route.json
 
 ### 3.2. 约定说明
 
+上述`route.json`中有两部分内容
 
+* defined：定义了当前应用的默认模板，上边的定义片段模板位置存储于：`src/container/module/page/`目录中。
+* special：定义当前应用的扩版模板，这个数据是一个JsonObject对象，key是模板名称，而value是一个数组，包含了当前模板下运行的所有页面。
 
+所以上述的Json代码其实可以简化成：
 
+```json
+{
+    "defined": "_module_page",
+    "special": {
+        "_login_index": [
+            "_login_index"
+        ]
+    }
+}
+```
+
+由于/module/page这个页面同样适用了/module/page这个模板，而默认模板使用的是/module/page，所以可直接简化。
 
