@@ -49,7 +49,31 @@ src/container/test/module/UI.js
 
 文件内容如下：
 
+```js
+import React from 'react'
+import {Col, Row} from 'antd';
 
+class Component extends React.PureComponent {
+    render() {
+        const {children} = this.props;
+        return (
+            <Row>
+                <Col span={8}>
+                    Left
+                </Col>
+                <Col>
+                    {children}
+                </Col>
+                <Col span={8}>
+                    Right
+                </Col>
+            </Row>
+        )
+    }
+}
+
+export default Component
+```
 
 
 
