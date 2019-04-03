@@ -27,6 +27,8 @@
 * `<m>`——Module，表示模块。
 * `<p>`——Page，表示页面。
 
+上边的整体结构参考：[ZUI-003 模板和页面连接文件](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-003-mo-ban-he-ye-mian-lian-jie-wen-jian.md)。
+
 示例中的默认信息：
 
 | 环境变量 | 值 |
@@ -35,7 +37,7 @@
 | Z\_LANGUAGE | cn |
 | Z\_CSS\_PREFIX | ima |
 
-## 1. 
+## 1.
 
 
 
