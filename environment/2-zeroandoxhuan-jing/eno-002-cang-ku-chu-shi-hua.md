@@ -9,7 +9,7 @@
 * 图定义的数据：图、类型、节点、边。
 * 界面定义数据：布局、页面、插槽、组件、字段、列。
 
-由于Origin X Engine依赖 http://www.vertxup.cn ，所以您需要拉取最新的Zero代码在本地编译：
+由于Origin X Engine依赖 [http://www.vertxup.cn](http://www.vertxup.cn) ，所以您需要拉取最新的Zero代码在本地编译：
 
 ```shell
 git clone https://github.com/silentbalanceyh/vertx-zero.git
@@ -17,5 +17,5 @@ cd vertx-zero
 mvn clean package install
 ```
 
-
+元数据仓库TiDB的搭建可以参考：。
 
