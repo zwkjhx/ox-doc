@@ -53,14 +53,14 @@ import {Col, Row} from 'antd';
 
 class Component extends React.PureComponent {
     render() {
-        const {children} = this.props;
+        const {component: Component} = this.props;
         return (
             <Row>
                 <Col span={8}>
                     Left
                 </Col>
-                <Col>
-                    {children}
+                <Col span={8}>
+                    <Component/>
                 </Col>
                 <Col span={8}>
                     Right
@@ -72,6 +72,8 @@ class Component extends React.PureComponent {
 
 export default Component
 ```
+
+注意这里不是使用的React默认的`children`变量，是因为Container执行完成过后可能会传给Component一些特殊的变量，所以Component渲染的赋值流程是在内部。
 
 ## 2. 页面文件
 
