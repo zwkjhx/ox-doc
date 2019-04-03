@@ -61,6 +61,8 @@ src/cab/cn/components/module/page：             # 资源文件目录
 | ai data | 独立 | 帮助开发人员生成模拟数据，主要生成Mock部分的数据 |
 | ai ipc | 独立 | 分析Zero所有的微服务项目中的内部服务通讯Rpc调用 |
 | ai csv | 独立 | 将一个json文件转换成CSV文件 |
+| ai ui.card | ZT | 直接创建一个带有PageCard的JS文件 |
+| ai ui.form | ZT | 直接创建一个带有Form的表单JS文件 |
 
 
 
