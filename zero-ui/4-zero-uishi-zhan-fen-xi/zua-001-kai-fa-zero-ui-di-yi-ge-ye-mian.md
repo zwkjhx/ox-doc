@@ -124,7 +124,7 @@ export default Component
 
 ## 4. 运行
 
-运行好过后，直接使用浏览器打开：
+运行好过后，直接使用浏览器打开：[http://localhost:5000/ox/test/page](http://localhost:5000/ox/test/page)
 
 ![](/assets/images/zua/001/browser.png)
 
