@@ -219,7 +219,6 @@ header {
   }
 
   .fork {
-    position:fixed;
     left:50%;
     padding: 10px 12px;
     margin-top: 6px;
@@ -229,15 +228,18 @@ header {
   }
 
   .github{
+    position:fixed;
     margin-left:-325px;
   }
 
-  .first{
-    margin-left:-445px;
+  .zero{
+    margin-left:-190px;
   }
-
-  .other{
-    margin-left:10px
+  .zero-ui{
+    margin-left:-55px;
+  }
+  .zero-ai{
+    margin-left:25px
   }
 
 
