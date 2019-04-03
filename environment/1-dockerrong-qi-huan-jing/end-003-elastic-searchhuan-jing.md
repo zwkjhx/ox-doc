@@ -1,6 +1,6 @@
 # Elastic Search环境初始化
 
-## 0. 安装
+## 1. 安装
 
 确认开发机器上已经安装了Docker环境，并保证Docker Engine已经运行起来。
 
@@ -36,7 +36,7 @@ Successfully built 93109ce1d590
 Successfully tagged es:latest
 ```
 
-## 1.脚本内容
+## 2. 脚本内容
 
 `ox-es.sh`的脚本内容如下
 
