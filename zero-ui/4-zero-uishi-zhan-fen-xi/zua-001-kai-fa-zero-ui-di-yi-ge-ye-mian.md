@@ -33,9 +33,9 @@
 
 | 环境变量 | 值 |
 | :--- | :--- |
-| Z\_ROUTE | ima |
+| Z\_ROUTE | ox |
 | Z\_LANGUAGE | cn |
-| Z\_CSS\_PREFIX | ima |
+| Z\_CSS\_PREFIX | ox |
 
 ## 1. 模板文件
 
@@ -121,6 +121,4 @@ export default Component
 ## 4. 运行
 
 运行好过后，直接使用浏览器打开：
-
-
 
