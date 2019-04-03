@@ -94,5 +94,19 @@ initial-cluster-token: etcd-cluster-token
 initial-cluster-state: new
 ```
 
+etcd-3.yml
+
+```yaml
+name: etcd_3
+data-dir: /Users/lang/Runtime/data/etcd/node3
+listen-client-urls: http://127.0.0.1:6181
+advertise-client-urls: http://127.0.0.1:6181
+listen-peer-urls: http://127.0.0.1:2381
+initial-advertise-peer-urls: http://127.0.0.1:2381
+initial-cluster: etcd_1=http://127.0.0.1:2379,etcd_2=http://127.0.0.1:2380,etcd_3=http://127.0.0.1:2381
+initial-cluster-token: etcd-cluster-token
+initial-cluster-state: new
+```
+
 
 
