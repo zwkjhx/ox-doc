@@ -144,5 +144,15 @@ initial-cluster-state: new
 
 连接可以使用工具：[https://github.com/nikfoundas/etcd-viewer](https://github.com/nikfoundas/etcd-viewer)，连接教程直接参考官方链接即可，这样一个本地的Etcd集群就搭建好了。
 
+```shell
+git clone https://github.com/nikfoundas/etcd-viewer.git
+```
+
+然后进入目录直接使用：
+
+```shell
+mvn jetty:run
+```
+
 
 
