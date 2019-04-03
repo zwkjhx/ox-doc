@@ -20,5 +20,9 @@ Zero UI中的前端页面主要包含两部分：
 * src/container/login/index/UI.js：当前页面使用的模板文件；
 * src/components/login/index/UI.js：当前页面核心文件；
 
+在Zero UI中一个页面主要分为两部分：
+
+
+
 
 
