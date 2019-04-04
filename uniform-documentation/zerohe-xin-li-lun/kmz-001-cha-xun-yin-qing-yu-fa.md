@@ -83,7 +83,9 @@ criteria支持多级查询树的动作，也就是说可以支持多个查询条
 
 ## 3. 查询条件示例
 
-**「01」**查询系统中`name`的值为Lang，`email`的值为`lang.yu@hpe.com`的用户
+### 3.1. 基本
+
+查询系统中`name`的值为Lang，`email`的值为`lang.yu@hpe.com`的用户
 
 ```json
 {
@@ -98,7 +100,9 @@ SQL：
 NAME = 'LANG' AND EMAIL='lang.yu@hpe.com'
 ```
 
-**「02」**查询系统中`name`中包含了Lily，`email`后缀为`hpe.com`或`hp.com`的用户
+### 3.2. 嵌套
+
+查询系统中`name`中包含了Lily，`email`后缀为`hpe.com`或`hp.com`的用户
 
 ```json
 {
@@ -119,7 +123,9 @@ SQL：
 NAME LIKE '%Lily%' AND (EMAIL LIKE '%hpe.com' OR EMAIL LIKE '%hp.com')
 ```
 
-**「03」**查询年龄`age`大于16的未启用`active`的用户
+### 3.3. 其他操作符
+
+查询年龄`age`大于16的未启用`active`的用户
 
 ```json
 {
