@@ -16,6 +16,8 @@ Origin X文档主页用来讲解Origin X框架的基本实施方法（主要面�
 * [OX-003 页面流解析说明](/origin-x-engine/1-oxshi-shi-jiao-cheng/ox-003-ye-mian-liu-jie-xi-shuo-ming.html)
 * [OX-004 事件流解析说明](/origin-x-engine/1-oxshi-shi-jiao-cheng/ox-004-shi-jian-liu-jie-xi-shuo-ming.html)
 
+> Ox的配置项详细信息可以参考规范章节：[SPO-001 界面配置全Json解析](/specification/3-origin-xgui-fan/spo-001-jie-mian-pei-zhi-quan-json-jie-xi.md)
+
 ## 2. 自定义组件
 
 * [OXC-001 关于自定义组件](/origin-x-engine/2-oxzi-ding-yi-zu-jian/oxc-001-guan-yu-zi-ding-yi-zu-jian.html)
