@@ -24,7 +24,7 @@
 
 左边是目前Origin X使用的模式，直接在上边的配置节点中引入“顶层容器”的概念，然后`layout`直接进行页面的第一次布局，使得整个页面具有容器和布局两个概念。
 
-右边是一种协变模式，也就是说，页面可以不使用布局，而直接使用一个容器类型的control（参考：[SPO-011 容器类型的Control](/specification/3-origin-xgui-fan/spo-011-rong-qi-lei-xing-de-control.md)），然后通过`xuiChildren`渲染这个Control中的子控件，同样也是可以完成的。那么为什么不推荐使用右边这种呢？对于一个Web页面而言，
+右边是一种协变模式，也就是说，页面可以不使用布局，而直接使用一个容器类型的control（参考：[SPO-011 容器类型的Control](/specification/3-origin-xgui-fan/spo-011-rong-qi-lei-xing-de-control.md)），然后通过`xuiChildren`渲染这个Control中的子控件，同样也是可以完成的。那么为什么不推荐使用右边这种呢？对于一个Web页面而言，Origin X的设计遵循一个基本原则：一个页面尽可能多地由多个
 
 ## 2. 限制
 
