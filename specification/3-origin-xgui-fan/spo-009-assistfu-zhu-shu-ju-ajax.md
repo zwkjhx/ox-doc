@@ -8,7 +8,7 @@
 
 ## 1. OxAssist
 
-在Origin X UI中，
+在Origin X中，辅助数据使用专用的辅助数据容器：`src/app/web/container/OxAssist/`来实现，它的示例配置如下：
 
 
 
