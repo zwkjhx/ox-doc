@@ -18,7 +18,7 @@ Origin X中的响应式布局直接沿用Ant Design中的响应式处理：[http
 
 | 属性名 | 说明 |
 | :--- | :--- |
-| xs | &lt; 576px |
+| xs | 480px &lt;= 宽度 &lt; 576px |
 | sm | 576px &lt;= 宽度 &lt; 768px |
 | md | 768px &lt;= 宽度 &lt; 992px |
 | lg | 992px &lt;= 宽度 &lt; 1200px |
@@ -27,8 +27,31 @@ Origin X中的响应式布局直接沿用Ant Design中的响应式处理：[http
 
 这里的宽度表示屏幕的分辨率宽度，可以看看Ant Design中的变量定义：
 
-```css
+```less
+// Media queries breakpoints
+// Extra small screen / phone
+@screen-xs: 480px;
+@screen-xs-min: @screen-xs;
 
+// Small screen / tablet
+@screen-sm: 576px;
+@screen-sm-min: @screen-sm;
+
+// Medium screen / desktop
+@screen-md: 768px;
+@screen-md-min: @screen-md;
+
+// Large screen / wide desktop
+@screen-lg: 992px;
+@screen-lg-min: @screen-lg;
+
+// Extra large screen / full hd
+@screen-xl: 1200px;
+@screen-xl-min: @screen-xl;
+
+// Extra extra large screen / large descktop
+@screen-xxl: 1600px;
+@screen-xxl-min: @screen-xxl;
 ```
 
 ## 2. 响应式配置
