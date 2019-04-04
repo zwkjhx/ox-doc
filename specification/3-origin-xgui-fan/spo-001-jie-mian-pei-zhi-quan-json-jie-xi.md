@@ -52,7 +52,8 @@
 
 | 文档 | 详细说明 |
 | :--- | :--- |
-| [SPO-003 页面结构说明](/specification/3-origin-xgui-fan/spo-003-bu-ju-pei-zhi-gui-fan.md) | 用于描述一个页面如何构成 |
+| [SPO-003 页面结构说明](/specification/3-origin-xgui-fan/spo-003-bu-ju-pei-zhi-gui-fan.md) | 描述一个页面如何构成 |
+| [SPO-004 页面布局说明](/specification/3-origin-xgui-fan/spo-004-ye-mian-bu-ju-shuo-ming.md) | 描述页面布局如何使用Ant Design的Grid布局 |
 |  |  |
 
 
