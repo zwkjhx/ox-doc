@@ -36,7 +36,7 @@
                 {
                     "span":16,
                     "value":[
-                        "<controlId>",
+                        "a770c579-0135-410c-a74f-42253604394c，第一行的UUID，直接control中检索",
                         "<controlId>"
                     ]
                 },
@@ -53,6 +53,14 @@
             "name":"OxCard - 链接到 src/app/web/中的核心组件",
             "config":{
                 "title":"标题信息"
+            }
+        }
+    },
+    "control":{
+        "a770c579-0135-410c-a74f-42253604394c":{
+            "container":{
+            },
+            "component":{
             }
         }
     }
