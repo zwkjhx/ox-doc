@@ -58,7 +58,7 @@ ajaxKey存在的原因如下：
 | :--- | :--- |
 | uri | 远程Ajax的地址信息，没有默认值，必须配置 |
 | method | HTTP方法，默认为GET（不配置就是GET） |
-| query | 查询引擎专用参数格式，参考：[SPO-007 Ajax中的查询引擎](/specification/3-origin-xgui-fan/spo-007-ajaxzhong-de-cha-xun-yin-qing.md) |
+| query | 查询引擎专用参数格式，参考：[SPO-007 Ajax中的查询引擎](/specification/3-origin-xgui-fan/spo-007-ajaxzhong-de-cha-xun-yin-qing.html) |
 | params | POST/PUT专用参数格式 |
 | lazy | 是否启用Lazy模式，默认为false |
 | secure | 是否启用安全模式，默认为true，Ux中调用的Ajax方法生成Promise的流程有所不同 |
