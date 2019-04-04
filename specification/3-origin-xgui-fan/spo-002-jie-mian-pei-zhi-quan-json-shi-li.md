@@ -31,7 +31,7 @@
     },
     "page":{
         "layout":[
-            "<controlId>",
+            "<controlId:当前页面的Control控件，如果是字符串则表示 span = 24，满行>",
             [
                 {
                     "span":16,
