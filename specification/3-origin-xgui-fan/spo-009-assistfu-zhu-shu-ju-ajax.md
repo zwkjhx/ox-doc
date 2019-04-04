@@ -10,5 +10,35 @@
 
 在Origin X中，辅助数据使用专用的辅助数据容器：`src/app/web/container/OxAssist/`来实现，它的示例配置如下：
 
+```json
+{
+    "control": {
+        "73ac2517-15f9-42be-b187-e571af54ede9": {
+            "container": null,
+            "component": {
+                "name": "OxAssist",
+                "config": {
+                    "assist": [
+                        {
+                            "ajax": "default.column.full",
+                            "assist": {
+                                "key": "column.valid.full"
+                            }
+                        },
+                        {
+                            "ajax": "default.column.my",
+                            "assist": {
+                                "key": "column.valid.my"
+                            }
+                        }
+                    ],
+                    "grid": "46c0551c-17f6-4556-8d03-1e52dc3ba479"
+                }
+            }
+        }
+    }
+}
+```
+
 
 
