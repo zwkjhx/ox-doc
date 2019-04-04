@@ -40,7 +40,7 @@ Origin X中在执行复杂查询时遵循Zero中定义的查询引擎语法，�
 | projection | 列过滤参数 |
 | pager | 分页参数 |
 | sorter | 排序参数（支持多字段排序） |
-| criteria | 查询树，参考： |
+| criteria | 查询树 |
 
 
 
