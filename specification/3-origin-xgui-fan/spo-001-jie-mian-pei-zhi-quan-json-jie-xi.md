@@ -4,7 +4,23 @@
 
 ## 1. 整体结构
 
-### 1.1. 示例说明
+一份完整的界面数据的结构参考：[SPO-002 界面配置全Json示例](/specification/3-origin-xgui-fan/spo-002-jie-mian-pei-zhi-quan-json-shi-li.md)，整个配置数据的结构如下：
 
-一份完整的界面数据的结构参考：[SPO-002 界面配置全Json示例](/specification/3-origin-xgui-fan/spo-002-jie-mian-pei-zhi-quan-json-shi-li.md)。顶层是Zero UI中本身存在的**模拟数据**规范，所以这里不做说明，直接针对data节点进行解析。
+```json
+{
+    "mock":true,
+    "data":{
+        "layout":{
+        },
+        "ajax":{
+        },
+        "page":{
+        },
+        "control":{
+        }
+    }
+}
+```
+
+
 
