@@ -9,6 +9,7 @@
 | 语言相关 | 计算机语言相关基础 | L |
 | 开源项目相关 | 开源项目的一些相关文档 | O |
 | 规范相关 | 所有软件规范的相关文档 | S |
+| Zero核心概念 | Zero中一些特殊的概念说明 | Z |
 
 ## 面试题
 
@@ -45,6 +46,10 @@
 ## 规范相关
 
 * [KMS-001 UBL规范中的Price字段说明](/uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html)
+
+## Zero核心概念
+
+* [KMZ-001 查询引擎语法](/uniform-documentation/zerohe-xin-li-lun/kmz-001-cha-xun-yin-qing-yu-fa.md)
 
 
 
