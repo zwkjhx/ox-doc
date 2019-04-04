@@ -17,10 +17,11 @@
 
 * [SPO-001 界面配置全Json解析](/specification/3-origin-xgui-fan/spo-001-jie-mian-pei-zhi-quan-json-jie-xi.md)
 * [SPO-002 界面配置全Json示例](/specification/3-origin-xgui-fan/spo-002-jie-mian-pei-zhi-quan-json-shi-li.md)
-* 
+
 ## 4. RESTful设计指导规范
 
 * [SPR-001 URI路径设计规范](/specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.html)
+
 * [SPR-002 URI业务设计规范](/specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.html)
 
 
