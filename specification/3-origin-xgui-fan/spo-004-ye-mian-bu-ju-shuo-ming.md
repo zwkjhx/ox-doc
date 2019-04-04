@@ -17,7 +17,5 @@
 
 ## 2. 关于Grid
 
-在`Ant Design`中，
-
-
+在`Ant Design`中（[https://ant.design/components/grid-cn/](https://ant.design/components/grid-cn/)）它的Grid布局将整个页面分成了24列，在不考虑响应式处理的情况下，直接使用`<Col>`标签的`span`属性进行设置，那么Origin X基于这点通过二维数组的模式来进行布局。
 
