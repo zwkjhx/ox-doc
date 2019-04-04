@@ -14,9 +14,19 @@
 
 Origin X中的响应式布局直接沿用Ant Design中的响应式处理：[https://ant.design/components/grid-cn/\#components-grid-demo-responsive](https://ant.design/components/grid-cn/#components-grid-demo-responsive)，通过对`<Col/>`进行特殊的响应式配置来实现响应式布局。
 
-## 1. 响应式配置
+## 1. 响应式
 
+| 属性名 | 说明 |
+| :--- | :--- |
+|  |  |
 
+## 2. 响应式配置
+
+下边是响应式布局的示例：
+
+```json
+
+```
 
 
 
