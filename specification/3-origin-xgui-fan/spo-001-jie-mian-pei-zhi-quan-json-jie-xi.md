@@ -52,7 +52,7 @@
 
 | 规范项 | 说明 |
 | :--- | :--- |
-| [SPO-003 布局配置规范](/specification/3-origin-xgui-fan/spo-003-bu-ju-pei-zhi-gui-fan.md) | 描述一个页面的核心结构 |
+|  | 描述一个页面的核心结构 |
 
 
 
