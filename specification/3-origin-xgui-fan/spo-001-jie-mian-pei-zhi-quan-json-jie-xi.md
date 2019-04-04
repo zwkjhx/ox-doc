@@ -6,25 +6,5 @@
 
 ### 1.1. 示例说明
 
-一份完整的界面数据的结构参考：[SPO-002 界面配置全Json示例](/specification/3-origin-xgui-fan/spo-002-jie-mian-pei-zhi-quan-json-shi-li.md)。
-
-```json
-{
-    "mock":true,
-    "data":{
-        "layout":{}
-        "ajax":{
-            "ajaxKey":{
-                "uri":"访问地址专用的Uri",
-                "method":"Http方法",
-                "query":{
-                    "projection":""
-                }
-            }
-        }
-    }
-}
-```
-
-顶层是Zero UI中本身存在的**模拟数据**规范，所以这里不做说明，直接针对data节点进行解析。
+一份完整的界面数据的结构参考：[SPO-002 界面配置全Json示例](/specification/3-origin-xgui-fan/spo-002-jie-mian-pei-zhi-quan-json-shi-li.md)。顶层是Zero UI中本身存在的**模拟数据**规范，所以这里不做说明，直接针对data节点进行解析。
 
