@@ -4,7 +4,7 @@
 
 ## 1. 整体结构
 
-一份完整的界面数据的结构参考：[SPO-002 界面配置全Json示例](/specification/3-origin-xgui-fan/spo-002-jie-mian-pei-zhi-quan-json-shi-li.md)，整个配置数据的结构如下：
+一份完整的界面数据的结构参考：[SPO-002 界面配置全Json示例](/specification/3-origin-xgui-fan/spo-002-jie-mian-pei-zhi-quan-json-shi-li.html)，整个配置数据的结构如下：
 
 ```json
 {
@@ -52,21 +52,21 @@
 
 | 文档 | 详细说明 |
 | :--- | :--- |
-| [SPO-003 页面结构说明](/specification/3-origin-xgui-fan/spo-003-bu-ju-pei-zhi-gui-fan.md) | 描述一个页面如何构成 |
-| [SPO-004 页面布局说明](/specification/3-origin-xgui-fan/spo-004-ye-mian-bu-ju-shuo-ming.md) | 描述页面布局如何使用Ant Design的Grid布局 |
-| [SPO-005 响应式布局](/specification/3-origin-xgui-fan/spo-005-xiang-ying-shi-bu-ju.md) | 页面响应式布局的说明 |
-| [SPO-006 Ajax请求基本说明](/specification/3-origin-xgui-fan/spo-006-ajaxqing-qiu-ji-ben-shuo-ming.md) | 描述当前页面如何调用远程接口 |
-| [SPO-007 Ajax中的查询引擎](/specification/3-origin-xgui-fan/spo-007-ajaxzhong-de-cha-xun-yin-qing.md) | 描述分页、排序、列过滤、查询专用的远程接口 |
-| [SPO-008 关于Ajax中的Lazy模式](/specification/3-origin-xgui-fan/spo-008-guan-yu-ajax-zhong-de-lazy-mo-shi.md) | 如何使用Lazy和非Lazy模式下的Ajax接口 |
-| [SPO-009 Assist辅助数据Ajax](/specification/3-origin-xgui-fan/spo-009-assistfu-zhu-shu-ju-ajax.md) | 对于辅助依赖数据的Ajax请求说明 |
-| [SPO-010 Control的基本结构](/specification/3-origin-xgui-fan/spo-010-controlde-ji-ben-jie-gou.md) | 描述一个Control（控件）的基本结构 |
-| [SPO-011 容器类型的Control](/specification/3-origin-xgui-fan/spo-011-rong-qi-lei-xing-de-control.md) | 描述一个容器类型的Control如何执行Connect动作 |
-| [SPO-012 数据绑定节点data](/specification/3-origin-xgui-fan/spo-012-shu-ju-bang-ding-jie-dian-data.md) | 如何让component / container和Ajax响应数据绑定 |
-| [SPO-013 Act操作组件](/specification/3-origin-xgui-fan/spo-013-actcao-zuo-zu-jian.md) | 关于操作组件的基本配置说明 |
-| [SPO-014 DataEvent配置说明](/specification/3-origin-xgui-fan/spo-014-dataeventpei-zhi-shuo-ming.md) | 如何封装和触发 DataEvent |
-| [SPO-015 不同组件的event节点](/specification/3-origin-xgui-fan/spo-015-bu-tong-zu-jian-de-event-jie-dian.md) | 不同的组件在使用 event 时构造的 DataEvent的模式说明 |
-| [SPO-016 全局覆盖性变量](/specification/3-origin-xgui-fan/spo-016-quan-ju-fu-gai-xing-bian-liang.md) | 当前Origin X使用的特殊全局变量说明 |
-| [SPO-017 五种不同模式的xuiChildren说明](/specification/3-origin-xgui-fan/spo-017-wu-zhong-bu-tong-mo-shi-de-xuichildren-shuo-ming.md) | 描述 xuiChildren，有关连接点的强化说明 |
+| [SPO-003 页面结构说明](/specification/3-origin-xgui-fan/spo-003-bu-ju-pei-zhi-gui-fan.html) | 描述一个页面如何构成 |
+| [SPO-004 页面布局说明](/specification/3-origin-xgui-fan/spo-004-ye-mian-bu-ju-shuo-ming.html) | 描述页面布局如何使用Ant Design的Grid布局 |
+| [SPO-005 响应式布局](/specification/3-origin-xgui-fan/spo-005-xiang-ying-shi-bu-ju.html) | 页面响应式布局的说明 |
+| [SPO-006 Ajax请求基本说明](/specification/3-origin-xgui-fan/spo-006-ajaxqing-qiu-ji-ben-shuo-ming.html) | 描述当前页面如何调用远程接口 |
+| [SPO-007 Ajax中的查询引擎](/specification/3-origin-xgui-fan/spo-007-ajaxzhong-de-cha-xun-yin-qing.html) | 描述分页、排序、列过滤、查询专用的远程接口 |
+| [SPO-008 关于Ajax中的Lazy模式](/specification/3-origin-xgui-fan/spo-008-guan-yu-ajax-zhong-de-lazy-mo-shi.html) | 如何使用Lazy和非Lazy模式下的Ajax接口 |
+| [SPO-009 Assist辅助数据Ajax](/specification/3-origin-xgui-fan/spo-009-assistfu-zhu-shu-ju-ajax.html) | 对于辅助依赖数据的Ajax请求说明 |
+| [SPO-010 Control的基本结构](/specification/3-origin-xgui-fan/spo-010-controlde-ji-ben-jie-gou.html) | 描述一个Control（控件）的基本结构 |
+| [SPO-011 容器类型的Control](/specification/3-origin-xgui-fan/spo-011-rong-qi-lei-xing-de-control.html) | 描述一个容器类型的Control如何执行Connect动作 |
+| [SPO-012 数据绑定节点data](/specification/3-origin-xgui-fan/spo-012-shu-ju-bang-ding-jie-dian-data.html) | 如何让component / container和Ajax响应数据绑定 |
+| [SPO-013 Act操作组件](/specification/3-origin-xgui-fan/spo-013-actcao-zuo-zu-jian.html) | 关于操作组件的基本配置说明 |
+| [SPO-014 DataEvent配置说明](/specification/3-origin-xgui-fan/spo-014-dataeventpei-zhi-shuo-ming.html) | 如何封装和触发 DataEvent |
+| [SPO-015 不同组件的event节点](/specification/3-origin-xgui-fan/spo-015-bu-tong-zu-jian-de-event-jie-dian.html) | 不同的组件在使用 event 时构造的 DataEvent的模式说明 |
+| [SPO-016 全局覆盖性变量](/specification/3-origin-xgui-fan/spo-016-quan-ju-fu-gai-xing-bian-liang.html) | 当前Origin X使用的特殊全局变量说明 |
+| [SPO-017 五种不同模式的xuiChildren说明](/specification/3-origin-xgui-fan/spo-017-wu-zhong-bu-tong-mo-shi-de-xuichildren-shuo-ming.html) | 描述 xuiChildren，有关连接点的强化说明 |
 
 
 
