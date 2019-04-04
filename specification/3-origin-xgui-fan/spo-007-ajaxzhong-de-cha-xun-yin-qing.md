@@ -112,7 +112,17 @@ Origin X中在执行复杂查询时遵循Zero中定义的查询引擎语法，�
 
 Origin X中判断一个请求是否查询请求的关键代码如下（方便开发人员理解内部原理）：
 
-
+```js
+const isIr = (config = {}) => {
+    const {method = "GET"} = config;
+    if ("POST" === method) {
+        const {query = {}} = config;
+        return (query.hasOwnProperty("criteria") // 不带分页查询
+            || query.hasOwnProperty("pager") // 带分页查询
+        )
+    } else return false;
+};
+```
 
 
 
