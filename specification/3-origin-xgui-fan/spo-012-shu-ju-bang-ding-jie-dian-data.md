@@ -42,25 +42,96 @@ const { data = [] } = this.props;
 比如有如下一份数据：
 
 ```json
-{
-    "mock": true,
-    "data": {
-        "list": [
-            {
-                "title": "我的服务器",
-                "description": "我所管理的服务器列表。",
-                "icon": "desktop",
-                "cis": 12,
-                "added": 3,
-                "tag": "服务器",
-                "category": "OWNER",
-                "updatedAt": "2019-03-15T20:59:56",
-                "key": "f1a3c82d-2ab1-4b7d-8076-eafe43ac745a",
-            }
-        }
+[
+    {
+        "title": "我的服务器",
+        "description": "我所管理的服务器列表。",
+        "icon": "desktop",
+        "cis": 12,
+        "added": 3,
+        "tag": "服务器",
+        "category": "OWNER",
+        "updatedAt": "2019-03-15T20:59:56",
+        "key": "f1a3c82d-2ab1-4b7d-8076-eafe43ac745a",
     }
-}  
+]
 ```
 
+如果它作为主数据，那么提取的代码如：
 
+```js
+const { data = [] } = this.props
+```
+
+### 3.2. mapping的配置
+
+在使用这份数据的Control中配置了如下信息：
+
+```json
+{
+    "config": {
+        "pagination": {
+            "showSizeChanger": false,
+            "showQuickJumper": true
+        },
+        "size": "large",
+        "action": {
+            "text": "编辑圈子",
+            "uri": "/dp/"
+        },
+        "columns": [
+            {
+                "metadata": "count,配置项数量,EXPRESSION",
+                "$expr": ":value个",
+                "style": {
+                    "fontWeight": 700,
+                    "color": "black"
+                }
+            },
+            {
+                "metadata": "added,新增数量,EXPRESSION",
+                "$expr": ":value个",
+                "style": {
+                    "fontWeight": 700,
+                    "color": "red"
+                }
+            },
+            {
+                "metadata": "createdAt,创建时间,DATE",
+                "$format": "YYYY-MM-DD HH:mm:ss"
+            }
+        ],
+        "mapping": {
+            "count":"cis"
+        }
+    }
+}
+```
+
+其中可以看到mapping的配置如：
+
+```json
+{
+    "count":"cis"
+}
+```
+
+它表示将原始数据中的`cis`字段转换成`count`的最终字段，然后执行渲染，而且在config配置中可以看到如下：
+
+```json
+{
+        "columns": [
+            {
+                "metadata": "count,配置项数量,EXPRESSION",
+                "$expr": ":value个",
+                "style": {
+                    "fontWeight": 700,
+                    "color": "black"
+                }
+            }
+        ]
+}
+```
+
+也就是说columns最终在List中绑定的字段名是`count`而不是`cis`，那么mapping配置就直接将后端Ajax请求接口中的数据和前端绑定的字段重新做了一次“映射”，实现了绑定，倘若接口数据发生变化，只需要更改mapping配置就可以完成数据的完整对接。
 
