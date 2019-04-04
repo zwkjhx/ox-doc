@@ -58,5 +58,9 @@
 |  | event | 事件绑定节点 |
 |  | config | 组件的配置 |
 
+* 每一个control节点可以包含两个核心节点：container容器和component组件。
+* container容器节点不能包含绑定的data数据节点。
+* component组件虽然是组件信息，但这个组件同样可以是容器组件，此时是可以使用data数据绑定节点的。
+
 
 
