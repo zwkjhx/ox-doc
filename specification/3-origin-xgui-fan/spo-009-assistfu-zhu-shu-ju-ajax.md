@@ -40,7 +40,7 @@
 }
 ```
 
-### 1.1.节点说明
+## 2. 节点说明
 
 | 节点 | 子节点 | 含义 |
 | :--- | :--- | :--- |
@@ -48,6 +48,14 @@
 |  | ajax | 绑定的ajaxKey，参考：[SPO-006 Ajax请求基本说明](/specification/3-origin-xgui-fan/spo-006-ajaxqing-qiu-ji-ben-shuo-ming.md) |
 |  | assist -&gt; key | 生成的Assist变量 |
 | grid |  | 布局参数，参考：[SPO-004 页面布局说明](/specification/3-origin-xgui-fan/spo-004-ye-mian-bu-ju-shuo-ming.md) |
+
+## 3. 关于Assist变量
+
+在Zero UI中存在两种核心变量，详细内容参考：。
+
+|  |  |  |
+| :--- | :--- | :--- |
+|  |  |  |
 
 
 
