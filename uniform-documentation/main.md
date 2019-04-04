@@ -49,7 +49,7 @@
 
 ## Zero核心概念
 
-* [KMZ-001 查询引擎语法](/uniform-documentation/zerohe-xin-li-lun/kmz-001-cha-xun-yin-qing-yu-fa.md)
+* [KMZ-001 查询引擎语法](/uniform-documentation/zerohe-xin-li-lun/kmz-001-cha-xun-yin-qing-yu-fa.html)
 
 
 
