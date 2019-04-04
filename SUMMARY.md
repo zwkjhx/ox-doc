@@ -124,7 +124,7 @@
 * [3 - Origin X规范](specification/3-origin-xgui-fan.md)
   * [SPO-001 界面配置全Json解析](specification/3-origin-xgui-fan/spo-001-jie-mian-pei-zhi-quan-json-jie-xi.md)
   * [SPO-002 界面配置全Json示例](specification/3-origin-xgui-fan/spo-002-jie-mian-pei-zhi-quan-json-shi-li.md)
-  * [SPO-003 布局配置规范](specification/3-origin-xgui-fan/spo-003-bu-ju-pei-zhi-gui-fan.md)
+  * [SPO-003 页面结构说明](specification/3-origin-xgui-fan/spo-003-bu-ju-pei-zhi-gui-fan.md)
 * [4 - RESTful设计规范](specification/4-restfulshe-ji-zhi-dao-gui-fan.md)
   * [SPR-001 URI路径设计规范](specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.md)
   * [SPR-002 URI业务设计规范](specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.md)

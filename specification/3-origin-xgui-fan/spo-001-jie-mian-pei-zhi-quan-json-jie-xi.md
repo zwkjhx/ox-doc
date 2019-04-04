@@ -52,6 +52,7 @@
 
 | 文档 | 详细说明 |
 | :--- | :--- |
+| [SPO-003 页面结构说明](/specification/3-origin-xgui-fan/spo-003-bu-ju-pei-zhi-gui-fan.md) | 用于描述一个页面如何构成 |
 |  |  |
 
 
