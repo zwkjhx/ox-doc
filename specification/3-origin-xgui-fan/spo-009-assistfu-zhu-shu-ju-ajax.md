@@ -40,5 +40,12 @@
 }
 ```
 
+### 1.1.节点说明
+
+| 节点 | 含义 |
+| :--- | :--- |
+| assist | 数组节点，支持多个Ajax处理（Lazy和非Lazy都支持） |
+| grid | 布局参数，参考：[SPO-004 页面布局说明](/specification/3-origin-xgui-fan/spo-004-ye-mian-bu-ju-shuo-ming.md) |
+
 
 
