@@ -24,6 +24,7 @@
                 "pager":"1,3",
                 "sorter":"createdAt=DESC",
                 "criteria":{
+                    "field":"SOURCE:object.attribute"
                 }
             }
         }
