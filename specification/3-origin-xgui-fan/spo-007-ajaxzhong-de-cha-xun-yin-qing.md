@@ -9,7 +9,29 @@ Origin X中在执行复杂查询时遵循Zero中定义的查询引擎语法，�
 
 ## 1. 基本格式
 
+回到前边的配置例子：
 
+```json
+{
+    "ajax": {
+        "personal.pager.zone": {
+            "uri": "/api/personal/circle/search",
+            "method": "POST",
+            "query": {
+                "projection": [],
+                "pager": "1,5",
+                "sorter": "createdAt=DESC",
+                "criteria": {
+                }
+            }
+        }
+    }
+}
+```
+
+当Ajax的定义中使用了`query`作为参数节点时，证明该Ajax触发的是后端的POST查询（HTTP方法必须为POST）。
+
+## 2. 
 
 
 
