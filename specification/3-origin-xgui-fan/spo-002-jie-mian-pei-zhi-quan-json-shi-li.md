@@ -28,6 +28,28 @@
                 }
             }
         }
+    },
+    "page":{
+        "layout":[
+            "<controlId>",
+            [
+                {
+                    "span":16,
+                    "value":[
+                        "<controlId>",
+                        "<controlId>"
+                    ]
+                },
+                {
+                    "span":8,
+                    "value":[
+                        "<controlId>",
+                        "<controlId>"
+                    ]
+                }
+            ]
+        ],
+        "container":null
     }
 }
 ```
