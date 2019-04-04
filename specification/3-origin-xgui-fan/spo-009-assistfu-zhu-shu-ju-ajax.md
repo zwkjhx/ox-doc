@@ -53,9 +53,14 @@
 
 在Zero UI中存在两种核心变量，详细内容参考：[KMZ-002 Tabular和Assist变量](/uniform-documentation/zerohe-xin-li-lun/kmz-002-tabularhe-assist-bian-liang.html)。
 
-|  |  |  |
-| :--- | :--- | :--- |
-|  |  |  |
+比如一个变量的键值：`user.model`。
+
+| 变量 | Redux树 | 键值 | 变量名 |
+| :--- | :--- | :--- | :--- |
+| Tabular变量 | out.tabular.user\_model | user.model | $t\_user\_model |
+| Assist变量 | out.assist.user\_model | user.model | $a\_user\_model |
+
+而Assist容器使用的就是Assist变量。
 
 
 
