@@ -95,6 +95,7 @@
   * [KMS-001 UBL规范中的Price字段说明](uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.md)
 * [Zero核心概念](uniform-documentation/zerohe-xin-li-lun.md)
   * [KMZ-001 查询引擎语法](uniform-documentation/zerohe-xin-li-lun/kmz-001-cha-xun-yin-qing-yu-fa.md)
+  * [KMZ-002 Tabular和Assist变量](uniform-documentation/zerohe-xin-li-lun/kmz-002-tabularhe-assist-bian-liang.md)
 
 ## Environment
 

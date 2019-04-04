@@ -50,6 +50,7 @@
 ## Zero核心概念
 
 * [KMZ-001 查询引擎语法](/uniform-documentation/zerohe-xin-li-lun/kmz-001-cha-xun-yin-qing-yu-fa.html)
+* [KMZ-002 Tabular和Assist变量](/uniform-documentation/zerohe-xin-li-lun/kmz-002-tabularhe-assist-bian-liang.md)
 
 
 
