@@ -15,6 +15,8 @@
 
 ## 3. Origin X规范
 
+### 3.1. Ox页面配置规范
+
 * [SPO-001 界面配置全Json解析](/specification/3-origin-xgui-fan/spo-001-jie-mian-pei-zhi-quan-json-jie-xi.md)
 * [SPO-002 界面配置全Json示例](/specification/3-origin-xgui-fan/spo-002-jie-mian-pei-zhi-quan-json-shi-li.md)
 * [SPO-003 页面结构说明](/specification/3-origin-xgui-fan/spo-003-bu-ju-pei-zhi-gui-fan.md)
