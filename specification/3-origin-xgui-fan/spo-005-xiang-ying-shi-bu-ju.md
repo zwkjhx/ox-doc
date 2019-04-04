@@ -1,6 +1,6 @@
 ## 响应式布局
 
-[SPO-004 页面布局说明](/specification/3-origin-xgui-fan/spo-004-ye-mian-bu-ju-shuo-ming.html)中提到的一个页面的片段如：
+[SPO-004 页面布局说明](/specification/3-origin-xgui-fan/spo-004-ye-mian-bu-ju-shuo-ming.md)中提到的一个页面的片段如：
 
 ```json
 {
