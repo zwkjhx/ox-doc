@@ -1,6 +1,6 @@
 # 界面配置全Json示例
 
-下边这份数据是页面的配置：
+下边这份数据是页面[http://localhost:5000/ox/dp/person/zone](http://localhost:5000/ox/dp/person/zone)的配置：
 
 ```json
 {
