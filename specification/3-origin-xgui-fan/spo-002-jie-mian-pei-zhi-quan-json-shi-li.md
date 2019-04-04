@@ -49,7 +49,12 @@
                 }
             ]
         ],
-        "container":null
+        "container":{
+            "name":"OxCard - 链接到 src/app/web/中的核心组件",
+            "config":{
+                "title":"标题信息"
+            }
+        }
     }
 }
 ```
