@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/uniform-documentation/main.md" beforeDir="false" afterPath="$PROJECT_DIR$/uniform-documentation/main.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-009-assistfu-zhu-shu-ju-ajax.md" beforeDir="false" afterPath="$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-009-assistfu-zhu-shu-ju-ajax.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,18 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-001-jie-mian-pei-zhi-quan-json-jie-xi.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1224">
-                <caret line="68" column="127" selection-start-line="68" selection-start-column="127" selection-end-line="68" selection-end-column="127" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-002-jie-mian-pei-zhi-quan-json-shi-li.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -95,12 +83,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uniform-documentation/main.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="301">
-                <caret line="52" column="110" selection-start-line="52" selection-start-column="110" selection-end-line="52" selection-end-column="110" />
+              <first_editor relative-caret-position="265">
+                <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-009-assistfu-zhu-shu-ju-ajax.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="211">
+                <caret line="53" column="133" selection-start-line="53" selection-start-column="133" selection-end-line="53" selection-end-column="133" />
               </first_editor>
               <second_editor />
             </state>
@@ -164,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.md" />
         <option value="$PROJECT_DIR$/environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.md" />
         <option value="$PROJECT_DIR$/environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.md" />
@@ -215,6 +214,7 @@
         <option value="$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-007-ajaxzhong-de-cha-xun-yin-qing.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/zerohe-xin-li-lun/kmz-001-cha-xun-yin-qing-yu-fa.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/main.md" />
+        <option value="$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-009-assistfu-zhu-shu-ju-ajax.md" />
       </list>
     </option>
   </component>
@@ -254,6 +254,17 @@
               <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="_layouts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="specification" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="specification" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="3-origin-xgui-fan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -352,7 +363,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zero-ui/shou-ye.md" />
     <entry file="file://$PROJECT_DIR$/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-001-zero-uixiang-mu-jie-gou-shuo-ming.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -791,8 +801,18 @@
     <entry file="file://$PROJECT_DIR$/uniform-documentation/main.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="301">
-            <caret line="52" column="110" selection-start-line="52" selection-start-column="110" selection-end-line="52" selection-end-column="110" />
+          <first_editor relative-caret-position="265">
+            <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-009-assistfu-zhu-shu-ju-ajax.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="211">
+            <caret line="53" column="133" selection-start-line="53" selection-start-column="133" selection-end-line="53" selection-end-column="133" />
           </first_editor>
           <second_editor />
         </state>

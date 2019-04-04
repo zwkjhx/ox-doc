@@ -45,13 +45,13 @@
 | 节点 | 子节点 | 含义 |
 | :--- | :--- | :--- |
 | assist |  | 数组节点，支持多个Ajax处理（Lazy和非Lazy都支持） |
-|  | ajax | 绑定的ajaxKey，参考：[SPO-006 Ajax请求基本说明](/specification/3-origin-xgui-fan/spo-006-ajaxqing-qiu-ji-ben-shuo-ming.md) |
+|  | ajax | 绑定的ajaxKey，参考：[SPO-006 Ajax请求基本说明](/specification/3-origin-xgui-fan/spo-006-ajaxqing-qiu-ji-ben-shuo-ming.html) |
 |  | assist -&gt; key | 生成的Assist变量 |
-| grid |  | 布局参数，参考：[SPO-004 页面布局说明](/specification/3-origin-xgui-fan/spo-004-ye-mian-bu-ju-shuo-ming.md) |
+| grid |  | 布局参数，参考：[SPO-004 页面布局说明](/specification/3-origin-xgui-fan/spo-004-ye-mian-bu-ju-shuo-ming.html) |
 
 ## 3. 关于Assist变量
 
-在Zero UI中存在两种核心变量，详细内容参考：[KMZ-002 Tabular和Assist变量](/uniform-documentation/zerohe-xin-li-lun/kmz-002-tabularhe-assist-bian-liang.md)。
+在Zero UI中存在两种核心变量，详细内容参考：[KMZ-002 Tabular和Assist变量](/uniform-documentation/zerohe-xin-li-lun/kmz-002-tabularhe-assist-bian-liang.html)。
 
 |  |  |  |
 | :--- | :--- | :--- |
