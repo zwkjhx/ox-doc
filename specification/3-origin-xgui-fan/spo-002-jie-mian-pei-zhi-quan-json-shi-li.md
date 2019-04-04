@@ -18,7 +18,7 @@
     "ajax":{
         "<ajax.key>":{
             "uri":"当前调用的Ajax的Uri地址",
-            "method":"当前接口使用的",
+            "method":"当前接口使用的HTTP方法",
             "query":{
                 "projection":[],
                 "pager":"1,3",
