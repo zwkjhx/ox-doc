@@ -54,8 +54,12 @@
 | :--- | :--- |
 | [SPO-003 页面结构说明](/specification/3-origin-xgui-fan/spo-003-bu-ju-pei-zhi-gui-fan.md) | 描述一个页面如何构成 |
 | [SPO-004 页面布局说明](/specification/3-origin-xgui-fan/spo-004-ye-mian-bu-ju-shuo-ming.md) | 描述页面布局如何使用Ant Design的Grid布局 |
-| [SPO-005 响应式布局](/specification/3-origin-xgui-fan/spo-005-xiang-ying-shi-bu-ju.md) | 处理页面响应式布局的说明 |
-|  |  |
+| [SPO-005 响应式布局](/specification/3-origin-xgui-fan/spo-005-xiang-ying-shi-bu-ju.md) | 页面响应式布局的说明 |
+| [SPO-006 Ajax请求基本说明](/specification/3-origin-xgui-fan/spo-006-ajaxqing-qiu-ji-ben-shuo-ming.md) | 描述当前页面如何调用远程接口 |
+| [SPO-007 Ajax中的查询引擎](/specification/3-origin-xgui-fan/spo-007-ajaxzhong-de-cha-xun-yin-qing.md) | 描述分页、排序、列过滤、查询专用的远程接口 |
+| [SPO-008 关于Ajax中的Lazy模式](/specification/3-origin-xgui-fan/spo-008-guan-yu-ajax-zhong-de-lazy-mo-shi.md) | 如何使用Lazy和非Lazy模式下的Ajax接口 |
+| [SPO-009 Assist辅助数据Ajax](/specification/3-origin-xgui-fan/spo-009-assistfu-zhu-shu-ju-ajax.md) | 对于辅助依赖数据的Ajax请求说明 |
+| [SPO-010 Control的基本结构](/specification/3-origin-xgui-fan/spo-010-controlde-ji-ben-jie-gou.md) | 描述一个Control（控件）的基本结构 |
 
 
 
