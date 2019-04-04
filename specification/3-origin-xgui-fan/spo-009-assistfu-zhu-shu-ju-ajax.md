@@ -51,13 +51,11 @@
 
 ## 3. 关于Assist变量
 
-在Zero UI中存在两种核心变量，详细内容参考：。
+在Zero UI中存在两种核心变量，详细内容参考：[KMZ-002 Tabular和Assist变量](/uniform-documentation/zerohe-xin-li-lun/kmz-002-tabularhe-assist-bian-liang.md)。
 
 |  |  |  |
 | :--- | :--- | :--- |
 |  |  |  |
-
-
 
 
 
