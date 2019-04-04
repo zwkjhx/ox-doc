@@ -19,8 +19,35 @@ ajaxKey存在的原因如下：
 下边是一个页面中的Ajax的配置片段：
 
 ```json
-
+{
+    "ajax": {
+        "personal.circle.by.type": {
+            "uri": "/api/personal/circle/type"
+        },
+        "personal.pager.zone": {
+            "uri": "/api/personal/circle/search",
+            "method": "POST",
+            "query": {
+                "projection": [],
+                "pager": "1,5",
+                "sorter": "createdAt=DESC",
+                "criteria": {
+                }
+            }
+        }
+    }
+}
 ```
+
+在上边的配置片段中，`personal.circle.by.type`和`personal.pager.zone`就是ajaxKey，后续在Control控件中可以使用
+
+```json
+{
+    "data":"personal.circle.by.type"
+}
+```
+
+来执行绑定
 
 
 
