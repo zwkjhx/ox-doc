@@ -15,8 +15,16 @@
         "ajax":{
         },
         "page":{
+            "layout":[
+            ],
+            "container":null
         },
         "control":{
+            "<uuid:controlId>":{
+                "container":null,
+                "component":{
+                }
+            }
         }
     }
 }
