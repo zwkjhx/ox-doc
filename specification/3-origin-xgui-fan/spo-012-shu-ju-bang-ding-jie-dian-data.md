@@ -39,8 +39,27 @@ const { data = [] } = this.props;
 
 ### 3.1. 远程Ajax读取的数据：
 
-```json
+比如有如下一份数据：
 
+```json
+{
+    "mock": true,
+    "data": {
+        "list": [
+            {
+                "title": "我的服务器",
+                "description": "我所管理的服务器列表。",
+                "icon": "desktop",
+                "cis": 12,
+                "added": 3,
+                "tag": "服务器",
+                "category": "OWNER",
+                "updatedAt": "2019-03-15T20:59:56",
+                "key": "f1a3c82d-2ab1-4b7d-8076-eafe43ac745a",
+            }
+        }
+    }
+}  
 ```
 
 
