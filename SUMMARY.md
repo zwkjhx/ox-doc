@@ -12,6 +12,7 @@
   * [ZUI-002 Zero UI中的环境变量](zero-ui/1-zero-uiji-ben-jiao-cheng/zui-002-zero-uizhong-de-huan-jing-bian-liang.md)
   * [ZUI-003 模板和页面连接文件](zero-ui/1-zero-uiji-ben-jiao-cheng/zui-003-mo-ban-he-ye-mian-lian-jie-wen-jian.md)
   * [ZUI-004 资源文件](zero-ui/1-zero-uiji-ben-jiao-cheng/zui-004-zi-yuan-wen-jian.md)
+  * [ZUI-005 查询参数criteria配置解析](zero-ui/1-zero-uiji-ben-jiao-cheng/zui-005-cha-xun-can-shu-criteria-pei-zhi-jie-xi.md)
 * [2 - React碎碎念](zero-ui/2-reactsui-sui-nian.md)
 * [3 - Ant全家桶](zero-ui/3-antquan-jia-tong.md)
 * [4 - Zero UI实战分析](zero-ui/4-zero-uishi-zhan-fen-xi.md)
