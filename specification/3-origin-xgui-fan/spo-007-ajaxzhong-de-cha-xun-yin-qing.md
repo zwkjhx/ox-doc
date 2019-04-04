@@ -106,7 +106,7 @@ Origin X中在执行复杂查询时遵循Zero中定义的查询引擎语法，�
 
 ### 2.4. criteria
 
-查询树的语法参考Zero UI中的教程：[ZUI-005 查询参数criteria配置解析](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-005-cha-xun-can-shu-criteria-pei-zhi-jie-xi.md)
+查询树的语法参考Zero UI中的教程：[ZUI-005 查询参数criteria配置解析](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-005-cha-xun-can-shu-criteria-pei-zhi-jie-xi.html)
 
 ## 3. 判断查询请求
 
