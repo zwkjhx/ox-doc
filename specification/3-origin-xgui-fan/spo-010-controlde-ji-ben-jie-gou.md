@@ -62,5 +62,9 @@
 * container容器节点不能包含绑定的data数据节点。
 * component组件虽然是组件信息，但这个组件同样可以是容器组件，此时是可以使用data数据绑定节点的。
 
+关于数据和事件部分可以参考：
+
+* [SPO-012 数据绑定节点data](/specification/3-origin-xgui-fan/spo-012-shu-ju-bang-ding-jie-dian-data.md)
+
 
 
