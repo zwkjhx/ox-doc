@@ -19,7 +19,54 @@
 
 这里列举一个容器配置的例子。
 
-
+```json
+{
+    "control": {
+        "54740a4b-1257-4985-a8f5-d49ad76852d5": {
+            "container": {
+                "name": "OxCard",
+                "config": {
+                    "header": false
+                }
+            },
+            "component": {
+                "name": "OxContainer",
+                "config": {
+                    "grid": [
+                        [
+                            {
+                                "span": 16,
+                                "lg": 14,
+                                "xxl": 16,
+                                "value": [
+                                    "f47ef525-b4b4-44cb-9870-478ba5ce71ff"
+                                ]
+                            },
+                            {
+                                "span": 4,
+                                "lg": 5,
+                                "xxl": 4,
+                                "value": [
+                                    "1e023544-3b19-4c4b-8dee-92617c0ae6c0"
+                                ]
+                            },
+                            {
+                                "span": 4,
+                                "lg": 5,
+                                "xxl": 4,
+                                "value": [
+                                    "98d5f0ed-274e-4919-b0de-3a9b432b60b8"
+                                ]
+                            }
+                        ],
+                        "1d43acbc-0079-4475-b274-d32f65b7ebe7"
+                    ]
+                }
+            }
+        }
+    }
+}
+```
 
 
 
