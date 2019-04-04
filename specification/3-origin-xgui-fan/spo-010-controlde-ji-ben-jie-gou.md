@@ -65,6 +65,7 @@
 关于数据和事件部分可以参考：
 
 * [SPO-012 数据绑定节点data](/specification/3-origin-xgui-fan/spo-012-shu-ju-bang-ding-jie-dian-data.md)
+* [SPO-015 不同组件的event节点](/specification/3-origin-xgui-fan/spo-015-bu-tong-zu-jian-de-event-jie-dian.md)
 
 
 
