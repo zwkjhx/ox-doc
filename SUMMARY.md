@@ -138,6 +138,7 @@
   * [SPO-014 DataEvent配置说明](specification/3-origin-xgui-fan/spo-014-dataeventpei-zhi-shuo-ming.md)
   * [SPO-015 不同组件的event节点](specification/3-origin-xgui-fan/spo-015-bu-tong-zu-jian-de-event-jie-dian.md)
   * [SPO-016 全局覆盖性变量](specification/3-origin-xgui-fan/spo-016-quan-ju-fu-gai-xing-bian-liang.md)
+  * [SPO-017 五种不同模式的xuiChildren说明](specification/3-origin-xgui-fan/spo-017-wu-zhong-bu-tong-mo-shi-de-xuichildren-shuo-ming.md)
 * [4 - RESTful设计规范](specification/4-restfulshe-ji-zhi-dao-gui-fan.md)
   * [SPR-001 URI路径设计规范](specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.md)
   * [SPR-002 URI业务设计规范](specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.md)

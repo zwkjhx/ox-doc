@@ -66,6 +66,7 @@
 | [SPO-014 DataEvent配置说明](/specification/3-origin-xgui-fan/spo-014-dataeventpei-zhi-shuo-ming.md) | 如何封装和触发 DataEvent |
 | [SPO-015 不同组件的event节点](/specification/3-origin-xgui-fan/spo-015-bu-tong-zu-jian-de-event-jie-dian.md) | 不同的组件在使用 event 时构造的 DataEvent的模式说明 |
 | [SPO-016 全局覆盖性变量](/specification/3-origin-xgui-fan/spo-016-quan-ju-fu-gai-xing-bian-liang.md) | 当前Origin X使用的特殊全局变量说明 |
+| [SPO-017 五种不同模式的xuiChildren说明](/specification/3-origin-xgui-fan/spo-017-wu-zhong-bu-tong-mo-shi-de-xuichildren-shuo-ming.md) | 描述 xuiChildren，有关连接点的强化说明 |
 
 
 
