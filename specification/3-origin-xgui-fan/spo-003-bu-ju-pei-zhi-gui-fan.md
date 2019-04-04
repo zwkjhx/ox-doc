@@ -24,6 +24,8 @@
 
 页面本身的布局可以直接使用容器类型的组件来完成，参考下图：
 
+![](/assets/images/spo/003/page-layout.png)
+
 左边是目前Origin X使用的模式，直接在上边的配置节点中引入“顶层容器”的概念，然后`layout`直接进行页面的第一次布局，使得整个页面具有容器和布局两个概念。
 
 右边是一种协变模式，也就是说，页面可以不使用布局，而直接使用一个容器类型的control（参考：[SPO-011 容器类型的Control](/specification/3-origin-xgui-fan/spo-011-rong-qi-lei-xing-de-control.md)），然后通过`xuiChildren`渲染这个Control中的子控件，同样也是可以完成的。那么为什么不推荐使用右边这种呢？对于一个Web页面而言，Origin X的设计遵循两个基本原则：
@@ -41,6 +43,4 @@
 * 多个子控件的容器：children 数量 &gt; 1。
 
 对于顶层容器，Origin X中只允许使用children数量 = 1的容器，这种情况下像`OxTabContainer`就是不合适的，那么如果整个页面的初始容器是`OxTabContainer`呢，这种模式下的需求将在未来的Origin X版本中放开，如果目前遇到这种需求，可以考虑直接使用右图的这种模式来处理，而不去配置`container`节点。
-
-
 
