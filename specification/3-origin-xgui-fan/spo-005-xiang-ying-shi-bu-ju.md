@@ -32,12 +32,14 @@ Origin X中的响应式布局直接沿用Ant Design中的响应式处理：[http
             [
                 {
                     "span":8,
+                    "lg":6
                     "value":[
                         "6066a32c-d0b4-4243-8e21-b495cf49b1d4"
                     ]
                 },
                 {
                     "span":16,
+                    "lg":18,
                     "value":[
                         "b2fbb200-0371-4ca0-a174-080562613087"
                     ]
