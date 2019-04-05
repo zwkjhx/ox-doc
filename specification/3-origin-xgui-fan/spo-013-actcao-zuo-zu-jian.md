@@ -7,7 +7,48 @@ Act是Action的简称，在Origin X中，所有名字以`OxAct`打头的组件�
 下边是一个Act操作组件的示例：
 
 ```json
-
+{
+    "control": {
+        "1e023544-3b19-4c4b-8dee-92617c0ae6c0": {
+            "component": {
+                "name": "OxActRadio",
+                "event": [
+                    {
+                        "name": "onSearch",
+                        "config": {
+                            "target": "1d43acbc-0079-4475-b274-d32f65b7ebe7",
+                            "query": {
+                                "category": ":value"
+                            }
+                        }
+                    }
+                ],
+                "config": {
+                    "type": "BUTTON",
+                    "style": {
+                        "paddingTop": 8,
+                        "paddingBottom": 8
+                    },
+                    "defaultValue": "__DELETE__",
+                    "items": [
+                        {
+                            "label": "全部",
+                            "key": "__DELETE__"
+                        },
+                        {
+                            "label": "创建的",
+                            "key": "OWNER"
+                        },
+                        {
+                            "label": "加入的",
+                            "key": "JOINED"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
 ```
 
 
