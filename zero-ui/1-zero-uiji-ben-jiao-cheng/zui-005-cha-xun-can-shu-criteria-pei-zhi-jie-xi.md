@@ -71,5 +71,59 @@ PROP前缀用于从当前组件的 props 中提取数据，根据Zero UI的基�
 }
 ```
 
+这种做法等价于：
+
+```js
+const { $app } = this.props;
+if($app.is()){
+    const appId = $app._("key");
+}
+```
+
+如果得到的值为：061f0cf8-045b-4f77-bed9-0ffae428e89d，那么生成的最终SQL语句为：
+
+```sql
+-- appId对应的列为APP_ID
+APP_ID = '061f0cf8-045b-4f77-bed9-0ffae428e89d'
+```
+
+### 3.2. FIX
+
+FIX前缀用于设定固定值，这里输入什么值就应该是什么值。
+
+如：
+
+```json
+{
+    "status,=":"FIX:TEST"
+}
+```
+
+生成的SQL为：
+
+```sql
+-- status对应的列为STATUS
+STATUS = 'TEST'
+```
+
+### 3.3. BOOL
+
+对于布尔语句，是需要执行特殊转换的，所以需要有一个专程的针对Bool值的处理，如：
+
+```json
+{
+    "active,=":"BOOL:true"
+}
+```
+
+那么生成的SQL为：
+
+```sql
+-- active对应字段ACTIVE
+ACTIVE = TRUE
+```
+
+### 3.4. 
+
 
 
