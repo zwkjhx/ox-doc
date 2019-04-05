@@ -9,7 +9,8 @@
 | $metadata.control | 当前配置中的control节点，处理DataEvent构造target事件目标专用。 |
 | $metadata.ajax | 当前配置中的ajax节点，Lazy模式下构造Promise专用。 |
 | $container | 顶层父组件引用，所有的组件能够拿到的$container都是顶层引用。 |
-|  |  |
+| $datum | 所有Ajax（非Lazy模式）加载的数据信息，使用ajaxKey = 响应数据。 |
+| $query | 当前组件使用的查询专用，controlId = 查询条件。 |
 
 
 
