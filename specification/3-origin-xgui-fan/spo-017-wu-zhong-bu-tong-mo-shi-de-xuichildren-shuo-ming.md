@@ -177,7 +177,8 @@ class Outer extends React.PureComponent{
 
 * Origin X中每个控件包含两部分，Container/Component，其目的是在使用控件渲染的时候使得一些和HTML盒模型相关的属性直接使用容器来完成，这样容器可以处理掉类似外边距、内边距、边、头部、尾部这些和业务本身不相关的任务。
 * React在使用 children 变量的过程中，本来就存在两种方式：
-  * 是否要将当前组件的计算型数据结果传递给children，若传递则需要调用`cloneElement`的方法
+  * 是否要将当前组件的计算型数据结果传递给children，若传递则需要调用`cloneElement`的API来实现。
+  * 如果不需要给children传递任何数据，那么就可以直接使用。
 
 
 
