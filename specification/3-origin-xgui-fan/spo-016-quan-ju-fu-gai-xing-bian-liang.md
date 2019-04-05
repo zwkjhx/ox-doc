@@ -4,10 +4,12 @@
 
 ## 1. 变量说明
 
-| 变量名称 | 子节点 | 说明 |
-| :--- | :--- | :--- |
-| $metadata | control | 当前配置中的control节点，处理DataEvent构造target事件目标专用。 |
-|  | ajax | 当前配置中的ajax节点，Lazy模式下构造Promise专用。 |
+| 变量名称.属性名 | 说明 |
+| :--- | :--- |
+| $metadata.control | 当前配置中的control节点，处理DataEvent构造target事件目标专用。 |
+| $metadata.ajax | 当前配置中的ajax节点，Lazy模式下构造Promise专用。 |
+| $container | 顶层父组件引用，所有的组件能够拿到的$container都是顶层引用。 |
+|  |  |
 
 
 
