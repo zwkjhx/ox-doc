@@ -8,7 +8,8 @@
 
 | 分类 | 结构 | 说明 |
 | :--- | :--- | :--- |
-| 标准单控件 | container + component x 1 | xuiControl的 |
+| 标准单控件 | container + component x 1 | xuiControl的标准结构，一个container中包含了一个component |
+| 标准多控件 | container + component x n |  |
 
 
 
