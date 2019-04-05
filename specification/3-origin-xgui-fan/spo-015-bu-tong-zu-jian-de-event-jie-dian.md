@@ -76,5 +76,24 @@ const onBind = (event, reference) => {
 
 > 目前版本的串行和并行执行还不支持，后续提供。
 
+自定义组件中的使用代码如下（OxActSearch的源代码）：
+
+```jsx
+import React from 'react'
+import {Input} from 'antd'
+import Fn from 'ox.fun';
+
+class Component extends React.PureComponent {
+    render() {
+        const {config = {}, event} = this.props;
+        return (
+            <Input.Search {...config} onSearch={Fn.onBind(event, this)}/>
+        );
+    }
+}
+
+export default Component
+```
+
 
 
