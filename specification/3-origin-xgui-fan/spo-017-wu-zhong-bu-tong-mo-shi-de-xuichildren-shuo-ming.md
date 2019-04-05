@@ -179,6 +179,7 @@ class Outer extends React.PureComponent{
 * React在使用 children 变量的过程中，本来就存在两种方式：
   * 是否要将当前组件的计算型数据结果传递给children，若传递则需要调用`cloneElement`的API来实现。
   * 如果不需要给children传递任何数据，那么就可以直接使用。
+* 很多时候，使用Container/Component的两层架构来渲染一个组件时，Container承担了
 
 
 
