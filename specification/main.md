@@ -28,7 +28,7 @@
 * [SPO-011 容器类型的Control](/specification/3-origin-xgui-fan/spo-011-rong-qi-lei-xing-de-control.html)
 * [SPO-012 数据绑定节点data](/specification/3-origin-xgui-fan/spo-012-shu-ju-bang-ding-jie-dian-data.html)
 * [SPO-013 Act操作组件](/specification/3-origin-xgui-fan/spo-013-actcao-zuo-zu-jian.html)
-* [SPO-014 DataEvent配置说明](/specification/3-origin-xgui-fan/spo-014-dataeventpei-zhi-shuo-ming.html)
+* [SPO-014 DataEvent结构说明](/specification/3-origin-xgui-fan/spo-014-dataeventpei-zhi-shuo-ming.html)
 * [SPO-015 不同组件的event节点](/specification/3-origin-xgui-fan/spo-015-bu-tong-zu-jian-de-event-jie-dian.html)
 * [SPO-016 全局覆盖性变量](/specification/3-origin-xgui-fan/spo-016-quan-ju-fu-gai-xing-bian-liang.html)
 * [SPO-017 五种不同模式的xuiChildren说明](/specification/3-origin-xgui-fan/spo-017-wu-zhong-bu-tong-mo-shi-de-xuichildren-shuo-ming.html)
