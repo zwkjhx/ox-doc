@@ -11,7 +11,8 @@
 | 标准单控件 | container + component x 1 | xuiControl的标准结构，一个container中包含了一个component |
 | 标准多控件 | container + component x n | xuiControl的标准结构，一个container中包含了多个component |
 | 容器子控件 | component = control | component位置上配置的是一个容器行的组件，子组件充当了容器作用 |
-| 状态容器 | container中使用了state | container会将计算的一些state状态结果传递给component |
+| 状态容器 | container使用了state | container会将计算的一些state状态结果传递给component |
+| 状态容器子组件 | component使用了state | component会将state的计算结果传递给它的子控件 |
 
 
 
