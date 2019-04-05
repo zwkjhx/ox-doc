@@ -11,6 +11,8 @@
 | $container | 顶层父组件引用，所有的组件能够拿到的$container都是顶层引用。 |
 | $datum | 所有Ajax（非Lazy模式）加载的数据信息，使用ajaxKey = 响应数据。 |
 | $query | 当前组件使用的查询专用，controlId = 查询条件。 |
+| $generator | Lazy模式下的Promise生成器，ajaxKey = Function的模式，参数为该Promise的入参。 |
+| $connect | ajaxKey = controlId，记录了Control组件消费ajax的核心连接表，该连接表只针对component中的data节点中的配置，即为主数据连接表。 |
 
 
 
