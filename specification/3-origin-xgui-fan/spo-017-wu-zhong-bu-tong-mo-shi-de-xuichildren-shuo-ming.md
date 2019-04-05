@@ -52,10 +52,17 @@ class Inner extends React.PureComponent{
 标准单控件模式是最常用的模式，实际上只需要将上边的Outer的render方法改成下边这种就可以了：
 
 ```jsx
-
+render(){
+    const { children } = this.props;
+    return (
+        <div>
+            Container
+            {children}
+            {/** 上边代码就是直接渲染组件的代码 **/}
+        </div>
+    )
+}
 ```
-
-
 
 
 
