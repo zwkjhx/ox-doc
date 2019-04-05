@@ -93,7 +93,17 @@ return (
 )
 ```
 
+这里调用代码内部使用了两个Inner组件，也就是说Outer的内部 children 在这个时候是一个数组，除了使用上边的`{children}`以外，还可以使用下边这种模式渲染：
 
+```jsx
+return (
+    <div>
+        {children.map(child => child)}
+    </div>
+)
+```
+
+> 由于React默认可以渲染集合，所以上边代码和直接使用 {children} 是等价的。
 
 
 
