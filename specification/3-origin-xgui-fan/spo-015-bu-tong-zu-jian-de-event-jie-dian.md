@@ -74,5 +74,7 @@ const onBind = (event, reference) => {
 };
 ```
 
+> 目前版本的串行和并行执行还不支持，后续提供。
+
 
 
