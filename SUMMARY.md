@@ -149,7 +149,7 @@
 
 ## Utility X
 
-* [Utility X主页](utility-x/utility-xzhu-ye.md)
+* [Utility X主页](utility-x/main.md)
 * [1 - 设计理念](utility-x/1-she-ji-li-nian.md)
   * [UXD-001 令人繁琐的Util](utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md)
 * [2 - Zero中的Ux](utility-x/2-zerozhong-de-ux.md)
