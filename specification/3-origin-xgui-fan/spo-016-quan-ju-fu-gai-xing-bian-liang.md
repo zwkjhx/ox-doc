@@ -6,8 +6,8 @@
 
 | 变量名称 | 子节点 | 说明 |
 | :--- | :--- | :--- |
-| $metadata | control | 当前配置中的control节点，用于处理DataEvent构造target专用。 |
-|  | ajax |  |
+| $metadata | control | 当前配置中的control节点，处理DataEvent构造target专用。 |
+|  | ajax | 当前配置中的ajax节点，Lazy模式下构造Promise专用。 |
 
 
 
