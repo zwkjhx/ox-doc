@@ -6,6 +6,8 @@
 
 关于DataEvent数据结构可以参考下图：
 
+![](/assets/images/spo/014/data-event.png)
+
 ## 2. 说明
 
 * 每一个发送的DataEvent都有一个时间名称`name`，可直接通过`key()`的API进行获取。
