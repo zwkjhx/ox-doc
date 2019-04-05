@@ -105,5 +105,35 @@ return (
 
 > 由于React默认可以渲染集合，所以上边代码和直接使用 {children} 是等价的。
 
+### 2.3. 容器子控件
+
+容器子控件实际上增加了整个组件的层级，先修改Inner的代码为：
+
+```jsx
+class Inner extends React.PureComponent{
+    render(){
+        const { children } = this.props;
+        return (
+            <div>
+                Component
+                {children}
+            </div>
+        )
+    }
+}
+```
+
+在这种模式下，其实Inner和Outer的用法就一致了，那么外围调用代码有可能如：
+
+```jsx
+return (
+    <Outer>
+        <Inner>
+            <OtherComponent/>
+        </Inner>
+    </Outer>
+) 
+```
+
 
 
