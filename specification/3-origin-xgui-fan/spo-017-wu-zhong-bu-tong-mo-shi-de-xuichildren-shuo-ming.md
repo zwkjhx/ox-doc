@@ -132,7 +132,37 @@ return (
             <OtherComponent/>
         </Inner>
     </Outer>
-) 
+)
+```
+
+### 2.4. 状态容器
+
+状态容器的外围调用代码实际上和上边的代码没什么区别，唯一的区别在内部实现部分，这种情况下，容器内部会有状态信息，然后在渲染 children 时将状态信息设置到 children 中去。
+
+```jsx
+class Outer extends React.PureComponent{
+    state = {}
+    componentDidMount(){
+        this.setState({
+            $user:{
+                username:"Lang",
+                password:"lang.lang"
+            }
+        }}
+    }
+    render(){
+        const { $user = {} } = this.state;
+        const { children } = this.props;
+        return (
+            <div>
+                Container,
+                {React.cloneElement(children,{
+                    $username: $user.username
+                })}
+            </div>
+        )
+    }
+}
 ```
 
 
