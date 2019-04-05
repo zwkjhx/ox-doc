@@ -179,7 +179,106 @@ class Outer extends React.PureComponent{
 * React在使用 children 变量的过程中，本来就存在两种方式：
   * 是否要将当前组件的计算型数据结果传递给children，若传递则需要调用`cloneElement`的API来实现。
   * 如果不需要给children传递任何数据，那么就可以直接使用。
-* 很多时候，使用Container/Component的两层架构来渲染一个组件时，Container承担了
+* 很多时候，使用Container/Component的两层架构来渲染一个组件时，Container可以在Component变得更加纯，因为像`OxAssist`和`OxBoundary`这种不渲染界面的虚拟容器在使用的时候，可以在真正的Component渲染之前将所有界面的数据准备好。
+
+## 4. xuiChildren源代码
+
+下边是 xuiChildren 这个函数的核心源代码，研发人员可以参考：
+
+```js
+/**
+ * 子组件渲染，用于中间层容器，中间层容器的渲染主要分为两种模式
+ * 1.「标准」（单组件）
+ * -- xuiControl直接渲染：父容器 + 子组件：
+ *    container + component 模式
+ * 2.「标准」（多组件）
+ * -- xuiControl直接渲染：父容器 + n * 子组件：
+ *    container + components 模式
+ * 3.「协变」（容器子组件模式）
+ * 配置的 component 位置上的组件是一个 container 类型的组件，此时子组件充当了
+ * 容器的作用，这种模式下，如果当前 control 原始包含了容器，那么会形成一个：
+ * container -> component -> control 的三级结构
+ * 4.「协变」（状态容器模式）
+ * 配置的 container 位置上的组件本身是一个状态组件，需要将 state 变量中的一些计算
+ * 出来的结果数据放到 component 中执行渲染
+ * container -> component ( component 部分数据来源于 container ）
+ * 5.「协变」（状态容器子组件模式）
+ * 配置的 component 位置上的组件本身是一个状态组件，需要将 state 变量中的一些计算
+ * 出来的结果数据放到它所关联的外置的 control 中执行第二次渲染
+ * container -> component -> control 结构（ control 部分数据来源于 component ）
+ */
+const xuiChildren = (reference, children) => {
+    const {config = {}, name = "", data} = reference.props;
+    const state = reference.state;
+    /**
+     * 读取 config 中的 control
+     * 如果 control 是一个 String，直接链接
+     */
+    let grid = config.grid;
+    if (undefined === grid) {
+        /**
+         * 不使用 xuiControl
+         */
+        if (state) {
+            /**
+             * 带状态的容器
+             */
+            const props = _xuiInherit(reference);
+            Ux.dgDebug(props, "[Ox] Container, 纯渲染，带状态，传入Props：", "#4666e4");
+            return _xuiUniform(children, props);
+        } else {
+            /**
+             * 不带状态的容器
+             * 最简单的模式
+             * 1 和 2
+             */
+            Ux.dgDebug({}, "[Ox] Container, 纯渲染，不带状态，传入Props：", "#4666e4");
+            return _xuiUniform(children);
+        }
+    } else {
+        /**
+         * 使用 xuiControl 方式渲染，如果不是数组的时候需要转换
+         */
+        if (!U.isArray(grid)) {
+            grid = [grid];
+        }
+        const {$metadata = {}, id, $container, data} = reference.props;
+        const {control = {}} = $metadata;
+        const prefix = `ox-grid-${id}`;
+        const ui = Fn.toGrid(grid, prefix, control);
+        /**
+         * 容器属性处理
+         */
+        const inherit = Fn.inheritContainer($container);
+        if (state) {
+            /**
+             * 带状态的容器 或 组件
+             */
+            const state = _xuiInherit(reference);
+            Object.assign(inherit, state);
+            Ux.dgDebug({
+                name,
+                config,
+                data,
+                inherit
+            }, "[Ox] Container, 连接Control渲染，带状态。", "#4666e4");
+        } else {
+            /**
+             * 不带状态的容器或组件
+             */
+            Ux.dgDebug({
+                name,
+                config,
+                data
+            }, "[Ox] Container, 连接Control渲染，不带状态。", "#4666e4");
+        }
+        return Rdr.xuiGrid(ui, UI, {
+            $data: data,
+            inherit
+        })
+    }
+};
+```
 
 
 
