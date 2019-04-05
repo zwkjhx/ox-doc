@@ -26,7 +26,53 @@
 
 ## 3. onBind方法
 
+onBind方法属于事件绑定的专用方法，它会生成一个类似：
 
+```js
+event => {
+
+}
+```
+
+的函数，这个函数可以直接赋值给组件的对象如：onClick、onChange、onSearch等，它的方法源代码如下：
+
+```js
+/**
+ * 绑定传入值必须是一个合法的
+ * Object包含键：parallel
+ *    parallel = true：并行绑定
+ *    parallel = false：单事件绑定
+ * Array（长度为1）：单事件绑定
+ * Array（长度>1）：顺序事件绑定
+ */
+const onBind = (event, reference) => {
+    if (U.isArray(event)) {
+        if (0 === event.length) {
+            // 空事件绑定，不允许
+            return Bind.bindResult({event}, "[OX] Event, 数组中的事件为空！");
+        } else if (1 === event.length) {
+            // 如果只有一个元素，执行单事件绑定
+            return Bind.bindSingle(event, reference);
+        } else {
+            // 串行顺序执行
+            return Bind.bindResult({event}, "[OX] Event Warning, 暂时不支持", "#c93");
+        }
+    } else {
+        if (U.isObject(event) && !!event) {
+            const {parallel = false, ...rest} = event;
+            // 如果是一个对象，转换成数组执行单事件绑定
+            if (parallel) {
+                // TODO: 并行绑定，待定
+                return Bind.bindResult({event}, "[OX] Event Warning, 暂时不支持", "#c93");
+            } else {
+                return Bind.bindSingle([rest], reference);
+            }
+        } else {
+            return Bind.bindResult({event}, "[OX] Event Failure, 事件 event 的格式不合法");
+        }
+    }
+};
+```
 
 
 
