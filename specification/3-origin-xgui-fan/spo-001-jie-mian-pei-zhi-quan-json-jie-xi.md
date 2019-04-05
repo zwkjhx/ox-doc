@@ -68,5 +68,17 @@
 | [SPO-016 全局覆盖性变量](/specification/3-origin-xgui-fan/spo-016-quan-ju-fu-gai-xing-bian-liang.html) | 当前Origin X使用的特殊全局变量说明 |
 | [SPO-017 五种不同模式的xuiChildren说明](/specification/3-origin-xgui-fan/spo-017-wu-zhong-bu-tong-mo-shi-de-xuichildren-shuo-ming.html) | 描述 xuiChildren，有关连接点的强化说明 |
 
+## 3. 术语表
+
+| 术语 | 文中说明 |
+| :--- | :--- |
+| container | 容器 |
+| page | 页面 |
+| layout | 布局 |
+| control | 控件（控件包含容器 + 组件） |
+| component | 组件 |
+| event | 事件 |
+| config | 配置 |
+
 
 
