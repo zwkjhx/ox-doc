@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-013-actcao-zuo-zu-jian.md" beforeDir="false" afterPath="$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-013-actcao-zuo-zu-jian.md" afterDir="false" />
-    </list>
+    <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -101,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-013-actcao-zuo-zu-jian.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="288">
+              <first_editor relative-caret-position="319">
                 <caret line="61" column="231" selection-start-line="61" selection-start-column="231" selection-end-line="61" selection-end-column="231" />
               </first_editor>
               <second_editor />
@@ -813,7 +811,7 @@
     <entry file="file://$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-013-actcao-zuo-zu-jian.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="288">
+          <first_editor relative-caret-position="319">
             <caret line="61" column="231" selection-start-line="61" selection-start-column="231" selection-end-line="61" selection-end-column="231" />
           </first_editor>
           <second_editor />
