@@ -59,7 +59,5 @@ Act组件的基本配置和一个Control配置一样，它和Control的配置区
 * Act组件必须带一个`event`配置，表示当前Act触发的DataEvent事件相关信息。
 * 配置节点`config`根据不同的组件会有所区别。
 
-关于事件配置的信息可参考：[SPO-015 不同组件的event节点](/specification/3-origin-xgui-fan/spo-015-bu-tong-zu-jian-de-event-jie-dian.html)，而DataEvent的结构可以参考：[SPO-014 DataEvent配置说明](/specification/3-origin-xgui-fan/spo-014-dataeventpei-zhi-shuo-ming.html)。
-
-
+关于事件配置的信息可参考：[SPO-015 不同组件的event节点](/specification/3-origin-xgui-fan/spo-015-bu-tong-zu-jian-de-event-jie-dian.html)，而DataEvent的结构可以参考：[SPO-014 DataEvent结构说明](/specification/3-origin-xgui-fan/spo-014-dataeventpei-zhi-shuo-ming.html)。
 
