@@ -17,8 +17,21 @@
 很早的时候，我们在书本上学过，不要使用混乱的缩写命名，因为别人不知道那个缩写代表什么，但并没有说过不让我们使用缩写，实际上很多时候缩写应该有它自己的位置。我一直无法苟同于Spring中Repository部分的代码生成方法的做法，虽然完美表达了意思，但基本上长度很无敌，比如：
 
 ```java
+@Repository
+public interface GroupRepository extends JpaRepository<Group, String> {
 
+    @Query(value = "select distinct sec_group from Group sec_group left join fetch sec_group.users",
+        countQuery = "select count(distinct sec_group) from Group sec_group")
+    Page<Group> findAllWithEagerRelationships(Pageable pageable);
+
+    @Query(value = "select distinct sec_group from Group sec_group left join fetch sec_group.users")
+    List<Group> findAllWithEagerRelationships();
+
+    @Query("select sec_group from Group sec_group left join fetch sec_group.users where sec_group.id =:id")
+    Optional<Group> findOneWithEagerRelationships(@Param("id") String id);
+
+}
 ```
 
-
+所以在很长一段时间里我一直都在追求极致，甚至比较优雅而不失实用性的命名方式。
 
