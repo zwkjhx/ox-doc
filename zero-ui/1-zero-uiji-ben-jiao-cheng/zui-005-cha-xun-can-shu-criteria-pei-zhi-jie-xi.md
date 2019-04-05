@@ -164,9 +164,23 @@ TYPE = 'km.factor' AND UNIFIED = false
 
 ```json
 {
-    
+    "category,=": "DATUM:preorder.category,code=Company"
 }
 ```
+
+上边的解析可理解成：
+
+* 从Redux树或者Assist容器提供的辅助数据中查找 key = preorder.category的辅助数据：
+  * `$t_`打头的是Tabular数据。
+  * `$a_`打头的是Assist数据。
+  * `$c_`打头的是Category数据。
+* 一般这种数据源都是一个数组如Array，那么后边是查询条件，在这个数据中查找code = Company的数据。
+* 由于后端设定中这三种数据的code 是unique的，所以这里会直接提取到唯一记录。
+* 最后将唯一记录的 key 值设置到这个条件中，完成动态数据连接。
+
+## 4. valueSearch
+
+
 
 
 
