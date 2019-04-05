@@ -64,5 +64,20 @@ render(){
 }
 ```
 
+而直接渲染的外围代码类似于：
+
+```jsx
+return (
+    <Outer>
+        <Inner/>
+    </Outer>
+)
+```
+
+也就是说，它遵循下边几个规则：
+
+* 在Outer的Jsx渲染中，必须使用代码将 children 变量渲染，若不使用它，即使是最后这种模式，子组件也是不会被渲染出来的。
+* 直接渲染模式中，Outer内部的变量是无法传递给 children 的，也就是说Container
+
 
 
