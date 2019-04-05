@@ -169,7 +169,7 @@ class Outer extends React.PureComponent{
 
 ### 2.5. 状态容器子组件
 
-这种模式就不重复了，结合2.3和2.4，相信读者可以理解了，在Origin X中，这种模式下的component本身是2.4定义的这样一个组件。
+这种模式就不重复了，结合2.3和2.4，读者可以理解了，在Origin X中，这种模式下的component本身是类似2.4定义的容器组件。
 
 ## 3. 设计理念
 
