@@ -14,5 +14,48 @@
 | 状态容器 | container使用了state | container会将计算的一些state状态结果传递给component |
 | 状态容器子组件 | component使用了state | component会将state的计算结果传递给它的子控件 |
 
+## 2. 五种模式说明
+
+本章节主要讲解五种模式的详细内容，本文以下边两个控件为例（一个是容器组件，一个是组件）：
+
+**Outer**：容器组件
+
+```jsx
+class Outer extends React.PureComponent{
+    render(){
+        const { children } = this.props;
+        return (
+            <div>
+                Container
+            </div>
+        )
+    }
+}
+```
+
+**Inner**：普通组件
+
+```jsx
+class Inner extends React.PureComponent{
+    render(){
+        return (
+            <div>
+                Component
+            </div>
+        )
+    }
+}
+```
+
+### 2.1. 标准单控件
+
+标准单控件模式是最常用的模式，实际上只需要将上边的Outer的render方法改成下边这种就可以了：
+
+```jsx
+
+```
+
+
+
 
 
