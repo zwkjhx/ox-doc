@@ -165,5 +165,17 @@ class Outer extends React.PureComponent{
 }
 ```
 
+从上边的代码可以知道，Outer组件将自己的状态中的`$user`变量的username字段数据传递给Inner组件了，它们之间存在内部通信，而最外层是感知不了这种传递的，如`OxAssist`就是采取的这种模式。
+
+### 2.5. 状态容器子组件
+
+这种模式就不重复了，结合2.3和2.4，相信读者可以理解了，在Origin X中，这种模式下的component本身是2.4定义的这样一个组件。
+
+## 3. 设计理念
+
+实际上React本身没有这么复杂，为什么要在Origin X中设计这么复杂的结构呢，主要原因如下：
+
+* Origin X中每个控件包含两部分，Container/Component，其目的是在使用控件渲染的时候使得一些和HTML盒模型相关的属性直接使用容器来完成，
+
 
 
