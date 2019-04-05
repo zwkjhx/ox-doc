@@ -6,7 +6,7 @@
 
 关于DataEvent数据结构可以参考下图：
 
-![](/assets/images/spo/014/data-event.png)
+![](/assets/images/spo/014/data-event-structure.png)
 
 ## 2. 说明
 
