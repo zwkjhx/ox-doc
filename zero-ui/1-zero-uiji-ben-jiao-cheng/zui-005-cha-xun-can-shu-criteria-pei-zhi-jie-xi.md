@@ -123,7 +123,27 @@ STATUS = 'TEST'
 ACTIVE = TRUE
 ```
 
-### 3.4. 
+### 3.4. ENUM
+
+对于枚举值，会使用IN语法，如：
+
+```json
+{
+    "category,i","ENUM:PROD`STG`DEV"
+}
+```
+
+生成的SQL语句如：
+
+```sql
+CATEGORY IN ('PROD','STG','DEV')
+```
+
+### 3.5. OPERATOR
+
+OPERATOR是特殊连接符，主要用于设置当前这个查询条件的连接关系是AND还是OR。
+
+
 
 
 
