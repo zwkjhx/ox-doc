@@ -1,6 +1,4 @@
-# DataEvent配置说明
-
-
+# DataEvent结构说明
 
 
 
