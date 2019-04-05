@@ -141,7 +141,24 @@ CATEGORY IN ('PROD','STG','DEV')
 
 ### 3.5. OPERATOR
 
-OPERATOR是特殊连接符，主要用于设置当前这个查询条件的连接关系是AND还是OR。
+OPERATOR是特殊连接符，主要用于设置当前这个查询条件的连接关系是AND还是OR，比如：
+
+```json
+{
+    "": "OPERATOR:AND",
+    "type,=": "FIX:km.factor",
+    "unified,=": "FIX:false"
+}
+```
+
+上边的两个条件最终会生成：`"" = true`的一个键值对，底层的SQL如：
+
+```sql
+-- type 对应字段TYPE，unified 对应字段 UNIFIED
+TYPE = 'km.factor' AND UNIFIED = false
+```
+
+### 3.6. DATUM
 
 
 
