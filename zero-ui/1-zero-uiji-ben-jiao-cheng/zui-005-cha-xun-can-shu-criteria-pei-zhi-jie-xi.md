@@ -160,7 +160,13 @@ TYPE = 'km.factor' AND UNIFIED = false
 
 ### 3.6. DATUM
 
+如果输入参数是动态的，并且是基于某个Tabular/Category/Assist，则使用DATUM这种方式读取输入数据，如：
 
+```json
+{
+    
+}
+```
 
 
 
