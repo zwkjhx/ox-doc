@@ -11,6 +11,8 @@
 
 ## 1. Zero规范
 
+* [SPC-001 Zero基本开发规范](/specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.md)
+
 ## 2. Zero UI规范
 
 ## 3. Origin X规范
