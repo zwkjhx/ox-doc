@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/specification/main.md" beforeDir="false" afterPath="$PROJECT_DIR$/specification/main.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md" beforeDir="false" afterPath="$PROJECT_DIR$/utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,12 +48,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/specification/main.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="234">
                 <caret line="13" column="90" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="405">
+                <caret line="47" column="249" selection-start-line="47" selection-start-column="249" selection-end-line="47" selection-end-column="249" />
               </first_editor>
               <second_editor />
             </state>
@@ -105,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.md" />
@@ -156,6 +167,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/utility-x/main.md" />
         <option value="$PROJECT_DIR$/specification/main.md" />
+        <option value="$PROJECT_DIR$/utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md" />
       </list>
     </option>
   </component>
@@ -195,6 +207,17 @@
               <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="specification" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="utility-x" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="utility-x" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="1-she-ji-li-nian" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -282,16 +305,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-002-tong-bu-he-yi-bu.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="2" selection-start-column="2" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-003-vertxzhong-de-ji-qun-guan-li-qi.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -731,6 +744,16 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="234">
             <caret line="13" column="90" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="405">
+            <caret line="47" column="249" selection-start-line="47" selection-start-column="249" selection-end-line="47" selection-end-column="249" />
           </first_editor>
           <second_editor />
         </state>
