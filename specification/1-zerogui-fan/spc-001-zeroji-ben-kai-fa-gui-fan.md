@@ -41,16 +41,19 @@ Zero中由于使用了微服务的整体结构，所以对于使用Zero开发的
 
 ## 3. 其他规范
 
+### 3.1. 清单
+
 本文中的规范是Zero中我们实战常用规范，不一定是最优化，但开发人员遵循这个规范来开发项目，可以将Zero用得更加得心应手。
 
 | 规则 | 示例 |
 | :--- | :--- |
-| Addr的地址名称统一使用 EVENT://ADDR/ 前缀，全大写 | EVENT://ADDR/PAYBILL/PUT |
-| Addr中的变量名和字符串中的文字一致 | PAYBILL\_PUT |
+| Addr的地址名称统一使用 EVENT://ADDR/ 前缀，全大写 | EVENT://ADDR/PAYBILL/PUT、\[3.2.1\] |
+| Addr中的变量名和字符串中的文字一致 | PAYBILL\_PUT、\[3.2.1\] |
+|  |  |
 
-## 4. 示例代码
+### 3.2. 示例代码
 
-Addr中的基本规范：
+#### 3.2.1. Addr中的变量名和字符串值
 
 ```java
 String PAYBILL_PUT = "EVENT://ADDR/PAYBILL/PUT";
