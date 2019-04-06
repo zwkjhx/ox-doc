@@ -34,9 +34,10 @@ Zero中由于使用了微服务的整体结构，所以对于使用Zero开发的
 | epic | OrderAider \[C\] | 使用Aider后缀 | aider的含义在英文翻译中有：辅助、后援的意思，实际上是业务逻辑层的辅助工具类。 |
 | exception | HotelMissingException \[C\] | 所有异常类直接使用Exception后缀 |  |
 | ipc | MenuIvy \[C\] | 统一使用Ivy的后缀命名 | Ivy有常春藤的含义，由于这个包中包含的是开放给内部服务的Rpc接口，Rpc又是长连接，一旦调用后会保持，加上Ivy的名字比较短，所以用了该命名。 |
-| micro.&lt;module&gt; | RoomApi | 所有RESTful接口类统一使用Api后缀 |  |
-|  | RoomIrApi | 查询和基础接口分离的时候，查询类的使用IrApi后缀 | Ir全称：Information Retrieval，信息检索 |
-|  | RoomStub | 业务逻辑接口类统一使用Stub的后缀 | Stub在Java语言的RMI中有存根的意思，实际上是不带实现的远程调用接口 |
+| micro.&lt;module&gt; | RoomApi \[I\] | 所有RESTful接口类统一使用Api后缀 |  |
+|  | RoomIrApi \[I\] | 查询和基础接口分离的时候，查询类的使用IrApi后缀 | Ir全称：Information Retrieval，信息检索。 |
+|  | RoomStub \[I\] | 业务逻辑接口类统一使用Stub的后缀 | Stub在Java语言的RMI中有存根的意思，实际上是不带实现的远程调用接口。 |
+|  |  |  |  |
 
 ## 2. 模块内部规范
 
