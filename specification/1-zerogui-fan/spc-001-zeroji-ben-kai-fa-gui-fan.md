@@ -58,7 +58,7 @@ String PAYBILL_PUT = "EVENT://ADDR/PAYBILL/PUT";
 
 ### 3.2. Api中的方法定义
 
-Api类中的方法定义一般有两套，这个开发者可以根据实际情况来，这个文件接口中一般包含普通CRUD的操作接口，对于复杂的RESTful的接口规范可以参考：[SPR-002 URI业务设计规范](/specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.md)。
+Api类中的方法定义一般有两套，这个开发者可以根据实际情况来，这个文件接口中一般包含普通CRUD的操作接口，对于复杂的RESTful的接口规范可以参考：[SPR-002 URI业务设计规范](/specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.html)。
 
 实体名如：user（用户）
 

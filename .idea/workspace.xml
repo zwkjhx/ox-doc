@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="" />
+    <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.md" beforeDir="false" afterPath="$PROJECT_DIR$/specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -46,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/specification/main.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -70,11 +72,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="243">
+                <caret line="60" column="179" selection-start-line="60" selection-start-column="179" selection-end-line="60" selection-end-column="179" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -145,7 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.md" />
         <option value="$PROJECT_DIR$/environment/yin-dao-ye.md" />
@@ -196,6 +199,7 @@
         <option value="$PROJECT_DIR$/utility-x/main.md" />
         <option value="$PROJECT_DIR$/specification/main.md" />
         <option value="$PROJECT_DIR$/utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md" />
+        <option value="$PROJECT_DIR$/specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.md" />
       </list>
     </option>
   </component>
@@ -769,19 +773,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/specification/main.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="-117">
             <caret line="13" column="90" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="243">
+            <caret line="60" column="179" selection-start-line="60" selection-start-column="179" selection-end-line="60" selection-end-column="179" />
           </first_editor>
           <second_editor />
         </state>
