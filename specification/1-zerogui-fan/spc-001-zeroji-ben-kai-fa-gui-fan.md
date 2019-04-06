@@ -28,9 +28,22 @@ Zero中的一个服务中使用的基本规范如下：
 
 根包名使用：`com.<app>.micro.<module>`
 
+这里提到的内部包规范是当前模块想对复杂的时候，如果比较简单，直接将所有文件扔在这个模块的根包内页不会有影响，如：
+
+```
+com/htl/micro/rent/RentApi.java
+com/htl/micro/rent/RentIrApi.java
+com/htl/micro/rent/RentWorker.java
+com/htl/micro/rent/RentStub.java
+com/htl/micro/rent/RentService.java
+```
+
+### 2.1. 基本包定义
+
 | 包名 | 职责 | 含义 |
 | :--- | :--- | :--- |
-|  |  |  |
+| &lt;root&gt; | 根包，定义模块的接口 |  |
+| impl | 实现包，定义模块接口对应的实现 |  |
 
 
 
