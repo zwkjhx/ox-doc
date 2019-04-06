@@ -56,5 +56,11 @@ Zero中由于使用了微服务的整体结构，所以对于使用Zero开发的
 String PAYBILL_PUT = "EVENT://ADDR/PAYBILL/PUT";
 ```
 
+### 3.2. Api中的方法定义
+
+Api类中的方法定义一般有两套，这个开发者可以根据实际情况来，这个文件接口中一般包含普通CRUD的操作接口。
+
+
+
 
 
