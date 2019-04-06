@@ -152,7 +152,7 @@
 
 * [Utility X主页](utility-x/main.md)
 * [1 - 设计理念](utility-x/1-she-ji-li-nian.md)
-  * [UXD-001 那些年的Util](utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md)
+  * [UXD-001 那些年的伤痛](utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md)
 * [2 - Zero中的Ux](utility-x/2-zerozhong-de-ux.md)
 * [3 - Zero UI中的Ux](utility-x/3-zero-uizhong-de-ux.md)
 * [4 - Zero中的Ut](utility-x/4-zerozhong-de-ut.md)
