@@ -13,7 +13,7 @@ Utility X是在Zero时代取的名字，现在贯穿所有目前的项目，它�
 
 ## 1. 设计理念
 
-* [UXD-001 那些年的Util](/utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.html)
+* [UXD-001 那些年的伤痛](/utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.html)
 
 ## 2. Zero中的Ux
 
