@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.md" beforeDir="false" afterPath="$PROJECT_DIR$/specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.md" afterDir="false" />
-    </list>
+    <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
