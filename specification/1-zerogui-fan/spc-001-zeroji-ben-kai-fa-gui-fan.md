@@ -39,6 +39,8 @@ Zero中由于使用了微服务的整体结构，所以对于使用Zero开发的
 |  | RoomWorker \[C\] | 后台Worker线程专用，统一使用Worker后缀 |  |
 |  | RoomService \[C\] | 实现了Stub的业务逻辑实现类 | Service就是服务，不是接口，直接使用该名字描述服务的内容。 |
 
+## 3. 变量名
+
 
 
 
