@@ -29,7 +29,8 @@ Zero中由于使用了微服务的整体结构，所以对于使用Zero开发的
 | 包 | 规则/示例 | 含义 |
 | :--- | :--- | :--- |
 | aop | 直接使用Aop后缀，如AuditAop | 直接告诉开发人员这个类就是Aop部分的代码。 |
-|  |  |  |
+| cv | 地址常量 Addr.java | Address的简称，连接Agent和Worker的EventBus中的地址表。 |
+| cv | 领域模型映射常量 Pojo.java | 使用Pojo直接会让开发人员联想到和Java中的Domain相关。 |
 
 ## 2. 模块内部规范
 
