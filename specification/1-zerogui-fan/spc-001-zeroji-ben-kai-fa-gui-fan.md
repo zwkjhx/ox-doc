@@ -32,6 +32,7 @@ Zero中由于使用了微服务的整体结构，所以对于使用Zero开发的
 | cv | 地址常量 Addr.java | Address的简称，连接Agent和Worker的EventBus中的地址表。 |
 | cv | 领域模型映射常量 Pojo.java | 使用Pojo直接会让开发人员联想到和Java中的Domain相关。 |
 | epic | 使用Aider后缀 | aider的含义在英文翻译中有：辅助、后援的意思，实际上是业务逻辑层的辅助工具类。 |
+| exception | 所有异常类直接使用Exception后缀 |  |
 
 ## 2. 模块内部规范
 
