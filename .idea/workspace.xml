@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="" />
+    <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/utility-x/main.md" beforeDir="false" afterPath="$PROJECT_DIR$/utility-x/main.md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -38,8 +40,8 @@
         <entry file="file://$PROJECT_DIR$/utility-x/main.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="306">
-                <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+              <first_editor relative-caret-position="270">
+                <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
               </first_editor>
               <second_editor />
             </state>
@@ -91,7 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/mian-shi-ti/kmi-002-cdakao-shi-da-gang.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.md" />
@@ -142,6 +143,7 @@
         <option value="$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-011-rong-qi-lei-xing-de-control.md" />
         <option value="$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-013-actcao-zuo-zu-jian.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/utility-x/main.md" />
       </list>
     </option>
   </component>
@@ -721,8 +723,8 @@
     <entry file="file://$PROJECT_DIR$/utility-x/main.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="306">
-            <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <first_editor relative-caret-position="270">
+            <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
           </first_editor>
           <second_editor />
         </state>
