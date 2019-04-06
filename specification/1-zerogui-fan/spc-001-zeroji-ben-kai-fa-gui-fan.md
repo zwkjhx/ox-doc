@@ -19,7 +19,7 @@ Zero中由于使用了微服务的整体结构，所以对于使用Zero开发的
 | epic | 可共享Monad专用工具类 | 可用于调用远程Rpc，也可做服务通信客户端，或者初始化、响应处理某一类的基础工作，属于原来业务逻辑层中类似Helper的功能。——这里的静态方法可直接作为Future的compose方法的参数来处理。 |
 | exception | 全局异常专用包 | 用于定义一些业务层面的全局异常信息。 |
 | ipc | 服务内部通信Rpc服务端 | 当微服务相互通信的时候，这个包中放的就是内部通讯时开放给其他服务的Rpc接口。 |
-| micro.&lt;module&gt; | 某个服务所有组件 | 用于定义某个服务中的所有组件信息，包括RESTful的Api、Agent/Worker、业务逻辑层接口和实现（Stub/Service） |
+| micro.&lt;module&gt; | 某个服务所有组件 | 定义某个服务中的所有组件信息，包括RESTful的Api、Agent/Worker、业务逻辑层接口和实现（Stub/Service）。 |
 
 
 
