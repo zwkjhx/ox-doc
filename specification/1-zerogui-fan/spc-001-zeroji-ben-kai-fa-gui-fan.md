@@ -26,13 +26,13 @@ Zero中由于使用了微服务的整体结构，所以对于使用Zero开发的
 
 ### 1.2. 类名基本规范
 
-| 包 | 示例类名 | 规则/示例 | 含义 |
+| 包 | 示例类名（I-接口/C-类） | 规则/示例 | 含义 |
 | :--- | :--- | :--- | :--- |
-| aop | AuditAop | 直接使用Aop后缀 | 直接告诉开发人员这个类就是Aop部分的代码。 |
-| cv | Addr | 地址常量 | Address的简称，连接Agent和Worker的EventBus中的地址表。 |
-| cv | Pojo | 领域模型映射常量 Pojo | 使用Pojo直接会让开发人员联想到和Java中的Domain相关。 |
-| epic | OrderAider | 使用Aider后缀 | aider的含义在英文翻译中有：辅助、后援的意思，实际上是业务逻辑层的辅助工具类。 |
-| exception | HotelMissingException | 所有异常类直接使用Exception后缀 |  |
+| aop | AuditAop \[C\] | 直接使用Aop后缀 | 直接告诉开发人员这个类就是Aop部分的代码。 |
+| cv | Addr \[I\] | 地址常量 | Address的简称，连接Agent和Worker的EventBus中的地址表。 |
+| cv | Pojo \[I\] | 领域模型映射常量 Pojo | 使用Pojo直接会让开发人员联想到和Java中的Domain相关。 |
+| epic | OrderAider \[C\] | 使用Aider后缀 | aider的含义在英文翻译中有：辅助、后援的意思，实际上是业务逻辑层的辅助工具类。 |
+| exception | HotelMissingException，C | 所有异常类直接使用Exception后缀 |  |
 | ipc | MenuIvy | 统一使用Ivy的后缀命名 | Ivy有常春藤的含义，由于这个包中包含的是开放给内部服务的Rpc接口，Rpc又是长连接，一旦调用后会保持，加上Ivy的名字比较短，所以用了该命名。 |
 | micro.&lt;module&gt; | RoomApi | 所有RESTful接口类统一使用Api后缀 |  |
 |  | RoomIrApi | 查询和基础接口分离的时候，查询类的使用IrApi后缀 | Ir全称：Information Retrieval，信息检索 |
