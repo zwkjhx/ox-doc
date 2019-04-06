@@ -60,7 +60,9 @@ String PAYBILL_PUT = "EVENT://ADDR/PAYBILL/PUT";
 
 Api类中的方法定义一般有两套，这个开发者可以根据实际情况来，这个文件接口中一般包含普通CRUD的操作接口。
 
-
+| 方法名 | URI |  |
+| :--- | :--- | :--- |
+|  |  |  |
 
 
 
