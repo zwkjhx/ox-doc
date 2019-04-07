@@ -72,7 +72,10 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 | getByXxx | GET | /user/email/{email} | 「单个」按照email查询用户信息，返回为JsonObject |
 | searchByXxx | GET | /users/status/{status} | 「多个」按照status查询用户信息，返回为JsonArray |
 | getAll | GET | /users | 读取所有用户，JsonArray |
-| batchUpdate | PUT |  |  |
+| batchUpdate | PUT | /users | 批量更新用户 |
+| batchCreate | POST | /users | 批量创建用户 |
+| batchDelete | DELETE | /users | 批量删除用户 |
+|  |  |  |  |
 
 
 
