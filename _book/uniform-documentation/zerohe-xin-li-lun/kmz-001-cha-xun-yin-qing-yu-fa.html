@@ -1,0 +1,2412 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>KMZ-001 查询引擎语法 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="kmz-002-tabularhe-assist-bian-liang.html" />
+    
+    
+    <link rel="prev" href="../zerohe-xin-li-lun.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">http://www.origin-x.cn</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Origin X Doc文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Zero UI</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../zero-ui/main.html">
+            
+                <a href="../../zero-ui/main.html">
+            
+                    
+                    Zero UI文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../zero-ui/1-zero-uiji-ben-jiao-cheng.html">
+            
+                <a href="../../zero-ui/1-zero-uiji-ben-jiao-cheng.html">
+            
+                    
+                    1 - Zero UI基本教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../zero-ui/1-zero-uiji-ben-jiao-cheng/zui-001-zero-uixiang-mu-jie-gou-shuo-ming.html">
+            
+                <a href="../../zero-ui/1-zero-uiji-ben-jiao-cheng/zui-001-zero-uixiang-mu-jie-gou-shuo-ming.html">
+            
+                    
+                    ZUI-001 Zero UI项目结构说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../../zero-ui/1-zero-uiji-ben-jiao-cheng/zui-002-zero-uizhong-de-huan-jing-bian-liang.html">
+            
+                <a href="../../zero-ui/1-zero-uiji-ben-jiao-cheng/zui-002-zero-uizhong-de-huan-jing-bian-liang.html">
+            
+                    
+                    ZUI-002 Zero UI中的环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../../zero-ui/1-zero-uiji-ben-jiao-cheng/zui-003-mo-ban-he-ye-mian-lian-jie-wen-jian.html">
+            
+                <a href="../../zero-ui/1-zero-uiji-ben-jiao-cheng/zui-003-mo-ban-he-ye-mian-lian-jie-wen-jian.html">
+            
+                    
+                    ZUI-003 模板和页面连接文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../../zero-ui/1-zero-uiji-ben-jiao-cheng/zui-004-zi-yuan-wen-jian.html">
+            
+                <a href="../../zero-ui/1-zero-uiji-ben-jiao-cheng/zui-004-zi-yuan-wen-jian.html">
+            
+                    
+                    ZUI-004 资源文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../../zero-ui/1-zero-uiji-ben-jiao-cheng/zui-005-cha-xun-can-shu-criteria-pei-zhi-jie-xi.html">
+            
+                <a href="../../zero-ui/1-zero-uiji-ben-jiao-cheng/zui-005-cha-xun-can-shu-criteria-pei-zhi-jie-xi.html">
+            
+                    
+                    ZUI-005 查询参数criteria配置解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../zero-ui/2-reactsui-sui-nian.html">
+            
+                <a href="../../zero-ui/2-reactsui-sui-nian.html">
+            
+                    
+                    2 - React碎碎念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../zero-ui/3-antquan-jia-tong.html">
+            
+                <a href="../../zero-ui/3-antquan-jia-tong.html">
+            
+                    
+                    3 - Ant全家桶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../zero-ui/4-zero-uishi-zhan-fen-xi.html">
+            
+                <a href="../../zero-ui/4-zero-uishi-zhan-fen-xi.html">
+            
+                    
+                    4 - Zero UI实战分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../../zero-ui/4-zero-uishi-zhan-fen-xi/zua-001-kai-fa-zero-ui-di-yi-ge-ye-mian.html">
+            
+                <a href="../../zero-ui/4-zero-uishi-zhan-fen-xi/zua-001-kai-fa-zero-ui-di-yi-ge-ye-mian.html">
+            
+                    
+                    ZUA-001 开发Zero UI第一个页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../../zero-ui/4-zero-uishi-zhan-fen-xi/zua-002-he-zi-yuan-wen-jian-bang-ding.html">
+            
+                <a href="../../zero-ui/4-zero-uishi-zhan-fen-xi/zua-002-he-zi-yuan-wen-jian-bang-ding.html">
+            
+                    
+                    ZUA-002 和资源文件绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../../zero-ui/4-zero-uishi-zhan-fen-xi/zua-003-renderzhi-qian-de-ajax-kai-fa.html">
+            
+                <a href="../../zero-ui/4-zero-uishi-zhan-fen-xi/zua-003-renderzhi-qian-de-ajax-kai-fa.html">
+            
+                    
+                    ZUA-003 render之前的Ajax开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Zero Up</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../zero-up/main.html">
+            
+                <a href="../../zero-up/main.html">
+            
+                    
+                    Zero 文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../zero-up/1-zeroji-ben-jiao-cheng.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng.html">
+            
+                    
+                    1 - Zero基本教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro001-ling-zhi-qi-yuan.html">
+            
+                    
+                    ZRO-001 零之起源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro002-di-yi-ge-zero.html">
+            
+                    
+                    ZRO-002 第一个Zero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../../zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html">
+            
+                <a href="../../zero-up/1-zeroji-ben-jiao-cheng/zro003-restfulzhong-de-path-he-method.html">
+            
+                    
+                    ZRO-003 RESTful中的Path和Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../zero-up/2-vertxsui-sui-nian.html">
+            
+                <a href="../../zero-up/2-vertxsui-sui-nian.html">
+            
+                    
+                    2 - Vert.x碎碎念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../../zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html">
+            
+                <a href="../../zero-up/2-vertxsui-sui-nian/zvx-001-ji-yuauth-common-kai-fa-vert-x-zi-ding-yi-an-quan-zu-jian.html">
+            
+                    
+                    ZVX-001 基于 auth-common 开发Vert.x自定义安全组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../zero-up/3-zeroshi-zhan-fen-xi.html">
+            
+                <a href="../../zero-up/3-zeroshi-zhan-fen-xi.html">
+            
+                    
+                    3 - Zero实战分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../zero-up/4-javayu-yan-ji-chu.html">
+            
+                <a href="../../zero-up/4-javayu-yan-ji-chu.html">
+            
+                    
+                    4 - Java语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu.html">
+            
+                    
+                    5 - 《逐鹿记》后记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-001-javayu-yan-zhong-de-an-zhi-chuan-di.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-001-javayu-yan-zhong-de-an-zhi-chuan-di.html">
+            
+                    
+                    ZBR-001 Java语言中的按值传递
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.2" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-002-tong-bu-he-yi-bu.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-002-tong-bu-he-yi-bu.html">
+            
+                    
+                    ZBR-002 同步和异步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.3" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-003-vertxzhong-de-ji-qun-guan-li-qi.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-003-vertxzhong-de-ji-qun-guan-li-qi.html">
+            
+                    
+                    ZBR-003 Vert.x中的集群管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.4" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-004-actormo-xing.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-004-actormo-xing.html">
+            
+                    
+                    ZBR-004 Actor模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.5" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-005-rxjava2zhong-desingle-jie-xi.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-005-rxjava2zhong-desingle-jie-xi.html">
+            
+                    
+                    ZBR-005 RxJava2中的Single解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.6" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-006-reactormo-shi.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-006-reactormo-shi.html">
+            
+                    
+                    ZBR-006 Reactor模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.7" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-007-nettyzhong-de-pipeline-ji-zhi.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-007-nettyzhong-de-pipeline-ji-zhi.html">
+            
+                    
+                    ZBR-007 Netty中的Pipeline机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.8" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-008-tcpxie-yi-zhong-de-reuse.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-008-tcpxie-yi-zhong-de-reuse.html">
+            
+                    
+                    ZBR-008 TCP协议中的Reuse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.9" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-009-ipv6zhong-de-tong-xin-liang-lei-traffic-class.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-009-ipv6zhong-de-tong-xin-liang-lei-traffic-class.html">
+            
+                    
+                    ZBR-009 IPv6中的通信量类Traffic Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.10" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-010-tcpzhongdenagle-suan-fa.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-010-tcpzhongdenagle-suan-fa.html">
+            
+                    
+                    ZBR-010 TCP中的Nagle算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.11" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-011-tcpzhong-de-keepalive-ji-zhi.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-011-tcpzhong-de-keepalive-ji-zhi.html">
+            
+                    
+                    ZBR-011 TCP中的KeepAlive机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.12" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-012-alpnxie-yi.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-012-alpnxie-yi.html">
+            
+                    
+                    ZBR-012 Alpn协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.13" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-013-sslzhong-de-pfx-zheng-shu.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-013-sslzhong-de-pfx-zheng-shu.html">
+            
+                    
+                    ZBR-013 SSL中的Pfx证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.14" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-014-sslzhong-de-cert-zheng-shu.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-014-sslzhong-de-cert-zheng-shu.html">
+            
+                    
+                    ZBR-014 SSL中的Cert证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.15" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-015-guan-yu-tls-xie-yi.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-015-guan-yu-tls-xie-yi.html">
+            
+                    
+                    ZBR-015 关于TLS协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.16" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-016-wang-luo-fu-wu-qi-zhong-de-sni.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-016-wang-luo-fu-wu-qi-zhong-de-sni.html">
+            
+                    
+                    ZBR-016 网络服务器中的SNI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.17" data-path="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-017-guan-yu-two-way-shuang-xiang-ren-zheng-mo-shi.html">
+            
+                <a href="../../zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-017-guan-yu-two-way-shuang-xiang-ren-zheng-mo-shi.html">
+            
+                    
+                    ZBR-017 关于Two-Way双向认证模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Origin X Engine</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../origin-x-engine/main.html">
+            
+                <a href="../../origin-x-engine/main.html">
+            
+                    
+                    Origin X Engine文档主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../origin-x-engine/1-oxshi-shi-jiao-cheng.html">
+            
+                <a href="../../origin-x-engine/1-oxshi-shi-jiao-cheng.html">
+            
+                    
+                    1 - Ox实施教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../../origin-x-engine/1-oxshi-shi-jiao-cheng/ox-001-origin-x-uixiang-mu-jie-gou-shuo-ming.html">
+            
+                <a href="../../origin-x-engine/1-oxshi-shi-jiao-cheng/ox-001-origin-x-uixiang-mu-jie-gou-shuo-ming.html">
+            
+                    
+                    OX-001 项目结构说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../../origin-x-engine/1-oxshi-shi-jiao-cheng/ox-002-origin-xzhong-ke-pei-zhi-de-shi-jian-shuo-ming.html">
+            
+                <a href="../../origin-x-engine/1-oxshi-shi-jiao-cheng/ox-002-origin-xzhong-ke-pei-zhi-de-shi-jian-shuo-ming.html">
+            
+                    
+                    OX-002 可配置的事件说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="../../origin-x-engine/1-oxshi-shi-jiao-cheng/ox-003-ye-mian-liu-jie-xi-shuo-ming.html">
+            
+                <a href="../../origin-x-engine/1-oxshi-shi-jiao-cheng/ox-003-ye-mian-liu-jie-xi-shuo-ming.html">
+            
+                    
+                    OX-003 页面流解析说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="../../origin-x-engine/1-oxshi-shi-jiao-cheng/ox-004-shi-jian-liu-jie-xi-shuo-ming.html">
+            
+                <a href="../../origin-x-engine/1-oxshi-shi-jiao-cheng/ox-004-shi-jian-liu-jie-xi-shuo-ming.html">
+            
+                    
+                    OX-004 事件流解析说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../origin-x-engine/2-oxzi-ding-yi-zu-jian.html">
+            
+                <a href="../../origin-x-engine/2-oxzi-ding-yi-zu-jian.html">
+            
+                    
+                    2 - Ox自定义组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../../origin-x-engine/2-oxzi-ding-yi-zu-jian/oxc-001-guan-yu-zi-ding-yi-zu-jian.html">
+            
+                <a href="../../origin-x-engine/2-oxzi-ding-yi-zu-jian/oxc-001-guan-yu-zi-ding-yi-zu-jian.html">
+            
+                    
+                    OXC-001 关于自定义组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../../origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html">
+            
+                <a href="../../origin-x-engine/3-oxhou-duan-kuo-zhan-kai-fa.html">
+            
+                    
+                    3 - Ox后端扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../../origin-x-engine/4-oxshi-zhan-fen-xi.html">
+            
+                <a href="../../origin-x-engine/4-oxshi-zhan-fen-xi.html">
+            
+                    
+                    4 - Ox实战分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1" data-path="../../origin-x-engine/4-oxshi-zhan-fen-xi/oxa-001-kai-fa-di-yi-ge-ox-ye-mian.html">
+            
+                <a href="../../origin-x-engine/4-oxshi-zhan-fen-xi/oxa-001-kai-fa-di-yi-ge-ox-ye-mian.html">
+            
+                    
+                    OXA-001 研发第一个Ox空页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Uniform Docoument</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../main.html">
+            
+                <a href="../main.html">
+            
+                    
+                    通用知识库主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../mian-shi-ti.html">
+            
+                <a href="../mian-shi-ti.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html">
+            
+                <a href="../mian-shi-ti/kmi-001-chou-jiang-qi-xu-qiu.html">
+            
+                    
+                    KMI-001 抽奖器需求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../mian-shi-ti/kmi-002-cdakao-shi-da-gang.html">
+            
+                <a href="../mian-shi-ti/kmi-002-cdakao-shi-da-gang.html">
+            
+                    
+                    KMI-002 CDA考试大纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html">
+            
+                <a href="../mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.html">
+            
+                    
+                    KMI-003 Spring RESTful开发基础题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../ruan-jian-xu-qiu-ling-yu.html">
+            
+                <a href="../ruan-jian-xu-qiu-ling-yu.html">
+            
+                    
+                    软件理论领域
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html">
+            
+                <a href="../ruan-jian-xu-qiu-ling-yu/kmr-002-fei-gong-neng-xu-qiu-ping-gu-zhi-biao.html">
+            
+                    
+                    KMR-001 非功能需求评估指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.html">
+            
+                <a href="../ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.html">
+            
+                    
+                    KMR-002 程序设计的六个基本原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../yu-yan-xiang-guan.html">
+            
+                <a href="../yu-yan-xiang-guan.html">
+            
+                    
+                    语言相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../yu-yan-xiang-guan/kml-001-ecma-script-60.html">
+            
+                <a href="../yu-yan-xiang-guan/kml-001-ecma-script-60.html">
+            
+                    
+                    KML-001 ECMA Script 6.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="../yu-yan-xiang-guan/kml-002-jsr330gui-fan.html">
+            
+                <a href="../yu-yan-xiang-guan/kml-002-jsr330gui-fan.html">
+            
+                    
+                    KML-002 JSR330规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="../yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.html">
+            
+                <a href="../yu-yan-xiang-guan/kml-003-liu-lan-qi-zhong-de-fetch-api.html">
+            
+                    
+                    KML-003 浏览器中的Fetch Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.4" data-path="../yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.html">
+            
+                <a href="../yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.html">
+            
+                    
+                    KML-004 Java中的静态和单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.5" data-path="../yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.html">
+            
+                <a href="../yu-yan-xiang-guan/kml-005-javayu-yan-7684-class-zi-jie-ma-jie-gou.html">
+            
+                    
+                    KML-005 Java语言的.class字节码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../kai-yuan-xiang-mu.html">
+            
+                <a href="../kai-yuan-xiang-mu.html">
+            
+                    
+                    开源项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.5.1" data-path="../kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-001-vertx-coreguan-fang-fan-yi-ban-3-4.html">
+            
+                    
+                    KMO-001 Vert.x Core官方翻译版 3.4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.2" data-path="../kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-002-vertx-webguan-fang-fan-yi-ban-3-4.html">
+            
+                    
+                    KMO-002 Vert.x Web官方翻译版 3.4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.3" data-path="../kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-004-spring-bootzhong-de-ce-shi.html">
+            
+                    
+                    KMO-003 Spring Boot中的测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.4" data-path="../kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-005-shi-yong-oval-jin-xing-fang-yu-shi-bian-cheng.html">
+            
+                    
+                    KMO-004 使用OVal进行防御式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.5" data-path="../kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-006-sassji-chu-zhi-shi.html">
+            
+                    
+                    KMO-005 Sass基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.6" data-path="../kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-007-mockitoji-chu-he-shi-yong.html">
+            
+                    
+                    KMO-006 Mockito基础和使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.7" data-path="../kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-008-jasmineji-chu-zhi-shi.html">
+            
+                    
+                    KMO-007 Jasmine基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.8" data-path="../kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-010-dockerfileyu-fa-ji-chu.html">
+            
+                    
+                    KMO-008 Dockerfile语法基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.9" data-path="../kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-009-redux-ormxiang-mu-wen-dang.html">
+            
+                    
+                    KMO-009 redux-orm项目文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.10" data-path="../kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html">
+            
+                <a href="../kai-yuan-xiang-mu/kmo-010-tradeshiftying-yong-kai-fa-shou-ce.html">
+            
+                    
+                    KMO-010 Tradeshift应用开发手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../gui-fan-xiang-guan.html">
+            
+                <a href="../gui-fan-xiang-guan.html">
+            
+                    
+                    规范相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6.1" data-path="../gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html">
+            
+                <a href="../gui-fan-xiang-guan/kms-001-ublgui-fan-zhong-de-price-zi-duan-shuo-ming.html">
+            
+                    
+                    KMS-001 UBL规范中的Price字段说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../zerohe-xin-li-lun.html">
+            
+                <a href="../zerohe-xin-li-lun.html">
+            
+                    
+                    Zero核心概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="5.7.1" data-path="kmz-001-cha-xun-yin-qing-yu-fa.html">
+            
+                <a href="kmz-001-cha-xun-yin-qing-yu-fa.html">
+            
+                    
+                    KMZ-001 查询引擎语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7.2" data-path="kmz-002-tabularhe-assist-bian-liang.html">
+            
+                <a href="kmz-002-tabularhe-assist-bian-liang.html">
+            
+                    
+                    KMZ-002 Tabular和Assist变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Environment</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../environment/main.html">
+            
+                <a href="../../environment/main.html">
+            
+                    
+                    环境搭建知识库主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../environment/1-dockerrong-qi-huan-jing.html">
+            
+                <a href="../../environment/1-dockerrong-qi-huan-jing.html">
+            
+                    
+                    1 - Docker容器环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="../../environment/1-dockerrong-qi-huan-jing/end-001-neo4jhuan-jing-chu-shi-hua.html">
+            
+                <a href="../../environment/1-dockerrong-qi-huan-jing/end-001-neo4jhuan-jing-chu-shi-hua.html">
+            
+                    
+                    END-001 Neo4j环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="../../environment/1-dockerrong-qi-huan-jing/end-002-tidbhuan-jing-chu-shi-hua.html">
+            
+                <a href="../../environment/1-dockerrong-qi-huan-jing/end-002-tidbhuan-jing-chu-shi-hua.html">
+            
+                    
+                    END-002 TiDB环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.3" data-path="../../environment/1-dockerrong-qi-huan-jing/end-003-elastic-searchhuan-jing.html">
+            
+                <a href="../../environment/1-dockerrong-qi-huan-jing/end-003-elastic-searchhuan-jing.html">
+            
+                    
+                    END-003 Elastic Search环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../../environment/2-zeroandoxhuan-jing.html">
+            
+                <a href="../../environment/2-zeroandoxhuan-jing.html">
+            
+                    
+                    2 - Zero&Ox环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.3.1" data-path="../../environment/2-zeroandoxhuan-jing/eno-001-ox-uihuan-jing-da-jian.html">
+            
+                <a href="../../environment/2-zeroandoxhuan-jing/eno-001-ox-uihuan-jing-da-jian.html">
+            
+                    
+                    ENO-001 ox-ui环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.2" data-path="../../environment/2-zeroandoxhuan-jing/eno-002-cang-ku-chu-shi-hua.html">
+            
+                <a href="../../environment/2-zeroandoxhuan-jing/eno-002-cang-ku-chu-shi-hua.html">
+            
+                    
+                    ENO-002 元数据仓库初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.3" data-path="../../environment/2-zeroandoxhuan-jing/eno-004-etcdben-di-ji-qun-da-jian.html">
+            
+                <a href="../../environment/2-zeroandoxhuan-jing/eno-004-etcdben-di-ji-qun-da-jian.html">
+            
+                    
+                    ENO-003 Etcd本地集群搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../../environment/4-deploymentbu-shu-jiao-cheng.html">
+            
+                <a href="../../environment/4-deploymentbu-shu-jiao-cheng.html">
+            
+                    
+                    3 - Deployment部署教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../../environment/5-qi-ta-huan-jing.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing.html">
+            
+                    
+                    4 - 其他环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.5.1" data-path="../../environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-001-spring-bootzhong-de-shu-ju-yuan-pei-zhi.html">
+            
+                    
+                    ENV-001 Spring Boot中的数据源配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.2" data-path="../../environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-002-karmazai-es6-zhong-de-webpack-pei-zhi.html">
+            
+                    
+                    ENV-002 Karma在ES6中的Webpack配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.3" data-path="../../environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-003-karmade-an-zhuang-jiao-cheng.html">
+            
+                    
+                    ENV-003 Karma的安装教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.4" data-path="../../environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-004-windowshuan-jing-de-docker-an-zhuang.html">
+            
+                    
+                    ENV-004 Windows环境的Docker安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.5" data-path="../../environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-005-shi-yong-dockerhuan-jing-yun-xing-spring-boot.html">
+            
+                    
+                    ENV-005 使用Docker环境运行Spring Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.6" data-path="../../environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html">
+            
+                <a href="../../environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.html">
+            
+                    
+                    ENV-006 Maven环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../../environment/5-zero-aide-shi-yong.html">
+            
+                <a href="../../environment/5-zero-aide-shi-yong.html">
+            
+                    
+                    5 - Zero Ai的使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.6.1" data-path="../../environment/6-zero-ai/eai-001-zero-aide-an-zhuang.html">
+            
+                <a href="../../environment/6-zero-ai/eai-001-zero-aide-an-zhuang.html">
+            
+                    
+                    EAI-001 Zero Ai的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6.2" data-path="../../environment/6-zero-ai/eai-002-zero-uide-chu-shi-hua.html">
+            
+                <a href="../../environment/6-zero-ai/eai-002-zero-uide-chu-shi-hua.html">
+            
+                    
+                    EAI-002 Zero UI的初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Specification</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../specification/main.html">
+            
+                <a href="../../specification/main.html">
+            
+                    
+                    开发规范文档主页
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../../specification/main/spc-000-ye-wu-zhu-yu-gui-fan.html">
+            
+                <a href="../../specification/main/spc-000-ye-wu-zhu-yu-gui-fan.html">
+            
+                    
+                    SPC-000 业务术语统一
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../specification/1-zerogui-fan.html">
+            
+                <a href="../../specification/1-zerogui-fan.html">
+            
+                    
+                    1 - Zero规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="../../specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.html">
+            
+                <a href="../../specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.html">
+            
+                    
+                    SPC-001 Zero基本开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.2" data-path="../../specification/1-zerogui-fan/spc-002-apihe-fang-fa-she-ji-gui-fan.html">
+            
+                <a href="../../specification/1-zerogui-fan/spc-002-apihe-fang-fa-she-ji-gui-fan.html">
+            
+                    
+                    SPC-002 API和方法设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.3" data-path="../../specification/1-zerogui-fan/spc-003-ye-wu-zhu-yu-gui-fan.html">
+            
+                <a href="../../specification/1-zerogui-fan/spc-003-ye-wu-zhu-yu-gui-fan.html">
+            
+                    
+                    SPC-003 业务术语规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.4" data-path="../../specification/1-zerogui-fan/spc-004-zeronei-bu-zu-jian-shuo-ming.html">
+            
+                <a href="../../specification/1-zerogui-fan/spc-004-zeronei-bu-zu-jian-shuo-ming.html">
+            
+                    
+                    SPC-004 Zero内部组件说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../../specification/2-zero-uigui-fan.html">
+            
+                <a href="../../specification/2-zero-uigui-fan.html">
+            
+                    
+                    2 - Zero UI规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../../specification/3-origin-xgui-fan.html">
+            
+                <a href="../../specification/3-origin-xgui-fan.html">
+            
+                    
+                    3 - Origin X规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.4.1" data-path="../../specification/3-origin-xgui-fan/spo-001-jie-mian-pei-zhi-quan-json-jie-xi.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-001-jie-mian-pei-zhi-quan-json-jie-xi.html">
+            
+                    
+                    SPO-001 界面配置全Json解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.2" data-path="../../specification/3-origin-xgui-fan/spo-002-jie-mian-pei-zhi-quan-json-shi-li.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-002-jie-mian-pei-zhi-quan-json-shi-li.html">
+            
+                    
+                    SPO-002 界面配置全Json示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.3" data-path="../../specification/3-origin-xgui-fan/spo-003-bu-ju-pei-zhi-gui-fan.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-003-bu-ju-pei-zhi-gui-fan.html">
+            
+                    
+                    SPO-003 页面结构说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.4" data-path="../../specification/3-origin-xgui-fan/spo-004-ye-mian-bu-ju-shuo-ming.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-004-ye-mian-bu-ju-shuo-ming.html">
+            
+                    
+                    SPO-004 页面布局说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.5" data-path="../../specification/3-origin-xgui-fan/spo-005-xiang-ying-shi-bu-ju.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-005-xiang-ying-shi-bu-ju.html">
+            
+                    
+                    SPO-005 响应式布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.6" data-path="../../specification/3-origin-xgui-fan/spo-006-ajaxqing-qiu-ji-ben-shuo-ming.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-006-ajaxqing-qiu-ji-ben-shuo-ming.html">
+            
+                    
+                    SPO-006 Ajax请求基本说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.7" data-path="../../specification/3-origin-xgui-fan/spo-007-ajaxzhong-de-cha-xun-yin-qing.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-007-ajaxzhong-de-cha-xun-yin-qing.html">
+            
+                    
+                    SPO-007 Ajax中的查询引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.8" data-path="../../specification/3-origin-xgui-fan/spo-008-guan-yu-ajax-zhong-de-lazy-mo-shi.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-008-guan-yu-ajax-zhong-de-lazy-mo-shi.html">
+            
+                    
+                    SPO-008 关于Ajax中的Lazy模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.9" data-path="../../specification/3-origin-xgui-fan/spo-009-assistfu-zhu-shu-ju-ajax.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-009-assistfu-zhu-shu-ju-ajax.html">
+            
+                    
+                    SPO-009 Assist辅助数据Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.10" data-path="../../specification/3-origin-xgui-fan/spo-010-controlde-ji-ben-jie-gou.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-010-controlde-ji-ben-jie-gou.html">
+            
+                    
+                    SPO-010 Control的基本结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.11" data-path="../../specification/3-origin-xgui-fan/spo-011-rong-qi-lei-xing-de-control.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-011-rong-qi-lei-xing-de-control.html">
+            
+                    
+                    SPO-011 容器类型的Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.12" data-path="../../specification/3-origin-xgui-fan/spo-012-shu-ju-bang-ding-jie-dian-data.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-012-shu-ju-bang-ding-jie-dian-data.html">
+            
+                    
+                    SPO-012 数据绑定节点data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.13" data-path="../../specification/3-origin-xgui-fan/spo-013-actcao-zuo-zu-jian.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-013-actcao-zuo-zu-jian.html">
+            
+                    
+                    SPO-013 Act操作组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.14" data-path="../../specification/3-origin-xgui-fan/spo-014-dataeventpei-zhi-shuo-ming.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-014-dataeventpei-zhi-shuo-ming.html">
+            
+                    
+                    SPO-014 DataEvent结构说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.15" data-path="../../specification/3-origin-xgui-fan/spo-015-bu-tong-zu-jian-de-event-jie-dian.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-015-bu-tong-zu-jian-de-event-jie-dian.html">
+            
+                    
+                    SPO-015 不同组件的event节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.16" data-path="../../specification/3-origin-xgui-fan/spo-016-quan-ju-fu-gai-xing-bian-liang.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-016-quan-ju-fu-gai-xing-bian-liang.html">
+            
+                    
+                    SPO-016 全局覆盖性变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.17" data-path="../../specification/3-origin-xgui-fan/spo-017-wu-zhong-bu-tong-mo-shi-de-xuichildren-shuo-ming.html">
+            
+                <a href="../../specification/3-origin-xgui-fan/spo-017-wu-zhong-bu-tong-mo-shi-de-xuichildren-shuo-ming.html">
+            
+                    
+                    SPO-017 五种不同模式的xuiChildren说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan.html">
+            
+                    
+                    4 - RESTful设计规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.5.1" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.html">
+            
+                    
+                    SPR-001 URI路径设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5.2" data-path="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.html">
+            
+                <a href="../../specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-002-uriye-wu-she-ji-gui-fan.html">
+            
+                    
+                    SPR-002 URI业务设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Utility X</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../../utility-x/main.html">
+            
+                <a href="../../utility-x/main.html">
+            
+                    
+                    Utility X主页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../../utility-x/1-she-ji-li-nian.html">
+            
+                <a href="../../utility-x/1-she-ji-li-nian.html">
+            
+                    
+                    1 - 设计理念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.2.1" data-path="../../utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.html">
+            
+                <a href="../../utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.html">
+            
+                    
+                    UXD-001 那些年的伤痛
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../../utility-x/2-zerozhong-de-ux.html">
+            
+                <a href="../../utility-x/2-zerozhong-de-ux.html">
+            
+                    
+                    2 - Zero中的Ux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="../../utility-x/3-zero-uizhong-de-ux.html">
+            
+                <a href="../../utility-x/3-zero-uizhong-de-ux.html">
+            
+                    
+                    3 - Zero UI中的Ux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="../../utility-x/4-zerozhong-de-ut.html">
+            
+                <a href="../../utility-x/4-zerozhong-de-ut.html">
+            
+                    
+                    4 - Zero中的Ut
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="../../utility-x/5-zerozhong-de-fn.html">
+            
+                <a href="../../utility-x/5-zerozhong-de-fn.html">
+            
+                    
+                    5 - Zero中的Fn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.7" data-path="../../utility-x/6-origin-xzhong-de-fn.html">
+            
+                <a href="../../utility-x/6-origin-xzhong-de-fn.html">
+            
+                    
+                    6 - Origin X中的Fn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >KMZ-001 查询引擎语法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x67E5;&#x8BE2;&#x5F15;&#x64CE;&#x8BED;&#x6CD5;">&#x67E5;&#x8BE2;&#x5F15;&#x64CE;&#x8BED;&#x6CD5;</h1><p>&#x672C;&#x6587;&#x8BB2;&#x89E3;Zero&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x67E5;&#x8BE2;&#x5F15;&#x64CE;&#x8BED;&#x6CD5;&#x3002;</p><h2 id="1-&#x8BF7;&#x6C42;&#x683C;&#x5F0F;">1. &#x8BF7;&#x6C42;&#x683C;&#x5F0F;</h2><p>&#x67E5;&#x8BE2;&#x5F15;&#x64CE;&#x7684;&#x8BF7;&#x6C42;&#x4F7F;&#x7528;&#x56FA;&#x5B9A;&#x683C;&#x5F0F;&#xFF1A;</p><ul><li>HTTP&#x65B9;&#x6CD5;&#xFF1A;&#x4F7F;&#x7528;POST&#x67E5;&#x8BE2;&#x800C;&#x4E0D;&#x662F;&#x4F7F;&#x7528;GET&#x67E5;&#x8BE2;&#x3002;
+</li>
+<li>Body&#x7684;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;
+</li></ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;criteria&quot;</span>:{
+    },
+    <span class="hljs-string">&quot;pager&quot;</span>:{
+        <span class="hljs-string">&quot;page&quot;</span>:<span class="hljs-number">1</span>,
+        <span class="hljs-string">&quot;size&quot;</span>:<span class="hljs-number">10</span>
+    },
+    <span class="hljs-string">&quot;sorter&quot;</span>:[
+        <span class="hljs-string">&quot;name,DESC&quot;</span>
+    ],
+    <span class="hljs-string">&quot;projection&quot;</span>:[
+    ]
+}</code></pre>
+<ul><li>criteria&#xFF1A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;
+</li>
+<li>pager&#xFF1A;&#x5206;&#x9875;&#x53C2;&#x6570;&#xFF0C;&#x4ECE;&#x7B2C;&#x4E00;&#x9875;&#x5F00;&#x59CB;&#xFF08;page = 1&#xFF09;
+</li>
+<li>sorter&#xFF1A;&#x6392;&#x5E8F;&#xFF0C;&#x6570;&#x7EC4;&#x683C;&#x5F0F;&#xFF0C;&#x652F;&#x6301;&#x591A;&#x5B57;&#x6BB5;&#x4F18;&#x5148;&#x7EA7;&#x6392;&#x5E8F;
+</li>
+<li>projection&#xFF1A;&#x5217;&#x8FC7;&#x6EE4;&#x3002;
+</li></ul>
+<h2 id="2-&#x5173;&#x4E8E;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x8BED;&#x6CD5;">2. &#x5173;&#x4E8E;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x8BED;&#x6CD5;</h2><p>&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x7684;&#x57FA;&#x672C;&#x8BED;&#x6CD5;&#x4F7F;&#x7528;&#xFF1A;</p><pre><code class="lang-json">{
+    <span class="hljs-string">&quot;field,op&quot;</span>:<span class="hljs-string">&quot;value&quot;</span>,
+    <span class="hljs-string">&quot;related.field,op&quot;</span>:<span class="hljs-string">&quot;value&quot;</span>
+}</code></pre>
+<p>criteria&#x652F;&#x6301;&#x591A;&#x7EA7;&#x67E5;&#x8BE2;&#x6811;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x53EF;&#x4EE5;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x6784;&#x6210;&#x67E5;&#x8BE2;&#x8BED;&#x6CD5;&#x6811;&#x3002;</p><ul><li>&#x8868;&#x540D;&#xFF1A;USER
+<ul><li>&#x5B57;&#x6BB5;&#xFF1A;name&#xFF0C;&#x5217;&#x540D;&#xFF1A;NAME
+</li>
+<li>&#x5B57;&#x6BB5;&#xFF1A;email&#xFF0C;&#x5217;&#x540D;&#xFF1A;EMAIL
+</li>
+<li>&#x5B57;&#x6BB5;&#xFF1A;password&#xFF0C;&#x5217;&#x540D;&#xFF1A;PASSWORD
+</li>
+<li>&#x5B57;&#x6BB5;&#xFF1A;age&#xFF0C;&#x5217;&#x540D;&#xFF1A;AGE
+</li>
+<li>&#x5B57;&#x6BB5;&#xFF1A;active&#xFF0C;&#x5217;&#x540D;&#xFF1A;ACTIVE
+</li></ul>
+</li></ul>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x4EE5;&#x4E0A;&#x8FB9;&#x4E3A;&#x4F8B;&#x8BB2;&#x89E3;&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;&#xFF0C;&#x5148;&#x770B;&#x770B;op&#x5217;&#x8868;&#x3002;</p><h3 id="21-op&#x5217;&#x8868;">2.1. op&#x5217;&#x8868;</h3><table>
+<thead>
+<tr><th> &#x64CD;&#x4F5C;&#x7B26; </th>
+<th> &#x793A;&#x4F8B;&#x683C;&#x5F0F;&#xFF08;Json&#x4E2D;&#x952E;&#x503C;&#xFF09; </th>
+<th> &#x8BF4;&#x660E; </th>
+<th> SQL &#x6761;&#x4EF6; </th>
+</tr></thead><tbody>
+<tr><td style="text-align:left"> &lt; </td>
+<td style="text-align:left"> &quot;age,&lt;&quot;:20 </td>
+<td style="text-align:left"> &#x5C0F;&#x4E8E;&#x67D0;&#x4E2A;&#x503C; </td>
+<td style="text-align:left"> AGE &lt; 20 </td>
+</tr><tr><td style="text-align:left"> &lt;= </td>
+<td style="text-align:left"> &quot;age,&lt;=&quot;:20 </td>
+<td style="text-align:left"> &#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#x67D0;&#x4E2A;&#x503C; </td>
+<td style="text-align:left"> AGE &lt; 20 </td>
+</tr><tr><td style="text-align:left"> &gt; </td>
+<td style="text-align:left"> &quot;age,&gt;&quot;:16 </td>
+<td style="text-align:left"> &#x5927;&#x4E8E;&#x67D0;&#x4E2A;&#x503C; </td>
+<td style="text-align:left"> AGE &gt;= 16 </td>
+</tr><tr><td style="text-align:left"> &gt;= </td>
+<td style="text-align:left"> &quot;age,&gt;=&quot;:16 </td>
+<td style="text-align:left"> &#x5927;&#x4E8E;&#x7B49;&#x4E8E;&#x67D0;&#x4E2A;&#x503C; </td>
+<td style="text-align:left"> AGE &gt;= 16 </td>
+</tr><tr><td style="text-align:left"> = </td>
+<td style="text-align:left"> &quot;age,=&quot;:12 &#x6216; &quot;age&quot;:12 </td>
+<td style="text-align:left"> &#x7B49;&#x4E8E;&#x67D0;&#x4E2A;&#x503C; </td>
+<td style="text-align:left"> AGE = 12 </td>
+</tr><tr><td style="text-align:left"> &lt;&gt; </td>
+<td style="text-align:left"> &quot;name,&lt;&gt;&quot;:&quot;LANG&quot; </td>
+<td style="text-align:left"> &#x4E0D;&#x7B49;&#x4E8E; </td>
+<td style="text-align:left"> NAME &lt;&gt; &apos;LANG&apos; </td>
+</tr><tr><td style="text-align:left"> !n </td>
+<td style="text-align:left"> &quot;name,!n&quot;:&quot;&#x968F;&#x610F;&quot; </td>
+<td style="text-align:left"> &#x4E0D;&#x4E3A;&#x7A7A; </td>
+<td style="text-align:left"> NAME IS NOT NULL </td>
+</tr><tr><td style="text-align:left"> n </td>
+<td style="text-align:left"> &quot;name,n&quot;:&quot;&#x968F;&#x610F;&quot; </td>
+<td style="text-align:left"> &#x4E3A;&#x7A7A; </td>
+<td style="text-align:left"> NAME IS NULL </td>
+</tr><tr><td style="text-align:left"> t </td>
+<td style="text-align:left"> &quot;active,t&quot;:&quot;&#x968F;&#x610F;&quot; </td>
+<td style="text-align:left"> &#x7B49;&#x4E8E;TRUE </td>
+<td style="text-align:left"> NAME = TRUE </td>
+</tr><tr><td style="text-align:left"> f </td>
+<td style="text-align:left"> &quot;active,f&quot;:&quot;&#x968F;&#x610F;&quot; </td>
+<td style="text-align:left"> &#x7B49;&#x4E8E;FALSE </td>
+<td style="text-align:left"> NAME = FALSE </td>
+</tr><tr><td style="text-align:left"> i </td>
+<td style="text-align:left"> &quot;name,i&quot;:[&quot;A&quot;,&quot;B&quot;] </td>
+<td style="text-align:left"> &#x5728;&#x67D0;&#x4E9B;&#x503C;&#x5185; </td>
+<td style="text-align:left"> NAME IN (&apos;A&apos;,&apos;B&apos;) </td>
+</tr><tr><td style="text-align:left"> !i </td>
+<td style="text-align:left"> &quot;name,!i&quot;:[&quot;C&quot;,&quot;D&quot;] </td>
+<td style="text-align:left"> &#x4E0D;&#x5728;&#x67D0;&#x4E9B;&#x503C;&#x5185; </td>
+<td style="text-align:left"> NAME NOT IN(&apos;A&apos;,&apos;B&apos;) </td>
+</tr><tr><td style="text-align:left"> s </td>
+<td style="text-align:left"> &quot;name,s&quot;:&quot;Lang&quot; </td>
+<td style="text-align:left"> &#x4EE5;&#x67D0;&#x4E2A;&#x503C;&#x5F00;&#x59CB; </td>
+<td style="text-align:left"> NAME LIKE &apos;Lang%&apos; </td>
+</tr><tr><td style="text-align:left"> e </td>
+<td style="text-align:left"> &quot;name,e&quot;:&quot;Lang&quot; </td>
+<td style="text-align:left"> &#x4EE5;&#x67D0;&#x4E2A;&#x503C;&#x7ED3;&#x675F; </td>
+<td style="text-align:left"> NAME LIKE &apos;%Lang&apos; </td>
+</tr><tr><td style="text-align:left"> c </td>
+<td style="text-align:left"> &quot;name,c&quot;:&quot;Lang&quot; </td>
+<td style="text-align:left"> &#x6A21;&#x7CCA;&#x5339;&#x914D; </td>
+<td style="text-align:left"> NAME LIKE &apos;%Lang%&apos;</td>
+</tr></tbody></table>
+
+<h3 id="22-&#x5173;&#x4E8E;&#x8FDE;&#x63A5;&#x7B26;">2.2. &#x5173;&#x4E8E;&#x8FDE;&#x63A5;&#x7B26;</h3><p>&#x5982;&#x679C;&#x5728;&#x67E5;&#x8BE2;&#x5F15;&#x64CE;&#x4E2D;&#x51FA;&#x73B0;&#x4E86;&#x8FDE;&#x63A5;&#x7B26;&#xFF0C;&#x90A3;&#x4E48;&#x4EE5;&#x540C;&#x7EA7;&#x6811;&#x4E2D;&#x7684;<code>&quot;&quot;</code>&#x952E;&#x5224;&#x65AD;&#x662F; AND &#x8FD8;&#x662F; OR</p><table>
+<thead>
+<tr><th style="text-align:left"> &#x952E; </th>
+<th style="text-align:left"> &#x503C; </th>
+<th style="text-align:left"> &#x8FDE;&#x63A5;&#x7B26; </th>
+</tr></thead><tbody>
+<tr><td style="text-align:left"> &quot;&quot; </td>
+<td style="text-align:left"> true </td>
+<td style="text-align:left"> AND&#xFF08;&#x6216;&#x8005;&#x4E0D;&#x5199;&#xFF09; </td>
+</tr><tr><td style="text-align:left"> &quot;&quot; </td>
+<td style="text-align:left"> false </td>
+<td style="text-align:left"> OR&#xFF08;&#x6216;&#x8005;&#x4E0D;&#x5199;&#xFF09;</td>
+</tr></tbody></table>
+
+<h2 id="3-&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x793A;&#x4F8B;">3. &#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x793A;&#x4F8B;</h2><h3 id="31-&#x57FA;&#x672C;">3.1. &#x57FA;&#x672C;</h3><p>&#x67E5;&#x8BE2;&#x7CFB;&#x7EDF;&#x4E2D;<code>name</code>&#x7684;&#x503C;&#x4E3A;Lang&#xFF0C;<code>email</code>&#x7684;&#x503C;&#x4E3A;<code>lang.yu@hpe.com</code>&#x7684;&#x7528;&#x6237;</p><pre><code class="lang-json">{
+    <span class="hljs-string">&quot;name&quot;</span>:<span class="hljs-string">&quot;Lang&quot;</span>,
+    <span class="hljs-string">&quot;email&quot;</span>:<span class="hljs-string">&quot;lang.yu@hpe.com&quot;</span>
+}</code></pre>
+<p>SQL&#xFF1A;</p><pre><code class="lang-sql">NAME = &apos;LANG&apos; AND EMAIL=&apos;lang.yu@hpe.com&apos;</code></pre>
+<h3 id="32-&#x5D4C;&#x5957;">3.2. &#x5D4C;&#x5957;</h3><p>&#x67E5;&#x8BE2;&#x7CFB;&#x7EDF;&#x4E2D;<code>name</code>&#x4E2D;&#x5305;&#x542B;&#x4E86;Lily&#xFF0C;<code>email</code>&#x540E;&#x7F00;&#x4E3A;<code>hpe.com</code>&#x6216;<code>hp.com</code>&#x7684;&#x7528;&#x6237;</p><pre><code class="lang-json">{
+    <span class="hljs-string">&quot;name,c&quot;</span>:<span class="hljs-string">&quot;Lily&quot;</span>,
+    <span class="hljs-string">&quot;$0&quot;</span>:{
+        <span class="hljs-string">&quot;&quot;</span>:<span class="hljs-literal">false</span>,
+        <span class="hljs-string">&quot;email,e&quot;</span>:<span class="hljs-string">&quot;hpe.com&quot;</span>,
+        <span class="hljs-string">&quot;email,e&quot;</span>:<span class="hljs-string">&quot;hp.com&quot;</span>
+    }
+}</code></pre>
+<blockquote><p>&#x6CE8;&#xFF1A;&#x4E0A;&#x8FB9;&#x7684;$0&#x53EA;&#x662F;&#x7EA6;&#x5B9A;&#x4FD7;&#x6210;&#xFF0C;&#x53EA;&#x8981;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x662F;Json&#x7684;Object&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p></blockquote><p>SQL&#xFF1A;</p><pre><code class="lang-sql">NAME LIKE &apos;%Lily%&apos; AND (EMAIL LIKE &apos;%hpe.com&apos; OR EMAIL LIKE &apos;%hp.com&apos;)</code></pre>
+<h3 id="33-&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x7B26;">3.3. &#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x7B26;</h3><p>&#x67E5;&#x8BE2;&#x5E74;&#x9F84;<code>age</code>&#x5927;&#x4E8E;16&#x7684;&#x672A;&#x542F;&#x7528;<code>active</code>&#x7684;&#x7528;&#x6237;</p><pre><code class="lang-json">{
+    <span class="hljs-string">&quot;age,&gt;&quot;</span>:<span class="hljs-number">16</span>,
+    <span class="hljs-string">&quot;active,f&quot;</span>:<span class="hljs-string">&quot;$0&quot;</span>
+}</code></pre>
+<blockquote><p>&#x6B64;&#x65F6; $0 &#x4F5C;&#x4E3A;&#x4E86;&#x5360;&#x4F4D;&#x7B26;</p></blockquote><pre><code class="lang-sql">AGE &gt; 16 AND ACTIVE = FALSE</code></pre>
+<h2 id="4-&#x4F5C;&#x4E1A;">4. &#x4F5C;&#x4E1A;</h2><p>&#x6700;&#x7EC8;&#x53D1;&#x4E00;&#x4EFD;Email&#x7ED9;&#x6211;&#xFF0C;&#x6807;&#x4E0A;&#x9898;&#x53F7;&#xFF1A;silentbalanceyh@126.com</p><ul><li>&#x6570;&#x636E;&#x8868;&#x540D;&#xFF1A;SERVER
+</li></ul>
+<table>
+<thead>
+<tr><th style="text-align:left"> &#x5B57;&#x6BB5; </th>
+<th style="text-align:left"> &#x5217; </th>
+<th style="text-align:left"> &#x542B;&#x4E49; </th>
+</tr></thead><tbody>
+<tr><td style="text-align:left"> name </td>
+<td style="text-align:left"> NAME </td>
+<td style="text-align:left"> &#x670D;&#x52A1;&#x5668;&#x540D;&#x79F0; </td>
+</tr><tr><td style="text-align:left"> ip </td>
+<td style="text-align:left"> IP </td>
+<td style="text-align:left"> &#x670D;&#x52A1;&#x5668;IP&#x5730;&#x5740; </td>
+</tr><tr><td style="text-align:left"> os </td>
+<td style="text-align:left"> OS </td>
+<td style="text-align:left"> &#x670D;&#x52A1;&#x5668;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF; </td>
+</tr><tr><td style="text-align:left"> osVersion </td>
+<td style="text-align:left"> OS_VERSION </td>
+<td style="text-align:left"> &#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7248;&#x672C; </td>
+</tr><tr><td style="text-align:left"> type </td>
+<td style="text-align:left"> TYPE </td>
+<td style="text-align:left"> &#x670D;&#x52A1;&#x5668;&#x7C7B;&#x578B; </td>
+</tr><tr><td style="text-align:left"> active </td>
+<td style="text-align:left"> ACTIVE </td>
+<td style="text-align:left"> &#x662F;&#x5426;&#x542F;&#x7528;</td>
+</tr></tbody></table>
+
+<h3 id="41-&#x7FFB;&#x8BD1;">4.1. &#x7FFB;&#x8BD1;</h3><p>&#x5C06;&#x4E0B;&#x8FB9;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x7FFB;&#x8BD1;&#x6210;SQL</p><pre><code class="lang-json">{
+    <span class="hljs-string">&quot;01-01&quot;</span>:{
+        <span class="hljs-string">&quot;os&quot;</span>:<span class="hljs-string">&quot;Windows&quot;</span>
+    },
+    <span class="hljs-string">&quot;01-02&quot;</span>:{
+        <span class="hljs-string">&quot;name,e&quot;</span>:<span class="hljs-string">&quot;Linux&quot;</span>,
+        <span class="hljs-string">&quot;osVersion&quot;</span>:<span class="hljs-number">2.6</span>
+    },
+    <span class="hljs-string">&quot;01-03&quot;</span>:{
+        <span class="hljs-string">&quot;active,f&quot;</span>:<span class="hljs-string">&quot;$0&quot;</span>,
+        <span class="hljs-string">&quot;&quot;</span>:<span class="hljs-literal">false</span>,
+        <span class="hljs-string">&quot;$0&quot;</span>:{
+            <span class="hljs-string">&quot;name,s&quot;</span>:<span class="hljs-string">&quot;Duplicated&quot;</span>,
+            <span class="hljs-string">&quot;active,t&quot;</span>:<span class="hljs-string">&quot;$1&quot;</span>
+        }
+    }
+}</code></pre>
+<p>&#x5C06;&#x4E0B;&#x8FB9;SQL&#x7FFB;&#x8BD1;&#x6210;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;</p><pre><code class="lang-sql">-- 02-01
+NAME LIKE &apos;%X%&apos; AND ( ACTIVE = TRUE OR TYPE = &apos;ONLINE&apos; )
+-- 02-02
+IP LIKE &apos;%.192.100&apos; OR ( NAME = &apos;Linux&apos; AND IP LIKE &apos;%.100&apos; )
+-- 02-03
+OS_VERSION &gt; &apos;10.0.1000&apos; OR ( OS_VERSION &lt; &apos;9.0.1000&apos; AND ACTIVE = TRUE )</code></pre>
+<p>&#x63CF;&#x8FF0;&#xFF08;&#x540C;&#x65F6;&#x5199;Json&#x548C;SQL&#xFF09;&#xFF1A;</p><ul><li>&#x67E5;&#x8BE2;&#x542F;&#x7528;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E3A;Windows&#x5E76;&#x4E14;&#x7248;&#x672C;&#x4E0D;&#x5927;&#x4E8E;<code>8.0.1000</code>&#x7684;&#x8BB0;&#x5F55;&#x3002;
+</li>
+<li>&#x67E5;&#x8BE2;&#x6240;&#x6709;NAME&#x4E3A;&#x7A7A;&#x6216;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x53F7;&#x4E3A;&#x7A7A;&#x7684;&#x8BB0;&#x5F55;&#x3002;
+</li>
+<li>&#x67E5;&#x8BE2;&#x6240;&#x6709;TYPE&#x4E3A;<code>OX</code>&#x6216;TYPE&#x4E0D;&#x4E3A;<code>OX</code>&#x4F46;IP&#x5730;&#x5740;&#x5728;<code>192.100.0.100</code>&#x5230;<code>192.100.0.0</code>&#x7684;&#x503C;&#x3002;
+</li></ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../zerohe-xin-li-lun.html" class="navigation navigation-prev " aria-label="Previous page: Zero核心概念">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="kmz-002-tabularhe-assist-bian-liang.html" class="navigation navigation-next " aria-label="Next page: KMZ-002 Tabular和Assist变量">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"KMZ-001 查询引擎语法","level":"5.7.1","depth":2,"next":{"title":"KMZ-002 Tabular和Assist变量","level":"5.7.2","depth":2,"path":"uniform-documentation/zerohe-xin-li-lun/kmz-002-tabularhe-assist-bian-liang.md","ref":"uniform-documentation/zerohe-xin-li-lun/kmz-002-tabularhe-assist-bian-liang.md","articles":[]},"previous":{"title":"Zero核心概念","level":"5.7","depth":1,"path":"uniform-documentation/zerohe-xin-li-lun.md","ref":"uniform-documentation/zerohe-xin-li-lun.md","articles":[{"title":"KMZ-001 查询引擎语法","level":"5.7.1","depth":2,"path":"uniform-documentation/zerohe-xin-li-lun/kmz-001-cha-xun-yin-qing-yu-fa.md","ref":"uniform-documentation/zerohe-xin-li-lun/kmz-001-cha-xun-yin-qing-yu-fa.md","articles":[]},{"title":"KMZ-002 Tabular和Assist变量","level":"5.7.2","depth":2,"path":"uniform-documentation/zerohe-xin-li-lun/kmz-002-tabularhe-assist-bian-liang.md","ref":"uniform-documentation/zerohe-xin-li-lun/kmz-002-tabularhe-assist-bian-liang.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"uniform-documentation/zerohe-xin-li-lun/kmz-001-cha-xun-yin-qing-yu-fa.md","mtime":"2019-04-05T23:11:42.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-04-07T03:22:21.526Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
