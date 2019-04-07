@@ -16,6 +16,8 @@
 | column | 列 | row | 行 |
 | namespace | 名空间 | identifier | 标识 |
 
+## 2. 业务词
+
 | 词语 | 含义 | 词语 | 含义 |
 | :--- | :--- | :--- | :--- |
 | init | 初始化 | pre-init | 初始化预处理 |
