@@ -69,5 +69,5 @@ Worker方法名称定义了Api层的专用方法名称，并且可触发Aop层�
 
 ### 3.3. 含义性业务词
 
-
+该部分内容在Zero/Origin中都是统一处理，所以参考：[SPC-000 业务术语统一](/specification/main/spc-000-ye-wu-zhu-yu-gui-fan.md)。
 
