@@ -24,7 +24,8 @@ Zero框架中使用了很多后缀命名法用于定义不同的组件，本文�
 | PlugRouter | Router的扩展机制，Origin X 中使用了PlugRouter重新定义了动态路由规则，路由信息不通过Java语言中的Annotation进行静态扫描，而是直接连接到后端的路由管理数据仓库实现动态路由注册机制。从Zero中就是用PlugRouter进行直接的路由扩展。 |
 | Filler | 请求参数处理器，针对JSR311以及311的扩展，处理不同的请求参数，统一成后端专用的数据格式，方便组件和组件之间通过DTO进行数据交互。 |
 | Extractor | 配置最终抽取器，直接从Node接口读取到的配置数据执行规范化，生成Agent、Worker专用的配置项对象，如：Event、Receipt、DeploymentOptions等。 |
-|  |  |
+| Axis | 路由设置器，用于设置Vert.x中Router对象下的每一个路由Route示例，包括设置路由偏好、地址、HTTP方法、以及于对应的Handler。 |
+| Aim | Handler生成器，根据不同的Java方法定义，为Zero处理请求模式进行Handler的生成，包括：One-Way、Publish-Subscribe、Request-Request、Java Async、Vertx Async五种基本模式的Handler生成都是通过Aim组件完成。 |
 
 ## 2. 特殊类
 
