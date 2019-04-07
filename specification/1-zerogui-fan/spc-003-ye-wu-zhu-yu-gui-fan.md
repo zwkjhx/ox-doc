@@ -32,7 +32,7 @@ Worker方法名称定义了Api层的专用方法名称，并且可触发Aop层�
 | post | create |
 | put | update |
 | delete | remove |
-| exist/miss | check |
+| exist/miss | exist/miss |
 | query/search | fetch（Jooq底层统一） |
 
 * 上述方法直接可以通过`Ux.Jooq`的模式统一执行，所以不需要开`Stub/Service`的业务逻辑层来完成。
@@ -47,6 +47,11 @@ Worker方法名称定义了Api层的专用方法名称，并且可触发Aop层�
 | post | 创建 | 【无】只能用于API接口（Agent/Api） |
 | put | 更新 | 【无】只能用于API接口（Agent/Api） |
 | delete | 删除 | 可用于Dao层，不可用于业务逻辑层，Service业务逻辑层只能使用remove，不可用delete。 |
+| exist/miss | 检查谓词 | 可用于Service业务逻辑层，也可用于Dao层，根据实际业务需求而定。 |
+| query/search | 查询 | query只能用于返回JsonArray的情况，search只能用于返回JsonObject的情况。 |
+| create | 创建 | 【无】用于Service业务逻辑层，不能用于Worker中 |
+| read | 读取 | 【无】用于Service业务逻辑层，不能用于Worker中 |
+| modify/update | 更新 | 【无】用于Service业务逻辑层，不能用于Worker中 |
 
 * 【无】表示Zero中不推荐使用该谓词在其他地方使用。
 
