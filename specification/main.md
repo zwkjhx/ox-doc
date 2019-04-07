@@ -9,6 +9,10 @@
 | Origin X规范 | Origin X相关的结构解析和命名规范 |
 | RESTful设计指导规范 | RESTful设计相关的规范 |
 
+## 0. 统一
+
+* [SPC-000 业务术语统一](/specification/main/spc-000-ye-wu-zhu-yu-gui-fan.md)
+
 ## 1. Zero规范
 
 * [SPC-001 Zero基本开发规范](/specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.html)
