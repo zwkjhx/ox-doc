@@ -26,9 +26,21 @@ API方法定义描述了在Agent/Api两种Java文件中方法的名字。
 
 Worker方法名称定义了Api层的专用方法名称，并且可触发Aop层的Audit设置操作
 
-| API | Worker中方法 | 是否开Service？描述 |
-| :--- | :--- | :--- |
-|  |  |  |
+| API | Worker中方法 |
+| :--- | :--- |
+| get | read |
+| post | create |
+| put | update |
+| delete | remove |
+| exist/miss | check |
+| query/search | fetch（Jooq底层统一） |
+
+* 上述方法直接可以通过`Ux.Jooq`的模式统一执行，所以不需要开`Stub/Service`的业务逻辑层来完成。
+* 除了上边的属于对应之外，其他的想对自由。
+
+## 3. 其他业务谓词
+
+
 
 
 
