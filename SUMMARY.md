@@ -123,6 +123,7 @@
 ## Specification
 
 * [开发规范文档主页](specification/main.md)
+  * [SPC-000 业务术语统一](specification/main/spc-000-ye-wu-zhu-yu-gui-fan.md)
 * [1 - Zero规范](specification/1-zerogui-fan.md)
   * [SPC-001 Zero基本开发规范](specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.md)
   * [SPC-002 API和方法设计规范](specification/1-zerogui-fan/spc-002-apihe-fang-fa-she-ji-gui-fan.md)
