@@ -58,7 +58,7 @@ String PAYBILL_PUT = "EVENT://ADDR/PAYBILL/PUT";
 
 ### 3.2. Api中的方法定义
 
-Zero中的API、方法定义相关信息相对比较复杂，它的完整规范参考：[SPC-002 API和方法设计规范](/specification/1-zerogui-fan/spc-002-apihe-fang-fa-she-ji-gui-fan.md)。
+Zero中的API、方法定义相关信息相对比较复杂，它的完整规范参考：[SPC-002 API和方法设计规范](/specification/1-zerogui-fan/spc-002-apihe-fang-fa-she-ji-gui-fan.html)。
 
 
 
