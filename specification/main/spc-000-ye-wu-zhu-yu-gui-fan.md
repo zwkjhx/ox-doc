@@ -7,7 +7,13 @@
 | 词语 | 含义 | 词语 | 含义 |
 | :--- | :--- | :--- | :--- |
 | platform | 平台 | app / application | 应用 |
-|  |  |  |  |
+| system | 系统 | sub-system | 子系统 |
+| module | 模块 | model | 模型 |
+| domain | 领域模型 | attribute | 属性 |
+| entity | 实体 | relation | 关系 |
+| field | 字段 | key | 键 |
+| index | 键 | table | 表 |
+| column | 列 | row | 行 |
 
 | 词语 | 含义 | 词语 | 含义 |
 | :--- | :--- | :--- | :--- |
