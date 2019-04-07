@@ -14,6 +14,7 @@
 | field | 字段 | key | 键 |
 | index | 键 | table | 表 |
 | column | 列 | row | 行 |
+| namespace | 名空间 | identifier | 标识 |
 
 | 词语 | 含义 | 词语 | 含义 |
 | :--- | :--- | :--- | :--- |
