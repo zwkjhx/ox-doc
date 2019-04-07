@@ -1,4 +1,4 @@
-* [ ] # Zero基本开发规范
+# Zero基本开发规范
 
 ## 0. 术语
 
@@ -61,8 +61,6 @@ String PAYBILL_PUT = "EVENT://ADDR/PAYBILL/PUT";
 Zero中的API、方法定义相关信息相对比较复杂，它的完整规范参考：[SPC-002 API和方法设计规范](/specification/1-zerogui-fan/spc-002-apihe-fang-fa-she-ji-gui-fan.html)。
 
 ### 3.3. 服务通信
-
-
 
 
 
