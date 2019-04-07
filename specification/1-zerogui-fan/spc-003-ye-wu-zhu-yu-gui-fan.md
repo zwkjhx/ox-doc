@@ -19,6 +19,16 @@ API方法定义描述了在Agent/Api两种Java文件中方法的名字。
 | search | 按照某个条件查询多条记录，返回JsonObject（list,count），带分页、排序、列过滤、查询树 |
 
 * API中的标准方法定义和HTTP Method对应，使得开发人员不用去思考POST/PUT究竟哪个规则用于更新。
-* 
+* 批量全部使用batch方法名前缀。
+* 将query/search的返回值进行限定，query只返回JsonArray，有多少条返回多少条，search返回一个JsonObject，主要是带`list`和`count`两个属性，用于处理分页数据。
+
+## 2. Worker方法
+
+Worker方法名称定义了Api层的专用方法名称，并且可触发Aop层的Audit设置操作
+
+| API | Worker中方法 | 是否开Service？描述 |
+| :--- | :--- | :--- |
+|  |  |  |
+
 
 
