@@ -4,6 +4,7 @@ Zero框架中使用了很多后缀命名法用于定义不同的组件结构，�
 
 | 组件 | 详细说明 |
 | :--- | :--- |
+| VertxApplication / DansApplication | 标准服务启动器 / ApiGateway启动器 |
 |  |  |
 
 
