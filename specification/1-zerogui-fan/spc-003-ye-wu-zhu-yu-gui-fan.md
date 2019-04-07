@@ -14,6 +14,6 @@ API方法定义描述了在Agent/Api两种Java文件中方法的名字。
 | delete | 删除记录专用方法 |
 
 * API中的标准方法定义和HTTP Method对应，使得开发人员不用去思考POST/PUT究竟哪个规则用于更新。
-
+* 
 
 
