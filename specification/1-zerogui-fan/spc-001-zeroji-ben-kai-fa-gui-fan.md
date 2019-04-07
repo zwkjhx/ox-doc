@@ -80,5 +80,17 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 | existUser | POST | /user/exist | 检查用户是否存在 |
 |  |  |  |  |
 
+#### 3.2.2. 批量操作
+
+* 可带上查询树`criteria`语法。
+* 返回值为JsonArray。
+
+| 方法名 | HTTP方法 | URI | 含义 |
+| :--- | :--- | :--- | :--- |
+| batchGet | GET | /users | 读取所有用户，JsonArray |
+| batchPut | PUT | /users | 批量更新用户 |
+| batchPost | POST | /users | 批量创建用户（ID集） |
+| batchDelete | DELETE | /users | 批量删除用户（ID集） |
+
 
 
