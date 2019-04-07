@@ -85,6 +85,8 @@ Worker方法名称定义了Api层的专用方法名称，并且可触发Aop层�
 | model | 模型 | attribute | 模型的属性 |
 | id | 当前模型的记录主键 | namespace | 模型/实体的名空间 |
 | identifier | 实体和模型的定义ID（注意和主键区别） | api/agent | RESTful前端开放接口 |
+| worker | Worker后端专用线程 | stub/service | 业务逻辑接口/存根/实现 |
+| dao | 数据访问层接口 |  |  |
 
 
 
