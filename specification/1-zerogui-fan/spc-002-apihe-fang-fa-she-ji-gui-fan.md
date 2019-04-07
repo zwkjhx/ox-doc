@@ -29,7 +29,14 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 | batchPost | POST | /users | 批量创建用户（ID集） |
 | batchDelete | DELETE | /users | 批量删除用户（ID集） |
 
-## 3. 单记录查询
+## 3. 辅助功能
+
+| 方法名 | HTTP方法 | URI | 含义 |
+| :--- | :--- | :--- | :--- |
+| existUser | POST | /user/exist/{updated} | 检查用户是否存在，存在 = true，不存在 = false |
+| missUser | POST | /user/miss/{updated} | 检查用户是否不存在，不存在 = true，存在 = false |
+
+## 4. 单记录查询
 
 * 单记录查询中的 field = value 模式只可以输入单个条件信息。
 * 在POST查询中固定使用 `/<entity>/query`模式，支持criteria语法。
@@ -40,7 +47,7 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 | getByField | GET | /user/{field}/{value} | 按照 field = value 查询用户信息 |
 | getByFields | POST | /user/query | 按照criteria模式查询用户信息 |
 
-## 4. 辅助功能
+## 
 
 
 
