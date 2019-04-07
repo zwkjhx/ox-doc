@@ -126,6 +126,7 @@
 * [1 - Zero规范](specification/1-zerogui-fan.md)
   * [SPC-001 Zero基本开发规范](specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.md)
   * [SPC-002 API和方法设计规范](specification/1-zerogui-fan/spc-002-apihe-fang-fa-she-ji-gui-fan.md)
+  * [SPC-003 业务术语规范](specification/1-zerogui-fan/spc-003-ye-wu-zhu-yu-gui-fan.md)
 * [2 - Zero UI规范](specification/2-zero-uigui-fan.md)
 * [3 - Origin X规范](specification/3-origin-xgui-fan.md)
   * [SPO-001 界面配置全Json解析](specification/3-origin-xgui-fan/spo-001-jie-mian-pei-zhi-quan-json-jie-xi.md)
