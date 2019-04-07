@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/specification/1-zerogui-fan/spc-002-apihe-fang-fa-she-ji-gui-fan.md" beforeDir="false" afterPath="$PROJECT_DIR$/specification/1-zerogui-fan/spc-002-apihe-fang-fa-she-ji-gui-fan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specification/main.md" beforeDir="false" afterPath="$PROJECT_DIR$/specification/main.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,27 +16,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uniform-documentation/main.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="900">
-                <caret line="50" selection-start-line="50" selection-end-line="50" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utility-x/main.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -48,12 +27,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/specification/main.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="270">
-                <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
+              <first_editor relative-caret-position="360">
+                <caret line="20" column="93" selection-start-line="20" selection-start-column="93" selection-end-line="20" selection-end-column="93" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/specification/main/spc-000-ye-wu-zhu-yu-gui-fan.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="419">
+                <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
               </first_editor>
               <second_editor />
             </state>
@@ -84,12 +75,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/specification/1-zerogui-fan/spc-002-apihe-fang-fa-she-ji-gui-fan.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="405">
                 <caret line="93" column="87" selection-start-line="93" selection-start-column="87" selection-end-line="93" selection-end-column="87" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/specification/1-zerogui-fan/spc-003-ye-wu-zhu-yu-gui-fan.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="405">
+                <caret line="71" column="100" selection-start-line="71" selection-start-column="100" selection-end-line="71" selection-end-column="100" />
               </first_editor>
               <second_editor />
             </state>
@@ -161,8 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/uniform-documentation/mian-shi-ti/kmi-003-spring-restfulkai-fa-ji-chu-ti.md" />
-        <option value="$PROJECT_DIR$/environment/yin-dao-ye.md" />
         <option value="$PROJECT_DIR$/environment/5-qi-ta-huan-jing/env-006-mavenhuan-jing-da-jian.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/yu-yan-xiang-guan/kml-004-javazhong-de-jing-tai-he-dan-li.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/ruan-jian-xu-qiu-ling-yu/kmr-002-cheng-xu-she-ji-de-liu-ge-ji-ben-yuan-ze.md" />
@@ -209,9 +210,11 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/utility-x/main.md" />
         <option value="$PROJECT_DIR$/utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md" />
-        <option value="$PROJECT_DIR$/specification/main.md" />
         <option value="$PROJECT_DIR$/specification/1-zerogui-fan/spc-001-zeroji-ben-kai-fa-gui-fan.md" />
         <option value="$PROJECT_DIR$/specification/1-zerogui-fan/spc-002-apihe-fang-fa-she-ji-gui-fan.md" />
+        <option value="$PROJECT_DIR$/specification/1-zerogui-fan/spc-003-ye-wu-zhu-yu-gui-fan.md" />
+        <option value="$PROJECT_DIR$/specification/main/spc-000-ye-wu-zhu-yu-gui-fan.md" />
+        <option value="$PROJECT_DIR$/specification/main.md" />
       </list>
     </option>
   </component>
@@ -263,6 +266,12 @@
               <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="specification" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="4-restfulshe-ji-zhi-dao-gui-fan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="specification" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -355,26 +364,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-007-nettyzhong-de-pipeline-ji-zhi.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="2" selection-start-column="2" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zero-up/5-300a-zhu-lu-ji-300b-fu-lu/zbr-008-tcpxie-yi-zhong-de-reuse.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="2" selection-start-column="2" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/origin-x-engine/2-oxzi-ding-yi-zu-jian/oxc-001-guan-yu-zi-ding-yi-zu-jian.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -767,16 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/specification/main.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="270">
-            <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/specification/4-restfulshe-ji-zhi-dao-gui-fan/spr-001-urilu-jing-she-ji-gui-fan.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -800,6 +779,36 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="405">
             <caret line="93" column="87" selection-start-line="93" selection-start-column="87" selection-end-line="93" selection-end-column="87" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specification/1-zerogui-fan/spc-003-ye-wu-zhu-yu-gui-fan.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="405">
+            <caret line="71" column="100" selection-start-line="71" selection-start-column="100" selection-end-line="71" selection-end-column="100" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specification/main/spc-000-ye-wu-zhu-yu-gui-fan.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="419">
+            <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specification/main.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="360">
+            <caret line="20" column="93" selection-start-line="20" selection-start-column="93" selection-end-line="20" selection-end-column="93" />
           </first_editor>
           <second_editor />
         </state>
