@@ -91,5 +91,5 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 
 ## 8. 业务含义常用
 
-业务术语表参考：[SPC-003 业务术语规范](/specification/1-zerogui-fan/spc-003-ye-wu-zhu-yu-gui-fan.md)。
+业务术语表参考：[SPC-003 业务术语规范](/specification/1-zerogui-fan/spc-003-ye-wu-zhu-yu-gui-fan.html)。
 
