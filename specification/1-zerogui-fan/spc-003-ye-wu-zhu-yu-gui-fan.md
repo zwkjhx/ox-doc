@@ -43,7 +43,7 @@ Worker方法名称定义了Api层的专用方法名称，并且可触发Aop层�
 
 | 词语 | 含义 | 协变规则 |
 | :--- | :--- | :--- |
-| get | 读取 | 无，不可用于底层，只能使用于API接口定义中，禁止在底层Dao/Service中使用getBy，getX等方法，底层的Get表示Bean的“获取”方法。 |
+| get | 读取 | 【无】不可用于底层，只能使用于API接口定义中，禁止在底层Dao/Service中使用getBy，getX等方法，底层的Get表示Bean的“获取”方法。 |
 
 
 
