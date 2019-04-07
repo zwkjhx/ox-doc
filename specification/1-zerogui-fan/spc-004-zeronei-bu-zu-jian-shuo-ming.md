@@ -11,7 +11,7 @@ Zero框架中使用了很多后缀命名法用于定义不同的组件，本文�
 | Launcher | 启动器，会被 Application 调用，并且启动 Vert.x 实例，启动器分两种：标准模式 / Rx模式（平行世界，使用了rxjava库的启动模式）。 |
 | Infix | Zero中的插件，有插件专用接口用于扩展Zero。 |
 | Endurer | 「**Handler**」错误响应器，一般用于 failureHandler 的生成过程，一旦在请求过程发生了错则启用错误响应器。 |
-|  |  |
+| Filter | JSR340过滤器规范支持接口。 |
 
 
 
