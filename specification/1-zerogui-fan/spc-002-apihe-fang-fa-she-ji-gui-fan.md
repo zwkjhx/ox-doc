@@ -60,5 +60,15 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 | queryByField | GET | /users/{field}/{value} | 按照 field = value 查询用户信息 |
 | queryByFields | POST | /users/query | 按照criteria模式查询用户信息 |
 
+## 6. 复杂搜索
+
+* 复杂搜索只能使用`criteria`语法执行查询。
+* 返回值为Pagination转换出来的JsonObject，带`list, count`两个节点。
+
+| 方法名 | HTTP方法 | URI | 含义 |
+| :--- | :--- | :--- | :--- |
+| search | POST | /users/search | 复杂搜索 |
+|  |  |  |  |
+
 
 
