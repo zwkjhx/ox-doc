@@ -91,11 +91,11 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 #### 3.2.3. 单记录查询
 
 * 单记录查询中的 field = value 模式只可以输入单个字段信息。
-* 
+
 | 方法名 | HTTP方法 | URI | 含义 |
 | :--- | :--- | :--- | :--- |
-| getByField | GET | /user/{field}/{value} | 按照field = value查询用户信息 |
-|  |  |  |  |
+| getByField | GET | /user/{field}/{value} | 按照 field = value 查询用户信息 |
+| getByFields | POST | /user |  |
 
 
 
