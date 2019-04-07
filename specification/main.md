@@ -11,7 +11,7 @@
 
 ## 0. 统一
 
-* [SPC-000 业务术语统一](/specification/main/spc-000-ye-wu-zhu-yu-gui-fan.md)
+* [SPC-000 业务术语统一](/specification/main/spc-000-ye-wu-zhu-yu-gui-fan.html)
 
 ## 1. Zero规范
 
