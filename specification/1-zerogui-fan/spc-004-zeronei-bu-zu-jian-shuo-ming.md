@@ -17,7 +17,7 @@ Zero框架中使用了很多后缀命名法用于定义不同的组件，本文�
 | Factor | 内置启动因式，由于启动器内部的启动流程有所区别，在微服务的API Gateway模式、WebSocket模式、RESTful标准服务模式使用不同的Factor来处理，Factor会处理一个Vert.x中开启多个服务器的模式——不同的服务器需要挂载的Agent会有所区别。 |
 | Inquirer | 组件扫描器，主要用于扫描不同组件而定义：扫描Agent、Worker、EndPoint地址、插件等等。 |
 | Saber | 序列化组件，针对不同的Java原生类型，除开jackson本身的序列化过后，提供特殊类型的序列化子系统，完成Web Service的序列化子系统定义。 |
-|  |  |
+| Monitor | 健康检查器，用于微服务模式下检查各个节点心跳、收集数据，监控流量而定义。 |
 
 ## 2. 特殊类
 
