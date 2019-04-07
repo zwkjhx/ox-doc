@@ -75,6 +75,7 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 | batchUpdate | PUT | /users | 批量更新用户 |
 | batchCreate | POST | /users | 批量创建用户（ID集） |
 | batchDelete | DELETE | /users | 批量删除用户（ID集） |
+| existUser | POST | /user/exist | 检查用户是否存在 |
 |  |  |  |  |
 
 
