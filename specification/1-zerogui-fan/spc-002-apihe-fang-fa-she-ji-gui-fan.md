@@ -43,7 +43,7 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 ## 4. 单记录查询
 
 * 单记录查询中的 field = value 模式只可以输入单个条件信息。
-* 在POST查询中固定使用 `/<entity>/query`模式，支持criteria语法。
+* 在POST查询中固定使用 `/<entity>/query`模式，支持`criteria`语法。
 * 返回值为JsonObject。
 
 | 方法名 | HTTP方法 | URI | 含义 |
@@ -51,7 +51,16 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 | getByField | GET | /user/{field}/{value} | 按照 field = value 查询用户信息 |
 | getByFields | POST | /user/fetch | 按照criteria模式查询用户信息 |
 
-## 
+## 5. 列表查询
+
+* 列表记录查询中 field = value 模式只可以传入单个条件信息。
+* 在POST查询中固定使用 `/<entity>/query`模式，支持`criteria`语法。
+* 返回值为List&lt;T&gt;，最终转换成JsonArray。
+
+| 方法名 | HTTP方法 | URI | 含义 |
+| :--- | :--- | :--- | :--- |
+| queryByField | GET | /users/{field}/{value} | 按照 field = value 查询用户信息 |
+| queryByFields | POST | /users/query | 按照criteria模式查询用户信息 |
 
 
 
