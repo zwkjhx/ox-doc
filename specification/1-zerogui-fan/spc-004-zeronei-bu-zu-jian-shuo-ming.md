@@ -2,10 +2,10 @@
 
 Zero框架中使用了很多后缀命名法用于定义不同的组件，本文主要讲解某些后缀下的不同组件对应的职责以及含义，方便开发者阅读Zero本身的代码。
 
-| 组件 | 子组件 | 详细说明 |
-| :--- | :--- | :--- |
-| VertxApplication / DansApplication |  | 标准服务启动器 / ApiGateway启动器 |
-| Scatter |  | 启动器子线程 |
+| 组件 | 详细说明 |
+| :--- | :--- |
+| VertxApplication / DansApplication | 标准服务启动器 / ApiGateway启动器 |
+| Scatter | 启动器子线程，包含：Agent扫描线程、Worker扫描线程、Infix插件扫描线程、Rule规则扫描线程四种 |
 
 
 
