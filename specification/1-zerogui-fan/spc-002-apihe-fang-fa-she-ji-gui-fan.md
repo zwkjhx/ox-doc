@@ -35,8 +35,10 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 
 | 方法名 | HTTP方法 | URI | 含义 |
 | :--- | :--- | :--- | :--- |
-| existUser | POST | /user/exist/{updated} | 检查用户是否存在，存在 = true，不存在 = false |
-| missUser | POST | /user/miss/{updated} | 检查用户是否不存在，不存在 = true，存在 = false |
+| existUser | POST | /user/exist | 检查用户是否存在，存在 = true，不存在 = false |
+| missUser | POST | /user/miss | 检查用户是否不存在，不存在 = true，存在 = false |
+| existWhenUser | POST | /user/exist-updating | 更新过程检查 |
+| missWhenUser | POST | /user/miss-updating | 更新过程检查 |
 
 ## 4. 单记录查询
 
