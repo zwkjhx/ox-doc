@@ -44,6 +44,9 @@ Worker方法名称定义了Api层的专用方法名称，并且可触发Aop层�
 | 词语 | 含义 | 协变规则 |
 | :--- | :--- | :--- |
 | get | 读取 | 【无】不可用于底层，只能使用于API接口定义中，禁止在底层Dao/Service中使用getBy，getX等方法，底层的Get表示Bean的“获取”方法。 |
+| post | 创建 | 【无】只能用于API接口（Agent/Api） |
+| put | 更新 | 【无】只能用于API接口（Agent/Api） |
+| delete | 删除 | 可用于Dao层，不可用于业务逻辑层，Service业务逻辑层只能使用remove，不可用delete。 |
 
 * 【无】表示Zero中不推荐使用该谓词在其他地方使用。
 
