@@ -71,7 +71,23 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 | search | POST | /users/search | 复杂搜索 |
 | searchMapField | POST | /users/search/{field} | 复杂搜索，返回值一个Map结果 |
 
-## 7. 业务含义常用
+## 7. 子查询规则
+
+对于牵涉到的子查询，直接使用单个实体带上id的根路径，后边跟上 1 - 6的基本规则即可。
+
+举例：
+
+* app：应用模型
+* menu：菜单模型
+
+按照应用查询菜单的全套API如下：
+
+| API | 含义 |
+| :--- | :--- |
+| /app/{key}/menus | 查询当前应用下所有菜单信息 |
+| /app/{key}/menus/search | 查询当前应用下满足条件的所有菜单信息 |
+
+## 8. 业务含义常用
 
 业务术语表参考：[SPC-003 业务术语规范](/specification/1-zerogui-fan/spc-003-ye-wu-zhu-yu-gui-fan.md)。
 
