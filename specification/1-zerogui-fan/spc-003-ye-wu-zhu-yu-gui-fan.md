@@ -39,7 +39,9 @@ Worker方法名称定义了Api层的专用方法名称，并且可触发Aop层�
 * 除了上边的属于对应之外，其他的想对自由。
 * 由于`Ux.Jooq`已经生成了Dao层，所以不需要类似`insert/update/select/delete`等这种数据层的方法来描述行为。
 
-## 3. 其他业务谓词
+## 3. 业务谓词
+
+### 3.1. 基本业务谓词
 
 | 词语 | 含义 | 协变规则 |
 | :--- | :--- | :--- |
@@ -52,8 +54,24 @@ Worker方法名称定义了Api层的专用方法名称，并且可触发Aop层�
 | create | 创建 | 【无】用于Service业务逻辑层，不能用于Worker中 |
 | read | 读取 | 【无】用于Service业务逻辑层，不能用于Worker中 |
 | modify/update | 更新 | 【无】用于Service业务逻辑层，不能用于Worker中 |
+| fetch | 查询 | 除开API层以外，全层通用。 |
 
 * 【无】表示Zero中不推荐使用该谓词在其他地方使用。
+
+### 3.2. 分层CRUD
+
+|  | 添加 | 删除 | 查询 | 修改 |
+| :--- | :--- | :--- | :--- | :--- |
+| Api/Agent | post | delete | get / query / search | put |
+| Worker | create | remove | read / fetch | modify |
+| Service | create / add | remove | fetch | modify |
+| Dao | insert | delete | select / fetch | update |
+
+### 3.3. 含义性业务谓词
+
+| 词语 | 含义 | 词语 | 含义 |
+| :--- | :--- | :--- | :--- |
+|  |  |  |  |
 
 
 
