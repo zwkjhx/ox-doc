@@ -24,8 +24,12 @@ Zero框架中使用了很多后缀命名法用于定义不同的组件，本文�
 | PlugRouter | Router的扩展机制，Origin X 中使用了PlugRouter重新定义了动态路由规则，路由信息不通过Java语言中的Annotation进行静态扫描，而是直接连接到后端的路由管理数据仓库实现动态路由注册机制。从Zero中就是用PlugRouter进行直接的路由扩展。 |
 | Filler | 请求参数处理器，针对JSR311以及311的扩展，处理不同的请求参数，统一成后端专用的数据格式，方便组件和组件之间通过DTO进行数据交互。 |
 | Extractor | 配置最终抽取器，直接从Node接口读取到的配置数据执行规范化，生成Agent、Worker专用的配置项对象，如：Event、Receipt、DeploymentOptions等。 |
-| Axis | 路由设置器，用于设置Vert.x中Router对象下的每一个路由Route示例，包括设置路由偏好、地址、HTTP方法、以及于对应的Handler。 |
+| Axis | 路由注册器，用于挂载生成好的所有路由信息到Router对象，实现路由注册机制。 |
 | Aim | Handler生成器，根据不同的Java方法定义，为Zero处理请求模式进行Handler的生成，包括：One-Way、Publish-Subscribe、Request-Request、Java Async、Vertx Async五种基本模式的Handler生成都是通过Aim组件完成。 |
+| Bolt | 安全模块分流器，针对不同的安全实现方式进行分流，第一层执行全扩展分流和方法扩展分流，第二层进行安全认证授权模式分流（Basic还是OAuth）。 |
+| Hub | 路由挂载总线，将Event对象中扫描到的信息挂载到Route对象里，针对每一个Route对象进行细粒度扩展。 |
+| Ruler | 基本数据规范验证器，验证JsonObject格式、JsonArray格式以及必须的整数、字符串长度、特殊属性，在发布之前验证配置专用。 |
+| Differ | 模式分流器，根据Java方法定义，直接通过模式分流器来判断当前配置数据应该生成什么样的Aim，再调用Aim中的方法来生成对应的Handler。主要分为：前置验证分流、Http请求模式分流、Worker处理模式分流、通用分流、Rpc内部服务通信分流。 |
 
 ## 2. 特殊类
 
