@@ -71,7 +71,6 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 | put | PUT | /user/{id} | 按照id更新某个实体 |
 | delete | DELETE | /user/{id} | 按照id删除某个实体 |
 | search | POST | /user/search | 搜索用户实体信息（查询引擎），返回值是JsonObject包含了数据和总条数 |
-| getByXxx | GET | /user/email/{email} | 「单个」按照email查询用户信息，返回为JsonObject |
 | searchByXxx | GET | /users/status/{status} | 「多个」按照status查询用户信息，返回为JsonArray |
 | existUser | POST | /user/exist | 检查用户是否存在 |
 |  |  |  |  |
@@ -90,7 +89,7 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 
 #### 3.2.3. 单记录查询
 
-* 单记录查询中的 field = value 模式只可以输入单个字段信息。
+* 单记录查询中的 field = value 模式只可以输入单个条件信息。
 * 在POST查询中固定使用 `/<entity>/query`模式，支持criteria语法。
 * 返回值为JsonObject。
 
