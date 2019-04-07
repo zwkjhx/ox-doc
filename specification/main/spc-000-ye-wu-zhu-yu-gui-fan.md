@@ -44,7 +44,9 @@
 | 词语 | 含义 | 词语 | 含义 |
 | :--- | :--- | :--- | :--- |
 | agent | Class类型前端接口类 | api | RESTful接口定义 |
-|  |  |  |  |
+| worker | 后台工作线程 | sender | 发送器 |
+| validator | 验证器 | convertor | 转换器 |
+| consumer | 消息消费者 | replier | 响应回复者 |
 
 
 
