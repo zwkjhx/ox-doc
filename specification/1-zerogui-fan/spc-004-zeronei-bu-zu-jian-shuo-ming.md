@@ -2,8 +2,6 @@
 
 Zero框架中使用了很多后缀命名法用于定义不同的组件，本文主要讲解某些后缀下的不同组件对应的职责以及含义，方便开发者阅读Zero本身的代码。
 
-## 1. 启动组件
-
 | 组件 | 详细说明 |
 | :--- | :--- |
 | VertxApplication / DansApplication | 标准服务入口 / ApiGateway服务应用入口。 |
@@ -11,7 +9,7 @@ Zero框架中使用了很多后缀命名法用于定义不同的组件，本文�
 | Visitor | 配置访问器，分两种：纯数据系列如读取JsonObject/JsonArray；特殊DTO系列，如Vert.x Options，Server Options等。 |
 | Node&lt;T&gt; | 配置数据解析器，主要分：解析 vertx.yml文件、解析vertx-inject.yml 文件扫描Infix插件、解析 lime节点、解析统一配置——分层、合并处理。 |
 | Launcher | 启动器，会被 Application 调用，并且启动 Vert.x 实例，启动器分两种：标准模式 / Rx模式（平行世界，使用了rxjava库的启动模式）。 |
-|  |  |
+| Infix | Zero中的插件，有插件专用接口用于扩展Zero。 |
 |  |  |
 |  |  |
 
