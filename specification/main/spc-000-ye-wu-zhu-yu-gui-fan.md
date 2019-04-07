@@ -26,8 +26,15 @@
 | core | 核心系统 | datum | 系统数据 |
 | data | 数据 | metadata | 元数据 |
 | engine | 引擎 | workflow | 工作流 |
+| horizon | 水平面（通用功能） | tool | 工具箱 |
 
 ## 3. 动词
+
+| 词语 | 含义 | 词语 | 含义 |
+| :--- | :--- | :--- | :--- |
+| init | 初始化 | pre-init | 初始化预处理 |
+| inited | 初始化完成 | upload | 上传 |
+| download | 下载 |  |  |
 
 ## 4. 组件词
 
