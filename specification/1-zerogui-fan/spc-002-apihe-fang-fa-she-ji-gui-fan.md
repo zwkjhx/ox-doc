@@ -82,10 +82,12 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 
 按照应用查询菜单的全套API如下：
 
-| API | 含义 |
-| :--- | :--- |
-| /app/{key}/menus | 查询当前应用下所有菜单信息 |
-| /app/{key}/menus/search | 查询当前应用下满足条件的所有菜单信息 |
+| API | 返回值 | 含义 |
+| :--- | :--- | :--- |
+| /app/{key}/menus | JsonArray | 查询当前应用下所有菜单信息 |
+| /app/{key}/menus/search | JsonObject（分页处理） | 查询当前应用下满足条件的所有菜单 |
+| /app/{key}/menus/query | JsonArray | 查询当前应用下满足条件的所有菜单 |
+| /app/{key}/menus/search/{field} | JsonObject | 底层调用 searchMapField |
 
 ## 8. 业务含义常用
 
