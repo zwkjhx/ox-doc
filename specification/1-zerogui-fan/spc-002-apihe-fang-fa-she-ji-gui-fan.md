@@ -12,8 +12,6 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 | post | POST | /user | 创建某个实体 |
 | put | PUT | /user/{id} | 按照id更新某个实体 |
 | delete | DELETE | /user/{id} | 按照id删除某个实体 |
-| search | POST | /user/search | 搜索用户实体信息（查询引擎），返回值是JsonObject包含了数据和总条数 |
-| searchByXxx | GET | /users/status/{status} | 「多个」按照status查询用户信息，返回为JsonArray |
 
 ## 2. 批量操作
 
