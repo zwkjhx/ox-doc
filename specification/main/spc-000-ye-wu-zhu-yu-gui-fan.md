@@ -34,13 +34,16 @@
 | :--- | :--- | :--- | :--- |
 | init | 初始化 | pre-init | 初始化预处理 |
 | inited | 初始化完成 | upload | 上传 |
-| download | 下载 |  |  |
+| download | 下载 | send | 发送 |
+| reply | 响应 | async | 异步 |
+| sync | 同步 | validate | 验证 |
+| convert | 转换 |  |  |
 
 ## 4. 组件词
 
 | 词语 | 含义 | 词语 | 含义 |
 | :--- | :--- | :--- | :--- |
-| init | 初始化 | pre-init | 初始化预处理 |
+| agent | Class类型前端接口类 | api | RESTful接口定义 |
 |  |  |  |  |
 
 
