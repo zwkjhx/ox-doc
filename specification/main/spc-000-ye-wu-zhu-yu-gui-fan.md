@@ -20,6 +20,19 @@
 
 | 词语 | 含义 | 词语 | 含义 |
 | :--- | :--- | :--- | :--- |
+| attach | 附件 | tabular | 列表 |
+| category | 分类 | system | 系统 |
+| macrocosm | 宏观世界（系统） | kernel | 内核 |
+| core | 核心系统 | datum | 系统数据 |
+| data | 数据 | metadata | 元数据 |
+|  |  |  |  |
+
+
+
+
+
+| 词语 | 含义 | 词语 | 含义 |
+| :--- | :--- | :--- | :--- |
 | init | 初始化 | pre-init | 初始化预处理 |
 | inited | 初始化完成 | attach | 附件 |
 | download | 下载 | upload | 上传 |
