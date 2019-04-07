@@ -29,6 +29,8 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 
 ## 3. 辅助功能
 
+* 返回值为true/false，显示判断结果。
+
 | 方法名 | HTTP方法 | URI | 含义 |
 | :--- | :--- | :--- | :--- |
 | existUser | POST | /user/exist/{updated} | 检查用户是否存在，存在 = true，不存在 = false |
