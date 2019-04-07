@@ -1,4 +1,4 @@
-# Zero基本开发规范
+* [ ] # Zero基本开发规范
 
 ## 0. 术语
 
@@ -73,10 +73,6 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 | search | POST | /user/search | 搜索用户实体信息（查询引擎），返回值是JsonObject包含了数据和总条数 |
 | getByXxx | GET | /user/email/{email} | 「单个」按照email查询用户信息，返回为JsonObject |
 | searchByXxx | GET | /users/status/{status} | 「多个」按照status查询用户信息，返回为JsonArray |
-| getAll | GET | /users | 读取所有用户，JsonArray |
-| batchUpdate | PUT | /users | 批量更新用户 |
-| batchCreate | POST | /users | 批量创建用户（ID集） |
-| batchDelete | DELETE | /users | 批量删除用户（ID集） |
 | existUser | POST | /user/exist | 检查用户是否存在 |
 |  |  |  |  |
 
@@ -91,6 +87,15 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 | batchPut | PUT | /users | 批量更新用户 |
 | batchPost | POST | /users | 批量创建用户（ID集） |
 | batchDelete | DELETE | /users | 批量删除用户（ID集） |
+
+#### 3.2.3. 单记录查询
+
+* 单记录查询中的 field = value 模式只可以输入单个字段信息。
+* 
+| 方法名 | HTTP方法 | URI | 含义 |
+| :--- | :--- | :--- | :--- |
+| getByField | GET | /user/{field}/{value} | 按照field = value查询用户信息 |
+|  |  |  |  |
 
 
 
