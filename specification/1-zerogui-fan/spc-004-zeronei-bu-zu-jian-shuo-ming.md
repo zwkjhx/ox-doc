@@ -9,7 +9,7 @@ Zero框架中使用了很多后缀命名法用于定义不同的组件，本文�
 | VertxApplication / DansApplication | 标准服务启动器 / ApiGateway启动器。 |
 | Scatter | 启动器子线程，包含：Agent扫描线程、Worker扫描线程、Infix插件扫描线程、Rule规则扫描线程四种。 |
 | Visitor | 配置访问器，分两种：纯数据系列如读取JsonObject/JsonArray；特殊DTO系列，如Vert.x Options，Server Options等。 |
-| Node&lt;T&gt; | 配置数据解析器，主要分： |
+| Node&lt;T&gt; | 配置数据解析器，主要分：解析 vertx.yml文件、解析vertx-inject.yml 文件扫描Infix插件、解析 lime节点、解析统一配置——分层、合并处理。 |
 |  |  |
 |  |  |
 |  |  |
