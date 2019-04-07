@@ -98,5 +98,11 @@ Api类中的方法定义一般有两套，这个开发者可以根据实际情�
 | getByField | GET | /user/{field}/{value} | 按照 field = value 查询用户信息 |
 | getByFields | POST | /user/query | 按照criteria模式查询用户信息 |
 
+#### 3.2.4. 辅助功能
+
+
+
+
+
 
 
