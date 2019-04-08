@@ -152,7 +152,7 @@ Ux.ajaxPut("/api/:appId/point/types",{
 | criteria | 查询参数，指定查询语法。 |
 | sorter | 排序参数，指定当前查询的排序规则。 |
 
-> 这些参数不要用于数据部分，因为会被直接解析成查询树结构，也就是说不要在你的后端实体中定义类似pager, projection, criteria, sorter这种字段，如果请求本身的格式符合查询树语法时，有可能会被直接解析成“POST复杂查询”。参考：
+> 这些参数不要用于数据部分，因为会被直接解析成查询树结构，也就是说不要在你的后端实体中定义类似pager, projection, criteria, sorter这种字段，如果请求本身的格式符合查询树语法时，有可能会被直接解析成“POST复杂查询”。参考：[KMZ-001 查询引擎语法](/uniform-documentation/zerohe-xin-li-lun/kmz-001-cha-xun-yin-qing-yu-fa.md)
 
 
 
