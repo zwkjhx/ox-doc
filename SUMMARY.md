@@ -159,7 +159,7 @@
   * [UXD-001 那些年的伤痛](utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md)
 * [2 - Zero中的Ux](utility-x/2-zerozhong-de-ux.md)
 * [3 - Zero UI中的Ux](utility-x/3-zero-uizhong-de-ux.md)
-  * [UXI-001 Ux.ajaxXxx](utility-x/3-zero-uizhong-de-ux/uxi-001-uxajaxxxx.md)
+  * [UXI-001 Ux.ajax](utility-x/3-zero-uizhong-de-ux/uxi-001-uxajaxxxx.md)
 * [4 - Zero中的Ut](utility-x/4-zerozhong-de-ut.md)
 * [5 - Zero中的Fn](utility-x/5-zerozhong-de-fn.md)
 * [6 - Origin X中的Fn](utility-x/6-origin-xzhong-de-fn.md)
