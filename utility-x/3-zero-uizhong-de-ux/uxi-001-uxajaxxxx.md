@@ -41,6 +41,13 @@ export default {
 | ajaxDownload | 下载专用API。参数：3.1 |
 | ajaxFetch | 非安全模式下的GET方法，不带token。参数：3.1 |
 | ajaxPush | 非安全模式下的POST方法，不带token。参数：3.1 |
+| ajaxGet | 安全模式下的GET方法，带token。参数：3.1 |
+| ajaxPost | 安全模式下的POST方法，带token。参数：3.1 |
+| ajaxPut | 安全模式下的PUT方法，带token。参数：3.1 |
+| ajaxDelete | 安全模式下的DELETE方法，带token。参数：3.1 |
+| microFetch | 非安全模式下的GET方法，不带token。参数：3.2 |
+| microPush | 非安全模式下的POST方法，不带token。参数：3.2 |
+|  |  |
 
 ## 3. 统一参数说明
 
