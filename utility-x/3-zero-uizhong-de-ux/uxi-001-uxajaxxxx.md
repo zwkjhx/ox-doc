@@ -89,7 +89,9 @@ method( service, uri, params, mockData );
 
 为什么不直接在路径中使用`/report/api/test/ok`，而是要抽象一个服务名称出来——其实只有一个原因：概念上讲让人员清楚这个服务本身是什么名称，用来干什么，并且当服务名称发生改变的时候，可以在整个UI项目中统一修改，而不是查找所有路径中带了该服务名称的API来进行Replace。
 
-### 3.3. 参数替换
+## 4. 注意点
+
+### 4.1. 参数替换
 
 RESTful中经常会使用路径参数（Path Param），如果使用了这种参数，那么如何调用ajax的API来实现对路径参数的访问呢？先看看下边的API
 
@@ -113,9 +115,44 @@ Ux.ajaxPut("/api/:appId/point/types",{
 
 最终发出去的请求，路径中的`:appId`会被JavaScript中的Object中的信息替换掉。
 
-### 3.4. 特殊参数$body
+### 4.2. 特殊参数$body
 
-特殊参数`$body`主要用于解决PUT和POST中带路径参数
+【Deprecated】特殊参数`$body`主要用于解决PUT和POST中带路径参数的行为，在原始的Api调用中，一旦在路径中处理过的参数会直接从参数表中删除掉，而有时候为了规范化请求体的参数，所以当时设计了这个结构，不过以后这种模式会被摒弃。
+
+```js
+Ux.ajaxPut("/api/:appId/point/types",{
+    appId:"5f949dd4-a09f-4799-94fc-a88be2b19b59",
+    $body:{
+        username:"Lang",
+        email:"lang.yu@hpe.com"
+    }
+});
+```
+
+上述请求中，最终发送给后端的请求体不会包含`appId`，这种模式下和下边这种写法有稍许区别：
+
+```js
+Ux.ajaxPut("/api/:appId/point/types",{
+    appId:"5f949dd4-a09f-4799-94fc-a88be2b19b59",
+    username:"Lang",
+    email:"lang.yu@hpe.com"
+});
+```
+
+上边这种模式下，`appId`依然会出现在最终发送给后端的请求体内。
+
+### 4.3. Query参数
+
+不论是Zero UI还是Zero、Origin对复杂查询都是用了查询引擎和查询树的分析，这种情况下，对于Ajax请求造成了一定的限制，在一个请求体中，需要让开发人员注意几个特殊的参数。
+
+| 参数名 | 说明 |
+| :--- | :--- |
+| pager | 分页参数，指定当前查询是否启用分页功能。 |
+| projection | 列过滤参数，指定当前查询是否启用列过滤功能。 |
+| criteria | 查询参数，指定查询语法。 |
+| sorter | 排序参数，指定当前查询的排序规则。 |
+
+> 这些参数不要用于数据部分，因为会被直接解析成查询树结构，也就是说不要在你的后端实体中定义类似pager, projection, criteria, sorter这种字段，如果请求本身的格式符合查询树语法时，有可能会被直接解析成“POST复杂查询”。参考：
 
 
 
