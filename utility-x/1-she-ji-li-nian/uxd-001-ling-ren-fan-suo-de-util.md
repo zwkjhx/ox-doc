@@ -82,9 +82,20 @@ com/htl/domain/Role.java
 
 ```
 # 用户模块
-com/htl/micro/UserApi.java
-com/htl/micro/UserWorker.java
-com/htl/micro/User
+com/htl/micro/user/UserController.java
+com/htl/micro/user/UserService.java
+com/htl/micro/user/UserServiceImpl.java
+com/htl/micro/user/UserDao.java
+com/htl/micro/user/UserDaoImpl.java
+# 角色模块
+com/htl/micro/role/RoleController.java
+com/htl/micro/role/RoleService.java
+com/htl/micro/role/RoleServiceImpl.java
+com/htl/micro/role/RoleDao.java
+com/htl/micro/role/RoleDaoImpl.java
+# 领域模型
+com/htl/domain/User.java
+com/htl/domain/Role.java
 ```
 
 
