@@ -39,7 +39,8 @@ export default {
 |  | file - 上传的文件参数，一般是 input = file 或者执行了multipart/\* 编码过的上传内容数据。 |
 |  | mockData - 当前请求引入的Mock数据，遵循Zero UI中的Mock结构。 |
 | ajaxDownload | 下载专用API。参数：3.1 |
-| ajaxFetch |  |
+| ajaxFetch | 非安全模式下的GET方法，不带token。参数：3.1 |
+| ajaxPush | 非安全模式下的POST方法，不带token。参数：3.1 |
 
 ## 3. 统一参数说明
 
