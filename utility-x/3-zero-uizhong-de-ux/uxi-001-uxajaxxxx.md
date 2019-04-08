@@ -63,5 +63,35 @@ export default {
 | mockData | 当前请求依赖的Mock参数，DEV\_MOCK = true时才生效。 |
 | service | Spring的原始微模式下的服务名称。 |
 
+### 3.1. ajax系列
+
+ajax系列的方法参数签名如下：
+
+```js
+method( uri, params, mockData );
+```
+
+### 3.2. micro系列
+
+micro系列之所以会出现，是由于在原始的Spring Boot中的API Gateway寻找路径地址时，会多一层服务名称，如：
+
+```shell
+服务名：report
+访问路径：/api/test/ok
+最终访问地址：/report/api/test/ok  # 这是不深度配置的Spring的默认方式
+```
+
+所以对应ajax系列，会出现一套micro的微模式，它的签名如下：
+
+```js
+method( service, uri, params, mockData );
+```
+
+为什么不直接在路径中使用`/report/api/test/ok`，而是要抽象一个服务名称出来——其实只有一个原因：概念上讲让人员清楚这个服务本身是什么名称，用来干什么，并且当服务名称发生改变的时候，可以在整个UI项目中统一修改，而不是查找所有路径中带了该服务名称的API来进行Replace。
+
+### 3.3. 参数替换
+
+
+
 
 
