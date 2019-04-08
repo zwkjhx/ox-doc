@@ -22,6 +22,10 @@ export default {
 
 ## 2. API清单
 
+前端路径为：http://localhost:5000
+
+后端路径为：http://localhost:6083
+
 | API签名 | 说明 |
 | :--- | :--- |
 |  |  |
