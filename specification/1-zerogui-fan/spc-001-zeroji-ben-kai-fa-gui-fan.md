@@ -1,4 +1,4 @@
-* [ ] # Zero基本开发规范
+# Zero基本开发规范
 
 ## 0. 术语
 
@@ -62,7 +62,111 @@ Zero中的API、方法定义相关信息相对比较复杂，它的完整规范�
 
 ### 3.3. 服务通信
 
+#### 3.3.1. 服务端
+
+在Zero中开放Rpc服务端的代码如下：
+
+```java
+package com.htl.ipc;
+
+import com.htl.micro.activity.ActivityStub;
+import io.vertx.core.Future;
+import io.vertx.core.json.JsonObject;
+import io.vertx.up.annotations.Ipc;
+import io.vertx.up.atom.Envelop;
+import io.vertx.up.log.Annal;
+
+import javax.inject.Inject;
 
 
+public class TabularIvy {
 
+    @Ipc("IPC://ADDR/TABULARS/MULTI")
+    public Future<JsonObject> listAndMulti(final Envelop evenelop) {
+        final JsonObject params = evenelop.data();
+        return Ux.Jooq.on(SysTabularDao.class).on(Pojo.TABULAR)
+                .fetchAndAsync(new JsonObject()
+                        .put("sigma", params.getString("sigma"))
+                        .put("type,i", params.getJsonArray("type").getList()))
+                .compose(Ux.fnJArray(Pojo.TABULAR))
+                .compose(array -> Ux.thenGroup(array, "type"));
+    }
+}
+```
+
+#### 3.3.2. 客户端
+
+```java
+    public static Future<JsonObject> rpcTabular(
+            final String sigma,
+            final JsonArray type) {
+        final JsonObject params = new JsonObject()
+                .put("sigma", sigma).put("type", type);
+        return Ux.thenRpc("ipc-datum", "IPC://ADDR/TABULARS/MULTI", params);
+    }
+```
+
+> 注：上边可以是静态方法，也可以是非静态方法。
+
+所以针对服务通信的基本规范如下：
+
+* 所有的@Ipc内的地址统一使用`IPC://ADDR`前缀标识；
+* 客户端调用统一使用`Ux.thenRpc`方式调用；
+
+### 3.4. 组件概念
+
+通常我们会把Zero的前后端线程进行分离，接受请求线程和处理请求线程会使用Event Bus进行异步数据通信：
+
+| 组件名称 | 职责 |
+| :--- | :--- |
+| Agent | 通常又称为接收请求的线程主体 |
+| Handler | 处理器，接收请求线程主体中的执行线程，真正接收线程过程中的执行主体 |
+| Sender | 往事件总线Event Bus发送数据的专用执行线程，一般位于Handler链的最后 |
+| Worker | 处理请求的线程主体 |
+| Consumer | 消费事件总线Event Bus中数据的专员执行线程，真正消费数据的执行主体，可执行Block的动作如IO操作、数据库访问、网络访问等 |
+
+上边组件的基本关系如下：
+
+* 一个Agent中可以包含多个Handler；
+* 当多个Handler组成一个Handler的链式结构时，若启用了Event Bus，那么Sender一般位于最后，发送数据到Event Bus的Handler称为Sender；
+* 一个Worker中可以包含多个Consumer，每个地址上会绑定一个Consumer；
+
+### 3.5. Worker和Service通信
+
+后端的Worker和Service通信的过程中，一般遵循两个基本规则：
+
+* 如果业务逻辑不复杂，如单纯的CRUD操作时，可直接在Worker中调用`Ux.Jooq`完成相关动作，这种情况下可不使用`Stub/Service`的业务逻辑层结构。
+* 当业务逻辑层出现了超过两次以上的`compose`对应的Monad运算操作时，开启`Stub/Service`的业务逻辑层来执行相关计算。
+* 如果业务逻辑层的接口存在“复用”，同样需要开启`Stub/Service`的业务逻辑层来进行复用分离，直接在`Stub`中定义业务逻辑层接口。
+
+### 3.6. 使用Helper
+
+在Worker和Service中的核心代码部分，尽可能只包含过程，也就是说不在主体代码中塞逻辑，代码参考如下：
+
+```java
+    public Future<JsonObject> createDirect(final JsonObject data) {
+        LOGGER.info("[ Hotel ] 直接入住: \n{0}", data.encodePrettily());
+        // 后续添加入住记录使用
+        data.put("datum", data.getJsonArray("travelers").copy());
+        return TicketAid.asyncItems(data)
+                // 创建订单
+                .compose(processed -> OrderAider.createOrder(processed, "Registered"))
+                // 创建订单项
+                .compose(OrderAider::createOrderItem)
+                // 保存宾客记录，目前更新 1)宾客状态，2) 入住次数。其它字段不在本处处理中更新
+                .compose(OccupAider::saveTravelers)
+                // 保存入住记录
+                .compose(OccupAider::createInoccup)
+                // 初始化账本
+                .compose(AtmAider::createAccountBook)
+                // 更新房间信息，更新成占用房
+                .compose(order -> this.statusStub.updateEtat(
+                        order.getString("sigma"),
+                        TicketAid.getEtatParam(order),
+                        null)
+                        .compose(nil -> Future.succeededFuture(order)));
+    }
+```
+
+这种模式下，可借用`Aider`中的可重用方法执行函数引用的注入、替换等相关操作，并且代码结构上会清晰很多。
 
