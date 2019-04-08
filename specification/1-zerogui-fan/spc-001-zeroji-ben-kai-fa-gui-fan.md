@@ -79,18 +79,17 @@ import io.vertx.up.log.Annal;
 import javax.inject.Inject;
 
 
-public class ActivityIvy {
+public class TabularIvy {
 
-    private static final Annal LOGGER = Annal.get(ActivityIvy.class);
-
-    @Inject
-    private transient ActivityStub stub;
-
-    @Ipc("IPC://ADDR/ACTIVITY/CREATE")
-    public Future<JsonObject> createActivity(final Envelop envelop) {
-        final JsonObject params = envelop.data();
-        LOGGER.info("[H] 登录日志数据：{0}", params.encodePrettily());
-        return this.stub.createActivity(params);
+    @Ipc("IPC://ADDR/TABULARS/MULTI")
+    public Future<JsonObject> listAndMulti(final Envelop evenelop) {
+        final JsonObject params = evenelop.data();
+        return Ux.Jooq.on(SysTabularDao.class).on(Pojo.TABULAR)
+                .fetchAndAsync(new JsonObject()
+                        .put("sigma", params.getString("sigma"))
+                        .put("type,i", params.getJsonArray("type").getList()))
+                .compose(Ux.fnJArray(Pojo.TABULAR))
+                .compose(array -> Ux.thenGroup(array, "type"));
     }
 }
 ```
@@ -108,6 +107,11 @@ public class ActivityIvy {
 ```
 
 > 注：上边可以是静态方法，也可以是非静态方法。
+
+所以针对服务通信的基本规范如下：
+
+* 所有的@Ipc内的地址统一使用`IPC://ADDR`前缀标识；
+* 客户端调用统一使用`Ux.thenRpc`方式调用；
 
 
 
