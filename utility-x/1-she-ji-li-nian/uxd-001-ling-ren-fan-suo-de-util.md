@@ -183,7 +183,7 @@ public class TicketWorker {
     String put(@PathParam("id") String id, @BodyParam JsonObject data);
 ```
 
-> 实际上，Ux.getString读取的就是orderId参数，而Ux.getJson1读取的就是JsonObject类型的Body参数。
+> 实际上，Ux.getString读取的就是orderId参数，而Ux.getJson1读取的就是JsonObject类型的Body参数，对开发人员而言，它不需要知道Agent和Worker是怎么使用Event Bus的，同样不需要知道Sender和Consumer是如何通信的，直接定义了接口后，在对应的方法内调用Ux的API就可以取到参数了，而Agent和Worker中的绑定关系就是依靠Addr.ORDER\_PUT这个地址来绑定的。
 
 
 
