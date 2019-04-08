@@ -17,11 +17,11 @@ Zero UI在传统前端开发中有一个比较大的变动，就是直接在webp
 
 ```js
 import React from 'react';
-import Fn from '../../../ux';    // 相对路径
+import Ux from '../../../ux';    // 相对路径
 
 class Component extends React.Component{
     render(){
-        const single = Fn.elementUnique(this.props.data,"code","Single");
+        const single = Ux.elementUnique(this.props.data,"code","Single");
         return false;
     }
 }
@@ -33,11 +33,11 @@ export default Component
 
 ```js
 import React from 'react';
-import Fn from 'ux';    // 直接引用包名
+import Ux from 'ux';    // 直接引用包名
 
 class Component extends React.Component{
     render(){
-        const single = Fn.elementUnique(this.props.data,"code","Single");
+        const single = Ux.elementUnique(this.props.data,"code","Single");
         return false;
     }
 }
