@@ -135,6 +135,11 @@ public class TabularIvy {
 
 后端的Worker和Service通信的过程中，一般遵循两个基本规则：
 
-* 
+* 如果业务逻辑不复杂，如单纯的CRUD操作时，可直接在Worker中调用`Ux.Jooq`完成相关动作，这种情况下可不使用`Stub/Service`的业务逻辑层结构。
+* 当业务逻辑层出现了超过两次以上的`compose`对应的Monad运算操作时，开启`Stub/Service`的业务逻辑层来执行相关计算。
+* 如果业务逻辑层的接口存在“复用”，同样需要开启`Stub/Service`的业务逻辑层来进行复用分离，直接在`Stub`中定义业务逻辑层接口。
+
+
+
 
 
