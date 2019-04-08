@@ -138,8 +138,52 @@ ArrayUtil.sort(array);
 使用了上述方法后，代码本身就简洁很多了，比如下边的方法：
 
 ```java
+package com.htl.micro.order;
 
+import com.htl.cv.Addr;
+import io.vertx.core.Future;
+import io.vertx.core.json.JsonObject;
+import io.vertx.up.aiki.Ux;
+import io.vertx.up.annotations.Address;
+import io.vertx.up.annotations.Queue;
+import io.vertx.up.atom.Envelop;
+
+import javax.inject.Inject;
+
+@Queue
+public class TicketWorker {
+
+    @Inject
+    private transient TicketStub ticketStub;
+
+    @Address(Addr.ORDER_PUT)
+    public Future<JsonObject> edit(final Envelop envelop) {
+        // 直接调用Ux方法，从Agent中传入的参数里读取第一个参数，由于定义的是String类型的，直接使用getString来读取。
+        final String id = Ux.getString(envelop);
+        // 直接调用Ux方法，从Agent中传入的参数里读取第二个参数，JsonObject类型。
+        final JsonObject data = Ux.getJson1(envelop);
+        return this.ticketStub.update(id, data);
+    }
+}
 ```
+
+上述代码这样看起来可能比较费解，看看下边关于这个地址（`Addr.ORDER_PUT`）下的RESTful定义就明白了。
+
+```java
+    /**
+     * 按ID更新单张订单数据
+     *
+     * @param id   订单ID
+     * @param data 传入需要更新的订单数据
+     * @return 返回读取的订单数据
+     */
+    @Path("/order/{id}")
+    @PUT
+    @Address(Addr.ORDER_PUT)
+    String put(@PathParam("id") String id, @BodyParam JsonObject data);
+```
+
+> 实际上，Ux.getString读取的就是orderId参数，而Ux.getJson1读取的就是JsonObject类型的Body参数。
 
 
 
