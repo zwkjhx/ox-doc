@@ -33,7 +33,7 @@ export default {
 | ajaxResource | 读取前端某个路径下的资源，只支持GET方法，所以默认就是GET，前端站点直接调用。 |
 |  | uri - 前端请求路径，如果 uri = /react/index.html，那么该请求将发送到：[http://localhost:5000/react/index.html](http://localhost:5000/react/index.html中。)中。 |
 | ajaxUpload | 上传专用API。 |
-|  | uri - 上传地址，前缀会引入ENDPOINT，请求最终发送给后端，如 uri = /api/attach/upload，那么请求将发送给 http://localhost:6083/api/attach/upload。 |
+|  | uri - 上传地址，前缀会引入ENDPOINT，请求最终发送给后端，如 uri = /api/attach/upload，那么请求将发送给 [http://localhost:6083/api/attach/upload](http://localhost:6083/api/attach/upload。)。 |
 
 ## 3. 参数统一说明
 
