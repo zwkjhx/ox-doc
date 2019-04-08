@@ -21,7 +21,7 @@ Utility X是在Zero时代取的名字，现在贯穿所有目前的项目，它�
 
 ## 3. Zero UI中的Ux
 
-* [UXI-001 Ux.ajax](/utility-x/3-zero-uizhong-de-ux/uxi-001-uxajaxxxx.md)
+* [UXI-001 Ux.ajax](/utility-x/3-zero-uizhong-de-ux/uxi-001-uxajaxxxx.html)
 
 ## 4. Zero中的Ut
 
