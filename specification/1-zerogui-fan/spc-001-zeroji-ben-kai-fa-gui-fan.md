@@ -113,5 +113,11 @@ public class TabularIvy {
 * 所有的@Ipc内的地址统一使用`IPC://ADDR`前缀标识；
 * 客户端调用统一使用`Ux.thenRpc`方式调用；
 
+### 3.4. 关于Worker和Service
+
+通常我们会把Zero的前后端线程进行分离，而有几个基本概念需要说明：
+
+
+
 
 
