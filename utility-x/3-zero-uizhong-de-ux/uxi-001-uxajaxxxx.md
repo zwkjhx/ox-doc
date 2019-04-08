@@ -28,6 +28,8 @@ export default {
 
 后端路径为：[http://localhost:6083](http://localhost:6083)
 
+> 除了特殊的参数提供说明，其他的API方法参考统一参数说明。
+
 | API名称 | 说明 |
 | :--- | :--- |
 | ajaxResource | 读取前端某个路径下的资源，只支持GET方法，所以默认就是GET，前端站点直接调用。 |
@@ -36,6 +38,11 @@ export default {
 |  | uri - 上传地址，前缀会引入ENDPOINT，请求最终发送给后端，如 uri = /api/attach/upload，那么请求将发送给 [http://localhost:6083/api/attach/upload](http://localhost:6083/api/attach/upload。)，只支持POST上传。 |
 |  | file - 上传的文件参数，一般是 input = file 或者执行了multipart/\* 编码过的上传内容数据。 |
 |  | mockData - 当前请求引入的Mock数据，遵循Zero UI中的Mock结构。 |
+| ajaxDownload | 下载专用API，统一参数 |
+
+## 3. 统一参数说明
+
+
 
 
 
