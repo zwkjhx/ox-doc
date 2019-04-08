@@ -113,7 +113,7 @@ public class TabularIvy {
 * 所有的@Ipc内的地址统一使用`IPC://ADDR`前缀标识；
 * 客户端调用统一使用`Ux.thenRpc`方式调用；
 
-### 3.4. 关于Worker和Service
+### 3.4. 组件概念
 
 通常我们会把Zero的前后端线程进行分离，接受请求线程和处理请求线程会使用Event Bus进行异步数据通信：
 
@@ -121,7 +121,20 @@ public class TabularIvy {
 | :--- | :--- |
 | Agent | 通常又称为接收请求的线程主体 |
 | Handler | 处理器，接收请求线程主体中的执行线程，真正接收线程过程中的执行主体 |
-|  |  |
+| Sender | 往事件总线Event Bus发送数据的专用执行线程，一般位于Handler链的最后 |
+| Worker | 处理请求的线程主体 |
+| Consumer | 消费事件总线Event Bus中数据的专员执行线程，真正消费数据的执行主体，可执行Block的动作如IO操作、数据库访问、网络访问等 |
 
+上边组件的基本关系如下：
+
+* 一个Agent中可以包含多个Handler；
+* 当多个Handler组成一个Handler的链式结构时，若启用了Event Bus，那么Sender一般位于最后，发送数据到Event Bus的Handler称为Sender；
+* 一个Worker中可以包含多个Consumer，每个地址上会绑定一个Consumer；
+
+### 3.5. Worker和Service通信
+
+后端的Worker和Service通信的过程中，一般遵循两个基本规则：
+
+* 
 
 
