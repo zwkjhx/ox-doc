@@ -15,7 +15,19 @@ Zero UI在传统前端开发中有一个比较大的变动，就是直接在webp
 
 如果是原始前端开发，代码部分引用：
 
+```js
+import React from 'react';
+import Fn from '../../../ux';    // 相对路径
 
+class Component extends React.Component{
+    render(){
+        const single = Fn.elementUnique(this.props.data,"code","Single");
+        return false;
+    }
+}
+
+export default Component
+```
 
 
 
