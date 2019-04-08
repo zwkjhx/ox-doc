@@ -62,5 +62,52 @@ Zero中的API、方法定义相关信息相对比较复杂，它的完整规范�
 
 ### 3.3. 服务通信
 
+#### 3.3.1. 服务端
+
+在Zero中开放Rpc服务端的代码如下：
+
+```java
+package com.htl.ipc;
+
+import com.htl.micro.activity.ActivityStub;
+import io.vertx.core.Future;
+import io.vertx.core.json.JsonObject;
+import io.vertx.up.annotations.Ipc;
+import io.vertx.up.atom.Envelop;
+import io.vertx.up.log.Annal;
+
+import javax.inject.Inject;
+
+
+public class ActivityIvy {
+
+    private static final Annal LOGGER = Annal.get(ActivityIvy.class);
+
+    @Inject
+    private transient ActivityStub stub;
+
+    @Ipc("IPC://ADDR/ACTIVITY/CREATE")
+    public Future<JsonObject> createActivity(final Envelop envelop) {
+        final JsonObject params = envelop.data();
+        LOGGER.info("[H] 登录日志数据：{0}", params.encodePrettily());
+        return this.stub.createActivity(params);
+    }
+}
+```
+
+#### 3.3.2. 客户端
+
+```java
+    public static Future<JsonObject> rpcTabular(
+            final String sigma,
+            final JsonArray type) {
+        final JsonObject params = new JsonObject()
+                .put("sigma", sigma).put("type", type);
+        return Ux.thenRpc("ipc-datum", "IPC://ADDR/TABULARS/MULTI", params);
+    }
+```
+
+> 注：上边可以是静态方法，也可以是非静态方法。
+
 
 
