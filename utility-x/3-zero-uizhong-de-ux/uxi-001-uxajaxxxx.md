@@ -38,11 +38,10 @@ export default {
 |  | uri - 上传地址，前缀会引入ENDPOINT，请求最终发送给后端，如 uri = /api/attach/upload，那么请求将发送给 [http://localhost:6083/api/attach/upload](http://localhost:6083/api/attach/upload。)，只支持POST上传。 |
 |  | file - 上传的文件参数，一般是 input = file 或者执行了multipart/\* 编码过的上传内容数据。 |
 |  | mockData - 当前请求引入的Mock数据，遵循Zero UI中的Mock结构。 |
-| ajaxDownload | 下载专用API，统一参数 |
+| ajaxDownload | 下载专用API。参数：3.1 |
+| ajaxFetch |  |
 
 ## 3. 统一参数说明
-
-
 
 
 
