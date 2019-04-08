@@ -31,7 +31,7 @@ export default {
 | API名称 | 说明 |
 | :--- | :--- |
 | ajaxResource | 读取前端某个路径下的资源，只支持GET方法，所以默认就是GET，前端站点直接调用。 |
-|  | uri - 前端请求路径，如果 uri = /react/index.html，那么该请求将发送到：http://localhost:5000/react/index.html中。 |
+|  | uri - 前端请求路径，如果 uri = /react/index.html，那么该请求将发送到：[http://localhost:5000/react/index.html](http://localhost:5000/react/index.html中。)中。 |
 
 ## 3. 参数统一说明
 
