@@ -49,7 +49,43 @@ public interface GroupRepository extends JpaRepository<Group, String> {
 
 ### 2.3. 以职责为主的命名方式
 
-曾经是一个“分层”的时代，有很长一段时间，我们都在考虑`MVC`，或者说直接使用分层架构，有展示层、控制层、业务逻辑层、数据访问层、领域模型层，这样的方式支撑了整个系统架构很长一段时间，于是那个时候我们系统中会有Factory、Manager类似的字眼，但是也引起了一个问题——有时候这些东西的职责不够单一。
+曾经是一个“分层”的时代，有很长一段时间，我们都在考虑`MVC`，或者说直接使用分层架构，有展示层、控制层、业务逻辑层、数据访问层、领域模型层，这样的方式支撑了整个系统架构很长一段时间，于是那个时候我们系统中会有Factory、Manager类似的字眼，但是也引起了一个问题——有时候这些东西的职责不够单一。在最新的Redux框架从前端诞生时，官方的标配也是：Reducer、Types、Action在不同的层（实际上在前端会将不同的内容放到不同目录中），姑且不论这种方式的好坏，通过我们在开发中的时间证明，这种方式也许符合一个单项目的思路，但在“微架构”下，似乎有些问题。
+
+* 这种分层的方式在“微架构“下，某一个模块的不同层组件位于同一的层中，其内聚性的表达分散得太厉害。
+* 当开发人员去更改或开发某一个业务模块的组件时，必须先去定位层，然后在众多文件中找到自己要改动的文件，然后进行开发，而且每个开发人员在层中开发的内容是共享的，分离开发变得复杂。
+* 如果要执行某个模块的重构，由于层中代码是共享的，定然会影响到别人的代码，使得模块和模块的隔离性变得很麻烦。
+
+举个例子，如果有`User`和`Role`两个模块，现在有一批操作，传统的文件结构如下：
+
+```shell
+# 控制层
+com/htl/controller/UserController.java
+com/htl/controller/RoleController.java
+# 业务逻辑层文件结构
+com/htl/service/UserService.java
+com/htl/service/RoleService.java
+com/htl/service/UserServiceImpl.java
+com/htl/service/RoleServiceImpl.java
+# 数据访问层文件结构
+com/htl/dao/UserDao.java
+com/htl/dao/RoleDao.java
+com/htl/dao/UserDaoImpl.java
+com/htl/dao/RoleDaoImpl.java
+# 领域模型
+com/htl/domain/User.java
+com/htl/domain/Role.java
+```
+
+在Zero中不推荐使用“分层”的架构，而是分模块的架构（以服务集合为中心），先参考下下边的结构：
+
+> 为了和上边的代码结构对比，直接使用同样的文件名，暂时不以Zero中的文件名为中心。
+
+```
+# 用户模块
+com/htl/micro/UserApi.java
+com/htl/micro/UserWorker.java
+com/htl/micro/User
+```
 
 
 
