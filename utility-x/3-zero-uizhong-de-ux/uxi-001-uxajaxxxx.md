@@ -22,9 +22,11 @@ export default {
 
 ## 2. API清单
 
-前端路径为：http://localhost:5000
+说明API的时候采用下边的基础数据（前后端分离架构）：
 
-后端路径为：http://localhost:6083
+前端路径为：[http://localhost:5000](http://localhost:5000)
+
+后端路径为：[http://localhost:6083](http://localhost:6083)
 
 | API签名 | 说明 |
 | :--- | :--- |
