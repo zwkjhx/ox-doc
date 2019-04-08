@@ -45,11 +45,23 @@ export default {
 | ajaxPost | 安全模式下的POST方法，带token。参数：3.1 |
 | ajaxPut | 安全模式下的PUT方法，带token。参数：3.1 |
 | ajaxDelete | 安全模式下的DELETE方法，带token。参数：3.1 |
-| microFetch | 非安全模式下的GET方法，不带token。参数：3.2 |
-| microPush | 非安全模式下的POST方法，不带token。参数：3.2 |
-|  |  |
+| microFetch | 同ajaxFetch。参数：3.2 |
+| microPush | 同ajaxPush。参数：3.2 |
+| microGet | 同ajaxGet。参数：3.2 |
+| microPost | 同ajaxPost。参数：3.2 |
+| microPut | 同ajaxPut。参数：3.2 |
+| microDelete | 同ajaxDelete。参数：3.2 |
 
 ## 3. 统一参数说明
+
+统一参数表示这些API所有的参数都是统一处理，参考下表：
+
+| 参数名 | 说明 |
+| :--- | :--- |
+| uri | 当前请求发送的远程API地址，不带ENDPOINT部分，系统自动会注入。 |
+| params | 当前请求所需要的参数，使用JavaScript中的Object表示。 |
+| mockData | 当前请求依赖的Mock参数，DEV\_MOCK = true时才生效。 |
+| service | Spring的原始微模式下的服务名称。 |
 
 
 
