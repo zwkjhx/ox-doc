@@ -139,7 +139,13 @@ public class TabularIvy {
 * 当业务逻辑层出现了超过两次以上的`compose`对应的Monad运算操作时，开启`Stub/Service`的业务逻辑层来执行相关计算。
 * 如果业务逻辑层的接口存在“复用”，同样需要开启`Stub/Service`的业务逻辑层来进行复用分离，直接在`Stub`中定义业务逻辑层接口。
 
+### 3.6. 使用Helper
 
+在Worker和Service中的核心代码部分，尽可能只包含过程，也就是说不在主体代码中塞逻辑，代码参考如下：
+
+```java
+
+```
 
 
 
