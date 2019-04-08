@@ -91,7 +91,31 @@ method( service, uri, params, mockData );
 
 ### 3.3. 参数替换
 
+RESTful中经常会使用路径参数（Path Param），如果使用了这种参数，那么如何调用ajax的API来实现对路径参数的访问呢？先看看下边的API
 
+```json
+/api/:appId/point/types
+```
+
+当请求发送给这个地址时，最终的成形结构应该如：
+
+```shell
+/api/5f949dd4-a09f-4799-94fc-a88be2b19b59/point/types
+```
+
+那么在这种情况下，只需要书写下边代码即可：
+
+```js
+Ux.ajaxPut("/api/:appId/point/types",{
+    appId:"5f949dd4-a09f-4799-94fc-a88be2b19b59"
+});
+```
+
+最终发出去的请求，路径中的`:appId`会被JavaScript中的Object中的信息替换掉。
+
+### 3.4. 特殊参数$body
+
+特殊参数`$body`主要用于解决PUT和POST中带路径参数
 
 
 
