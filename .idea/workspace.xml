@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346a347d-2741-43b1-aa05-a8765b3cb90c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/utility-x/3-zero-uizhong-de-ux/uxi-001-uxajaxxxx.md" beforeDir="false" afterPath="$PROJECT_DIR$/utility-x/3-zero-uizhong-de-ux/uxi-001-uxajaxxxx.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-006-jie-jue-xiang-dui-lu-jing-wen-ti.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-006-jie-jue-xiang-dui-lu-jing-wen-ti.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zero-ui/main.md" beforeDir="false" afterPath="$PROJECT_DIR$/zero-ui/main.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,21 +19,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/default.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="360">
               <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utility-x/3-zero-uizhong-de-ux/uxi-001-uxajaxxxx.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="369">
                 <caret line="154" column="223" selection-start-line="154" selection-start-column="223" selection-end-line="154" selection-end-column="223" />
-                <folding>
-                  <element signature="e#0#20#0" expanded="true" />
-                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zero-ui/main.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="324">
+                <caret line="18" column="102" selection-start-line="18" selection-start-column="102" selection-end-line="18" selection-end-column="102" />
               </first_editor>
               <second_editor />
             </state>
@@ -43,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="297">
+              <first_editor relative-caret-position="738">
                 <caret line="41" column="380" selection-start-line="41" selection-start-column="380" selection-end-line="41" selection-end-column="380" />
               </first_editor>
               <second_editor />
@@ -55,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/utility-x/main.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="345">
+              <first_editor relative-caret-position="414">
                 <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
               </first_editor>
               <second_editor />
@@ -170,7 +180,6 @@
         <option value="$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-003-bu-ju-pei-zhi-gui-fan.md" />
         <option value="$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-005-xiang-ying-shi-bu-ju.md" />
         <option value="$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-006-ajaxqing-qiu-ji-ben-shuo-ming.md" />
-        <option value="$PROJECT_DIR$/zero-ui/main.md" />
         <option value="$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-007-ajaxzhong-de-cha-xun-yin-qing.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/zerohe-xin-li-lun/kmz-001-cha-xun-yin-qing-yu-fa.md" />
         <option value="$PROJECT_DIR$/uniform-documentation/main.md" />
@@ -189,6 +198,7 @@
         <option value="$PROJECT_DIR$/utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md" />
         <option value="$PROJECT_DIR$/utility-x/main.md" />
         <option value="$PROJECT_DIR$/utility-x/3-zero-uizhong-de-ux/uxi-001-uxajaxxxx.md" />
+        <option value="$PROJECT_DIR$/zero-ui/main.md" />
       </list>
     </option>
   </component>
@@ -227,13 +237,7 @@
             <path>
               <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="utility-x" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="ox-doc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Develop/Source/ox-doc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="utility-x" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="3-zero-uizhong-de-ux" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="zero-ui" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -606,16 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zero-ui/main.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="306">
-            <caret line="17" column="117" selection-start-line="17" selection-start-column="117" selection-end-line="17" selection-end-column="117" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/specification/3-origin-xgui-fan/spo-007-ajaxzhong-de-cha-xun-yin-qing.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -683,6 +677,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/specification/main/spc-000-ye-wu-zhu-yu-gui-fan.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="810">
+            <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specification/main.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="356">
+            <caret line="21" selection-start-line="21" selection-end-line="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="738">
+            <caret line="41" column="380" selection-start-line="41" selection-start-column="380" selection-end-line="41" selection-end-column="380" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility-x/main.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="414">
+            <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/jekyll-theme-leap-day-extend.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4482">
@@ -716,61 +757,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utility-x/1-she-ji-li-nian/uxd-001-ling-ren-fan-suo-de-util.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="297">
-            <caret line="41" column="380" selection-start-line="41" selection-start-column="380" selection-end-line="41" selection-end-column="380" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utility-x/main.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/specification/main/spc-000-ye-wu-zhu-yu-gui-fan.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="810">
-            <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/specification/main.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="356">
-            <caret line="21" selection-start-line="21" selection-end-line="21" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utility-x/3-zero-uizhong-de-ux/uxi-001-uxajaxxxx.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="369">
             <caret line="154" column="223" selection-start-line="154" selection-start-column="223" selection-end-line="154" selection-end-column="223" />
-            <folding>
-              <element signature="e#0#20#0" expanded="true" />
-            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zero-ui/main.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="324">
+            <caret line="18" column="102" selection-start-line="18" selection-start-column="102" selection-end-line="18" selection-end-column="102" />
           </first_editor>
           <second_editor />
         </state>

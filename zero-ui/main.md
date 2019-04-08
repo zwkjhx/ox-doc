@@ -16,7 +16,7 @@ Zero UI文档用来讲解Zero UI框架的基本用法（[http://www.vertxui.cn](
 * [ZUI-003 模板和页面连接文件](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-003-mo-ban-he-ye-mian-lian-jie-wen-jian.html)
 * [ZUI-004 资源文件](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-004-zi-yuan-wen-jian.html)
 * [ZUI-005 查询参数criteria配置解析](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-005-cha-xun-can-shu-criteria-pei-zhi-jie-xi.html)
-* [ZUI-006 解决相对路径问题](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-006-jie-jue-xiang-dui-lu-jing-wen-ti.md)
+* [ZUI-006 解决相对路径问题](/zero-ui/1-zero-uiji-ben-jiao-cheng/zui-006-jie-jue-xiang-dui-lu-jing-wen-ti.html)
 
 ## 2. React碎碎念
 
