@@ -18,6 +18,8 @@ export default {
 }
 ```
 
+> 入口文件：src/ux/ajax/Ux.Ajax.js
+
 ## 2. API清单
 
 | API签名 | 说明 |
