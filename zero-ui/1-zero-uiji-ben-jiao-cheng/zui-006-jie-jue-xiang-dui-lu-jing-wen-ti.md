@@ -52,12 +52,13 @@ export default Component
 
 ## 2. 定义
 
+这种语法的定义部分参考两处，第一个定义文件是webpack中的配置文件，另外一个文件是Ts的定义文件。
+
 ### 2.1. webpack定义
 
-这种语法的定义部分参考两处，第一个定义文件是webpack中的配置文件，Zero UI已经将配置文件分离：
+config/modules.js
 
 ```js
-// config/modules.js
 const path = require("path");
 module.exports = {
     // 核心模块导入机制
@@ -79,6 +80,53 @@ module.exports = {
     moment$: "moment/moment.js"
 };
 ```
+
+### 2.2. TypeScript编译定义
+
+tsconfig.json
+
+```json
+        "paths": {
+            "environment": [
+                "src/environment"
+            ],
+            "entity": [
+                "src/entity"
+            ],
+            "lang": [
+                "src/cab"
+            ],
+            "web": [
+                "src/economy"
+            ],
+            "ux": [
+                "src/ux"
+            ],
+            "app": [
+                "src/app"
+            ]
+        }
+```
+
+## 3. 说明
+
+最后针对几个包说明一下，描述以下这些包在系统中的职责。
+
+| 包名 | 职责 |
+| :--- | :--- |
+| environment | 环境信息专用包 |
+| entity | 数据模型专用包，包含了DataObject、DataArray、DataTree、DataEvent等核心DTO |
+| lang | 语言包 |
+| web | Zero中的自定义组件包 |
+| ux | Utility X工具包 |
+| app | 应用程序专用包，Origin X中的内容就放在app包中 |
+
+Origin X中扩展了两个包出来：
+
+| 包名 | 职责 |
+| :--- | :--- |
+| ox.fun | Origin X中的Fn函数专用包，调用Ox专有函数。 |
+| ox.web | Origin X中的自定义组件专用包。 |
 
 
 
