@@ -133,5 +133,9 @@ ArrayUtil.sort(array);
 | Ux（vertx-ui） | Utility X的缩写，Zero UI的专用前端JavaScript方法类，所有的工具都从Ux中沿用。 |
 | Fn（ox-ui） | Function的缩写，由于Origin X运行在vertx-ui之中，所以可直接使用Ux，同样这里也提供了Origin X的专用工具类，使用Fn来处理（这个也是Zero UI规范定义的）。 |
 
+### 3.2. 示例代码
+
+
+
 
 
