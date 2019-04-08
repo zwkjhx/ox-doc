@@ -29,5 +29,21 @@ class Component extends React.Component{
 export default Component
 ```
 
+### 1.2. Zero中的代码
+
+```js
+import React from 'react';
+import Fn from 'ux';    // 直接引用包名
+
+class Component extends React.Component{
+    render(){
+        const single = Fn.elementUnique(this.props.data,"code","Single");
+        return false;
+    }
+}
+
+export default Component
+```
+
 
 
