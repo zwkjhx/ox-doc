@@ -144,8 +144,29 @@ public class TabularIvy {
 在Worker和Service中的核心代码部分，尽可能只包含过程，也就是说不在主体代码中塞逻辑，代码参考如下：
 
 ```java
-
+    public Future<JsonObject> createDirect(final JsonObject data) {
+        LOGGER.info("[ Hotel ] 直接入住: \n{0}", data.encodePrettily());
+        // 后续添加入住记录使用
+        data.put("datum", data.getJsonArray("travelers").copy());
+        return TicketAid.asyncItems(data)
+                // 创建订单
+                .compose(processed -> OrderAider.createOrder(processed, "Registered"))
+                // 创建订单项
+                .compose(OrderAider::createOrderItem)
+                // 保存宾客记录，目前更新 1)宾客状态，2) 入住次数。其它字段不在本处处理中更新
+                .compose(OccupAider::saveTravelers)
+                // 保存入住记录
+                .compose(OccupAider::createInoccup)
+                // 初始化账本
+                .compose(AtmAider::createAccountBook)
+                // 更新房间信息，更新成占用房
+                .compose(order -> this.statusStub.updateEtat(
+                        order.getString("sigma"),
+                        TicketAid.getEtatParam(order),
+                        null)
+                        .compose(nil -> Future.succeededFuture(order)));
+    }
 ```
 
-
+这种模式下，可借用`Aider`中的可重用方法执行函数引用的注入、替换等相关操作，并且代码结构上会清晰很多。
 
